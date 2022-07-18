@@ -28,7 +28,7 @@ Can group multiple images under one alt text eg star ratings. Provide alt on onl
 ASCII art - provide alt text and skip link
 Images of text = all text should be provided in alt text format
 Short alt text not enough? Provide both short and long.
-longdesc attribute - a URI to another page containing longer desc longdesc="image-description.html"
+longdesc attribute - a URI to another page containing longer desc longdesc="image-description.html" deprecated
 If a longer desc is on the page for all to see, use an aria-describedby attribute to link the sections to each other
 <img src="url" alt="short desc" aria-describedby="idtosection" />
 Use [End of description] to mark end of text for longdesc so they know they can go back
