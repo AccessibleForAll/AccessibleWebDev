@@ -1,11 +1,11 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const ImagesPage: NextPage = () => {
-  return (
-    <main>
-      <h1>Images</h1>
-    </main>
-  )
+	return (
+		<main>
+			<h1>Images</h1>
+		</main>
+	)
 }
 
 export default ImagesPage

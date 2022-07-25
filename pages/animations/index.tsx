@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const AnimationsPage: NextPage = () => {
-  return <div>AnimationsPage</div>
+	return <div>AnimationsPage</div>
 }
 
 export default AnimationsPage

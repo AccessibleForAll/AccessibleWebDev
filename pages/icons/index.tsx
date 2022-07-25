@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const IconsPage: NextPage = () => {
-  return <div>IconsPage</div>
+	return <div>IconsPage</div>
 }
 
 export default IconsPage

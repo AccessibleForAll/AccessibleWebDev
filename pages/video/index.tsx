@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const VideoPage: NextPage = () => {
-  return <div>VideoPage</div>
+	return <div>VideoPage</div>
 }
 
 export default VideoPage

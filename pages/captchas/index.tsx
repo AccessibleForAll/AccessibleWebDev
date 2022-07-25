@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const CaptchasPage: NextPage = () => {
-  return <div>Captchas</div>
+	return <div>Captchas</div>
 }
 
 export default CaptchasPage

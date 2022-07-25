@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const ChartsPage: NextPage = () => {
-  return <div>ChartsPage</div>
+	return <div>ChartsPage</div>
 }
 
 export default ChartsPage

@@ -1,7 +1,7 @@
-import { NextPage } from 'next'
+import { NextPage } from "next"
 
 const AudioPage: NextPage = () => {
-  return <div>AudioPage</div>
+	return <div>AudioPage</div>
 }
 
 export default AudioPage
