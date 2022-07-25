@@ -1,16 +1,30 @@
+:root {
+	--text: #272727;
+	--grey: #c7c7c7;
+	--lightGrey: #eeeeee;
+	--primaryLt: #f5649f;
+	--borderRadius: 8px;
+}
+
 html,
 body {
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+		color: var(--text)
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
+	color: inherit;	
 }
 
 * {
 	box-sizing: border-box;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px;
 }

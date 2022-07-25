@@ -1,7 +1,16 @@
 import { NextPage } from "next"
+import { useRouter } from "next/router"
+import Layout from "../../components/Layout/Layout"
+import { capitalizeRouter } from "../../utils"
 
 const CaptchasPage: NextPage = () => {
-	return <div>Captchas</div>
+	const router = useRouter()
+	const title = capitalizeRouter(router.pathname)
+	return (
+		<Layout pageTitle={title} headerTitle={title}>
+			<p>CAPTCHAS - coming soon</p>
+		</Layout>
+	)
 }
 
 export default CaptchasPage

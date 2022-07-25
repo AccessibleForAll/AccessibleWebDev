@@ -1,0 +1,27 @@
+.topBanner {
+  background-color: var(--text);
+  color: white;
+  height: 3rem;
+  padding: 0 16px;
+  display: grid;
+  place-content: center start;
+}
+
+.topBanner a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.headerTitle {
+  text-align: center;
+  font-size: clamp(2rem, 5vw + 1rem, 10rem);
+  margin: 0.5rem;
+}
+
+.bottomBorder {
+ width: 80%;
+ max-width: 1200px;
+ background-color: var(--primaryLt);
+ height: 3px;
+ border: none;
+}

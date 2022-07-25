@@ -1,7 +1,16 @@
 import { NextPage } from "next"
+import { useRouter } from "next/router"
+import Layout from "../../components/Layout/Layout"
+import { capitalizeRouter } from "../../utils"
 
 const IconsPage: NextPage = () => {
-	return <div>IconsPage</div>
+	const router = useRouter()
+	const title = capitalizeRouter(router.pathname)
+	return (
+		<Layout pageTitle={title} headerTitle={title}>
+			<p>Icons - coming soon</p>
+		</Layout>
+	)
 }
 
 export default IconsPage

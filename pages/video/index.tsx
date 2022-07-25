@@ -1,7 +1,20 @@
 import { NextPage } from "next"
+import { useRouter } from "next/router"
+
+// Components
+import Layout from "../../components/Layout/Layout"
+
+// Utils
+import { capitalizeRouter } from "../../utils"
 
 const VideoPage: NextPage = () => {
-	return <div>VideoPage</div>
+	const router = useRouter()
+	const title = capitalizeRouter(router.pathname)
+	return (
+		<Layout pageTitle={title} headerTitle={title}>
+			<p>Video - coming soon</p>
+		</Layout>
+	)
 }
 
 export default VideoPage

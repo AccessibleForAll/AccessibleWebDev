@@ -1,10 +1,15 @@
 import { NextPage } from "next"
+import { useRouter } from "next/router"
+import Layout from "../../components/Layout/Layout"
+import { capitalizeRouter } from "../../utils"
 
 const ImagesPage: NextPage = () => {
+	const router = useRouter()
+	const title = capitalizeRouter(router.pathname)
 	return (
-		<main>
-			<h1>Images</h1>
-		</main>
+		<Layout pageTitle={title} headerTitle={title}>
+			<p>Images - coming soon</p>
+		</Layout>
 	)
 }
 
