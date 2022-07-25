@@ -1,34 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Accessible Web Dev
+This site is intended to be a resource for developers wanting to learn the basics about accessibility in a clear and easy to understand way. It is not intended to replace official documentation and guidelines but to provide a stepping stone to get started where official documentation is often difficult to interpret for new web developers.
 
-## Getting Started
+## Contributing
 
-First, run the development server:
+- To report a bug, please raise a [bug report](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=bug_report.md&title=)
+- To request a new feature, please raise an [issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=feature_request.md&title=)
+- To make a contribution to documentation, translation, code or design please follow the [contributing guidelines](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## License
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Color Palette Combos is licensed under the MIT License - see [License](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/LICENSE)
