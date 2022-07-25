@@ -3,13 +3,25 @@
   color: white;
   height: 3rem;
   padding: 0 16px;
-  display: grid;
-  place-content: center start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .topBanner a {
   text-decoration: none;
   font-weight: bold;
+  
+}
+
+.topBanner button {
+  border: none;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  cursor: pointer;
 }
 
 .headerTitle {
@@ -18,10 +30,10 @@
   margin: 0.5rem;
 }
 
-.bottomBorder {
- width: 80%;
- max-width: 1200px;
- background-color: var(--primaryLt);
- height: 3px;
- border: none;
+
+
+@media (min-width: 800px) {
+  .topBanner button {
+    display: none;
+  }
 }

@@ -7,7 +7,10 @@ const CaptchasPage: NextPage = () => {
 	const router = useRouter()
 	const title = capitalizeRouter(router.pathname)
 	return (
-		<Layout pageTitle={title} headerTitle={title}>
+		<Layout
+			pageTitle={title}
+			headerTitle={title}
+			activeNavLink={router.pathname}>
 			<p>CAPTCHAS - coming soon</p>
 		</Layout>
 	)

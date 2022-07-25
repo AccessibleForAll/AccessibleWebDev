@@ -1,0 +1,6 @@
+.layoutContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 3px solid var(--primaryLt);
+}
