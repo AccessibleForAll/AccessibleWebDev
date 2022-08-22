@@ -9,4 +9,4 @@ This site is intended to be a resource for developers wanting to learn the basic
 
 ## License
 
-Color Palette Combos is licensed under the MIT License - see [License](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/LICENSE)
+AccessibleWebDev is licensed under the MIT License - see [License](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/LICENSE)
