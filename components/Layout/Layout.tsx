@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import Header from "../Header/Header"
 import NavPrimary from "../Nav/NavPrimary"
+import NavPrimaryMobile from "../Nav/NavPrimaryMobile"
 import styles from "./Layout.module.css"
 
 interface LayoutProps {
@@ -12,11 +13,19 @@ interface LayoutProps {
 
 const Layout = (props: LayoutProps) => {
 	const { pageTitle, headerTitle, activeNavLink, children } = props
+
+	const [showNavMobile, setShowNavMobile] = useState<Boolean>(false)
+
+	const handleNavClick = () => {
+		setShowNavMobile(prevState => !prevState)
+	}
+
 	return (
 		<>
-			<Header pageTitle={pageTitle} headerTitle={headerTitle} />
+			<Header pageTitle={pageTitle} headerTitle={headerTitle} handleNavClick={handleNavClick} />
 			<div className={styles.layoutContainer}>
 				<NavPrimary activeNavLink={activeNavLink} />
+				{showNavMobile && <NavPrimaryMobile activeNavLink={activeNavLink} handleNavClick={handleNavClick} />}
 				<main>{children}</main>
 			</div>
 		</>

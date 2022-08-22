@@ -1,9 +1,13 @@
 .navPrimary {
-  width: 100%;
+  display: none;
+}
+
+.navPrimaryMobile {
   position: absolute;
+  left: 0;
   right: 0;
-  top: 3rem;
-  background-color: white;
+  top: 48px;
+  background-color: var(--bg);
 }
 
 .navList {
@@ -30,8 +34,12 @@
 
 @media (min-width: 800px) {
   .navPrimary {
-    position: relative;
-    top: 0;
+    
     margin-top: 16px;
+    display: block;
+  }
+
+  .navPrimaryMobile {
+    display: none;
   }
 }
