@@ -2,7 +2,8 @@
 	--text: #272727;
 	--grey: #c7c7c7;
 	--lightGrey: #eeeeee;
-	--primaryLt: #f02f7c;
+	--primary: #f02f7c;
+	--primaryLt: #ffb0d0;
 	--borderRadius: 8px;
 	--bg: #fff;
 }
@@ -32,7 +33,7 @@ main {
 }
 
 .active {
-  border-left: 3px solid var(--primaryLt);
+  border-left: 3px solid var(--primary);
 	background-color: var(--lightGrey);
 	font-weight: bold;
 }

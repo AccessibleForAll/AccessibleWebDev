@@ -2,5 +2,5 @@
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  border-top: 3px solid var(--primaryLt);
+  border-top: 3px solid var(--primary);
 }

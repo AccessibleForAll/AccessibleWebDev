@@ -22,7 +22,7 @@
   display: block;
 }
 
-.navListItem a:hover, .navListItem a:focus {
+.navListItem a:hover {
   background-color: var(--primaryLt);
 }
 
