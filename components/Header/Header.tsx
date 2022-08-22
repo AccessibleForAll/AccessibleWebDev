@@ -1,18 +1,16 @@
 import Head from "next/head"
 import Link from "next/link"
-import { useState } from "react"
-
-import { IoMenuSharp } from "react-icons/io5"
-import NavPrimaryMobile from "../Nav/NavPrimaryMobile"
+import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
 import styles from "./Header.module.css"
 
 interface HeaderProps {
 	pageTitle: string
 	headerTitle: string
 	handleNavClick: () => void
+	showNavMobile: boolean
 }
 const Header = (props: HeaderProps) => {
-	const { pageTitle, headerTitle, handleNavClick } = props
+	const { pageTitle, headerTitle, handleNavClick, showNavMobile } = props
 	
 
 	return (
@@ -25,8 +23,9 @@ const Header = (props: HeaderProps) => {
 			<header>
 				<div className={styles.topBanner}>
 					<Link href="/">Accessible Web Dev</Link>
-					<button onClick={handleNavClick}>
-						<IoMenuSharp color="white" size="2.5rem" />
+					<button onClick={handleNavClick} aria-label="Navigation menu" aria-expanded={showNavMobile} >
+						{!showNavMobile && <IoMenuSharp color="white" size="2.5rem" aria-hidden="true" />}
+						{showNavMobile && <IoCloseSharp color="white" size="2.5rem" aria-hidden="true"/>}
 					</button>
 					
 				</div>

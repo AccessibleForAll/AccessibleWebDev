@@ -14,7 +14,7 @@ interface LayoutProps {
 const Layout = (props: LayoutProps) => {
 	const { pageTitle, headerTitle, activeNavLink, children } = props
 
-	const [showNavMobile, setShowNavMobile] = useState<Boolean>(false)
+	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
 
 	const handleNavClick = () => {
 		setShowNavMobile(prevState => !prevState)
@@ -22,7 +22,7 @@ const Layout = (props: LayoutProps) => {
 
 	return (
 		<>
-			<Header pageTitle={pageTitle} headerTitle={headerTitle} handleNavClick={handleNavClick} />
+			<Header pageTitle={pageTitle} headerTitle={headerTitle} handleNavClick={handleNavClick} showNavMobile={showNavMobile} />
 			<div className={styles.layoutContainer}>
 				<NavPrimary activeNavLink={activeNavLink} />
 				{showNavMobile && <NavPrimaryMobile activeNavLink={activeNavLink} handleNavClick={handleNavClick} />}
