@@ -20,6 +20,8 @@ const Layout = (props: LayoutProps) => {
 		setShowNavMobile(prevState => !prevState)
 	}
 
+
+
 	return (
 		<>
 			<Header pageTitle={pageTitle} headerTitle={headerTitle} handleNavClick={handleNavClick} showNavMobile={showNavMobile} />
