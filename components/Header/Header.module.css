@@ -12,16 +12,38 @@
 .topBanner a {
   text-decoration: none;
   font-weight: bold;
-  
+
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: relative;
 }
 
 .topBanner button {
-  border: none;
   background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+.hamburgerBtn {
   display: grid;
   place-items: center;
+  border: none;
   padding: 0;
-  cursor: pointer;
+}
+
+.themeBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #fff;
+  padding: 0rem 0.5rem;
+  border-radius: var(--borderRadius);
+  height: 25px;
+
 }
 
 .headerTitle {
@@ -30,10 +52,48 @@
   margin: 0.5rem;
 }
 
+.themeSwitcher {
+  position: absolute;
+  top: 33px;
+  right: 48px;
+  width: 10rem;
+  background-color: var(--bg);
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  border-radius: var(--borderRadius);
 
+
+
+}
+
+.themeSwitcher button {
+  color: var(--text);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+}
+
+.themeSwitcher button:hover {
+  background-color: var(--primaryLt);
+}
+
+.themeSwitcher button:focus {
+
+  background-color: var(--lightGrey);
+  font-weight: bold;
+}
 
 @media (min-width: 800px) {
-  .topBanner button {
+  .topBanner .hamburgerBtn {
     display: none;
+  }
+
+  .themeSwitcher {
+    top: 25px;
+    right: 0;
   }
 }

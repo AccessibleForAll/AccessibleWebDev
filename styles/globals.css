@@ -1,14 +1,24 @@
-:root {
-	color-scheme: light dark;
+:root,
+:root.light {
 	--text: #272727;
-	
 	--grey: #c7c7c7;
 	--lightGrey: #eeeeee;
 	--primary: #f02f7c;
 	--primaryLt: #ffb0d0;
-	--borderRadius: 8px;
 	--bg: #fff;
 	--dark: #000;
+	--borderRadius: 3px;
+}
+
+:root.dark {
+	--text: #fff;
+	--grey: #c7c7c7;
+	--lightGrey: #3b3b3b;
+	--primary: #f02f7c;
+	--primaryLt: #f02f7c79;
+	--bg: #272727;
+	--dark: #000;
+	--borderRadius: 3px;
 }
 
 html,
@@ -22,7 +32,7 @@ body {
 }
 
 a {
-	color: inherit;	
+	color: inherit;
 }
 
 * {
@@ -36,20 +46,39 @@ main {
 }
 
 .active {
-  border-left: 3px solid var(--primary);
+	border-left: 3px solid var(--primary);
 	background-color: var(--lightGrey);
 	font-weight: bold;
 }
 
- @media (prefers-color-scheme: dark) {
-	:root {
-	--text: #fff;
-	--grey: #c7c7c7;
-	--lightGrey: #3b3b3b;
-	--primary: #f02f7c;
-	--primaryLt: #f02f7c79;
-	--borderRadius: 8px;
-	--bg: #272727;
-	--dark: #000;
+[hidden] {
+	display: none;
 }
- }
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		color-scheme: light dark;
+		--text: #fff;
+		--grey: #c7c7c7;
+		--lightGrey: #3b3b3b;
+		--primary: #f02f7c;
+		--primaryLt: #f02f7c79;
+		--bg: #272727;
+		--dark: #000;
+		--borderRadius: 3px;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light dark;
+		--text: #272727;
+		--grey: #c7c7c7;
+		--lightGrey: #eeeeee;
+		--primary: #f02f7c;
+		--primaryLt: #ffb0d0;
+		--bg: #fff;
+		--dark: #000;
+		--borderRadius: 3px;
+	}
+} */
