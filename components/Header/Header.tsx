@@ -9,22 +9,20 @@ interface ThemeSwitcherProps {
 	setShowThemeSwitcher: (value: boolean) => void
 }
 
-
-
 const ThemeSwitcher = (props: ThemeSwitcherProps) => {
 	const { setShowThemeSwitcher } = props;
+
 	const setTheme = (theme: string) => {
 		document.documentElement.className = theme
 		localStorage.setItem("theme", theme)
 		setShowThemeSwitcher(false)
 	};
-	const setThemeFromOS = () => {
-		console.log(window.matchMedia("prefers-color-scheme: dark"));
 
+	const setThemeFromOS = () => {
 		window.matchMedia('(prefers-color-scheme: dark)').matches ? document.documentElement.className = "dark" : document.documentElement.className = "light"
 		setShowThemeSwitcher(false)
+		localStorage.removeItem("theme")
 	};
-
 
 	return (
 		<div className={styles.themeSwitcher} id="themeSwitcherMenu" role="menu" aria-labelledby="themeSwitcherBtn">
