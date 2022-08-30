@@ -23,7 +23,7 @@
 }
 
 .topBanner button {
-  background-color: transparent;
+
   cursor: pointer;
   color: #fff;
 }
@@ -33,6 +33,7 @@
   place-items: center;
   border: none;
   padding: 0;
+  background-color: transparent;
 }
 
 .themeBtn {
@@ -40,10 +41,9 @@
   align-items: center;
   gap: 0.5rem;
   border: 1px solid #fff;
-  padding: 0rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   border-radius: var(--borderRadius);
-  height: 25px;
-
+  background-color: transparent;
 }
 
 .headerTitle {
@@ -54,19 +54,18 @@
 
 .themeSwitcher {
   position: absolute;
-  top: 33px;
+  top: 16px;
   right: 48px;
-  width: 10rem;
+  width: 11em;
   background-color: var(--bg);
-  padding: 1rem;
+  padding: 0.5rem;
   border: 1px solid var(--primary);
   border-radius: var(--borderRadius);
-
-
-
+  list-style: none;
 }
 
-.themeSwitcher button {
+
+.themeSwitcher li {
   color: var(--text);
   display: flex;
   gap: 0.5rem;
@@ -75,17 +74,24 @@
   padding: 0.5rem;
   width: 100%;
   border: none;
+  background-color: var(--bg);
 }
 
-.themeSwitcher button:hover {
-  background-color: var(--primaryLt);
-}
-
-.themeSwitcher button:focus {
-
+.themeSwitcher li.activeBtn {
+  border-left: 3px solid var(--primary);
   background-color: var(--lightGrey);
   font-weight: bold;
 }
+
+.themeSwitcher li:hover {
+  background-color: var(--primaryLt);
+}
+
+.themeSwitcher li:focus {
+  background-color: var(--primaryLt);
+  font-weight: bold;
+}
+
 
 @media (min-width: 800px) {
   .topBanner .hamburgerBtn {
@@ -93,7 +99,7 @@
   }
 
   .themeSwitcher {
-    top: 25px;
+    top: 8px;
     right: 0;
   }
 }

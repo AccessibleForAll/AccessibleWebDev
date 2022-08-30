@@ -3,7 +3,7 @@ import Link from "next/link"
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
 import { BsCircleHalf, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import styles from "./Header.module.css"
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface ThemeSwitcherProps {
 	setShowThemeSwitcher: (value: boolean) => void
@@ -24,12 +24,19 @@ const ThemeSwitcher = (props: ThemeSwitcherProps) => {
 		localStorage.removeItem("theme")
 	};
 
+	const theme = localStorage.getItem("theme")
+
 	return (
-		<div className={styles.themeSwitcher} id="themeSwitcherMenu" role="menu" aria-labelledby="themeSwitcherBtn">
-			<button role="menuitem" onClick={setThemeFromOS}><BsCircleHalf size="0.8rem" aria-hidden="true" />OS settings</button>
-			<button role="menuitem" onClick={() => setTheme("light")}><BsFillSunFill size="0.8rem" aria-hidden="true" />Light</button>
-			<button role="menuitem" onClick={() => setTheme("dark")} ><BsFillMoonFill size="0.8rem" aria-hidden="true" />Dark</button>
-		</div>
+
+		<ul className={styles.themeSwitcher} role="menu" id="themeSwitcherMenu" aria-labelledby="themeSwitcherBtn">
+			<li role="menuitemradio" aria-checked={!theme} onClick={setThemeFromOS} onKeyDown={(e) => e.key === " " && setThemeFromOS()} tabIndex={0} className={!theme ? styles.activeBtn : ""}>
+				<BsCircleHalf size="0.7rem" aria-hidden="true" className={styles.themeIcon} />Device settings</li>
+			<li role="menuitemradio" aria-checked={theme === "light"} onClick={() => setTheme("light")} onKeyDown={(e) => e.key === " " && setTheme("light")} tabIndex={0} className={theme === "light" ? styles.activeBtn : ""}>
+				<BsFillSunFill size="0.7rem" aria-hidden="true" className={styles.themeIcon} />Light mode</li>
+			<li role="menuitemradio" aria-checked={theme === "dark"} onClick={() => setTheme("dark")} onKeyDown={(e) => e.key === " " && setTheme("dark")} tabIndex={0} className={theme === "dark" ? styles.activeBtn : ""} >
+				<BsFillMoonFill size="0.7rem" aria-hidden="true" className={styles.themeIcon} />Dark mode</li>
+
+		</ul>
 	)
 }
 
@@ -57,7 +64,7 @@ const Header = (props: HeaderProps) => {
 		}
 	}
 
-
+	const buttonRef = useRef<HTMLButtonElement>(null)
 
 	return (
 		<>
@@ -70,7 +77,7 @@ const Header = (props: HeaderProps) => {
 				<div className={styles.topBanner}>
 					<Link href="/">Accessible Web Dev</Link>
 					<div className={styles.buttonsContainer}>
-						<button className={styles.themeBtn} onClick={handleThemeSwitcher} onKeyDown={handleThemeSwitcherKB} type="button" id="themeSwitcherBtn" aria-haspopup="true" aria-controls="themeSwitcherMenu" aria-expanded={showThemeSwitcher}>
+						<button className={styles.themeBtn} ref={buttonRef} onClick={handleThemeSwitcher} onKeyDown={handleThemeSwitcherKB} type="button" id="themeSwitcherBtn" aria-haspopup="true" aria-controls="themeSwitcherMenu" aria-expanded={showThemeSwitcher}>
 							<BsCircleHalf color="white" size="1rem" aria-hidden="true" />
 							Theme
 						</button>
