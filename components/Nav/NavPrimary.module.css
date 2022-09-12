@@ -26,15 +26,20 @@
   background-color: var(--primaryLt);
 }
 
+.navList a:focus {
+  background-color: var(--primaryLt);
+  font-weight: bold;
+}
+
 @media (min-width: 40rem) {
- .navPrimary {
-  width: 15rem;
- }
+  .navPrimary {
+    width: 15rem;
+  }
 }
 
 @media (min-width: 800px) {
   .navPrimary {
-    
+
     margin-top: 16px;
     display: block;
   }
