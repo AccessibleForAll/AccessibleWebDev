@@ -1,54 +1,68 @@
 .topBanner {
-  background-color: var(--dark);
-  color: white;
-  height: 3rem;
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
+	background-color: var(--dark);
+	color: white;
+	height: 3rem;
+	padding: 0 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
 
 .topBanner a {
-  text-decoration: none;
-  font-weight: bold;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 .buttonsContainer {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  position: relative;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	position: relative;
 }
 
 .topBanner button {
-
-  cursor: pointer;
-  color: #fff;
+	cursor: pointer;
+	color: #fff;
 }
 
 .hamburgerBtn {
-  display: grid;
-  place-items: center;
-  border: none;
-  padding: 0;
-  background-color: transparent;
+	display: grid;
+	place-items: center;
+	border: none;
+	padding: 0;
+	background-color: transparent;
 }
-
-
 
 .headerTitle {
-  text-align: center;
-  font-size: clamp(2rem, 5vw + 1rem, 10rem);
-  margin: 0.5rem;
+	text-align: center;
+	font-size: 2rem;
+	margin: 1rem;
 }
 
+@media (min-width: 500px) {
+	.headerTitle {
+		font-size: 2.7rem;
+	}
+}
 
-
-
+@media (min-width: 630px) {
+	.headerTitle {
+		font-size: 3.5rem;
+	}
+}
 
 @media (min-width: 800px) {
-  .topBanner .hamburgerBtn {
-    display: none;
-  }
+	.topBanner .hamburgerBtn {
+		display: none;
+	}
+	.headerTitle {
+		font-size: 4.5rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.headerTitle {
+		font-size: 7rem;
+	}
 }
