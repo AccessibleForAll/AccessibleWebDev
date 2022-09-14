@@ -1,8 +1,8 @@
-# Contributing to Color Palette Combos
+# Contributing to Accessible Web Dev
 
 ## Languages
 
-This project is built with Next.JS and CSS modules.
+This project is built with Next.JS, Typescript and CSS modules.
 
 ## Pre-requisites
 [Node.js](https://nodejs.org/en/)  
