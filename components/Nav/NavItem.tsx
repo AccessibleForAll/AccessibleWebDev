@@ -1,27 +1,26 @@
-import Link from "next/link";
+import Link from "next/link"
 import styles from "./NavPrimary.module.css"
-
-type Page = { name: string; href: string }
+import { IPage } from "../../data/pages"
 
 interface NavItemProps {
-	page: Page
-    activeNavLink: string
-    handleNavClick?: () => void
+	page: IPage
+	activeNavLink: string
+	handleNavClick?: () => void
 }
 
 const NavItem = (props: NavItemProps) => {
 	const { page, activeNavLink, handleNavClick } = props
 
-    
 	return (
 		<li
 			className={`${styles.navListItem} ${
 				activeNavLink === page.href ? "active" : ""
 			}`}>
 			<Link href={page.href}>
-                <a onClick={handleNavClick}>{page.name}</a></Link>
+				<a onClick={handleNavClick}>{page.name}</a>
+			</Link>
 		</li>
 	)
 }
 
-export default NavItem;
+export default NavItem

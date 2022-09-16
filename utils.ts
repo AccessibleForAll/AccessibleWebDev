@@ -1,3 +1,3 @@
-export const capitalizeRouter = (phrase: string) => {
-	return phrase.charAt(1).toUpperCase() + phrase.slice(2)
+export const capitalizeRoute = (phrase: string) => {
+	return phrase.charAt(0).toUpperCase() + phrase.slice(1)
 }

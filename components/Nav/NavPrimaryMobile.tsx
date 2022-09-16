@@ -1,15 +1,14 @@
 import NavItem from "./NavItem"
-import {pages} from "./NavPrimaryPages"
+import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 
 interface NavProps {
 	activeNavLink: string
-    handleNavClick: () => void
+	handleNavClick: () => void
 }
 
 const NavPrimaryMobile = (props: NavProps) => {
-  
-    const { activeNavLink, handleNavClick } = props
+	const { activeNavLink, handleNavClick } = props
 	return (
 		<nav aria-label="Primary" className={styles.navPrimaryMobile}>
 			<ul className={styles.navList}>
@@ -18,13 +17,12 @@ const NavPrimaryMobile = (props: NavProps) => {
 						key={page.name + index}
 						page={page}
 						activeNavLink={activeNavLink}
-                        handleNavClick={handleNavClick}
+						handleNavClick={handleNavClick}
 					/>
 				))}
 			</ul>
 		</nav>
 	)
-  
 }
 
 export default NavPrimaryMobile

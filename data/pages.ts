@@ -1,6 +1,9 @@
-type Page = { name: string; href: string }
+export interface IPage {
+	name: string
+	href: string
+}
 
-export const pages: Page[] = [
+export const pages: IPage[] = [
 	{ name: "Home", href: "/" },
 	{ name: "Animations", href: "/animations" },
 	{ name: "Audio", href: "/audio" },
