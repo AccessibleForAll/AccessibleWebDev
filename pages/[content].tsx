@@ -1,8 +1,9 @@
-import type { GetStaticProps, NextPage } from "next"
+import type { GetStaticPaths, GetStaticProps, NextPage } from "next"
 
 import Layout from "../components/Layout/Layout"
 import Head from "next/head"
 import { capitalizeRoute } from "../utils"
+import { pages } from "../data/pages"
 
 // Components
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
@@ -12,7 +13,8 @@ import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
-
+import path from "path"
+import { promises as fs } from "fs"
 interface IProps {
 	page: string
 }
@@ -42,7 +44,18 @@ const ContentPage: NextPage = (props) => {
 	)
 }
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async (context) => {
+	// const pagesDirectory = path.join(process.cwd(), "data", "pages")
+	// const pages = await fs.readFile(pagesDirectory)
+
+	console.log("Pages", pages)
+
+	// Filter out the ones with no content eg home
+
+	//   const paths = pages.map((page) => ({
+	// 	params: { content: page.content },
+	//   }))
+
 	return {
 		paths: [
 			{ params: { content: "animations" } },
