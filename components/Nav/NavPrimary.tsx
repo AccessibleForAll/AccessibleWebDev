@@ -6,25 +6,8 @@ interface NavProps {
 	activeNavLink: string
 }
 
-// interface NavItemProps extends NavProps {
-// 	page: Page
-// }
-
-// const NavItem = (props: NavItemProps) => {
-// 	const { page, activeNavLink } = props
-// 	return (
-// 		<li
-// 			className={`${styles.navListItem} ${
-// 				activeNavLink === page.href ? "active" : ""
-// 			}`}>
-// 			<Link href={page.href}>{page.name}</Link>
-// 		</li>
-// 	)
-// }
-
 const NavPrimary = (props: NavProps) => {
 	const { activeNavLink } = props
-	console.log(activeNavLink)
 
 	return (
 		<nav aria-label="Primary" className={styles.navPrimary}>

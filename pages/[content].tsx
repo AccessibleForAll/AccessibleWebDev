@@ -13,8 +13,7 @@ import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
-import path from "path"
-import { promises as fs } from "fs"
+
 interface IProps {
 	page: string
 }
@@ -32,7 +31,7 @@ const ContentPage: NextPage = (props) => {
 			<Layout headerTitle={title} activeNavLink={`/${page}`}>
 				<>
 					{page === "animations" && <Animations />}
-					{page === "Audio" && <Audio />}
+					{page === "audio" && <Audio />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
 					{page === "icons" && <Icons />}
@@ -44,34 +43,21 @@ const ContentPage: NextPage = (props) => {
 	)
 }
 
-export const getStaticPaths: GetStaticPaths = async (context) => {
-	// const pagesDirectory = path.join(process.cwd(), "data", "pages")
-	// const pages = await fs.readFile(pagesDirectory)
-
-	console.log("Pages", pages)
-
-	// Filter out the ones with no content eg home
-
-	//   const paths = pages.map((page) => ({
-	// 	params: { content: page.content },
-	//   }))
+export const getStaticPaths: GetStaticPaths = async () => {
+	const paths = pages
+		.filter((page) => page.content)
+		.map((page) => ({
+			params: { content: page.content },
+		}))
 
 	return {
-		paths: [
-			{ params: { content: "animations" } },
-			{ params: { content: "audio" } },
-			{ params: { content: "captchas" } },
-			{ params: { content: "charts" } },
-			{ params: { content: "icons" } },
-			{ params: { content: "images" } },
-			{ params: { content: "video" } },
-		],
-		fallback: false, // can also be true or 'blocking'
+		paths,
+		fallback: false,
 	}
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const content = context.params?.content
+	const content = context.params!.content
 
 	return {
 		props: {
