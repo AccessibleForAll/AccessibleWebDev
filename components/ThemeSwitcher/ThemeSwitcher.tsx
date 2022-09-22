@@ -90,7 +90,9 @@ const ThemeSwitcher = () => {
 							Light mode
 						</button>
 					</li>
-					<li className={theme === "dark" ? styles.activeBtn : ""}>
+					<li
+						className={theme === "dark" ? styles.activeBtn : ""}
+						onBlur={handleThemeSwitcher}>
 						<button
 							className={styles.themeSwitcherBtn}
 							onClick={() => setTheme("dark")}
