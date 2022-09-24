@@ -24,5 +24,6 @@ export const pages: IPage[] = [
 	},
 	{ name: "Icons", href: "/icons", content: "icons" },
 	{ name: "Images", href: "/images", content: "images" },
+	{ name: "Links", href: "/links", content: "links" },
 	{ name: "Video", href: "/video", content: "video" },
 ]
