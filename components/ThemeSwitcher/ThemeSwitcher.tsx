@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, FocusEvent } from "react"
 import { BsCircleHalf, BsFillSunFill, BsFillMoonFill } from "react-icons/bs"
 
 import styles from "./ThemeSwitcher.module.css"
@@ -35,6 +35,12 @@ const ThemeSwitcher = () => {
 		}
 	}
 
+	const handleBlur = (e: FocusEvent) => {
+		if (!e.currentTarget.contains(e.relatedTarget) && showThemeSwitcher) {
+			setShowThemeSwitcher(false)
+		}
+	}
+
 	useEffect(() => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
 
@@ -63,7 +69,8 @@ const ThemeSwitcher = () => {
 				<ul
 					className={styles.themeSwitcher}
 					id="themeSwitcherMenu"
-					aria-labelledby="themeSwitcherBtn">
+					aria-labelledby="themeSwitcherBtn"
+					onBlur={handleBlur}>
 					<li className={!theme ? styles.activeBtn : ""}>
 						<button
 							className={styles.themeSwitcherBtn}
