@@ -36,10 +36,8 @@ const ThemeSwitcher = () => {
 	}
 
 	const handleBlur = (e: FocusEvent) => {
-		if (!e.currentTarget.contains(e.relatedTarget)) {
-			if (showThemeSwitcher) {
-				setShowThemeSwitcher(false)
-			}
+		if (!e.currentTarget.contains(e.relatedTarget) && showThemeSwitcher) {
+			setShowThemeSwitcher(false)
 		}
 	}
 
