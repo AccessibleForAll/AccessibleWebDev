@@ -12,6 +12,7 @@ import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
+import Links from "../components/ContentTemplates/LinksTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
 
 interface IProps {
@@ -36,6 +37,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "charts" && <Charts />}
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
+					{page === "links" && <Links />}
 					{page === "video" && <Video />}
 				</>
 			</Layout>
