@@ -30,6 +30,9 @@ const Home: NextPage = () => {
 						resources and further reading.
 					</p>
 					<p>
+						It is currently a work in progress so not all pages are finished (or
+						even started). If you dont find what you are looking for please feel
+						free to{" "}
 						<a href="https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose">
 							raise an issue on GitHub.
 						</a>
