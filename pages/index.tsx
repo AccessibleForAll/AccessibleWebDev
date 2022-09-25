@@ -29,14 +29,15 @@ const Home: NextPage = () => {
 						elements or widgets accessible. It will also provide links to
 						resources and further reading.
 					</p>
-					{/* <p>
+					<p>
 						It is currently a work in progress so not all pages are finished (or
-						even started). If you don't find what you are looking for please
-						feel free to{" "}
+						even started).
+						{/* (or even started). If you don't find what you are looking for
+						please feel free to{" "}
 						<a href="https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose">
 							raise an issue on GitHub.
-						</a>
-					</p> */}
+						</a> */}
+					</p>
 				</section>
 			</Layout>
 		</>
