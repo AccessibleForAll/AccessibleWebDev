@@ -31,8 +31,8 @@ const Home: NextPage = () => {
 					</p>
 					<p>
 						It is currently a work in progress so not all pages are finished (or
-						even started). If you dont find what you are looking for please feel
-						free to{" "}
+						even started). If you don't find what you are looking for please
+						feel free to{" "}
 						<a href="https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose">
 							raise an issue on GitHub.
 						</a>
