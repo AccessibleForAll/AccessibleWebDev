@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 			<Layout headerTitle="Web Dev" activeNavLink={router.pathname}>
 				<section>
 					<h2>Welcome!</h2>
-					{/* <p>
+					<p>
 						Accessible web dev is here to make accessibility more understandable
 						for developers and designers as current standards can be hard to
 						understand.
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 						elements or widgets accessible. It will also provide links to
 						resources and further reading.
 					</p>
-					<p>
+					{/* <p>
 						It is currently a work in progress so not all pages are finished (or
 						even started). If you don't find what you are looking for please
 						feel free to{" "}
