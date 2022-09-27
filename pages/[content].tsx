@@ -14,6 +14,7 @@ import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
+import Pagination from "../components/ContentTemplates/PaginationTemplate"
 
 interface IProps {
 	page: string
@@ -38,6 +39,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
 					{page === "links" && <Links />}
+					{page === "pagination" && <Pagination />}
 					{page === "video" && <Video />}
 				</>
 			</Layout>
