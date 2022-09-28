@@ -10,6 +10,7 @@ import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
+import Forms from "../components/ContentTemplates/FormsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
@@ -35,6 +36,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "audio" && <Audio />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
+					{page === "forms" && <Forms />}
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
 					{page === "links" && <Links />}
