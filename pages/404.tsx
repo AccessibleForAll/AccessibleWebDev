@@ -32,7 +32,7 @@ const PageNotFound = () => {
 					</li>
 					<li className={styles.linkItems}>
 						<Link href="/captchas">
-							<a className={styles.link}>Captachs</a>
+							<a className={styles.link}>Captchas</a>
 						</Link>
 					</li>
 					<li className={styles.linkItems}>
