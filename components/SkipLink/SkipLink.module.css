@@ -1,0 +1,20 @@
+.skipToMainContent {
+  display: flex;
+  justify-content: center;
+}
+
+.skipToMainContent a {
+  position: absolute;
+  color: var(--text);
+	background-color: var(--bg);
+  text-decoration: none;
+  padding: 0.3rem;
+  border: 1px solid var(--primary);
+  z-index: 100;
+  transform: translateY(-100%); 
+  transition: all .4s ease-in-out;
+}
+
+.skipToMainContent a:focus {
+  transform: translateY(0%);
+}

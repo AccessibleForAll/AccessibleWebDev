@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Header from "../Header/Header"
 import NavPrimary from "../Nav/NavPrimary"
 import NavPrimaryMobile from "../Nav/NavPrimaryMobile"
+import SkipLink from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
 interface LayoutProps {
@@ -21,6 +22,7 @@ const Layout = (props: LayoutProps) => {
 
 	return (
 		<>
+			<SkipLink />
 			<Header
 				headerTitle={headerTitle}
 				handleNavClick={handleNavClick}
@@ -34,7 +36,7 @@ const Layout = (props: LayoutProps) => {
 						handleNavClick={handleNavClick}
 					/>
 				)}
-				<main>{children}</main>
+				<main id="main">{children}</main>
 			</div>
 		</>
 	)
