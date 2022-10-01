@@ -6,6 +6,7 @@ export interface IPage {
 
 export const pages: IPage[] = [
 	{ name: "Home", href: "/" },
+	{ name: "Alerts", href: "/alerts", content: "alerts" },
 	{
 		name: "Animations",
 		href: "/animations",

@@ -13,6 +13,7 @@ import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
+import Alerts from "../components/ContentTemplates/AlertsTemplate"
 
 interface IProps {
 	page: string
@@ -30,6 +31,7 @@ const ContentPage: NextPage = (props) => {
 			</Head>
 			<Layout headerTitle={title} activeNavLink={`/${page}`}>
 				<>
+					{page === "alerts" && <Alerts />}
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
 					{page === "captchas" && <Captchas />}
