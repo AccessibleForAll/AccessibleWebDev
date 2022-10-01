@@ -10,10 +10,15 @@ import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
+import Forms from "../components/ContentTemplates/FormsTemplate"
+import Headings from "../components/ContentTemplates/HeadingsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
+import Menus from "../components/ContentTemplates/MenusTemplate"
+import Tables from "../components/ContentTemplates/TablesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
+import Pagination from "../components/ContentTemplates/PaginationTemplate"
 
 interface IProps {
 	page: string
@@ -35,9 +40,14 @@ const ContentPage: NextPage = (props) => {
 					{page === "audio" && <Audio />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
+					{page === "forms" && <Forms />}
+					{page === "headings" && <Headings />}
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
 					{page === "links" && <Links />}
+					{page === "menus" && <Menus />}
+          {page === "pagination" && <Pagination />}
+					{page === "tables" && <Tables />}
 					{page === "video" && <Video />}
 				</>
 			</Layout>
