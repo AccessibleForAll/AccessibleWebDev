@@ -8,6 +8,7 @@ import { pages } from "../data/pages"
 // Components
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
+import Buttons from "../components/ContentTemplates/ButtonsTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
@@ -33,6 +34,7 @@ const ContentPage: NextPage = (props) => {
 				<>
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
+					{page === "buttons" && <Buttons />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
 					{page === "icons" && <Icons />}
