@@ -8,13 +8,20 @@ import { pages } from "../data/pages"
 // Components
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
+import Buttons from "../components/ContentTemplates/ButtonsTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
+import Forms from "../components/ContentTemplates/FormsTemplate"
+import Headings from "../components/ContentTemplates/HeadingsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
+import Lists from "../components/ContentTemplates/ListsTemplate"
+import Menus from "../components/ContentTemplates/MenusTemplate"
 import Navigation from "../components/ContentTemplates/NavigationTemplate"
+import Tables from "../components/ContentTemplates/TablesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
+import Pagination from "../components/ContentTemplates/PaginationTemplate"
 
 interface IProps {
 	page: string
@@ -34,12 +41,19 @@ const ContentPage: NextPage = (props) => {
 				<>
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
+					{page === "buttons" && <Buttons />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
+					{page === "forms" && <Forms />}
+					{page === "headings" && <Headings />}
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
 					{page === "links" && <Links />}
-					{page === "navigation" && <Navigation />}
+					{page === "lists" && <Lists />}
+					{page === "menus" && <Menus />}
+          {page === "navigation" && <Navigation />}
+          {page === "pagination" && <Pagination />}
+					{page === "tables" && <Tables />}
 					{page === "video" && <Video />}
 				</>
 			</Layout>
