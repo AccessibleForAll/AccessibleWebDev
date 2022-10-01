@@ -33,4 +33,5 @@ export const pages: IPage[] = [
   { name: "Pagination", href: "/pagination", content: "pagination" },
 	{ name: "Tables", href: "/tables", content: "tables" },
 	{ name: "Video", href: "/video", content: "video" },
+	{ name: "Navigation", href: "/navigation", content: "navigation" },
 ]
