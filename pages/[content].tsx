@@ -14,6 +14,7 @@ import Forms from "../components/ContentTemplates/FormsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
 import Images from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
+import Tables from "../components/ContentTemplates/TablesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
 import Pagination from "../components/ContentTemplates/PaginationTemplate"
 
@@ -41,7 +42,8 @@ const ContentPage: NextPage = (props) => {
 					{page === "icons" && <Icons />}
 					{page === "images" && <Images />}
 					{page === "links" && <Links />}
-					{page === "pagination" && <Pagination />}
+          {page === "pagination" && <Pagination />}
+					{page === "tables" && <Tables />}
 					{page === "video" && <Video />}
 				</>
 			</Layout>
