@@ -1,5 +1,5 @@
 # Accessible Web Dev
-This site is intended to be a resource for developers wanting to learn the basics about accessibility in a clear and easy to understand way. It is not intended to replace official documentation and guidelines but to provide a stepping stone to get started where official documentation is often difficult to interpret for new web developers.
+This site is intended to be a resource for developers wanting to learn the basics about accessibility in a clear and easy way to understand. It is not intended to replace official documentation and guidelines, but to provide a stepping stone to get started where official documentation is often difficult to interpret for new web developers.
 
 <img width="626" alt="screenshot of Accessible Web Dev home page" src="https://user-images.githubusercontent.com/57045550/192143094-d3987a9c-4bc9-4d42-b1e3-25ba7655a4bd.png">
 
