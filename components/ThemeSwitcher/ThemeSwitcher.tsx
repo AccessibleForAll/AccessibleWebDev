@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, FocusEvent } from "react"
 import { BsCircleHalf, BsFillSunFill, BsFillMoonFill } from "react-icons/bs"
+import useOnClickOutside from "../../customHooks/useOnClickOutside"
 
 import styles from "./ThemeSwitcher.module.css"
 
@@ -7,6 +8,7 @@ const ThemeSwitcher = () => {
 	const [showThemeSwitcher, setShowThemeSwitcher] = useState<boolean>(false)
 
 	const buttonRef = useRef<HTMLButtonElement>(null)
+	const ulListRef = useRef<HTMLUListElement>(null)
 
 	const handleThemeSwitcher = () => {
 		setShowThemeSwitcher((prevState) => !prevState)
@@ -41,6 +43,12 @@ const ThemeSwitcher = () => {
 		}
 	}
 
+	const handleClickOutside = () => {
+		setShowThemeSwitcher(false)
+	}
+
+	useOnClickOutside(ulListRef, handleClickOutside)
+
 	useEffect(() => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
 
@@ -70,7 +78,8 @@ const ThemeSwitcher = () => {
 					className={styles.themeSwitcher}
 					id="themeSwitcherMenu"
 					aria-labelledby="themeSwitcherBtn"
-					onBlur={handleBlur}>
+					onBlur={handleBlur}
+					ref={ulListRef}>
 					<li className={!theme ? styles.activeBtn : ""}>
 						<button
 							className={styles.themeSwitcherBtn}

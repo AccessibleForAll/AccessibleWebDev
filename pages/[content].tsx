@@ -6,6 +6,7 @@ import { capitalizeRoute } from "../utils"
 import { pages } from "../data/pages"
 
 // Components
+import Alerts from "../components/ContentTemplates/AlertsTemplate"
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
 import Buttons from "../components/ContentTemplates/ButtonsTemplate"
@@ -39,6 +40,7 @@ const ContentPage: NextPage = (props) => {
 			</Head>
 			<Layout headerTitle={title} activeNavLink={`/${page}`}>
 				<>
+					{page === "alerts" && <Alerts />}
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
 					{page === "buttons" && <Buttons />}
