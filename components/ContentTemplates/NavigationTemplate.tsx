@@ -4,4 +4,4 @@ const NavigationTemplate = () => {
 	return <div>NavigationTemplate</div>
 }
 
-export default ANavigationTemplate
+export default NavigationTemplate
