@@ -47,7 +47,6 @@
 }
 
 .link {
-    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
@@ -101,4 +100,12 @@
         color: #00b4d8;
     }
     
+}
+
+@media only screen and (max-width: 56.25em) {    
+    .notFound{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
 }

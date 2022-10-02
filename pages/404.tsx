@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const PageNotFound = () => {
 	return (
-		<div className={styles.notFound}>
+		<main className={styles.notFound}>
 			<div className={styles.left}>
 				<h1 className={styles.headingPrimary}>
 					Oops, we couldn't find this page.
@@ -59,7 +59,7 @@ const PageNotFound = () => {
 					alt="not found"
 				/>
 			</div>
-		</div>
+		</main>
 	)
 }
 
