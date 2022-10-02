@@ -2010,7 +2010,7 @@ usehooks-ts@^2.7.2:
   version "2.7.2"
   resolved "https://registry.yarnpkg.com/usehooks-ts/-/usehooks-ts-2.7.2.tgz#5b1c166153f59fc63ae5408102be53608103c1d5"
   integrity sha512-DeLqSnGg9VvpwPZA+6lKVURJKM9EBu7bbIXuYclQ9COO3w4lacnJa0uP0iJbC/lAmY7GlmPinjZfGNNmDTlUpg==
-  
+
 v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
@@ -2071,4 +2071,3 @@ yaml@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.1.1.tgz#1e06fb4ca46e60d9da07e4f786ea370ed3c3cfec"
   integrity sha512-o96x3OPo8GjWeSLF+wOAbrPfhFOGY0W00GNaxCDv+9hkcDJEnev1yh8S7pgHF0ik6zc8sQLuL8hjHjJULZp8bw==
-
