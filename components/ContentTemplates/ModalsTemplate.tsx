@@ -1,7 +1,7 @@
 import React from "react"
 
 const ModalsTemplate = () => {
-	return <div>MenusTemplate</div>
+	return <div>ModalsTemplate</div>
 }
 
 export default ModalsTemplate
