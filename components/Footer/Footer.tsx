@@ -4,67 +4,63 @@ import styles from "./footer.module.css"
 
 const Footer = () => {
 	return (
-		<div className={styles.footer}>
+		<footer className={styles.footer}>
 			<div className={styles.footer__top}>
-				<ul className={styles.footer__box}>
-					<li className={styles.footer__linkName}>Community</li>
-					<li className={styles.footer__linkItems}>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/AccessibleForAll"
-							className={styles.footer__links}>
-							Github Page
-						</a>
-					</li>
-					<li className={styles.footer__linkItems}>
-						<a
-							target="_blank"
-							rel="noreferrer"
-							href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
-							className={styles.footer__links}>
-							{" "}
-							Become a Contributor
-						</a>
-					</li>
-					<li className={styles.footer__linkItems}>
-						<a href="#" className={styles.footer__links}>
-							Sponsor Us
-						</a>
-					</li>
-				</ul>
-				<ul
-					className={styles.footer__box}
-					style={{ paddingInlineStart: "0px" }}>
-					<li className={styles.footer__linkName}>Company</li>
-					<li className={styles.footer__linkItems}>
-						<Link href="/">
-							<a className={styles.footer__links}>Home</a>
-						</Link>
-					</li>
-					<li className={styles.footer__linkItems}>
-						<Link href="/about">
-							<a className={styles.footer__links}>About</a>
-						</Link>
-					</li>
-					<li className={styles.footer__linkItems}>
-						<Link href="/about">
-							<a className={styles.footer__links}>Contact Me</a>
-						</Link>
-					</li>
-				</ul>
+				<div className={styles.footer__box}>
+					<h2 className={styles.footer__linkHeading}>Community</h2>
+					<ul className={styles.footer__linkList}>
+						<li className={styles.footer__linkItems}>
+							<a
+								href="https://github.com/AccessibleForAll"
+								className={styles.footer__links}>
+								Github Page
+							</a>
+						</li>
+						<li className={styles.footer__linkItems}>
+							<a
+								href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
+								className={styles.footer__links}>
+								Become a Contributor
+							</a>
+						</li>
+						<li className={styles.footer__linkItems}>
+							<a href="#" className={styles.footer__links}>
+								Sponsor Us
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div className={styles.footer__box}>
+					<h2 className={styles.footer__linkHeading}>Company</h2>
+					<ul className={styles.footer__linkList}>
+						<li className={styles.footer__linkItems}>
+							<Link href="/">
+								<a className={styles.footer__links}>Home</a>
+							</Link>
+						</li>
+						<li className={styles.footer__linkItems}>
+							<Link href="/about">
+								<a className={styles.footer__links}>About</a>
+							</Link>
+						</li>
+						<li className={styles.footer__linkItems}>
+							<Link href="/about">
+								<a className={styles.footer__links}>Contact Me</a>
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<div className={styles.footer__bottomDetails}>
-				<span className={styles.footer__copyrightText}>
-					© Accessible Web Dev by{" "}
-					<b className={styles.footer__copyrightTextName}>Accessible For All</b>
+				<p className={styles.footer__copyrightText}>
+					© Accessible Web Dev by
+					<strong className={styles.footer__copyrightTextName}>
+						Accessible For All
+					</strong>
 					. Making accessibility accessible for everyone!
-				</span>
+				</p>
 				<div className={styles.footer__mediaIcon}>
-					<a
-						href="https://github.com/AccessibleForAll"
-						target="_blank"
-						rel="noreferrer">
+					<a href="https://github.com/AccessibleForAll">
 						<svg
 							fill="#FFF"
 							xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +72,7 @@ const Footer = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }
 
