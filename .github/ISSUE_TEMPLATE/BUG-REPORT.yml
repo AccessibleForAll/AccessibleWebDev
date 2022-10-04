@@ -55,6 +55,9 @@ body:
         - Windows
         - Linux
         - Mac
+        - iOS
+        - Android
+        - Others...
     validations:
       required: false
   - type: textarea
