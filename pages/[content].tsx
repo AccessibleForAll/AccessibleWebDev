@@ -9,6 +9,7 @@ import { pages } from "../data/pages"
 import Alerts from "../components/ContentTemplates/AlertsTemplate"
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
+import Breadcrumbs from "../components/ContentTemplates/BreadcrumbsTemplate"
 import Buttons from "../components/ContentTemplates/ButtonsTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
@@ -24,7 +25,6 @@ import Navigation from "../components/ContentTemplates/NavigationTemplate"
 import Tables from "../components/ContentTemplates/TablesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
 import Pagination from "../components/ContentTemplates/PaginationTemplate"
-import Breadcrumbs from "../components/ContentTemplates/BreadcrumbsTemplate"
 
 interface IProps {
 	page: string
