@@ -24,6 +24,7 @@ import Navigation from "../components/ContentTemplates/NavigationTemplate"
 import Tables from "../components/ContentTemplates/TablesTemplate"
 import Video from "../components/ContentTemplates/VideoTemplate"
 import Pagination from "../components/ContentTemplates/PaginationTemplate"
+import Breadcrumbs from "../components/ContentTemplates/BreadcrumbsTemplate"
 
 interface IProps {
 	page: string
@@ -44,6 +45,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "alerts" && <Alerts />}
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
+					{page === "breadcrumbs" && <Breadcrumbs />}
 					{page === "buttons" && <Buttons />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
@@ -55,8 +57,8 @@ const ContentPage: NextPage = (props) => {
 					{page === "lists" && <Lists />}
 					{page === "menus" && <Menus />}
                     {page === "modals" && <Modals />}
-          {page === "navigation" && <Navigation />}
-          {page === "pagination" && <Pagination />}
+					{page === "navigation" && <Navigation />}
+					{page === "pagination" && <Pagination />}
 					{page === "tables" && <Tables />}
 					{page === "video" && <Video />}
 				</>
