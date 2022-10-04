@@ -13,14 +13,7 @@ body:
       placeholder: Detailed description of your issue...
     validations:
       required: true
-  - type: input
-    id: reprod-url
-    attributes:
-      label: "Reproduction URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
-    validations:
-      required: true
+  
   - type: textarea
     id: screenshot
     attributes:
