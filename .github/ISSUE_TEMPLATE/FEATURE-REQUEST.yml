@@ -44,7 +44,7 @@ body:
       description: Indicate here some basic examples of your feature.
       placeholder: A few specific words about your feature request.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: drawbacks
     attributes:
