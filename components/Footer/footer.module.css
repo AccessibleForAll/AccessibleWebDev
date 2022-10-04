@@ -49,7 +49,7 @@
     .footer__bottomDetails {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         padding: 0rem;
         margin-top: 1rem;
     }
