@@ -1,6 +1,6 @@
 name: Other
 description: Describe anything here.
-title: Other <subject>
+title: [OTHER] <subject>
 labels: [question, Others]
 body:
   - type: markdown
