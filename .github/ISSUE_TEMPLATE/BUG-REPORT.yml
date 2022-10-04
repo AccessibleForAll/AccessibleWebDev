@@ -10,7 +10,7 @@ body:
     attributes:
       label: "Description"
       description: Please enter a detailed description of your issue
-      placeholder: Short and explicit description of your incident...
+      placeholder: Detailed description of your issue...
     validations:
       required: true
   - type: input
