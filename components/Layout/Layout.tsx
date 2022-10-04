@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
 import NavPrimary from "../Nav/NavPrimary"
 import NavPrimaryMobile from "../Nav/NavPrimaryMobile"
@@ -38,6 +39,7 @@ const Layout = (props: LayoutProps) => {
 				)}
 				<main id="main">{children}</main>
 			</div>
+			<Footer />
 		</>
 	)
 }
