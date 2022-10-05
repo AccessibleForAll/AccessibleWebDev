@@ -39,12 +39,12 @@ const Footer = () => {
 							</Link>
 						</li>
 						<li className={styles.footer__linkItems}>
-							<Link href="/about">
+							<Link href="/">
 								<a className={styles.footer__links}>About</a>
 							</Link>
 						</li>
 						<li className={styles.footer__linkItems}>
-							<Link href="/about">
+							<Link href="/">
 								<a className={styles.footer__links}>Contact Me</a>
 							</Link>
 						</li>
