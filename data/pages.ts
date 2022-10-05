@@ -6,6 +6,7 @@ export interface IPage {
 
 export const pages: IPage[] = [
 	{ name: "Home", href: "/" },
+	{ name: "Alerts", href: "/alerts", content: "alerts" },
 	{
 		name: "Animations",
 		href: "/animations",
@@ -22,6 +23,7 @@ export const pages: IPage[] = [
 		href: "/charts",
 		content: "charts",
 	},
+	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
 	{ name: "Buttons", href: "/buttons", content: "buttons" },
 	{ name: "Forms", href: "/forms", content: "forms" },
 	{ name: "Headings", href: "/headings", content: "headings" },
@@ -30,6 +32,7 @@ export const pages: IPage[] = [
 	{ name: "Links", href: "/links", content: "links" },
 	{ name: "Lists", href: "/lists", content: "lists" },
 	{ name: "Menus", href: "/menus", content: "menus" },
+	{ name: "Modals", href: "/modals", content: "modals" },
 	{ name: "Navigation", href: "/navigation", content: "navigation" },
 	{ name: "Pagination", href: "/pagination", content: "pagination" },
 	{ name: "Tables", href: "/tables", content: "tables" },
