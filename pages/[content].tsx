@@ -9,6 +9,7 @@ import { pages } from "../data/pages"
 import Alerts from "../components/ContentTemplates/AlertsTemplate"
 import Animations from "../components/ContentTemplates/AnimationsTemplate"
 import Audio from "../components/ContentTemplates/AudioTemplate"
+import Breadcrumbs from "../components/ContentTemplates/BreadcrumbsTemplate"
 import Buttons from "../components/ContentTemplates/ButtonsTemplate"
 import Captchas from "../components/ContentTemplates/CaptchasTemplate"
 import Charts from "../components/ContentTemplates/ChartsTemplate"
@@ -44,6 +45,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "alerts" && <Alerts />}
 					{page === "animations" && <Animations />}
 					{page === "audio" && <Audio />}
+					{page === "breadcrumbs" && <Breadcrumbs />}
 					{page === "buttons" && <Buttons />}
 					{page === "captchas" && <Captchas />}
 					{page === "charts" && <Charts />}
@@ -55,8 +57,8 @@ const ContentPage: NextPage = (props) => {
 					{page === "lists" && <Lists />}
 					{page === "menus" && <Menus />}
                     {page === "modals" && <Modals />}
-          {page === "navigation" && <Navigation />}
-          {page === "pagination" && <Pagination />}
+					{page === "navigation" && <Navigation />}
+					{page === "pagination" && <Pagination />}
 					{page === "tables" && <Tables />}
 					{page === "video" && <Video />}
 				</>
