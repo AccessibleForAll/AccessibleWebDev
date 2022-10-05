@@ -4,9 +4,16 @@
 
 This project is built with Next.JS, Typescript and CSS modules.
 
-## Pre-requisites
+## Pre-requisites (these need to be installed on your machine)
+
 [Node.js](https://nodejs.org/en/)  
 [Yarn Package Manager](https://yarnpkg.com/)  
+
+## Available packages
+
+Icons - [React Icons Documentation]( https://react-icons.github.io/react-icons)  
+Code Snippets - [React Syntax Highlighter Documentation](https://github.com/react-syntax-highlighter/react-syntax-highlighter)  
+Translations - [next-i18next Documentation](https://next.i18next.com/)  
 
 ## How to contribute
 
