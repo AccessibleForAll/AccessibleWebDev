@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress";
 
 const TablesTemplate = () => {
-	return <div>TablesTemplate</div>
+	return <WorkInProgress />
 }
 
 export default TablesTemplate
