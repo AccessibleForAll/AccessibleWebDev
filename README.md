@@ -16,4 +16,7 @@ AccessibleWebDev is licensed under the MIT License - see [License](https://githu
 
 ## Gitpod
 
+Gitpod is an open-source application which provides an interactive development environment (IDE) in your browser. 
+It allows you to view and interact with this code directly in your browser without the need to clone it to your local machine. If you wish to make changes that leads to a pull request, remember to fork the repository then click the Gitpod button in the forked readme. Otherwise, feel free to play around with the code by clicking here.
+
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AccessibleForAll/AccessibleWebDev)
