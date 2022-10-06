@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const LinksTemplate = () => {
-	return <div>LinksTemplate</div>
+	return <WorkInProgress/>
 }
 
 export default LinksTemplate

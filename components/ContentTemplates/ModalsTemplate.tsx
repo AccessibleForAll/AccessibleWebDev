@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const ModalsTemplate = () => {
-	return <div>ModalsTemplate</div>
+	return <WorkInProgress/>
 }
 
 export default ModalsTemplate
