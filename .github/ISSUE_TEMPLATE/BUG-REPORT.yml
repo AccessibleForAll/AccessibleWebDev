@@ -5,7 +5,7 @@ labels: [
   "bug"
 ]
 body:
-  - type: textarea
+   - type: textarea
     id: description
     attributes:
       label: "Description"
