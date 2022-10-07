@@ -1,7 +1,9 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
+
 
 const ListsTemplate = () => {
-    return <div>ListsTemplate</div>
+    return <WorkInProgress />
 }
 
 export default ListsTemplate
