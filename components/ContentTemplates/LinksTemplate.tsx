@@ -2,7 +2,7 @@ import React from "react"
 import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const LinksTemplate = () => {
-	return <WorkInProgress />
+	return <WorkInProgress/>
 }
 
 export default LinksTemplate
