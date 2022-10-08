@@ -17,7 +17,7 @@ Translations - [next-i18next Documentation](https://next.i18next.com/)
 
 ## How to contribute
 
-1.  Look through [Pre-existing issues](https://github.com/AccessibleForAll/AccessibleWebDev/issues) or [Raise a new issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose) and ask to be assigned
+1.  Look through [Pre-existing issues](https://github.com/AccessibleForAll/AccessibleWebDev/issues) or [Raise a new issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose) and ask to be assigned. Pull requests made without a corresponding issue will likely be closed.
 2.  [Fork](https://github.com/AccessibleForAll/AccessibleWebDev/fork) the project
 3.  Clone the project:
     ```bash
