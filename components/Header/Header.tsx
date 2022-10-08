@@ -35,7 +35,7 @@ const Header = (props: HeaderProps) => {
 						</button>
 					</div>
 				</div>
-				<h1 className={styles.headerTitle}>Accessible {headerTitle}</h1>
+				<h1 className={styles.headerTitle}>{headerTitle}</h1>
 			</header>
 		</>
 	)

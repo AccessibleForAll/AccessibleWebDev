@@ -9,9 +9,12 @@ const Home: NextPage = () => {
 		<>
 			<Head>
 				<title>{`Home - Accessible Web Dev`}</title>
-				<meta name="description" content="Learn the basics about web accessibility in a clear and easy to understand way" />
+				<meta
+					name="description"
+					content="Learn the basics about web accessibility in a clear and easy to understand way"
+				/>
 			</Head>
-			<Layout headerTitle="Web Dev" activeNavLink={router.pathname}>
+			<Layout headerTitle="Accessible Web Dev" activeNavLink={router.pathname}>
 				<section>
 					<h2>Welcome!</h2>
 					<p>
