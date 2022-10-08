@@ -1,5 +1,5 @@
 .footer {
-    background-color: black;
+    background-color: var(--dark);
     padding: 2rem;
     color: #fff;
     margin-top: 2rem;
@@ -31,7 +31,7 @@
     transition: all 0.2s ease-in;
 }
 .footer__links:hover {
-    color: #00b4d8;
+    color: var(--primary)
 }
 .footer__bottomDetails {
     display: flex;
