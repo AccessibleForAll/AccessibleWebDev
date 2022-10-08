@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const ImagesTemplate = () => {
-	return <div>ImagesTemplate</div>
+	return <WorkInProgress />
 }
 
 export default ImagesTemplate
