@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 					content="Learn the basics about web accessibility in a clear and easy to understand way"
 				/>
 			</Head>
-			<Layout headerTitle="Web Dev" activeNavLink="/">
+			<Layout headerTitle="Accessible Web Dev" activeNavLink="/">
 				<section>
 					<h2>Welcome!</h2>
 					<p>
