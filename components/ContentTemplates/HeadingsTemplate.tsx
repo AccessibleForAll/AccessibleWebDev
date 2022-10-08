@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const HeadingsTemplate = () => {
-	return <div>HeadingsTemplate</div>
+	return <WorkInProgress />
 }
 
 export default HeadingsTemplate
