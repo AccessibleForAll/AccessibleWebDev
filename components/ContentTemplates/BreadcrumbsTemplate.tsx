@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const BreadcrumbsTemplate = () => {
-	return <div>BreadcrumbsTemplate</div>
+	return <WorkInProgress />
 }
 
 export default BreadcrumbsTemplate
