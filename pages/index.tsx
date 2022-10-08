@@ -1,10 +1,8 @@
 import type { NextPage } from "next"
-import { useRouter } from "next/router"
 import Layout from "../components/Layout/Layout"
 import Head from "next/head"
 
 const Home: NextPage = () => {
-	const router = useRouter()
 	return (
 		<>
 			<Head>
@@ -14,7 +12,7 @@ const Home: NextPage = () => {
 					content="Learn the basics about web accessibility in a clear and easy to understand way"
 				/>
 			</Head>
-			<Layout headerTitle="Accessible Web Dev" activeNavLink={router.pathname}>
+			<Layout headerTitle="Accessible Web Dev" activeNavLink="/">
 				<section>
 					<h2>Welcome!</h2>
 					<p>
