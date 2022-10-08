@@ -1,17 +1,18 @@
 import type { NextPage } from "next"
-import { useRouter } from "next/router"
 import Layout from "../components/Layout/Layout"
 import Head from "next/head"
 
 const Home: NextPage = () => {
-	const router = useRouter()
 	return (
 		<>
 			<Head>
 				<title>{`Home - Accessible Web Dev`}</title>
-				<meta name="description" content="Learn the basics about web accessibility in a clear and easy to understand way" />
+				<meta
+					name="description"
+					content="Learn the basics about web accessibility in a clear and easy to understand way"
+				/>
 			</Head>
-			<Layout headerTitle="Web Dev" activeNavLink={router.pathname}>
+			<Layout headerTitle="Web Dev" activeNavLink="/">
 				<section>
 					<h2>Welcome!</h2>
 					<p>
