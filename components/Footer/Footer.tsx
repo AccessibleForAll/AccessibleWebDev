@@ -13,19 +13,27 @@ const Footer = () => {
 						<li className={styles.footer__linkItems}>
 							<a
 								href="https://github.com/AccessibleForAll"
-								className={styles.footer__links}>
+								className={styles.footer__links}
+								target="_blank"
+								rel="noreferrer">
 								Github Page
 							</a>
 						</li>
 						<li className={styles.footer__linkItems}>
 							<a
+								target="_blank"
+								rel="noreferrer"
 								href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
 								className={styles.footer__links}>
 								Become a Contributor
 							</a>
 						</li>
 						<li className={styles.footer__linkItems}>
-							<a href="#" className={styles.footer__links}>
+							<a
+								href="#"
+								className={styles.footer__links}
+								target="_blank"
+								rel="noreferrer">
 								Sponsor Us
 							</a>
 						</li>
