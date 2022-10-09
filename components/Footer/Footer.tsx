@@ -1,6 +1,6 @@
 import Link from "next/link"
 import React from "react"
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 import { BsGithub } from "react-icons/bs"
 
 const Footer = () => {
