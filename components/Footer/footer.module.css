@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--dark);
-    padding: 2rem;
+    padding: 16px;
     color: #fff;
     margin-top: 2rem;
 }
@@ -12,39 +12,36 @@
     padding: 1rem;
 }
 .footer__linkHeading {
-    margin-bottom: 0.4rem;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     line-height: 1;
 }
+
 .footer__linkList {
-    padding: 0rem;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 24px;
     
 }
 .footer__linkItems {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     list-style: none;
 }
 .footer__links, .footer__links:link, .footer__links:visited {
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.2s ease-in;
+    font-size: 0.9rem;
 }
+
 .footer__links:hover {
-    color: var(--primary)
+    text-decoration: underline;
 }
+
 .footer__bottomDetails {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    margin-top: 0rem;
+    position: relative;
 }
-
-.footer__mediaIcon svg{
-    margin-left: 1rem;
-}
-
 
 @media only screen and (max-width: 37.5em) {
 

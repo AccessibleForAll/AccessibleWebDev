@@ -60,11 +60,12 @@ const Footer = () => {
 					</strong>
 					. Making accessibility accessible for everyone!
 				</p>
-				<div className={styles.footer__mediaIcon}>
-					<a href="https://github.com/AccessibleForAll">
-						<BsGithub color="white" size="2rem" aria-label="Github" />
-					</a>
-				</div>
+
+				<a
+					href="https://github.com/AccessibleForAll"
+					className={styles.footer__mediaIcon}>
+					<BsGithub color="white" size="2rem" aria-label="Github" />
+				</a>
 			</div>
 		</footer>
 	)
