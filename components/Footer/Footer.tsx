@@ -40,7 +40,7 @@ const Footer = () => {
 							</Link>
 						</li>
 						<li className={styles.footer__linkItems}>
-							<Link href="/">
+							<Link href="/about">
 								<a className={styles.footer__links}>About</a>
 							</Link>
 						</li>
