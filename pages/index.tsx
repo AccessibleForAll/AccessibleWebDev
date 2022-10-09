@@ -1,20 +1,21 @@
-import type { NextPage } from "next"
+import type { GetStaticProps, NextPage } from "next"
 import Layout from "../components/Layout/Layout"
 import Head from "next/head"
+import { useTranslation } from "next-i18next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
 const Home: NextPage = () => {
+	const { t } = useTranslation("homepage")
+
 	return (
 		<>
 			<Head>
-				<title>{`Home - Accessible Web Dev`}</title>
-				<meta
-					name="description"
-					content="Learn the basics about web accessibility in a clear and easy to understand way"
-				/>
+				<title>{t("pageTitle")}</title>
+				<meta name="description" content={t("metaContent")} />
 			</Head>
 			<Layout headerTitle="Accessible Web Dev" activeNavLink="/">
 				<section>
-					<h2>Welcome!</h2>
+					<h2>{t("welcome")}</h2>
 					<p>
 						Accessible web dev is here to make accessibility more understandable
 						for developers and designers as current standards can be hard to
@@ -42,6 +43,18 @@ const Home: NextPage = () => {
 			</Layout>
 		</>
 	)
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+	const locale: string = context.locale!
+	console.log(context)
+
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ["common", "homepage"])),
+			// Will be passed to the page component as props
+		},
+	}
 }
 
 export default Home
