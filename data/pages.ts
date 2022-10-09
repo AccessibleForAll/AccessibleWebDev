@@ -13,6 +13,8 @@ export const pages: IPage[] = [
 		content: "animations",
 	},
 	{ name: "Audio", href: "/audio", content: "audio" },
+	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
+	{ name: "Buttons", href: "/buttons", content: "buttons" },
 	{
 		name: "Captchas",
 		href: "/captchas",
@@ -23,8 +25,6 @@ export const pages: IPage[] = [
 		href: "/charts",
 		content: "charts",
 	},
-	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
-	{ name: "Buttons", href: "/buttons", content: "buttons" },
 	{ name: "Forms", href: "/forms", content: "forms" },
 	{ name: "Headings", href: "/headings", content: "headings" },
 	{ name: "Icons", href: "/icons", content: "icons" },
