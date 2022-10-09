@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const AudioTemplate = () => {
-	return <div>AudioTemplate</div>
+	return <WorkInProgress />
 }
 
 export default AudioTemplate
