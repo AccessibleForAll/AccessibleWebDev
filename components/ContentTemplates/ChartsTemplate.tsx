@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const ChartsTemplate = () => {
-	return <div>ChartsTemplate</div>
+	return <WorkInProgress />
 }
 
 export default ChartsTemplate
