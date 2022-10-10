@@ -2,7 +2,9 @@
 
 ## Screenshots - If Any (Optional)
 
-## Issue ticket number and link - If Any
+## Link to issue
+<!-- Example: Closes #31 -->
+Closes #
 
 ## Checklist before requesting a review
 
