@@ -1,7 +1,8 @@
 import React from "react"
+import WorkInProgress from "../WorkInProgress/WorkInProgress"
 
 const PaginationTemplate = () => {
-	return <div>PaginationTemplate</div>
+	return <WorkInProgress/>
 }
 
 export default PaginationTemplate
