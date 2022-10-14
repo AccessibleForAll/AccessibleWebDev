@@ -33,7 +33,6 @@ const Home: NextPage = () => {
 
 export const getStaticProps: GetStaticProps = async (context) => {
 	const locale: string = context.locale!
-	console.log(context)
 
 	return {
 		props: {
