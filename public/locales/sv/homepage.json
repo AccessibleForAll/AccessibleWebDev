@@ -1,0 +1,16 @@
+{
+	"pageTitle": "Hem - Accessible Web Dev",
+	"metaContent": "Lär dig om webtillgänglighet på ett lätt och tydligt sätt.",
+	"heading": {
+		"welcome": "Välkommen!"
+	},
+	"para": {
+		"text1": "Accessible Web Dev finns för att göra tillgänglighet lättare att förstå för webutvecklare och designers eftersom nuvarande standardar är svårlästa.",
+		"text2": "Den här sajten är ett komplemang till de standardar som redan finns för att hjälpa dig på din resa mot att skapa mer tillgängliga webbupplevelser för alla.",
+		"text3": "Varje sida kommer innehålla exempel på hur man gör specifika element eller komponenter mer tillgängliga. Det kommer även finnas länkar till andra sajter där man kan lära sig mer.",
+		"text4": "För nuvarande är den här sajten under uppbyggnad. Vissa sidor är inte kompletta och kanske inte ens påbörjade. Om du inte hittar det du letar efter får du gärna"
+	},
+	"link": {
+		"githubIssue": "lyfta en fråga på GitHub."
+	}
+}

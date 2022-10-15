@@ -4,6 +4,8 @@ import Layout from "../components/Layout/Layout"
 import Head from "next/head"
 import { capitalizeRoute } from "../utils"
 import { pages } from "../data/pages"
+import { useTranslation } from "next-i18next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
 // Components
 import Alerts from "../components/ContentTemplates/AlertsTemplate"
@@ -33,6 +35,8 @@ interface IProps {
 const ContentPage: NextPage = (props) => {
 	const { page } = props as IProps
 	const title = capitalizeRoute(page)
+
+	const { t } = useTranslation("common")
 
 	return (
 		<>
@@ -67,24 +71,34 @@ const ContentPage: NextPage = (props) => {
 	)
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-	const paths = pages
-		.filter((page) => page.content)
-		.map((page) => ({
-			params: { content: page.content },
-		}))
+export const getStaticPaths: GetStaticPaths = async (context) => {
+	const locales = context.locales!
+	const paths = pages.filter((page) => page.content)
+
+	const pathsWithLocales = paths.flatMap((path) => {
+		return locales.map((locale) => {
+			return {
+				params: {
+					content: path.content,
+				},
+				locale: locale,
+			}
+		})
+	})
 
 	return {
-		paths,
+		paths: pathsWithLocales,
 		fallback: false,
 	}
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
 	const content = context.params!.content
+	const locale: string = context.locale!
 
 	return {
 		props: {
+			...(await serverSideTranslations(locale, ["common"])),
 			page: content,
 		},
 	}
