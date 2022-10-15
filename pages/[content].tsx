@@ -74,9 +74,6 @@ const ContentPage: NextPage = (props) => {
 export const getStaticPaths: GetStaticPaths = async (context) => {
 	const locales = context.locales!
 	const paths = pages.filter((page) => page.content)
-	// .map((page) => ({
-	// 	params: { content: page.content }
-	// }))
 
 	const pathsWithLocales = paths.flatMap((path) => {
 		return locales.map((locale) => {
