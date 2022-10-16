@@ -2,7 +2,7 @@ import Link from "next/link"
 import styles from "./NavPrimary.module.css"
 import { IPage } from "../../data/pages"
 
-interface NavItemProps {
+export interface NavItemProps {
 	page: IPage
 	activeNavLink: string
 	handleNavClick?: () => void
