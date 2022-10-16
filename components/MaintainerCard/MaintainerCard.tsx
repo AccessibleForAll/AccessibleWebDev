@@ -1,8 +1,5 @@
-import Image from "next/image"
+/* eslint-disable @next/next/no-img-element */
 import styles from "./MaintainerCard.module.css"
-
-const isLinkToImage = (link = "default") =>
-	/\.(jpg|jpeg|png|webp|avif|gif|svg)$/.test(link)
 
 export interface MaintainerCardProps {
 	maintainerImage: string
@@ -25,22 +22,27 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 
 	return (
 		<section>
-			{isLinkToImage(maintainerImage) ? (
-				<Image
+			{maintainerImage ? (
+				<img
+					className={styles.maintainerImage}
 					src={maintainerImage}
 					alt={`${maintainerName} ${maintainerSurname}`}
-					layout="fill"
 				/>
 			) : (
-				<p>{maintainerImage || "image"}</p>
+				<p className={styles.maintainerImage}>{maintainerImage || "image"}</p>
 			)}
+			<section className={styles.maintainerContainer}>
+				<h1 className={styles.maintainerFullName}>
+					{`${maintainerName} ${maintainerSurname}`}
+				</h1>
+				<p className={styles.maintainerDescription}>{maintainerDescription}</p>
 
-			<h1>{`${maintainerName} ${maintainerSurname}`}</h1>
-			<p>{maintainerDescription}</p>
-
-			<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
-				<button type="button">{maintainerGithubName}</button>
-			</a>
+				<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
+					<button className={styles.linkButton} type="button">
+						{maintainerGithubName}
+					</button>
+				</a>
+			</section>
 		</section>
 	)
 }

@@ -1,0 +1,84 @@
+.maintainerContainer {
+    align-items: center;
+    border: 2px solid #fe5196;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    width: 19rem;
+}
+
+.maintainerImage {
+    background-color: #fe5196;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    margin-bottom: -5em;
+    margin-left: 6.7em;
+    position: relative;
+    width: 8rem;
+}
+
+.maintainerFullName {
+	font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 1.8em;
+}
+
+.maintainerDescription {
+    font-size: 1.1rem;
+    margin-top: 0.5em;
+    align-self: center;
+}
+
+.linkButton {
+    background-color: #fe5196;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .maintainerContainer {
+        width: 95%;
+    }
+
+    .maintainerImage {
+        margin-left: 0;
+        left: 42%;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    .maintainerContainer {
+        width: 94%;
+    }
+
+    .maintainerImage {
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .maintainerContainer {
+        width: 93%;
+    }
+
+    .maintainerImage {
+        left: 38%;
+    }
+
+    .maintainerFullName {
+        font-size: 1.8rem;
+    }
+
+    .maintainerDescription {
+        font-size: 1rem;
+    }
+}
