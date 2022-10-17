@@ -12,9 +12,6 @@
 .maintainerImage {
     background-color: var(--primary);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 8rem;
     margin-bottom: -5em;
     margin-left: 6.7em;
