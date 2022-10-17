@@ -8,7 +8,7 @@ export interface MaintainerCardProps {
 	githubLink: string
 }
 
-export const MaintainerCard = (props: MaintainerCardProps) => {
+export const MaintainerCardComponent = (props: MaintainerCardProps) => {
 	const { image, fullName, description, githubLink } = props
 
 	return (
@@ -29,4 +29,4 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 	)
 }
 
-export default MaintainerCard
+export default MaintainerCardComponent

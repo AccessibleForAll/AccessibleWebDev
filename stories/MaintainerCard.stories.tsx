@@ -2,22 +2,22 @@ import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import {
-	MaintainerCard,
+	MaintainerCardComponent,
 	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 
 export default {
 	title: "Example/MaintainerCard",
-	component: MaintainerCard,
-} as ComponentMeta<typeof MaintainerCard>
+	component: MaintainerCardComponent,
+} as ComponentMeta<typeof MaintainerCardComponent>
 
-const Template: ComponentStory<typeof MaintainerCard> = (args) => (
+const Template: ComponentStory<typeof MaintainerCardComponent> = (args) => (
 	<MaintainerCard {...args} />
 )
 
-export const DesktopMaintainerCard = Template.bind({})
+export const MaintainerCard = Template.bind({})
 
-DesktopMaintainerCard.args = {
+MaintainerCard.args = {
 	image:
 		"https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg",
 	fullName: "John Doe",
