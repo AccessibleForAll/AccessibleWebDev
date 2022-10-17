@@ -1,7 +1,7 @@
 .maintainerContainer {
     align-items: center;
-    border: 2px solid var(--primary);
-    border-radius: 5px;
+    border: 0.15rem solid var(--primary);
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -13,8 +13,8 @@
     background-color: var(--primary);
     border-radius: 50%;
     height: 8rem;
-    margin-bottom: -5em;
-    margin-left: 6.7em;
+    margin-bottom: -5rem;
+    margin-left: 6.7rem;
     position: relative;
     width: 8rem;
 }
@@ -22,12 +22,12 @@
 .maintainerFullName {
 	font-size: 2rem;
     margin-bottom: 0;
-    margin-top: 1.8em;
+    margin-top: 1.8rem;
 }
 
 .maintainerDescription {
     font-size: 1.1rem;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
     align-self: center;
 }
 
@@ -37,8 +37,8 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-top: 1em;
-    padding: 0.5em 1em;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 @media screen and (max-width: 768px) {
