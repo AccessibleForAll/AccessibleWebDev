@@ -2,41 +2,28 @@
 import styles from "./MaintainerCard.module.css"
 
 export interface MaintainerCardProps {
-	maintainerImage: string
-	maintainerFullName: string
-	maintainerDescription: string
-	maintainerGithubName: string
-	maintainerGithubLink: string
+	image: string
+	fullName: string
+	description: string
+	githubLink: string
 }
 
 export const MaintainerCard = (props: MaintainerCardProps) => {
-	const {
-		maintainerImage,
-		maintainerFullName,
-		maintainerDescription,
-		maintainerGithubName,
-		maintainerGithubLink,
-	} = props
+	const { image, fullName, description, githubLink } = props
 
 	return (
 		<section className={styles.maintainerContainer}>
-			{maintainerImage ? (
-				<img
-					className={styles.maintainerImage}
-					src={maintainerImage}
-					alt={maintainerFullName}
-				/>
+			{image ? (
+				<img className={styles.maintainerImage} src={image} alt={fullName} />
 			) : (
-				<p className={styles.maintainerImage}>{maintainerImage || "image"}</p>
+				<p className={styles.maintainerImage}>{image}</p>
 			)}
 
-			<h1 className={styles.maintainerFullName}>{maintainerFullName}</h1>
-			<p className={styles.maintainerDescription}>{maintainerDescription}</p>
+			<p className={styles.maintainerFullName}>{fullName}</p>
+			<p className={styles.maintainerDescription}>{description}</p>
 
-			<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
-				<button className={styles.linkButton} type="button">
-					{maintainerGithubName}
-				</button>
+			<a className={styles.linkButton} href={githubLink}>
+				{`${fullName}'s Github`}
 			</a>
 		</section>
 	)
