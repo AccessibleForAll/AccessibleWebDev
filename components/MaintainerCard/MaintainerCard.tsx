@@ -3,8 +3,7 @@ import styles from "./MaintainerCard.module.css"
 
 export interface MaintainerCardProps {
 	maintainerImage: string
-	maintainerName: string
-	maintainerSurname: string
+	maintainerFullName: string
 	maintainerDescription: string
 	maintainerGithubName: string
 	maintainerGithubLink: string
@@ -13,8 +12,7 @@ export interface MaintainerCardProps {
 export const MaintainerCard = (props: MaintainerCardProps) => {
 	const {
 		maintainerImage,
-		maintainerName,
-		maintainerSurname,
+		maintainerFullName,
 		maintainerDescription,
 		maintainerGithubName,
 		maintainerGithubLink,
@@ -26,15 +24,13 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 				<img
 					className={styles.maintainerImage}
 					src={maintainerImage}
-					alt={`${maintainerName} ${maintainerSurname}`}
+					alt={maintainerFullName}
 				/>
 			) : (
 				<p className={styles.maintainerImage}>{maintainerImage || "image"}</p>
 			)}
 
-			<h1 className={styles.maintainerFullName}>
-				{`${maintainerName} ${maintainerSurname}`}
-			</h1>
+			<h1 className={styles.maintainerFullName}>{maintainerFullName}</h1>
 			<p className={styles.maintainerDescription}>{maintainerDescription}</p>
 
 			<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
