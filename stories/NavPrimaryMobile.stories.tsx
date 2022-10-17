@@ -14,6 +14,6 @@ const Template: ComponentStory<typeof NavPrimaryMobile> = (args) => (
 export const MobilePrimaryNav = Template.bind({})
 
 MobilePrimaryNav.args = {
-	activeNavLink: "home",
+	activeNavLink: "/",
 	handleNavClick: () => true,
 } as NavProps
