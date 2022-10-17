@@ -2,7 +2,7 @@ import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import {
-	MaintainerCardComponent,
+	MaintainerCard as MaintainerCardComponent,
 	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 
