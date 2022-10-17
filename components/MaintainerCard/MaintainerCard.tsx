@@ -21,7 +21,7 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 	} = props
 
 	return (
-		<section>
+		<section className={styles.maintainerContainer}>
 			{maintainerImage ? (
 				<img
 					className={styles.maintainerImage}
@@ -31,18 +31,17 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 			) : (
 				<p className={styles.maintainerImage}>{maintainerImage || "image"}</p>
 			)}
-			<section className={styles.maintainerContainer}>
-				<h1 className={styles.maintainerFullName}>
-					{`${maintainerName} ${maintainerSurname}`}
-				</h1>
-				<p className={styles.maintainerDescription}>{maintainerDescription}</p>
 
-				<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
-					<button className={styles.linkButton} type="button">
-						{maintainerGithubName}
-					</button>
-				</a>
-			</section>
+			<h1 className={styles.maintainerFullName}>
+				{`${maintainerName} ${maintainerSurname}`}
+			</h1>
+			<p className={styles.maintainerDescription}>{maintainerDescription}</p>
+
+			<a href={maintainerGithubLink} target="_blank" rel="noreferrer">
+				<button className={styles.linkButton} type="button">
+					{maintainerGithubName}
+				</button>
+			</a>
 		</section>
 	)
 }
