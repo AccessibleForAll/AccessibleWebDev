@@ -54,7 +54,7 @@ const Footer = () => {
 			</div>
 			<div className={styles.footer__bottomDetails}>
 				<p className={styles.footer__copyrightText}>
-					© Accessible Web Dev by
+					© Accessible Web Dev by&nbsp;
 					<strong className={styles.footer__copyrightTextName}>
 						Accessible For All
 					</strong>
