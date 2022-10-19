@@ -9,6 +9,7 @@ module.exports = {
 		"@storybook/addon-interactions",
 		"storybook-addon-next",
 		"storybook-css-modules",
+		"@storybook/addon-a11y",
 	],
 	framework: "@storybook/react",
 	core: {
