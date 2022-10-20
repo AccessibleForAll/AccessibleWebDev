@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 import { SkipLink } from "../components/SkipLink/SkipLink"
 
 export default {
-	title: "Example/Header",
+	title: "Example/SkipLink",
 	component: SkipLink,
 } as ComponentMeta<typeof SkipLink>
 
