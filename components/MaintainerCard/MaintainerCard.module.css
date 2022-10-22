@@ -1,0 +1,41 @@
+.maintainerContainer {
+    align-items: center;
+    border: 0.15rem solid var(--primary);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 4.5rem;
+    padding: 1rem;
+    width: 20rem;
+}
+
+.maintainerImage {
+    background-color: var(--primary);
+    border-radius: 50%;
+    height: 8rem;
+    margin-top: -5rem;
+    position: absolute;
+    width: 8rem;
+}
+
+.maintainerFullName {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 3.5rem;
+}
+
+.maintainerDescription {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.linkButton {
+    background-color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
