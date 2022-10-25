@@ -4,10 +4,11 @@ import styles from "./NavPrimary.module.css"
 
 export interface NavProps {
 	activeNavLink: string
+	handleNavClick: () => void
 }
 
 export const NavPrimary = (props: NavProps) => {
-	const { activeNavLink } = props
+	const { activeNavLink, handleNavClick } = props
 
 	return (
 		<nav aria-label="Primary" className={styles.navPrimary}>
@@ -17,6 +18,7 @@ export const NavPrimary = (props: NavProps) => {
 						key={page.name + index}
 						page={page}
 						activeNavLink={activeNavLink}
+						handleNavClick={handleNavClick}
 					/>
 				))}
 			</ul>
