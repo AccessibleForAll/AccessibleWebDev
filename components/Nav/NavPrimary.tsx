@@ -2,12 +2,13 @@ import NavItem from "./NavItem"
 import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 
-interface NavProps {
+export interface NavProps {
 	activeNavLink: string
+	handleNavClick: () => void
 }
 
-const NavPrimary = (props: NavProps) => {
-	const { activeNavLink } = props
+export const NavPrimary = (props: NavProps) => {
+	const { activeNavLink, handleNavClick } = props
 
 	return (
 		<nav aria-label="Primary" className={styles.navPrimary}>
@@ -17,6 +18,7 @@ const NavPrimary = (props: NavProps) => {
 						key={page.name + index}
 						page={page}
 						activeNavLink={activeNavLink}
+						handleNavClick={handleNavClick}
 					/>
 				))}
 			</ul>
