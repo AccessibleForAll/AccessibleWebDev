@@ -1,14 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./MaintainerCard.module.css"
 
-export interface MaintainerProps {
+export interface MaintainerCardProps {
 	image: string
 	fullName: string
 	description: string
 	githubLink: string
 }
 
-export const MaintainerCard = (props: MaintainerProps) => {
+export const MaintainerCard = (props: MaintainerCardProps) => {
 	const { image, fullName, description, githubLink } = props
 
 	return (
