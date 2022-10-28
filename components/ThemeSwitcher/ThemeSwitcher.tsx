@@ -1,9 +1,10 @@
 import { useState, useRef, useEffect, FocusEvent } from "react"
-import { BsCircleHalf, BsFillSunFill, BsFillMoonFill } from "react-icons/bs"
+import { BsCircleHalf } from "react-icons/bs"
 import { useTheme } from "next-themes"
 import useOnClickOutside from "../../customHooks/useOnClickOutside"
 
 import styles from "./ThemeSwitcher.module.css"
+import { themes } from "./themes"
 
 const ThemeSwitcher = () => {
 	const [showThemeSwitcher, setShowThemeSwitcher] = useState<boolean>(false)
@@ -67,45 +68,21 @@ const ThemeSwitcher = () => {
 					aria-labelledby="themeSwitcherBtn"
 					onBlur={handleBlur}
 					ref={ulListRef}>
-					<li className={theme === "system" ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={() => handleChangeTheme("system")}
-							aria-pressed={theme === "system"}>
-							<BsCircleHalf
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Device settings
-						</button>
-					</li>
-					<li className={theme === "light" ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={() => handleChangeTheme("light")}
-							aria-pressed={theme === "light"}>
-							<BsFillSunFill
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Light mode
-						</button>
-					</li>
-					<li className={theme === "dark" ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={() => handleChangeTheme("dark")}
-							aria-pressed={theme === "dark"}>
-							<BsFillMoonFill
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Dark mode
-						</button>
-					</li>
+					{themes.map(({ label, value, Icon }) => (
+						<li key={label} className={theme === value ? styles.activeBtn : ""}>
+							<button
+								className={styles.themeSwitcherBtn}
+								onClick={() => handleChangeTheme(value)}
+								aria-pressed={theme === value}>
+								<Icon
+									size="0.7rem"
+									aria-hidden="true"
+									className={styles.themeIcon}
+								/>
+								{label}
+							</button>
+						</li>
+					))}
 				</ul>
 			)}
 		</>
