@@ -1,10 +1,12 @@
 import type { GetStaticProps, NextPage } from "next"
 import Layout from "../components/Layout/Layout"
 import Head from "next/head"
-import WorkInProgress from "../components/WorkInProgress/WorkInProgress"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { MaintainerCardProps } from "../components/MaintainerCard/MaintainerCard"
+import MaintainerCard, {
+	MaintainerCardProps,
+} from "../components/MaintainerCard/MaintainerCard"
+import styles from "../styles/about.module.css"
 
 interface AboutProps {
 	maintainerData: MaintainerCardProps[]
@@ -25,7 +27,12 @@ const About: NextPage = (props) => {
 			</Head>
 			<Layout headerTitle="About Us" activeNavLink="">
 				<section>
-					<WorkInProgress />
+					<h2>Current Maintainers</h2>
+					<div className={styles.aboutRow}>
+						{maintainerData.map((e) => {
+							return MaintainerCard(e)
+						})}
+					</div>
 				</section>
 			</Layout>
 		</>
@@ -46,7 +53,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 		{
 			image: "",
 			fullName: "Cristian Toffanin",
-			description: "",
+			description:
+				"Doggo ipsum many pats long doggo shooberino shoober aqua doggo, pupperino mlem h*ck. Woofer much ruin diet heckin good boys heckin adorable doggo, super chub yapper.",
 			githubLink: "https://github.com/ctoffanin",
 		},
 	]
