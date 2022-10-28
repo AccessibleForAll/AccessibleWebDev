@@ -29,9 +29,9 @@ const About: NextPage = (props) => {
 				<section>
 					<h2>Current Maintainers</h2>
 					<div className={styles.aboutRow}>
-						{maintainerData.map((e) => {
-							return MaintainerCard(e)
-						})}
+						{maintainerData.map((maintainer, index) => (
+							<MaintainerCard key={index} {...maintainer} />
+						))}
 					</div>
 				</section>
 			</Layout>
