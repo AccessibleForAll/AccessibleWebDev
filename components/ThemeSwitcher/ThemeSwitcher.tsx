@@ -1,11 +1,14 @@
 import { useState, useRef, useEffect, FocusEvent } from "react"
-import { BsCircleHalf, BsFillSunFill, BsFillMoonFill } from "react-icons/bs"
+import { BsCircleHalf } from "react-icons/bs"
+import { useTheme } from "next-themes"
 import useOnClickOutside from "../../customHooks/useOnClickOutside"
 
 import styles from "./ThemeSwitcher.module.css"
+import { themes } from "./themes"
 
 const ThemeSwitcher = () => {
 	const [showThemeSwitcher, setShowThemeSwitcher] = useState<boolean>(false)
+	const { theme, setTheme } = useTheme()
 
 	const buttonRef = useRef<HTMLButtonElement>(null)
 	const ulListRef = useRef<HTMLUListElement>(null)
@@ -14,18 +17,8 @@ const ThemeSwitcher = () => {
 		setShowThemeSwitcher((prevState) => !prevState)
 	}
 
-	const setTheme = (theme: string) => {
-		document.documentElement.className = theme
-		localStorage.setItem("theme", theme)
-		handleThemeSwitcher()
-		buttonRef.current?.focus()
-	}
-
-	const setThemeFromOS = () => {
-		window.matchMedia("(prefers-color-scheme: dark)").matches
-			? (document.documentElement.className = "dark")
-			: (document.documentElement.className = "light")
-		localStorage.removeItem("theme")
+	const handleChangeTheme = (theme: string) => {
+		setTheme(theme)
 		handleThemeSwitcher()
 		buttonRef.current?.focus()
 	}
@@ -55,11 +48,6 @@ const ThemeSwitcher = () => {
 		return () => document.removeEventListener("keyup", handleThemeSwitcherKB)
 	}, [])
 
-	let theme
-	if (typeof window !== "undefined") {
-		theme = localStorage.getItem("theme")
-	}
-
 	return (
 		<>
 			<button
@@ -80,45 +68,21 @@ const ThemeSwitcher = () => {
 					aria-labelledby="themeSwitcherBtn"
 					onBlur={handleBlur}
 					ref={ulListRef}>
-					<li className={!theme ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={setThemeFromOS}
-							aria-pressed={!theme}>
-							<BsCircleHalf
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Device settings
-						</button>
-					</li>
-					<li className={theme === "light" ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={() => setTheme("light")}
-							aria-pressed={theme === "light"}>
-							<BsFillSunFill
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Light mode
-						</button>
-					</li>
-					<li className={theme === "dark" ? styles.activeBtn : ""}>
-						<button
-							className={styles.themeSwitcherBtn}
-							onClick={() => setTheme("dark")}
-							aria-pressed={theme === "dark"}>
-							<BsFillMoonFill
-								size="0.7rem"
-								aria-hidden="true"
-								className={styles.themeIcon}
-							/>
-							Dark mode
-						</button>
-					</li>
+					{themes.map(({ label, value, Icon }) => (
+						<li key={label} className={theme === value ? styles.activeBtn : ""}>
+							<button
+								className={styles.themeSwitcherBtn}
+								onClick={() => handleChangeTheme(value)}
+								aria-pressed={theme === value}>
+								<Icon
+									size="0.7rem"
+									aria-hidden="true"
+									className={styles.themeIcon}
+								/>
+								{label}
+							</button>
+						</li>
+					))}
 				</ul>
 			)}
 		</>
