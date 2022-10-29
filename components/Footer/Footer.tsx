@@ -14,7 +14,7 @@ const Footer = () => {
 							<a
 								href="https://github.com/AccessibleForAll"
 								className={styles.footer__links}>
-								Github Page
+								GitHub Page
 							</a>
 						</li>
 						<li className={styles.footer__linkItems}>
