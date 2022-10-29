@@ -30,10 +30,7 @@ export const Layout = (props: LayoutProps) => {
 				showNavMobile={showNavMobile}
 			/>
 			<div className={styles.layoutContainer}>
-				<NavPrimary
-					activeNavLink={activeNavLink}
-					handleNavClick={handleNavClick}
-				/>
+				<NavPrimary activeNavLink={activeNavLink} />
 				{showNavMobile && (
 					<NavPrimaryMobile
 						activeNavLink={activeNavLink}

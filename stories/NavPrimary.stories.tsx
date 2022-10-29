@@ -15,5 +15,4 @@ export const PrimaryNav = Template.bind({})
 
 PrimaryNav.args = {
 	activeNavLink: "/",
-	handleNavClick: () => true,
 } as NavProps
