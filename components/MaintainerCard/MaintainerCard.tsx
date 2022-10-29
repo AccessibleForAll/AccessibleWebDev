@@ -28,5 +28,3 @@ export const MaintainerCard = (props: MaintainerCardProps) => {
 		</section>
 	)
 }
-
-export default MaintainerCard

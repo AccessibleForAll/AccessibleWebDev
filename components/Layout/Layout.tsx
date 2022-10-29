@@ -1,9 +1,9 @@
 import React, { useState } from "react"
-import Footer from "../Footer/Footer"
-import Header from "../Header/Header"
-import NavPrimary from "../Nav/NavPrimary"
-import NavPrimaryMobile from "../Nav/NavPrimaryMobile"
-import SkipLink from "../SkipLink/SkipLink"
+import { Footer } from "../Footer/Footer"
+import { Header } from "../Header/Header"
+import { NavPrimary } from "../Nav/NavPrimary"
+import { NavPrimaryMobile } from "../Nav/NavPrimaryMobile"
+import { SkipLink } from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
 interface LayoutProps {
@@ -12,7 +12,7 @@ interface LayoutProps {
 	children: JSX.Element
 }
 
-const Layout = (props: LayoutProps) => {
+export const Layout = (props: LayoutProps) => {
 	const { headerTitle, activeNavLink, children } = props
 
 	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
@@ -30,7 +30,10 @@ const Layout = (props: LayoutProps) => {
 				showNavMobile={showNavMobile}
 			/>
 			<div className={styles.layoutContainer}>
-				<NavPrimary activeNavLink={activeNavLink} />
+				<NavPrimary
+					activeNavLink={activeNavLink}
+					handleNavClick={handleNavClick}
+				/>
 				{showNavMobile && (
 					<NavPrimaryMobile
 						activeNavLink={activeNavLink}
@@ -43,5 +46,3 @@ const Layout = (props: LayoutProps) => {
 		</>
 	)
 }
-
-export default Layout

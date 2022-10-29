@@ -1,9 +1,10 @@
 import type { GetStaticProps, NextPage } from "next"
-import Layout from "../components/Layout/Layout"
+import { Layout } from "../components/Layout/Layout"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import MaintainerCard, {
+import {
+	MaintainerCard,
 	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 import styles from "../styles/about.module.css"

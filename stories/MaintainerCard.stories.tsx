@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import {
 	MaintainerCard,
-	MaintainerProps,
+	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 
 export default {
@@ -24,4 +24,4 @@ DesktopMaintainerCard.args = {
 	description:
 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam massa, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam massa, eget aliquam nisl nisl eu nunc.",
 	githubLink: "https://github.com",
-} as MaintainerProps
+} as MaintainerCardProps

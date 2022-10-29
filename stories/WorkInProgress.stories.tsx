@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import WorkInProgress from "../components/WorkInProgress/WorkInProgress"
+import { WorkInProgress } from "../components/WorkInProgress/WorkInProgress"
 
 export default {
 	title: "Example/WorkInProgress",

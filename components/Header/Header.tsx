@@ -1,9 +1,8 @@
 import Link from "next/link"
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
+import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 
 import styles from "./Header.module.css"
-
-import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher"
 
 export interface HeaderProps {
 	headerTitle: string
@@ -40,5 +39,3 @@ export const Header = (props: HeaderProps) => {
 		</>
 	)
 }
-
-export default Header

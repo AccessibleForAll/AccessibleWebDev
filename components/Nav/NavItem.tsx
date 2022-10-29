@@ -8,7 +8,7 @@ export interface NavItemProps {
 	handleNavClick?: () => void
 }
 
-const NavItem = (props: NavItemProps) => {
+export const NavItem = (props: NavItemProps) => {
 	const { page, activeNavLink, handleNavClick } = props
 
 	return (
@@ -22,5 +22,3 @@ const NavItem = (props: NavItemProps) => {
 		</li>
 	)
 }
-
-export default NavItem

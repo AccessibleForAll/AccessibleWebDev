@@ -1,4 +1,4 @@
-import NavItem from "./NavItem"
+import { NavItem } from "./NavItem"
 import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 
@@ -25,5 +25,3 @@ export const NavPrimary = (props: NavProps) => {
 		</nav>
 	)
 }
-
-export default NavPrimary

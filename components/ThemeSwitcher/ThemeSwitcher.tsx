@@ -6,7 +6,7 @@ import useOnClickOutside from "../../customHooks/useOnClickOutside"
 import styles from "./ThemeSwitcher.module.css"
 import { themes } from "./themes"
 
-const ThemeSwitcher = () => {
+export const ThemeSwitcher = () => {
 	const [showThemeSwitcher, setShowThemeSwitcher] = useState<boolean>(false)
 	const { theme, setTheme } = useTheme()
 
@@ -88,5 +88,3 @@ const ThemeSwitcher = () => {
 		</>
 	)
 }
-
-export default ThemeSwitcher

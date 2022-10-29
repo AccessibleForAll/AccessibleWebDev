@@ -5,5 +5,3 @@ export const SkipLink = () => (
 		<a href="#main">Skip to main content</a>
 	</div>
 )
-
-export default SkipLink
