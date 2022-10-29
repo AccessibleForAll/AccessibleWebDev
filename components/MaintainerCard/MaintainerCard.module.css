@@ -4,7 +4,7 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin: 4.5rem;
+    margin: 4.5rem 0 0 0;
     padding: 1rem;
     width: 20rem;
 }
