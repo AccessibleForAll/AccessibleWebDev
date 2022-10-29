@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import {
 	MaintainerCard,
-	MaintainerProps,
+	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 
 export default {
@@ -19,9 +19,9 @@ export const DesktopMaintainerCard = Template.bind({})
 
 DesktopMaintainerCard.args = {
 	image:
-		"https://img.freepik.com/free-photo/handsome-smiling-young-african-man_171337-9650.jpg",
-	fullName: "John Doe",
+		"https://cdn.pixabay.com/photo/2016/09/28/02/14/user-1699635_960_720.png",
+	fullName: "Adorable Doggo",
 	description:
-		"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam massa, eget aliquam nisl nisl eu nunc. Sed euismod, nisl vel tincidunt luctus, nunc nisl aliquam massa, eget aliquam nisl nisl eu nunc.",
+		"Doggo ipsum many pats long doggo shooberino shoober aqua doggo, pupperino mlem h*ck. Woofer much ruin diet heckin good boys heckin adorable doggo, super chub yapper.",
 	githubLink: "https://github.com",
-} as MaintainerProps
+} as MaintainerCardProps

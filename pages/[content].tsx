@@ -1,6 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next"
 
-import Layout from "../components/Layout/Layout"
+import { Layout } from "../components/Layout/Layout"
 import Head from "next/head"
 import { capitalizeRoute } from "../utils"
 import { pages } from "../data/pages"

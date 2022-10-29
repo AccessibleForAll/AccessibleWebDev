@@ -1,9 +1,10 @@
 import type { GetStaticProps, NextPage } from "next"
-import Layout from "../components/Layout/Layout"
+import { Layout } from "../components/Layout/Layout"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import MaintainerCard, {
+import {
+	MaintainerCard,
 	MaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 import styles from "../styles/about.module.css"
@@ -44,17 +45,17 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 	const maintainerData: MaintainerCardProps[] = [
 		{
-			image: "",
+			image: "https://github.com/emmadawsondev.png",
 			fullName: "Emma Dawson",
 			description:
 				"Emma is a full stack developer from Stockholm with a passion for accessibility and open source. She wants to make web accessibility easy to learn for everyone.",
 			githubLink: "https://github.com/EmmaDawsonDev",
 		},
 		{
-			image: "",
+			image: "https://github.com/ctoffanin.png",
 			fullName: "Cristian Toffanin",
 			description:
-				"Doggo ipsum many pats long doggo shooberino shoober aqua doggo, pupperino mlem h*ck. Woofer much ruin diet heckin good boys heckin adorable doggo, super chub yapper.",
+				"Cristian is a full stack developer based in the Netherlands. He's always curious and always learning. He's currently learning about accessibility (Emma's mentee).",
 			githubLink: "https://github.com/ctoffanin",
 		},
 	]

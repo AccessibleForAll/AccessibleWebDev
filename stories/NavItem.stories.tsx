@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import NavItem, { NavItemProps } from "../components/Nav/NavItem"
+import { NavItem, NavItemProps } from "../components/Nav/NavItem"
 import { pages } from "../data/pages"
 
 export default {

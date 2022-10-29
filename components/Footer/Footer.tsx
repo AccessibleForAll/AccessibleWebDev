@@ -3,7 +3,7 @@ import React from "react"
 import styles from "./Footer.module.css"
 import { BsGithub } from "react-icons/bs"
 
-const Footer = () => {
+export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.footer__top}>
@@ -69,5 +69,3 @@ const Footer = () => {
 		</footer>
 	)
 }
-
-export default Footer
