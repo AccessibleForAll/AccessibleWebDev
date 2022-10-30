@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./MaintainerCard.module.css"
+import { IMaintainer } from "../../data/maintainers"
 
 export interface MaintainerCardProps {
-	image: string
-	fullName: string
-	description: string
-	githubLink: string
+	maintainer: IMaintainer
 }
 
 export const MaintainerCard = (props: MaintainerCardProps) => {
-	const { image, fullName, description, githubLink } = props
+	const {
+		maintainer: { image, fullName, description, githubLink },
+	} = props
 
 	return (
 		<section className={styles.maintainerContainer}>
