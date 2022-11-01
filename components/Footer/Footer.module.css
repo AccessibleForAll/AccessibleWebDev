@@ -9,7 +9,7 @@
     justify-content: space-around;    
     flex-wrap: wrap;
     border-bottom: 1px solid var(--lightGrey);
-    padding: 1rem;
+    padding: 2rem;
 }
 .footer__linkHeading {
     margin-bottom: 0.4rem;
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0;
     margin-top: 0rem;
 }
 
