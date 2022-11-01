@@ -17,11 +17,13 @@ const Template: ComponentStory<typeof MaintainerCard> = (args) => (
 
 export const DesktopMaintainerCard = Template.bind({})
 
-DesktopMaintainerCard.args = {
+const maintainer = {
 	image:
 		"https://cdn.pixabay.com/photo/2016/09/28/02/14/user-1699635_960_720.png",
 	fullName: "Adorable Doggo",
 	description:
 		"Doggo ipsum many pats long doggo shooberino shoober aqua doggo, pupperino mlem h*ck. Woofer much ruin diet heckin good boys heckin adorable doggo, super chub yapper.",
 	githubLink: "https://github.com",
-} as MaintainerCardProps
+}
+
+DesktopMaintainerCard.args = { maintainer } as MaintainerCardProps
