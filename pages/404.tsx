@@ -3,9 +3,13 @@ import React from "react"
 import notFoundImage from "../public/404.png"
 import Image from "next/image"
 import Head from "next/head"
-import Layout from "../components/Layout/Layout"
+import { Layout } from "../components/Layout/Layout"
+import { useTranslation } from "next-i18next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { GetStaticProps } from "next"
 
 const PageNotFound = () => {
+	const { t } = useTranslation("common")
 	return (
 		<>
 			<Head>
@@ -24,6 +28,17 @@ const PageNotFound = () => {
 			</Layout>
 		</>
 	)
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+	const locale: string = context.locale!
+
+	return {
+		props: {
+			...(await serverSideTranslations(locale, ["common"])),
+			// Will be passed to the page component as props
+		},
+	}
 }
 
 export default PageNotFound

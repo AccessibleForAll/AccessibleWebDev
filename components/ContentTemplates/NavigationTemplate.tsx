@@ -1,7 +1,8 @@
 import React from "react"
+import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
 const NavigationTemplate = () => {
-	return <div>NavigationTemplate</div>
+	return <WorkInProgress />
 }
 
 export default NavigationTemplate

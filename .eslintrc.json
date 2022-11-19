@@ -1,5 +1,9 @@
 {
-	"extends": ["next/core-web-vitals", "prettier"],
+	"extends": [
+		"next/core-web-vitals",
+		"prettier",
+		"plugin:storybook/recommended"
+	],
 	"rules": {
 		"comma-spacing": ["error", { "before": false, "after": true }],
 		"react/no-unescaped-entities": 0,

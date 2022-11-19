@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./WorkInProgress.module.css"
 
-const WorkInProgress = () => {
+export const WorkInProgress = () => {
 	return (
 		<section className={styles.WIPContainer}>
 			<h2>This section is a work in progress</h2>
@@ -12,5 +12,3 @@ const WorkInProgress = () => {
 		</section>
 	)
 }
-
-export default WorkInProgress

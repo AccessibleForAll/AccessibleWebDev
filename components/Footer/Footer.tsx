@@ -1,9 +1,9 @@
 import Link from "next/link"
 import React from "react"
-import styles from "./footer.module.css"
+import styles from "./Footer.module.css"
 import { BsGithub } from "react-icons/bs"
 
-const Footer = () => {
+export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<div className={styles.footer__top}>
@@ -14,7 +14,7 @@ const Footer = () => {
 							<a
 								href="https://github.com/AccessibleForAll"
 								className={styles.footer__links}>
-								Github Page
+								GitHub Page
 							</a>
 						</li>
 						<li className={styles.footer__linkItems}>
@@ -40,7 +40,7 @@ const Footer = () => {
 							</Link>
 						</li>
 						<li className={styles.footer__linkItems}>
-							<Link href="/">
+							<Link href="/about">
 								<a className={styles.footer__links}>About</a>
 							</Link>
 						</li>
@@ -54,7 +54,7 @@ const Footer = () => {
 			</div>
 			<div className={styles.footer__bottomDetails}>
 				<p className={styles.footer__copyrightText}>
-					© Accessible Web Dev by
+					© Accessible Web Dev by{" "}
 					<strong className={styles.footer__copyrightTextName}>
 						Accessible For All
 					</strong>
@@ -70,5 +70,3 @@ const Footer = () => {
 		</footer>
 	)
 }
-
-export default Footer
