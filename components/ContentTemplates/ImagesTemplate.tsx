@@ -1,27 +1,40 @@
 import { NavPage, IPageNavigationItem } from "../NavPage/NavPage"
+import { CodeBlock } from "../CodeBlock/CodeBlock"
 
 const ImagesTemplate = () => {
 	const pageNavigation: IPageNavigationItem[] = [
+		{ linkName: "Introduction", href: "#introduction" },
 		{ linkName: "Text Alternatives", href: "#textAlternatives" },
 		{ linkName: "Decorative Images", href: "#decorativeImages" },
 		{ linkName: "Informative Images", href: "#informativeImages" },
 		{ linkName: "Functional Images", href: "#functionalImages" },
+		{ linkName: "How to write good alt text", href: "#goodAltText" },
 		{ linkName: "Images of Text", href: "#imagesOfText" },
 		{ linkName: "Images and Colour", href: "#imagesAndColour" },
 	]
+
+	const example1 = `<img src="url" alt="The text alternative goes here" />`
+	const example2 = `<svg height="210" width="400">
+	<title>The text alternative goes here</title>
+  	<path d="M120 10 L55 200 L265 180 Z" />
+</svg>`
 	return (
 		<>
 			<NavPage pageNavigation={pageNavigation} />
 			<article>
-				<p>
-					A picture is worth more than a thousand words, as the old adage goes.
-					Images help bring texts to life, they complement complex explanations
-					and often lead to greater understanding and better web experiences.
-					For many people they help make things easier to understand. However,
-					not everyone can see images and therefore a text alternative is needed
-					so that everyone has access to the information conveyed in the image.
-				</p>
-				<section aria-labelledby="textAlternatives">
+				<section aria-labelledby="introduction" className="infoSection">
+					<h2 id="introduction">Introduction</h2>
+					<p>
+						A picture is worth more than a thousand words, as the old adage
+						goes. Images help bring texts to life, they complement complex
+						explanations and often lead to greater understanding and better web
+						experiences. For many people they help make things easier to
+						understand. However, not everyone can see images and therefore a
+						text alternative is needed so that everyone has access to the
+						information conveyed in the image.
+					</p>
+				</section>
+				<section aria-labelledby="textAlternatives" className="infoSection">
 					<h2 id="textAlternatives">Text Alternatives</h2>
 					<p>
 						The text alternative for an image depends upon its purpose. Is the
@@ -41,8 +54,11 @@ const ImagesTemplate = () => {
 						reader users may hear the whole image url instead, which can often
 						be a string of incomprehensible letters and numbers.
 					</p>
+					<CodeBlock language="html" codeSnippet={example1} />
+
+					<CodeBlock language="html" codeSnippet={example2} />
 				</section>
-				<section aria-labelledby="decorativeImages">
+				<section aria-labelledby="decorativeImages" className="infoSection">
 					<h2 id="decorativeImages">Decorative Images</h2>
 					<p>
 						Decorative images usually add no extra information to a page and a
@@ -50,11 +66,11 @@ const ImagesTemplate = () => {
 						visible. Background patterns and shapes are often decorative. Icons
 						are also sometimes decorative if they are combined with a link and
 						the link text describes the icon. Decorative images should have an
-						empty alt attribute
+						empty alt attribute.
 					</p>
 				</section>
 
-				<section aria-labelledby="informativeImages">
+				<section aria-labelledby="informativeImages" className="infoSection">
 					<h2 id="informativeImages">Informative Images</h2>
 					<p>
 						Informative images compliment written information by illustrating
@@ -84,7 +100,7 @@ const ImagesTemplate = () => {
 					</p>
 				</section>
 
-				<section aria-labelledby="functionalImages">
+				<section aria-labelledby="functionalImages" className="infoSection">
 					<h2 id="functionalImages">Functional Images</h2>
 					<p>
 						If images are used as part of a link or button they are usually
@@ -95,7 +111,12 @@ const ImagesTemplate = () => {
 					</p>
 				</section>
 
-				<section aria-labelledby="imagesOfText">
+				<section aria-labelledby="goodAltText" className="infoSection">
+					<h2 id="goodAltText">How to write good alt text</h2>
+					<p>Some text goes here</p>
+				</section>
+
+				<section aria-labelledby="imagesOfText" className="infoSection">
 					<h2 id="imagesOfText">Images of Text</h2>
 					<p>
 						Wherever possible, images of text should be avoided as the text
@@ -104,7 +125,7 @@ const ImagesTemplate = () => {
 						in the image.
 					</p>
 				</section>
-				<section aria-labelledby="imagesAndColour">
+				<section aria-labelledby="imagesAndColour" className="infoSection">
 					<h2 id="imagesAndColour">Images and Colour</h2>
 					<p>
 						Colour should not be the only way to represent meaning in an image
@@ -115,6 +136,9 @@ const ImagesTemplate = () => {
 					</p>
 				</section>
 			</article>
+			<p className="pageLastUpdated">
+				<strong>Page last updated: </strong>19th November 2022
+			</p>
 		</>
 	)
 }
