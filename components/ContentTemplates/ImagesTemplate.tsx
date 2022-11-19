@@ -11,6 +11,10 @@ const ImagesTemplate = () => {
 		{ linkName: "How to write good alt text", href: "#goodAltText" },
 		{ linkName: "Images of Text", href: "#imagesOfText" },
 		{ linkName: "Images and Colour", href: "#imagesAndColour" },
+		{ linkName: "Image Maps", href: "#imageMaps" },
+		{ linkName: "Image Checklist", href: "#checklist" },
+		{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+		{ linkName: "Other Resources", href: "#otherResources" },
 	]
 
 	const example1 = `<img src="url" alt="The text alternative goes here" />`
@@ -134,6 +138,29 @@ const ImagesTemplate = () => {
 						another way to tell the colours apart, such as different patterns or
 						symbols.
 					</p>
+				</section>
+				<section aria-labelledby="imageMaps" className="infoSection">
+					<h2 id="imageMaps">Image Maps</h2>
+					<p>
+						An image map is a larger image with clickable hotspots, each of
+						which open a different section. An example could be a floor plan of
+						a local building which opens up an enlarged map of each room when
+						clicked. The hotspots are made with the area element and each area
+						element should have its own alt attribute. The overall image should
+						also have an alt attribute.
+					</p>
+				</section>
+				<section aria-labelledby="checklist" className="infoSection">
+					<h2 id="checklist">Images Checklist</h2>
+					<p>Add some points here</p>
+				</section>
+				<section aria-labelledby="WCAGCriteria" className="infoSection">
+					<h2 id="WCAGCriteria">WCAG Criteria</h2>
+					<p>Add list of links here</p>
+				</section>
+				<section aria-labelledby="otherResources" className="infoSection">
+					<h2 id="otherResources">Other Resources</h2>
+					<p>Add list of links here</p>
 				</section>
 			</article>
 			<p className="pageLastUpdated">
