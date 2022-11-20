@@ -84,6 +84,12 @@ h3 {
 
 .pageLastUpdated {
 	margin-top: 5rem;
-text-align: right;
+	text-align: right;
+}
+
+.imageContainer {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
 }
 

@@ -1,14 +1,9 @@
+import Image from "next/image"
 import { NavPage } from "../NavPage/NavPage"
-//import { CodeBlock } from "../CodeBlock/CodeBlock"
-
+import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { imagePageNavigation } from "../../data/pageNavigationLists"
 
 const ImagesTemplate = () => {
-	// 	const example1 = `<img src="url" alt="The text alternative goes here" />`
-	// 	const example2 = `<svg height="210" width="400">
-	// 	<title>The text alternative goes here</title>
-	//   	<path d="M120 10 L55 200 L265 180 Z" />
-	// </svg>`
 	return (
 		<>
 			<NavPage pageNavigation={imagePageNavigation} />
@@ -45,9 +40,18 @@ const ImagesTemplate = () => {
 						reader users may hear the whole image url instead, which can often
 						be a string of incomprehensible letters and numbers.
 					</p>
-					{/* <CodeBlock language="html" codeSnippet={example1} />
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="url" alt="The text alternative goes here" />`}
+					/>
 
-					<CodeBlock language="html" codeSnippet={example2} /> */}
+					<CodeBlock
+						language="html"
+						codeSnippet={`<svg role="img" height="210" width="400">
+	<title>The text alternative goes here</title>
+	<path d="M120 10 L55 200 L265 180 Z" />
+</svg>`}
+					/>
 				</section>
 				<section aria-labelledby="decorativeImages" className="infoSection">
 					<h2 id="decorativeImages">Decorative Images</h2>
@@ -57,8 +61,28 @@ const ImagesTemplate = () => {
 						visible. Background patterns and shapes are often decorative. Icons
 						are also sometimes decorative if they are combined with a link and
 						the link text describes the icon. Decorative images should have an
-						empty alt attribute.
+						empty (sometimes also called null) alt attribute.
 					</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/oldPaperTexture.jpg"
+							alt="Old brown paper texture"
+							width={250}
+							height={175}
+						/>
+
+						<Image
+							src="/images/imagesTemplate/hexagonsPattern.jpg"
+							alt="Blue tiled hexagons"
+							width={250}
+							height={175}
+						/>
+					</div>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="/oldPaperTexture.jpg" alt="" />
+<img src="/hexagonsPattern.jpg" alt="" />`}
+					/>
 				</section>
 
 				<section aria-labelledby="informativeImages" className="infoSection">
