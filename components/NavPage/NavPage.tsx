@@ -1,10 +1,6 @@
 import Link from "next/link"
 import styles from "./NavPage.module.css"
-
-export interface IPageNavigationItem {
-	linkName: string
-	href: string
-}
+import { IPageNavigationItem } from "../../data/pageNavigationLists"
 
 interface INavPageProps {
 	pageNavigation: IPageNavigationItem[]

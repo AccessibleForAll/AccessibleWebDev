@@ -1,22 +1,9 @@
-import { NavPage, IPageNavigationItem } from "../NavPage/NavPage"
+import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 
-const ImagesTemplate = () => {
-	const pageNavigation: IPageNavigationItem[] = [
-		{ linkName: "Introduction", href: "#introduction" },
-		{ linkName: "Text Alternatives", href: "#textAlternatives" },
-		{ linkName: "Decorative Images", href: "#decorativeImages" },
-		{ linkName: "Informative Images", href: "#informativeImages" },
-		{ linkName: "Functional Images", href: "#functionalImages" },
-		{ linkName: "How to write good alt text", href: "#goodAltText" },
-		{ linkName: "Images of Text", href: "#imagesOfText" },
-		{ linkName: "Images and Colour", href: "#imagesAndColour" },
-		{ linkName: "Image Maps", href: "#imageMaps" },
-		{ linkName: "Image Checklist", href: "#checklist" },
-		{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
-		{ linkName: "Other Resources", href: "#otherResources" },
-	]
+import { imagePageNavigation } from "../../data/pageNavigationLists"
 
+const ImagesTemplate = () => {
 	const example1 = `<img src="url" alt="The text alternative goes here" />`
 	const example2 = `<svg height="210" width="400">
 	<title>The text alternative goes here</title>
@@ -24,7 +11,7 @@ const ImagesTemplate = () => {
 </svg>`
 	return (
 		<>
-			<NavPage pageNavigation={pageNavigation} />
+			<NavPage pageNavigation={imagePageNavigation} />
 			<article>
 				<section aria-labelledby="introduction" className="infoSection">
 					<h2 id="introduction">Introduction</h2>
