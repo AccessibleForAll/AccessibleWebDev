@@ -97,22 +97,14 @@ const ImagesTemplate = () => {
 					<div className="imageContainer">
 						<Image
 							src="/images/imagesTemplate/cupcakes.jpg"
-							alt="Old brown paper texture"
+							alt="Cupcakes with pink icing and small sugar heart decorations"
 							width={250}
-							height={175}
-						/>
-
-						<Image
-							src="/images/imagesTemplate/drill-instruction.png"
-							alt="Blue tiled hexagons"
-							width={200}
 							height={175}
 						/>
 					</div>
 					<CodeBlock
 						language="html"
-						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />
-<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
+						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />`}
 					/>
 
 					<h3>Complex Informative Images</h3>
@@ -133,6 +125,18 @@ const ImagesTemplate = () => {
 						explaining the information as not everyone perceives colour in the
 						same way.
 					</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/drill-instruction.png"
+							alt="Drawn instructions for how to use a handheld drill"
+							width={200}
+							height={175}
+						/>
+					</div>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
+					/>
 				</section>
 
 				<section aria-labelledby="functionalImages" className="infoSection">
@@ -144,6 +148,25 @@ const ImagesTemplate = () => {
 						or a logo as a link back to the home page. The text alternative
 						should match the action performed by the link or button.
 					</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/searchBtn.png"
+							alt="Magnifying glass used as search button example"
+							width={175}
+							height={175}
+						/>
+						<Image
+							src="/images/imagesTemplate/playBtn.png"
+							alt="Triangle used as play button example"
+							width={175}
+							height={175}
+						/>
+					</div>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="searchBtn.png" alt="Search" />
+<img src="playBtn.png" alt="Play" />`}
+					/>
 				</section>
 
 				<section aria-labelledby="goodAltText" className="infoSection">
