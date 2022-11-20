@@ -94,6 +94,26 @@ const ImagesTemplate = () => {
 						preceding a phone number are all examples of informative images.
 						These should have a short and succinct text alternative.
 					</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/cupcakes.jpg"
+							alt="Old brown paper texture"
+							width={250}
+							height={175}
+						/>
+
+						<Image
+							src="/images/imagesTemplate/drill-instruction.png"
+							alt="Blue tiled hexagons"
+							width={200}
+							height={175}
+						/>
+					</div>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />
+<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
+					/>
 
 					<h3>Complex Informative Images</h3>
 					<p>
