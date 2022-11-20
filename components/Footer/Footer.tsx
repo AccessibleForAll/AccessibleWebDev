@@ -6,65 +6,53 @@ import { BsGithub } from "react-icons/bs"
 export const Footer = () => {
 	return (
 		<footer className={styles.footer}>
-			<div className={styles.footer__top}>
-				<div className={styles.footer__box}>
-					<h2 className={styles.footer__linkHeading}>Community</h2>
-					<ul className={styles.footer__linkList}>
-						<li className={styles.footer__linkItems}>
-							<a
-								href="https://github.com/AccessibleForAll"
-								className={styles.footer__links}>
-								GitHub Page
+			<div className={styles.footerTop}>
+				<ul className={styles.footerList}>
+					<li>
+						<Link href="/about">
+							<a className={styles.footerLink}>About the maintainers</a>
+						</Link>
+					</li>
+
+					<li>
+						<a
+							href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
+							className={styles.footerLink}>
+							Become a Contributor
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://github.com/sponsors/EmmaDawsonDev"
+							className={styles.footerLink}>
+							Support Us
+						</a>
+					</li>
+					<li>
+						<a
+							href="mailto:emma.l.dawson@gmail.com"
+							className={styles.footerLink}>
+							Contact Us
+						</a>
+					</li>
+					<li>
+						<Link href="/">
+							<a className={styles.footerLink}>
+								Accessibility Statement - coming soon
 							</a>
-						</li>
-						<li className={styles.footer__linkItems}>
-							<a
-								href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
-								className={styles.footer__links}>
-								Become a Contributor
-							</a>
-						</li>
-						<li className={styles.footer__linkItems}>
-							<a href="#" className={styles.footer__links}>
-								Sponsor Us
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div className={styles.footer__box}>
-					<h2 className={styles.footer__linkHeading}>Company</h2>
-					<ul className={styles.footer__linkList}>
-						<li className={styles.footer__linkItems}>
-							<Link href="/">
-								<a className={styles.footer__links}>Home</a>
-							</Link>
-						</li>
-						<li className={styles.footer__linkItems}>
-							<Link href="/about">
-								<a className={styles.footer__links}>About</a>
-							</Link>
-						</li>
-						<li className={styles.footer__linkItems}>
-							<Link href="/">
-								<a className={styles.footer__links}>Contact Me</a>
-							</Link>
-						</li>
-					</ul>
-				</div>
+						</Link>
+					</li>
+				</ul>
 			</div>
-			<div className={styles.footer__bottomDetails}>
-				<p className={styles.footer__copyrightText}>
-					© Accessible Web Dev by{" "}
-					<strong className={styles.footer__copyrightTextName}>
-						Accessible For All
-					</strong>
-					. Making accessibility accessible for everyone!
+			<div className={styles.footerBottom}>
+				<p className={styles.footerCopyrightText}>
+					© Accessible Web Dev by <strong>Accessible For All</strong>. Making
+					accessibility accessible for everyone!
 				</p>
-				<div className={styles.footer__mediaIcon}>
-					<a href="https://github.com/AccessibleForAll">
-						<BsGithub color="white" size="2rem" aria-label="Github" />
-					</a>
-				</div>
+
+				<a href="https://github.com/AccessibleForAll">
+					<BsGithub color="white" size="1.5rem" aria-label="Github" />
+				</a>
 			</div>
 		</footer>
 	)
