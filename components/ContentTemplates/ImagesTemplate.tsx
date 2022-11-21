@@ -171,7 +171,76 @@ const ImagesTemplate = () => {
 
 				<section aria-labelledby="goodAltText" className="infoSection">
 					<h2 id="goodAltText">How to write good alt text</h2>
-					<p>Some text goes here</p>
+					<p>
+						Writing good text alternatives is not always easy and there are many
+						differing opinions about how to do it well. The text alternative
+						should get across all the important information. A good rule of
+						thumb is to imagine you are describing an image to someone over the
+						phone. Which details would you tell them about? Which details would
+						you leave out? The more complex the image, the more detailed your
+						alternative text needs to be.
+					</p>
+					<p>Let's take a look at the following image:</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/vw-beetle-car.jpg"
+							alt="VW Beetle Car in pale green in front of a pitched roof house painted in the same colour"
+							width={600}
+							height={400}
+						/>
+					</div>
+					<p>
+						The focus of this image would depend on the context of where it's
+						used. Is the focus the car or the house? Let's look at a couple of
+						alternatives.
+					</p>
+					<p>
+						<strong>Alternative 1: The house is for sale</strong>
+					</p>
+					<p>
+						The main focus should be on describing the house. The car is
+						probably not important as that won't be included in the house sale.
+						Let's try it.
+					</p>
+					<p>
+						<strong>Basic: </strong>House with pitched roof and brown front
+						door.
+					</p>
+					<p>
+						<strong>More detailed: </strong>Pale green, one storey house with
+						pitched roof, large windows and steps up to a brown front door.
+						Surrounded by a white picket fence.
+					</p>
+					<p>
+						<strong>Too detailed? </strong>Pale green, one storey house of
+						wooden construction. White painted trim surrounds large windows with
+						3 panels on either side of a stained wood front door. The house is
+						surrounded by a small garden and white picket fence with steps
+						leading from the road to the porch. There is both on-road parking
+						out the front and a driveway to the left of the house. The garden is
+						well-established with palms, various trees, bushes and vines.
+					</p>
+					<p>
+						<strong>Alternative 2: A car magazine</strong>
+					</p>
+					<p>
+						This time the car is the main focus and the house needs less
+						description. However, the house adds to the aesthetic and emotion of
+						the image.
+					</p>
+					<p>
+						<strong>Basic: </strong>Vintage car parked on a street.
+					</p>
+					<p>
+						<strong>More detailed: </strong>Soft, pale green vintage VW Beetle
+						parked in front of a house painted in the same pale green.
+					</p>
+					<p>
+						<strong>Too detailed? </strong>Soft, pale green vintage VW Beetle in
+						excellent condition with shiny silver trim and new tyres. The car is
+						parked on a quiet street in front of a one storey house painted in
+						the same color in a sleepy suburb.
+					</p>
 				</section>
 
 				<section aria-labelledby="imagesOfText" className="infoSection">
