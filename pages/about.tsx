@@ -10,12 +10,12 @@ import {
 import { currentMaintainers, IMaintainer } from "../data/maintainers"
 import styles from "../styles/about.module.css"
 
-interface AboutProps {
+interface IAboutProps {
 	currentMaintainerData: IMaintainer[]
 }
 
 const About: NextPage = (props) => {
-	const { currentMaintainerData } = props as AboutProps
+	const { currentMaintainerData } = props as IAboutProps
 	const { t } = useTranslation("common")
 
 	return (

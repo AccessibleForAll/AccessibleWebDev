@@ -2,11 +2,11 @@ import { NavItem } from "./NavItem"
 import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 
-export interface NavProps {
+export interface INavProps {
 	activeNavLink: string
 }
 
-export const NavPrimary = (props: NavProps) => {
+export const NavPrimary = (props: INavProps) => {
 	const { activeNavLink } = props
 
 	return (

@@ -6,13 +6,13 @@ import { NavPrimaryMobile } from "../Nav/NavPrimaryMobile"
 import { SkipLink } from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
-interface LayoutProps {
+interface ILayoutProps {
 	headerTitle: string
 	activeNavLink: string
 	children: JSX.Element
 }
 
-export const Layout = (props: LayoutProps) => {
+export const Layout = (props: ILayoutProps) => {
 	const { headerTitle, activeNavLink, children } = props
 
 	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
