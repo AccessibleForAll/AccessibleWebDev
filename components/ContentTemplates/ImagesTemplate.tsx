@@ -42,12 +42,10 @@ const ImagesTemplate = () => {
 						be a string of incomprehensible letters and numbers.
 					</p>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="url" alt="The text alternative goes here" />`}
 					/>
 
 					<CodeBlock
-						language="html"
 						codeSnippet={`<svg role="img" height="210" width="400">
 	<title>The text alternative goes here</title>
 	<path d="M120 10 L55 200 L265 180 Z" />
@@ -83,7 +81,6 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="/oldPaperTexture.jpg" alt="" />
 <img src="/hexagonsPattern.jpg" alt="" />`}
 					/>
@@ -109,7 +106,6 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />`}
 					/>
 
@@ -141,7 +137,6 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
 					/>
 				</TemplateSection>
@@ -173,7 +168,6 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="searchBtn.png" alt="Search" />
 <img src="playBtn.png" alt="Play" />`}
 					/>
@@ -272,7 +266,6 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<img src="make-the-day-great.jpg" alt="Make the day great sign" />`}
 					/>
 				</TemplateSection>
@@ -330,7 +323,6 @@ const ImagesTemplate = () => {
 						layout="intrinsic"
 					/>
 					<CodeBlock
-						language="html"
 						codeSnippet={`<map name="primary">
 	<area
 		shape="circle"

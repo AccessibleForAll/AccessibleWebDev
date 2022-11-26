@@ -1,7 +1,6 @@
 import styles from "./CodeBlock.module.css"
 interface ICodeBlockProps {
 	codeSnippet: string
-	language: string
 }
 
 export const CodeBlock = ({ codeSnippet }: ICodeBlockProps) => {
