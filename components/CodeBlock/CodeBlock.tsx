@@ -1,15 +1,11 @@
 import styles from "./CodeBlock.module.css"
 interface ICodeBlockProps {
 	codeSnippet: string
-	codeDescription: string
 }
 
-export const CodeBlock = ({
-	codeSnippet,
-	codeDescription,
-}: ICodeBlockProps) => {
+export const CodeBlock = ({ codeSnippet }: ICodeBlockProps) => {
 	return (
-		<pre className={styles.codeWrapper} aria-label={codeDescription}>
+		<pre className={styles.codeWrapper}>
 			<code>{codeSnippet}</code>
 		</pre>
 	)
