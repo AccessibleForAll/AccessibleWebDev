@@ -18,5 +18,3 @@ export const TemplateSection = ({
 		</section>
 	)
 }
-
-export default TemplateSection
