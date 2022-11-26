@@ -13,7 +13,7 @@ export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Images of Text", href: "#imagesOfText" },
 	{ linkName: "Images and Colour", href: "#imagesAndColour" },
 	{ linkName: "Image Maps", href: "#imageMaps" },
-	{ linkName: "Image Checklist", href: "#checklist" },
+	// { linkName: "Image Checklist", href: "#checklist" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
