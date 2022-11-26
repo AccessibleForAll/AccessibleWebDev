@@ -251,6 +251,18 @@ const ImagesTemplate = () => {
 						must have an image of text then the alt text should match the text
 						in the image.
 					</p>
+					<div className="imageContainer">
+						<Image
+							src="/images/imagesTemplate/make-the-day-great.jpg"
+							alt="Make the day great sign"
+							width={300}
+							height={200}
+						/>
+					</div>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<img src="make-the-day-great.jpg" alt="Make the day great sign" />`}
+					/>
 				</section>
 				<section aria-labelledby="imagesAndColour" className="infoSection">
 					<h2 id="imagesAndColour">Images and Colour</h2>
@@ -261,6 +273,9 @@ const ImagesTemplate = () => {
 						another way to tell the colours apart, such as different patterns or
 						symbols.
 					</p>
+					{
+						// TODO: Add an example here of a pie chart or bar chart
+					}
 				</section>
 				<section aria-labelledby="imageMaps" className="infoSection">
 					<h2 id="imageMaps">Image Maps</h2>
@@ -272,6 +287,57 @@ const ImagesTemplate = () => {
 						element should have its own alt attribute. The overall image should
 						also have an alt attribute.
 					</p>
+					<p>
+						Let's take a look at the image below. The image itself has an alt
+						attribute which describes the whole image. Each area is clickable
+						and leads to a Wikipedia article. Each area also has an alt
+						attribute describing just that section of the image.
+					</p>
+					<map name="primary">
+						<area
+							shape="circle"
+							coords="190,130,70"
+							href="https://en.wikipedia.org/wiki/Doughnut"
+							target="_blank"
+							alt="Doughnut"
+						/>
+						<area
+							shape="circle"
+							coords="380,250,100"
+							href="https://en.wikipedia.org/wiki/Coffee"
+							target="_blank"
+							alt="Coffee"
+						/>
+					</map>
+					<Image
+						useMap="#primary"
+						src="/images/imagesTemplate/donut-coffee.png"
+						width={600}
+						height={400}
+						alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee"
+					/>
+					<CodeBlock
+						language="html"
+						codeSnippet={`<map name="primary">
+	<area
+		shape="circle"
+		coords="190,130,70"
+		href="https://en.wikipedia.org/wiki/Doughnut"
+		alt="Doughnut"
+	/>
+	<area
+		shape="circle"
+		coords="380,250,100"
+		href="https://en.wikipedia.org/wiki/Coffee"
+		alt="Coffee"
+	/>
+</map>
+<img
+	usemap="#primary"
+	src="donut-coffee.png"
+	alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee" 
+/>`}
+					/>
 				</section>
 				<section aria-labelledby="checklist" className="infoSection">
 					<h2 id="checklist">Images Checklist</h2>
