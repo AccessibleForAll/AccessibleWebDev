@@ -1,4 +1,3 @@
-import React from "react"
 import styles from "./WorkInProgress.module.css"
 
 export const WorkInProgress = () => {
