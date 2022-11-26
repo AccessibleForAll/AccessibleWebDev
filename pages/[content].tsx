@@ -18,7 +18,7 @@ import Charts from "../components/ContentTemplates/ChartsTemplate"
 import Forms from "../components/ContentTemplates/FormsTemplate"
 import Headings from "../components/ContentTemplates/HeadingsTemplate"
 import Icons from "../components/ContentTemplates/IconsTemplate"
-import Images from "../components/ContentTemplates/ImagesTemplate"
+import { ImagesTemplate } from "../components/ContentTemplates/ImagesTemplate"
 import Links from "../components/ContentTemplates/LinksTemplate"
 import Lists from "../components/ContentTemplates/ListsTemplate"
 import Menus from "../components/ContentTemplates/MenusTemplate"
@@ -56,7 +56,7 @@ const ContentPage: NextPage = (props) => {
 					{page === "forms" && <Forms />}
 					{page === "headings" && <Headings />}
 					{page === "icons" && <Icons />}
-					{page === "images" && <Images />}
+					{page === "images" && <ImagesTemplate />}
 					{page === "links" && <Links />}
 					{page === "lists" && <Lists />}
 					{page === "menus" && <Menus />}
