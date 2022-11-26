@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { Footer } from "../Footer/Footer"
 import { Header } from "../Header/Header"
 import { NavPrimary } from "../Nav/NavPrimary"
