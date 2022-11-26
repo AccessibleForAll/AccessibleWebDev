@@ -69,16 +69,16 @@ const ImagesTemplate = () => {
 						<Image
 							src="/images/imagesTemplate/oldPaperTexture.jpg"
 							alt="Old brown paper texture"
-							width={250}
-							height={175}
+							width={300}
+							height={200}
 							layout="intrinsic"
 						/>
 
 						<Image
 							src="/images/imagesTemplate/hexagonsPattern.jpg"
 							alt="Blue tiled hexagons"
-							width={250}
-							height={175}
+							width={300}
+							height={200}
 							layout="intrinsic"
 						/>
 					</div>
@@ -103,8 +103,8 @@ const ImagesTemplate = () => {
 						<Image
 							src="/images/imagesTemplate/cupcakes.jpg"
 							alt="Cupcakes with pink icing and small sugar heart decorations"
-							width={250}
-							height={175}
+							width={300}
+							height={200}
 							layout="intrinsic"
 						/>
 					</div>
@@ -160,15 +160,15 @@ const ImagesTemplate = () => {
 						<Image
 							src="/images/imagesTemplate/searchBtn.png"
 							alt="Magnifying glass used as search button example"
-							width={175}
-							height={175}
+							width={150}
+							height={150}
 							layout="intrinsic"
 						/>
 						<Image
 							src="/images/imagesTemplate/playBtn.png"
 							alt="Triangle used as play button example"
-							width={175}
-							height={175}
+							width={150}
+							height={150}
 							layout="intrinsic"
 						/>
 					</div>
@@ -196,7 +196,7 @@ const ImagesTemplate = () => {
 						<Image
 							src="/images/imagesTemplate/vw-beetle-car.jpg"
 							alt="VW Beetle Car in pale green in front of a pitched roof house painted in the same colour"
-							width={300}
+							width={600}
 							height={400}
 							layout="intrinsic"
 						/>
@@ -324,7 +324,7 @@ const ImagesTemplate = () => {
 					<Image
 						useMap="#primary"
 						src="/images/imagesTemplate/donut-coffee.png"
-						width={300}
+						width={600}
 						height={400}
 						alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee"
 						layout="intrinsic"
