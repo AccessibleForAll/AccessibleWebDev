@@ -8,6 +8,7 @@
 	--bg: #fff;
 	--dark: #1c1c1c;
 	--borderRadius: 3px;
+	--white: #fff;
 }
 
 :root.dark {
@@ -19,6 +20,7 @@
 	--bg: #272727;
 	--dark: #1c1c1c;
 	--borderRadius: 3px;
+	--white: #fff;
 }
 
 html,
@@ -70,32 +72,32 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 1.8rem;
-}
-
-h3 {
 	font-size: 1.5rem;
 }
 
-@media (min-width: 500px) {
-	h2 {
-		font-size: 2rem;
-	}
-	
-	h3 {
-		font-size: 1.8rem;
-	}
+h3 {
+	font-size: 1.1rem;
 }
 
-
-
-@media (min-width: 800px) {
-	h2 {
-		font-size: 2.5rem;
-	}
-	
-	h3 {
-		font-size: 2rem;
-	}
+/*Classes used on multiple content pages*/
+.infoSection {
+	margin-top: 2rem;
+	width: 100%;
 }
+
+.pageLastUpdated {
+	margin-top: 5rem;
+	text-align: right;
+}
+
+.imageContainer {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+.blockLink {
+	display: block;
+}
+
 
