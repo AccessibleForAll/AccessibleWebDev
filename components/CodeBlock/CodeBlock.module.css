@@ -1,0 +1,7 @@
+.codeWrapper {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 16px;
+  font-size: 1rem;
+  line-height: 1.6;
+}

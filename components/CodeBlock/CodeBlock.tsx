@@ -1,21 +1,14 @@
-import SyntaxHighlighter from "react-syntax-highlighter"
-
-// The theme needs to be imported from cjs rather than esm otherwise it breaks
-import { materialDark } from "react-syntax-highlighter/dist/cjs/styles/prism"
-
+import styles from "./CodeBlock.module.css"
 interface ICodeBlockProps {
 	codeSnippet: string
 	language: string
 }
 
-export const CodeBlock = ({ codeSnippet, language }: ICodeBlockProps) => {
+export const CodeBlock = ({ codeSnippet }: ICodeBlockProps) => {
 	return (
-		<SyntaxHighlighter
-			language={language}
-			style={materialDark}
-			wrapLongLines={true}>
-			{codeSnippet}
-		</SyntaxHighlighter>
+		<pre className={styles.codeWrapper}>
+			<code>{codeSnippet}</code>
+		</pre>
 	)
 }
 

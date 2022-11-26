@@ -8,6 +8,7 @@
 	--bg: #fff;
 	--dark: #1c1c1c;
 	--borderRadius: 3px;
+	--white: #fff;
 }
 
 :root.dark {
@@ -19,6 +20,7 @@
 	--bg: #272727;
 	--dark: #1c1c1c;
 	--borderRadius: 3px;
+	--white: #fff;
 }
 
 html,
@@ -80,6 +82,7 @@ h3 {
 /*Classes used on multiple content pages*/
 .infoSection {
 	margin-top: 2rem;
+	width: 100%;
 }
 
 .pageLastUpdated {
@@ -96,4 +99,5 @@ h3 {
 .blockLink {
 	display: block;
 }
+
 

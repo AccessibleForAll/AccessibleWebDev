@@ -71,6 +71,7 @@ const ImagesTemplate = () => {
 							alt="Old brown paper texture"
 							width={250}
 							height={175}
+							layout="intrinsic"
 						/>
 
 						<Image
@@ -78,6 +79,7 @@ const ImagesTemplate = () => {
 							alt="Blue tiled hexagons"
 							width={250}
 							height={175}
+							layout="intrinsic"
 						/>
 					</div>
 					<CodeBlock
@@ -103,6 +105,7 @@ const ImagesTemplate = () => {
 							alt="Cupcakes with pink icing and small sugar heart decorations"
 							width={250}
 							height={175}
+							layout="intrinsic"
 						/>
 					</div>
 					<CodeBlock
@@ -134,6 +137,7 @@ const ImagesTemplate = () => {
 							alt="Drawn instructions for how to use a handheld drill"
 							width={200}
 							height={175}
+							layout="intrinsic"
 						/>
 					</div>
 					<CodeBlock
@@ -158,12 +162,14 @@ const ImagesTemplate = () => {
 							alt="Magnifying glass used as search button example"
 							width={175}
 							height={175}
+							layout="intrinsic"
 						/>
 						<Image
 							src="/images/imagesTemplate/playBtn.png"
 							alt="Triangle used as play button example"
 							width={175}
 							height={175}
+							layout="intrinsic"
 						/>
 					</div>
 					<CodeBlock
@@ -190,8 +196,9 @@ const ImagesTemplate = () => {
 						<Image
 							src="/images/imagesTemplate/vw-beetle-car.jpg"
 							alt="VW Beetle Car in pale green in front of a pitched roof house painted in the same colour"
-							width={600}
+							width={300}
 							height={400}
+							layout="intrinsic"
 						/>
 					</div>
 					<p>
@@ -261,6 +268,7 @@ const ImagesTemplate = () => {
 							alt="Make the day great sign"
 							width={300}
 							height={200}
+							layout="intrinsic"
 						/>
 					</div>
 					<CodeBlock
@@ -316,9 +324,10 @@ const ImagesTemplate = () => {
 					<Image
 						useMap="#primary"
 						src="/images/imagesTemplate/donut-coffee.png"
-						width={600}
+						width={300}
 						height={400}
 						alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee"
+						layout="intrinsic"
 					/>
 					<CodeBlock
 						language="html"
