@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react"
 import notFoundImage from "../public/404.png"
 import Image from "next/image"
 import Head from "next/head"
