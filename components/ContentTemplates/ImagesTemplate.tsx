@@ -4,7 +4,7 @@ import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { imagePageNavigation } from "../../data/pageNavigationLists"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 
-const ImagesTemplate = () => {
+export const ImagesTemplate = () => {
 	return (
 		<>
 			<NavPage pageNavigation={imagePageNavigation} />
@@ -404,5 +404,3 @@ const ImagesTemplate = () => {
 		</>
 	)
 }
-
-export default ImagesTemplate

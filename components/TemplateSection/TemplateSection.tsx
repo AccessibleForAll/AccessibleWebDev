@@ -1,9 +1,9 @@
-import React from "react"
+import { ReactNode } from "react"
 
 interface ITemplateSectionProps {
 	sectionName: string
 	title: string
-	children: React.ReactNode
+	children: ReactNode
 }
 
 export const TemplateSection = ({

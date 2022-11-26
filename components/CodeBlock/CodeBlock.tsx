@@ -10,5 +10,3 @@ export const CodeBlock = ({ codeSnippet }: ICodeBlockProps) => {
 		</pre>
 	)
 }
-
-export default CodeBlock

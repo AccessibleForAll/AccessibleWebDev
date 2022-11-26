@@ -23,5 +23,3 @@ export const NavPage = ({ pageNavigation }: INavPageProps) => {
 		</details>
 	)
 }
-
-export default NavPage
