@@ -339,21 +339,64 @@ const ImagesTemplate = () => {
 />`}
 					/>
 				</section>
-				<section aria-labelledby="checklist" className="infoSection">
+				{/* TODO: <section aria-labelledby="checklist" className="infoSection">
 					<h2 id="checklist">Images Checklist</h2>
 					<p>Add some points here</p>
-				</section>
+				</section> */}
 				<section aria-labelledby="WCAGCriteria" className="infoSection">
 					<h2 id="WCAGCriteria">WCAG Criteria</h2>
-					<p>Add list of links here</p>
+					<a
+						href="https://www.w3.org/TR/WCAG21/#non-text-content"
+						className="blockLink">
+						1.1.1 Non-text content
+					</a>
+					<a
+						href="https://www.w3.org/TR/WCAG21/#use-of-color"
+						className="blockLink">
+						1.4.1 Use of Color
+					</a>
+					<a
+						href="https://www.w3.org/TR/WCAG21/#images-of-text"
+						className="blockLink">
+						1.4.5 Images of Text
+					</a>
+					<a
+						href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception"
+						className="blockLink">
+						1.4.9 Images of Text (No Exception)
+					</a>
 				</section>
 				<section aria-labelledby="otherResources" className="infoSection">
 					<h2 id="otherResources">Other Resources</h2>
-					<p>Add list of links here</p>
+					<a
+						href="https://www.w3.org/WAI/tutorials/images/"
+						className="blockLink">
+						W3C Images Tutorial
+					</a>
+					<a
+						href="https://www.w3.org/WAI/tutorials/images/decision-tree/"
+						className="blockLink">
+						W3C An alt decision tree
+					</a>
+					<a
+						href="https://jakearchibald.com/2021/great-alt-text/"
+						className="blockLink">
+						Writing great alt text: Emotion matters
+					</a>
+					<a
+						href="https://tink.uk/thoughts-on-skin-tone-and-text-descriptions.md-notes-on-synthetic-speech/"
+						className="blockLink">
+						Thoughts on skin tone and text descriptions
+					</a>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map"
+						className="blockLink">
+						MDN: The Image Map element
+					</a>
 				</section>
 			</article>
 			<p className="pageLastUpdated">
-				<strong>Page last updated: </strong>19th November 2022
+				<strong>Page last updated: </strong>26th November 2022
 			</p>
 		</>
 	)
