@@ -4,4 +4,7 @@
   padding: 16px;
   font-size: 1rem;
   line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+  tab-size: 4;
 }
