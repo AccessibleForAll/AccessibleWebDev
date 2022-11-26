@@ -18,7 +18,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-syntax-highlighter": "^15.5.0",
     "usehooks-ts": "^2.7.2"
   },
   "devDependencies": {
