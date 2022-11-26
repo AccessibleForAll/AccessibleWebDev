@@ -43,9 +43,11 @@ const ImagesTemplate = () => {
 					</p>
 					<CodeBlock
 						codeSnippet={`<img src="url" alt="The text alternative goes here" />`}
+						codeDescription="Code demonstrating the use of the alt attribute on the html image tag"
 					/>
 
 					<CodeBlock
+						codeDescription="Code demonstrating the use of title and role on an svg tag"
 						codeSnippet={`<svg role="img" height="210" width="400">
 	<title>The text alternative goes here</title>
 	<path d="M120 10 L55 200 L265 180 Z" />
@@ -81,6 +83,7 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
+						codeDescription="Code demonstrating how to leave the alt text empty for decorative images"
 						codeSnippet={`<img src="/oldPaperTexture.jpg" alt="" />
 <img src="/hexagonsPattern.jpg" alt="" />`}
 					/>
@@ -106,6 +109,7 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
+						codeDescription="Code demonstrating how to give a short descriptive alt text to informative images"
 						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />`}
 					/>
 
@@ -137,6 +141,7 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
+						codeDescription="Code demonstrating how to point to a longer description for complex images"
 						codeSnippet={`<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
 					/>
 				</TemplateSection>
@@ -168,6 +173,7 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
+						codeDescription="Code demonstrating how to write alt text for functional images"
 						codeSnippet={`<img src="searchBtn.png" alt="Search" />
 <img src="playBtn.png" alt="Play" />`}
 					/>
@@ -266,6 +272,7 @@ const ImagesTemplate = () => {
 						/>
 					</div>
 					<CodeBlock
+						codeDescription="Code demonstrating how to write alt text for text in images"
 						codeSnippet={`<img src="make-the-day-great.jpg" alt="Make the day great sign" />`}
 					/>
 				</TemplateSection>
@@ -323,6 +330,7 @@ const ImagesTemplate = () => {
 						layout="intrinsic"
 					/>
 					<CodeBlock
+						codeDescription="Code demonstrating how to use map and area tags to create image maps"
 						codeSnippet={`<map name="primary">
 	<area
 		shape="circle"
