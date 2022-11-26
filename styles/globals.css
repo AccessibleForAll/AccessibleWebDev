@@ -93,3 +93,7 @@ h3 {
 	flex-wrap: wrap;
 }
 
+.blockLink {
+	display: block;
+}
+
