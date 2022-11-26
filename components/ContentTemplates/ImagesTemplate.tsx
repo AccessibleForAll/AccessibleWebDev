@@ -2,14 +2,14 @@ import Image from "next/image"
 import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { imagePageNavigation } from "../../data/pageNavigationLists"
+import { TemplateSection } from "../TemplateSection/TemplateSection"
 
 const ImagesTemplate = () => {
 	return (
 		<>
 			<NavPage pageNavigation={imagePageNavigation} />
 			<article>
-				<section aria-labelledby="introduction" className="infoSection">
-					<h2 id="introduction">Introduction</h2>
+				<TemplateSection sectionName="introduction" title="Introduction">
 					<p>
 						A picture is worth more than a thousand words, as the old adage
 						goes. Images help bring texts to life, they complement complex
@@ -19,9 +19,10 @@ const ImagesTemplate = () => {
 						text alternative is needed so that everyone has access to the
 						information conveyed in the image.
 					</p>
-				</section>
-				<section aria-labelledby="textAlternatives" className="infoSection">
-					<h2 id="textAlternatives">Text Alternatives</h2>
+				</TemplateSection>
+				<TemplateSection
+					sectionName="textAlternatives"
+					title="Text Alternatives">
 					<p>
 						The text alternative for an image depends upon its purpose. Is the
 						image purely decorative? Does it help to describe or explain the
@@ -52,9 +53,10 @@ const ImagesTemplate = () => {
 	<path d="M120 10 L55 200 L265 180 Z" />
 </svg>`}
 					/>
-				</section>
-				<section aria-labelledby="decorativeImages" className="infoSection">
-					<h2 id="decorativeImages">Decorative Images</h2>
+				</TemplateSection>
+				<TemplateSection
+					sectionName="decorativeImages"
+					title="Decorative Images">
 					<p>
 						Decorative images usually add no extra information to a page and a
 						person’s understanding is not hindered if the images are not
@@ -83,10 +85,11 @@ const ImagesTemplate = () => {
 						codeSnippet={`<img src="/oldPaperTexture.jpg" alt="" />
 <img src="/hexagonsPattern.jpg" alt="" />`}
 					/>
-				</section>
+				</TemplateSection>
 
-				<section aria-labelledby="informativeImages" className="infoSection">
-					<h2 id="informativeImages">Informative Images</h2>
+				<TemplateSection
+					sectionName="informativeImages"
+					title="Informative Images">
 					<p>
 						Informative images compliment written information by illustrating
 						concepts and examples visually. An image of a cake alongside a
@@ -137,10 +140,11 @@ const ImagesTemplate = () => {
 						language="html"
 						codeSnippet={`<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
 					/>
-				</section>
+				</TemplateSection>
 
-				<section aria-labelledby="functionalImages" className="infoSection">
-					<h2 id="functionalImages">Functional Images</h2>
+				<TemplateSection
+					sectionName="functionalImages"
+					title="Functional Images">
 					<p>
 						If images are used as part of a link or button they are usually
 						there to perform a function. Examples include using a magnifying
@@ -167,10 +171,11 @@ const ImagesTemplate = () => {
 						codeSnippet={`<img src="searchBtn.png" alt="Search" />
 <img src="playBtn.png" alt="Play" />`}
 					/>
-				</section>
+				</TemplateSection>
 
-				<section aria-labelledby="goodAltText" className="infoSection">
-					<h2 id="goodAltText">How to write good alt text</h2>
+				<TemplateSection
+					sectionName="goodAltText"
+					title="How to write good alt text">
 					<p>
 						Writing good text alternatives is not always easy and there are many
 						differing opinions about how to do it well. The text alternative
@@ -241,10 +246,9 @@ const ImagesTemplate = () => {
 						parked on a quiet street in front of a one storey house painted in
 						the same color in a sleepy suburb.
 					</p>
-				</section>
+				</TemplateSection>
 
-				<section aria-labelledby="imagesOfText" className="infoSection">
-					<h2 id="imagesOfText">Images of Text</h2>
+				<TemplateSection sectionName="imagesOfText" title="Images of Text">
 					<p>
 						Wherever possible, images of text should be avoided as the text
 						can’t be enlarged in the same way as text in HTML. However, if you
@@ -263,9 +267,10 @@ const ImagesTemplate = () => {
 						language="html"
 						codeSnippet={`<img src="make-the-day-great.jpg" alt="Make the day great sign" />`}
 					/>
-				</section>
-				<section aria-labelledby="imagesAndColour" className="infoSection">
-					<h2 id="imagesAndColour">Images and Colour</h2>
+				</TemplateSection>
+				<TemplateSection
+					sectionName="imagesAndColour"
+					title="Images and Colour">
 					<p>
 						Colour should not be the only way to represent meaning in an image
 						because not everyone perceives colour in the same way. If colour is
@@ -276,9 +281,8 @@ const ImagesTemplate = () => {
 					{
 						// TODO: Add an example here of a pie chart or bar chart
 					}
-				</section>
-				<section aria-labelledby="imageMaps" className="infoSection">
-					<h2 id="imageMaps">Image Maps</h2>
+				</TemplateSection>
+				<TemplateSection sectionName="imageMaps" title="Image Maps">
 					<p>
 						An image map is a larger image with clickable hotspots, each of
 						which open a different section. An example could be a floor plan of
@@ -338,13 +342,12 @@ const ImagesTemplate = () => {
 	alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee" 
 />`}
 					/>
-				</section>
-				{/* TODO: <section aria-labelledby="checklist" className="infoSection">
-					<h2 id="checklist">Images Checklist</h2>
+				</TemplateSection>
+				{/* TODO: <TemplateSection sectionName="checklist"  title="Images Checklist">
+					
 					<p>Add some points here</p>
-				</section> */}
-				<section aria-labelledby="WCAGCriteria" className="infoSection">
-					<h2 id="WCAGCriteria">WCAG Criteria</h2>
+				</TemplateSection> */}
+				<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 					<a
 						href="https://www.w3.org/TR/WCAG21/#non-text-content"
 						className="blockLink">
@@ -365,9 +368,8 @@ const ImagesTemplate = () => {
 						className="blockLink">
 						1.4.9 Images of Text (No Exception)
 					</a>
-				</section>
-				<section aria-labelledby="otherResources" className="infoSection">
-					<h2 id="otherResources">Other Resources</h2>
+				</TemplateSection>
+				<TemplateSection sectionName="otherResources" title="Other Resources">
 					<a
 						href="https://www.w3.org/WAI/tutorials/images/"
 						className="blockLink">
@@ -393,7 +395,7 @@ const ImagesTemplate = () => {
 						className="blockLink">
 						MDN: The Image Map element
 					</a>
-				</section>
+				</TemplateSection>
 			</article>
 			<p className="pageLastUpdated">
 				<strong>Page last updated: </strong>26th November 2022
