@@ -2,7 +2,8 @@
 	"extends": [
 		"next/core-web-vitals",
 		"prettier",
-		"plugin:storybook/recommended"
+		"plugin:storybook/recommended",
+		"plugin:@typescript-eslint/recommended"
 	],
 	"rules": {
 		"comma-spacing": ["error", { "before": false, "after": true }],
@@ -15,5 +16,62 @@
 			1,
 			{ "extensions": [".js", ".jsx", ".ts", ".tsx"] }
 		] //should add ".ts" if typescript project
-	}
+	},
+	"overrides": [
+		{
+			"files": ["*.ts", "*.tsx"],
+			"rules": {
+				"react/prop-types": "off",
+				"@typescript-eslint/naming-convention": [
+					"error",
+					{
+						"selector": "default",
+						"format": ["strictCamelCase"],
+						"leadingUnderscore": "forbid",
+						"trailingUnderscore": "forbid"
+					},
+					{
+						"selector": "objectLiteralProperty",
+						"modifiers": ["requiresQuotes"],
+						"format": null
+					},
+					{
+						"selector": "objectLiteralProperty",
+						"format": ["strictCamelCase", "StrictPascalCase"]
+					},
+					{
+						"selector": "typeLike",
+						"format": ["StrictPascalCase"]
+					},
+					{
+						"selector": "interface",
+						"format": ["PascalCase"]
+					},
+					{
+						"selector": "function",
+						// Exception for FunctionComponents
+						"format": ["strictCamelCase", "StrictPascalCase"]
+					},
+					{
+						"selector": "parameter",
+						"format": ["strictCamelCase", "StrictPascalCase"]
+					},
+					{
+						"selector": "variable",
+						"format": ["camelCase", "UPPER_CASE"]
+					},
+					{
+						"selector": "variable",
+						"modifiers": ["exported"],
+						// Exception for components wrapped in HOC's and for React's Context
+						"format": ["strictCamelCase", "StrictPascalCase", "UPPER_CASE"]
+					},
+					{
+						"selector": "enumMember",
+						"format": ["StrictPascalCase"]
+					}
+				]
+			}
+		}
+	]
 }
