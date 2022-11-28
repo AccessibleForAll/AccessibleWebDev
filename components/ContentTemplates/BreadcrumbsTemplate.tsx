@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const BreadcrumbsTemplate = () => {
+export const BreadcrumbsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default BreadcrumbsTemplate

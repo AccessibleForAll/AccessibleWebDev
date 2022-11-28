@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const ListsTemplate = () => {
+export const ListsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default ListsTemplate

@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const NavigationTemplate = () => {
+export const NavigationTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default NavigationTemplate

@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const AlertsTemplate = () => {
+export const AlertsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default AlertsTemplate
