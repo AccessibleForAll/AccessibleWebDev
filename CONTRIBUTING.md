@@ -18,30 +18,30 @@ Storybook - [Storybook Documentation](https://storybook.js.org/)
 
 ## How to contribute
 
-0. Please check the [coding standards](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CODING_STANDARDS.md) page before start contributing.
 1.  Look through [Pre-existing issues](https://github.com/AccessibleForAll/AccessibleWebDev/issues) or [Raise a new issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose) and ask to be assigned. Pull requests made without a corresponding issue will likely be closed.
-2.  [Fork](https://github.com/AccessibleForAll/AccessibleWebDev/fork) the project
-3.  Clone the project:
+2. Please check the [coding standards](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CODING_STANDARDS.md) page before start contributing.
+3.  [Fork](https://github.com/AccessibleForAll/AccessibleWebDev/fork) the project
+4.  Clone the project:
     ```bash
     git clone https://github.com/<your-github-username>/AccessibleWebDev
     ```
-4.  Navigate to the project directory:
+5.  Navigate to the project directory:
     ```bash
     cd AccessibleWebDev
     ```
-5.  Set the upstream repository:
+6.  Set the upstream repository:
     ```bash
     git remote add upstream https://github.com/AccessibleForAll/AccessibleWebDev.git
     ```
-6.  Install dependencies:
+7.  Install dependencies:
     ```bash
     yarn install
     ```
-7.  Create a new branch:
+8.  Create a new branch:
     ```bash
     git checkout -b <YourBranchName>
     ```
-8.  To run the whole project locally:
+9.  To run the whole project locally:
     ```bash
     yarn dev
     ```
@@ -50,21 +50,21 @@ Storybook - [Storybook Documentation](https://storybook.js.org/)
     yarn storybook
     ```
 
-9.  Make your changes
-10. Stage your changes:
+10.  Make your changes
+11. Stage your changes:
     ```bash
     git add <NameOfFileChanged>
     ```
-11. Commit your changes:
+12. Commit your changes:
     ```bash
     git commit -m "<Your commit message here>"
     ```
-12. Push your commits to your local repository
+13. Push your commits to your local repository
     ```bash
     git push origin <YourBranchName>
     ```
-13. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
-14. Wait for maintainers to review your pull request and suggest any changes
+14. Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+15. Wait for maintainers to review your pull request and suggest any changes
 
 **Congratulations!** You made a contribution to the Accessible For All Community!
 
