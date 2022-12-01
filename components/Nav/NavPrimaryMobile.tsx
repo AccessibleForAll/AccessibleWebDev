@@ -7,8 +7,10 @@ export interface INavProps {
 	handleNavClick: () => void
 }
 
-export const NavPrimaryMobile = (props: INavProps) => {
-	const { activeNavLink, handleNavClick } = props
+export const NavPrimaryMobile = ({
+	activeNavLink,
+	handleNavClick,
+}: INavProps) => {
 	return (
 		<nav aria-label="Primary" className={styles.navPrimaryMobile}>
 			<ul className={styles.navList}>
