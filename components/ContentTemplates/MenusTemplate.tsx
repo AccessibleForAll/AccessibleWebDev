@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const MenusTemplate = () => {
+export const MenusTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default MenusTemplate

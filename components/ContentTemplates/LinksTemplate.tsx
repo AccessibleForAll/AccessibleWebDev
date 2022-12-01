@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const LinksTemplate = () => {
+export const LinksTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default LinksTemplate

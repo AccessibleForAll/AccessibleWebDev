@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const ButtonsTemplate = () => {
+export const ButtonsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default ButtonsTemplate

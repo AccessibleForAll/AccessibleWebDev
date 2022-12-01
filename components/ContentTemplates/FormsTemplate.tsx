@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const FormsTemplate = () => {
+export const FormsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default FormsTemplate

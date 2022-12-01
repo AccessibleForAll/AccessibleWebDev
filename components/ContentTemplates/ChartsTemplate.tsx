@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const ChartsTemplate = () => {
+export const ChartsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default ChartsTemplate

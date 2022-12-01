@@ -1,7 +1,5 @@
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const TablesTemplate = () => {
+export const TablesTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default TablesTemplate

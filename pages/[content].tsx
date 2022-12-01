@@ -8,25 +8,25 @@ import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
 // Components
-import Alerts from "../components/ContentTemplates/AlertsTemplate"
-import Animations from "../components/ContentTemplates/AnimationsTemplate"
-import Audio from "../components/ContentTemplates/AudioTemplate"
-import Breadcrumbs from "../components/ContentTemplates/BreadcrumbsTemplate"
-import Buttons from "../components/ContentTemplates/ButtonsTemplate"
-import Captchas from "../components/ContentTemplates/CaptchasTemplate"
-import Charts from "../components/ContentTemplates/ChartsTemplate"
-import Forms from "../components/ContentTemplates/FormsTemplate"
-import Headings from "../components/ContentTemplates/HeadingsTemplate"
-import Icons from "../components/ContentTemplates/IconsTemplate"
+import { AlertsTemplate } from "../components/ContentTemplates/AlertsTemplate"
+import { AnimationsTemplate } from "../components/ContentTemplates/AnimationsTemplate"
+import { AudioTemplate } from "../components/ContentTemplates/AudioTemplate"
+import { BreadcrumbsTemplate } from "../components/ContentTemplates/BreadcrumbsTemplate"
+import { ButtonsTemplate } from "../components/ContentTemplates/ButtonsTemplate"
+import { CaptchasTemplate } from "../components/ContentTemplates/CaptchasTemplate"
+import { ChartsTemplate } from "../components/ContentTemplates/ChartsTemplate"
+import { FormsTemplate } from "../components/ContentTemplates/FormsTemplate"
+import { HeadingsTemplate } from "../components/ContentTemplates/HeadingsTemplate"
+import { IconsTemplate } from "../components/ContentTemplates/IconsTemplate"
 import { ImagesTemplate } from "../components/ContentTemplates/ImagesTemplate"
-import Links from "../components/ContentTemplates/LinksTemplate"
-import Lists from "../components/ContentTemplates/ListsTemplate"
-import Menus from "../components/ContentTemplates/MenusTemplate"
-import Modals from "../components/ContentTemplates/ModalsTemplate"
-import Navigation from "../components/ContentTemplates/NavigationTemplate"
-import Tables from "../components/ContentTemplates/TablesTemplate"
-import Video from "../components/ContentTemplates/VideoTemplate"
-import Pagination from "../components/ContentTemplates/PaginationTemplate"
+import { LinksTemplate } from "../components/ContentTemplates/LinksTemplate"
+import { ListsTemplate } from "../components/ContentTemplates/ListsTemplate"
+import { MenusTemplate } from "../components/ContentTemplates/MenusTemplate"
+import { ModalsTemplate } from "../components/ContentTemplates/ModalsTemplate"
+import { NavigationTemplate } from "../components/ContentTemplates/NavigationTemplate"
+import { TablesTemplate } from "../components/ContentTemplates/TablesTemplate"
+import { VideoTemplate } from "../components/ContentTemplates/VideoTemplate"
+import { PaginationTemplate } from "../components/ContentTemplates/PaginationTemplate"
 
 interface IProps {
 	page: string
@@ -46,25 +46,25 @@ const ContentPage: NextPage = (props) => {
 			</Head>
 			<Layout headerTitle={`Accessible ${title}`} activeNavLink={`/${page}`}>
 				<>
-					{page === "alerts" && <Alerts />}
-					{page === "animations" && <Animations />}
-					{page === "audio" && <Audio />}
-					{page === "breadcrumbs" && <Breadcrumbs />}
-					{page === "buttons" && <Buttons />}
-					{page === "captchas" && <Captchas />}
-					{page === "charts" && <Charts />}
-					{page === "forms" && <Forms />}
-					{page === "headings" && <Headings />}
-					{page === "icons" && <Icons />}
+					{page === "alerts" && <AlertsTemplate />}
+					{page === "animations" && <AnimationsTemplate />}
+					{page === "audio" && <AudioTemplate />}
+					{page === "breadcrumbs" && <BreadcrumbsTemplate />}
+					{page === "buttons" && <ButtonsTemplate />}
+					{page === "captchas" && <CaptchasTemplate />}
+					{page === "charts" && <ChartsTemplate />}
+					{page === "forms" && <FormsTemplate />}
+					{page === "headings" && <HeadingsTemplate />}
+					{page === "icons" && <IconsTemplate />}
 					{page === "images" && <ImagesTemplate />}
-					{page === "links" && <Links />}
-					{page === "lists" && <Lists />}
-					{page === "menus" && <Menus />}
-					{page === "modals" && <Modals />}
-					{page === "navigation" && <Navigation />}
-					{page === "pagination" && <Pagination />}
-					{page === "tables" && <Tables />}
-					{page === "video" && <Video />}
+					{page === "links" && <LinksTemplate />}
+					{page === "lists" && <ListsTemplate />}
+					{page === "menus" && <MenusTemplate />}
+					{page === "modals" && <ModalsTemplate />}
+					{page === "navigation" && <NavigationTemplate />}
+					{page === "pagination" && <PaginationTemplate />}
+					{page === "tables" && <TablesTemplate />}
+					{page === "video" && <VideoTemplate />}
 				</>
 			</Layout>
 		</>
