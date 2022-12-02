@@ -10,9 +10,11 @@ export interface IHeaderProps {
 	showNavMobile: boolean
 }
 
-export const Header = (props: IHeaderProps) => {
-	const { headerTitle, handleNavClick, showNavMobile } = props
-
+export const Header = ({
+	headerTitle,
+	handleNavClick,
+	showNavMobile,
+}: IHeaderProps) => {
 	return (
 		<>
 			<header>

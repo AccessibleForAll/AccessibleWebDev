@@ -14,8 +14,7 @@ interface IAboutProps {
 	currentMaintainerData: IMaintainer[]
 }
 
-const About: NextPage = (props) => {
-	const { currentMaintainerData } = props as IAboutProps
+const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 	const { t } = useTranslation("common")
 
 	return (

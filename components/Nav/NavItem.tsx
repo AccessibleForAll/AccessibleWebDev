@@ -8,9 +8,11 @@ export interface INavItemProps {
 	handleNavClick?: () => void
 }
 
-export const NavItem = (props: INavItemProps) => {
-	const { page, activeNavLink, handleNavClick } = props
-
+export const NavItem = ({
+	page,
+	activeNavLink,
+	handleNavClick,
+}: INavItemProps) => {
 	return (
 		<li
 			className={`${styles.navListItem} ${

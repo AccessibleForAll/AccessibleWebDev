@@ -12,9 +12,11 @@ interface ILayoutProps {
 	children: JSX.Element
 }
 
-export const Layout = (props: ILayoutProps) => {
-	const { headerTitle, activeNavLink, children } = props
-
+export const Layout = ({
+	headerTitle,
+	activeNavLink,
+	children,
+}: ILayoutProps) => {
 	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
 
 	const handleNavClick = () => {

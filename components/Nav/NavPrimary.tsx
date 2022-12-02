@@ -6,9 +6,7 @@ export interface INavProps {
 	activeNavLink: string
 }
 
-export const NavPrimary = (props: INavProps) => {
-	const { activeNavLink } = props
-
+export const NavPrimary = ({ activeNavLink }: INavProps) => {
 	return (
 		<nav aria-label="Primary" className={styles.navPrimary}>
 			<ul className={styles.navList}>

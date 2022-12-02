@@ -6,11 +6,12 @@ export interface IMaintainerCardProps {
 	maintainer: IMaintainer
 }
 
-export const MaintainerCard = (props: IMaintainerCardProps) => {
-	const {
-		maintainer: { image, fullName, description, githubLink },
-	} = props
-
+export const MaintainerCard = ({
+	image,
+	fullName,
+	description,
+	githubLink,
+}: IMaintainer) => {
 	return (
 		<section className={styles.maintainerContainer}>
 			{image ? (
