@@ -32,8 +32,7 @@ interface IProps {
 	page: string
 }
 
-const ContentPage: NextPage = (props) => {
-	const { page } = props as IProps
+const ContentPage: NextPage<IProps> = ({ page }) => {
 	const title = capitalizeRoute(page)
 
 	const { t } = useTranslation("common")
