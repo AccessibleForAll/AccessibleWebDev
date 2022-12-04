@@ -19,7 +19,7 @@ export const Footer = () => {
 							className={styles.footerLink}>
 							Become a Contributor
 							<span>
-								<BsBoxArrowUpRight aria-label="Become a Contributor" />
+								<BsBoxArrowUpRight aria-label="opens in new window" />
 							</span>
 						</a>
 					</li>
@@ -29,7 +29,7 @@ export const Footer = () => {
 							className={styles.footerLink}>
 							Support Us
 							<span>
-								<BsBoxArrowUpRight aria-label="support us" />
+								<BsBoxArrowUpRight aria-label="opens in new window" />
 							</span>
 						</a>
 					</li>
