@@ -3,10 +3,7 @@ import { Layout } from "../components/Layout/Layout"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import {
-	MaintainerCard,
-	IMaintainerCardProps,
-} from "../components/MaintainerCard/MaintainerCard"
+import { MaintainerCard } from "../components/MaintainerCard/MaintainerCard"
 import { currentMaintainers, IMaintainer } from "../data/maintainers"
 import styles from "../styles/about.module.css"
 
