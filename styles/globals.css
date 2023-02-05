@@ -124,6 +124,7 @@ h3 {
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
+	color: black;
 	border: 1px solid var(--dark);
 	border-radius: 5px;
 	display: inline-block;
@@ -137,6 +138,7 @@ h3 {
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
+	color: black;
 	border: 1px solid var(--dark);
 	border-radius: 5px;
 	display: inline-block;
@@ -155,6 +157,7 @@ h3 {
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
+	color:black;
 	border: 2px inset var(--primaryLt);
 	border-radius: 5px;
 	display: inline-block;
