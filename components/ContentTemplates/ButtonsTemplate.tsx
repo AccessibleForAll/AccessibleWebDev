@@ -1,6 +1,8 @@
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { FaSave } from "react-icons/fa"
+import { NavPage } from "../NavPage/NavPage"
+import { buttonPageNavigation } from "../../data/pageNavigationLists"
 
 export const ButtonsTemplate = () => {
 	const handleTextButton = () => {
@@ -16,6 +18,7 @@ export const ButtonsTemplate = () => {
 	}
 	return (
 		<>
+			<NavPage pageNavigation={buttonPageNavigation} />
 			<TemplateSection sectionName="introduction" title="Introduction">
 				<p>
 					Buttons are interactive elements that perform an action when pressed.

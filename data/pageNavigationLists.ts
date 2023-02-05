@@ -3,6 +3,13 @@ export interface IPageNavigationItem {
 	href: string
 }
 
+export const buttonPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Text Buttons", href: "#textButtons" },
+	{ linkName: "Text and Icon Buttons", href: "#textAndIconButtons" },
+	{ linkName: "Icon-only Buttons", href: "#iconOnlyButtons" },
+]
+
 export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Text Alternatives", href: "#textAlternatives" },
