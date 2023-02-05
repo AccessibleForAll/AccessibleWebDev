@@ -413,6 +413,16 @@ export const ButtonsTemplate = () => {
 					3.2.1 On Focus
 				</a>
 			</TemplateSection>
+			<TemplateSection sectionName="otherResources" title="Other Resources">
+				<a
+					href="https://design-system.service.gov.uk/components/button/"
+					className="blockLink">
+					Gov.uk Design System Button
+				</a>
+				<a href="https://yatil.net/blog/buttons-vs-links" className="blockLink">
+					Buttons vs. Links by Eric Eggert
+				</a>
+			</TemplateSection>
 		</>
 	)
 }
