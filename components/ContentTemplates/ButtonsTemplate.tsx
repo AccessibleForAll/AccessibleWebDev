@@ -335,6 +335,28 @@ export const ButtonsTemplate = () => {
 					codeSnippet={`<button type="button" onclick="handleClick()" aria-expanded="true">Button with popup</button>`}
 				/>
 			</TemplateSection>
+			<TemplateSection sectionName="buttonOrLink" title="Button or Link?">
+				<p>
+					How do you know when it's best to use a button and when it's best to
+					use a link?
+				</p>
+				<p>
+					Don't let CSS dictate which element you use. The styling can always be
+					changed. A simple rule of thumb is to think about what the element
+					should do. Buttons are for actions and links are to take you to new
+					places.
+				</p>
+				<p>
+					Is it performing an action like opening a modal, a menu or some other
+					popup? Is it applying some styling to a page like a bold or italic
+					button in a text editor? Is it allowing you to save something or
+					search for something? Then you should probably use a button.
+				</p>
+				<p>
+					Is it taking you to another page or another area of the page? Then it
+					should probably be a link.
+				</p>
+			</TemplateSection>
 		</>
 	)
 }
