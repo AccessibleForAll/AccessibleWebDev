@@ -306,6 +306,34 @@ export const ButtonsTemplate = () => {
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()" disabled>Disabled button</button>`}
 				/>
+				<h3>Toggle buttons - pressed and unpressed states</h3>
+				<p>
+					You might have a button that turns something on or off, or only has
+					two states. One example of this might be a light/dark mode.
+				</p>
+				<p>
+					In this case you need to add the extra information by using the aria
+					attribute aria-pressed which can either be true or false. This can be
+					toggled with the use of JavaScript. This lets screen reader users know
+					the state of the button.The button may also dynamically change the
+					text/icon to visually convey the state too.
+				</p>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()" aria-pressed="true">Toggle button</button>`}
+				/>
+				<h3>Menus and popups - expanded and collapsed state</h3>
+				<p>
+					If a button is used to open a menu or popup then it should also
+					communicate to screen readers whether the popup is shown or not. This
+					is done with the aria-expanded attribute which can take true or false
+					values. If the popup is shown then aria-expanded="true". If the popup
+					is not shown then aria-expanded="false" and the screen reader will
+					announce that the popup is collapsed. The state of aria-expanded can
+					be controlled with JavaScript.
+				</p>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()" aria-expanded="true">Button with popup</button>`}
+				/>
 			</TemplateSection>
 		</>
 	)
