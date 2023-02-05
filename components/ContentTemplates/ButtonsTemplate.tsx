@@ -217,6 +217,77 @@ export const ButtonsTemplate = () => {
 </button>`}
 				/>
 			</TemplateSection>
+			<TemplateSection sectionName="buttonStates" title="Button States">
+				<p>
+					Buttons can be used to communicate different states. A toggle button
+					can communicate both an on and off state. Buttons can also have
+					default, hover, focus, active and disabled states.
+				</p>
+				<h3>Default, hover, focus and active states</h3>
+				<p>These states can be handled with CSS.</p>
+				<ul>
+					<li>
+						<strong>Default state: </strong>
+						The normal state of a button when it's not being interacted with.
+						Any text or icon should have a contrast ratio of 4.5:1 with the
+						button background color. The button background color should have a
+						3:1 contrast ratio with the background.
+						<div>
+							<button
+								className="exampleButton"
+								type="button"
+								onClick={handleTextButton}>
+								Default
+							</button>
+						</div>
+					</li>
+					<li>
+						<strong>Hover state: </strong>
+						How the button looks when hovered over with a mouse cursor. This
+						state is not visible on all devices, most notably touch screens.
+						It's not a requirement to have a hover state but if used then normal
+						color contrast ratios apply.
+						<div>
+							<button
+								className="exampleHover"
+								type="button"
+								onClick={handleTextButton}>
+								Hover
+							</button>
+						</div>
+					</li>
+					<li>
+						<strong>Focus state: </strong>A button in focus should have a focus
+						indicator which makes it easy to see where focus is on the screen.
+						This is often a thicker border or outline around the button and
+						should have a contrast ratio of at least 3:1 with both the button
+						background color and the background behind the button. If the
+						button's colors change from default they should still meet the
+						required color contrast ratio between text and background.
+						<div>
+							<button
+								className="exampleFocus"
+								type="button"
+								onClick={handleTextButton}>
+								Focus
+							</button>
+						</div>
+					</li>
+					<li>
+						<strong>Active state: </strong>A button is active in the moment it
+						is pressed. It will often look like it's been pressed.
+						<div>
+							<button
+								className="exampleActive"
+								type="button"
+								onClick={handleTextButton}>
+								Active
+							</button>
+						</div>
+					</li>
+				</ul>
+				<p></p>
+			</TemplateSection>
 		</>
 	)
 }
