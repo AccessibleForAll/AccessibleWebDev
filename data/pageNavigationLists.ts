@@ -8,6 +8,7 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Text Buttons", href: "#textButtons" },
 	{ linkName: "Text and Icon Buttons", href: "#textAndIconButtons" },
 	{ linkName: "Icon-only Buttons", href: "#iconOnlyButtons" },
+	{ linkName: "Button States", href: "#buttonStates" },
 ]
 
 export const imagePageNavigation: IPageNavigationItem[] = [
