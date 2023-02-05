@@ -154,6 +154,48 @@ export const ButtonsTemplate = () => {
 					can be useful.
 				</p>
 			</TemplateSection>
+			<TemplateSection sectionName="iconOnlyButtons" title="Icon-only buttons">
+				<p>
+					Some buttons use only an icon to convey their function. In this case
+					it's important to choose icons that are widely recognised and
+					understood, otherwise it can be difficult to know their function. The
+					icons should also have a suitable label. This can be done with the alt
+					attribute if using images or the aria-label attribute.
+				</p>
+				<button type="button" onClick={handleTextAndIconButton}>
+					<FaSave color="black" size="1rem" aria-label="Save" />
+				</button>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<img src="icon-url.png" alt="Save" />
+</button>`}
+				/>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<i class="fa-solid fa-floppy-disk" aria-label="Save"></i>
+</button>`}
+				/>
+				<p>
+					Make sure that the label you give the icon matches the function of the
+					button, not necessarily describing the actual icon.
+				</p>
+				<p>
+					<strong>Do this:</strong>
+				</p>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+</button>`}
+				/>
+				<p>
+					<strong>Don't do this:</strong>
+				</p>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<i class="fa-solid fa-magnifying-glass" aria-label="Magnifying glass"></i>
+</button>`}
+				/>
+			</TemplateSection>
 		</>
 	)
 }
