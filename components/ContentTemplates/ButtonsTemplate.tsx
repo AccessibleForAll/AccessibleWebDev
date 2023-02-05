@@ -286,7 +286,26 @@ export const ButtonsTemplate = () => {
 						</div>
 					</li>
 				</ul>
-				<p></p>
+				<h3>Disabled state</h3>
+				<p>
+					A disabled button is a button that is not focusable or clickable. It
+					has been given the disabled attribute. The browser styling often greys
+					out the text making the contrast lower than 3:1 which makes disabled
+					buttons difficult to see for some people. Often they are also not
+					discoverable by users of assistive technology. Therefore, it's best to
+					avoid disabled buttons and add in logic that provides error messages
+					instead if the button is pressed.
+				</p>
+				<button
+					className="exampleDisabled"
+					type="button"
+					disabled
+					onClick={handleTextButton}>
+					Disabled button
+				</button>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()" disabled>Disabled button</button>`}
+				/>
 			</TemplateSection>
 		</>
 	)

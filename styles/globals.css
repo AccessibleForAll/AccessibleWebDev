@@ -165,3 +165,16 @@ h3 {
 	
 	margin: 0.5rem 0;
 }
+
+.exampleDisabled {
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: not-allowed;
+	background-color: var(--primaryLt);
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0.5rem 0;
+}
