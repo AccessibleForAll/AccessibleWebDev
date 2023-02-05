@@ -109,6 +109,7 @@ h3 {
 	background-color: var(--primaryLt);
 	border: 1px solid var(--dark);
 	border-radius: 5px;
+	display: inline-block;
 }
 
 .exampleButton:hover, .exampleButton:focus {
