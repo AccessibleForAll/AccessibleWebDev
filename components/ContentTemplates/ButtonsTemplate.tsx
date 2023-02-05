@@ -1,5 +1,6 @@
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
+import { FaSave } from "react-icons/fa"
 
 export const ButtonsTemplate = () => {
 	const handleTextButton = () => {
@@ -8,6 +9,10 @@ export const ButtonsTemplate = () => {
 
 	const handleAddToBasketButton = () => {
 		alert("This is an example Add to Basket button")
+	}
+
+	const handleTextAndIconButton = () => {
+		alert("This is an example Text and Icon button")
 	}
 	return (
 		<>
@@ -62,23 +67,23 @@ export const ButtonsTemplate = () => {
 				</p>
 				<ul>
 					<li>
-						Product 1
+						Product 1{" "}
 						<button onClick={handleAddToBasketButton}>Add to basket</button>
 					</li>
 					<li>
-						Product 2
+						Product 2{" "}
 						<button onClick={handleAddToBasketButton}>Add to basket</button>
 					</li>
 					<li>
-						Product 3
+						Product 3{" "}
 						<button onClick={handleAddToBasketButton}>Add to basket</button>
 					</li>
 					<li>
-						Product 4
+						Product 4{" "}
 						<button onClick={handleAddToBasketButton}>Add to basket</button>
 					</li>
 					<li>
-						Product 5
+						Product 5{" "}
 						<button onClick={handleAddToBasketButton}>Add to basket</button>
 					</li>
 				</ul>
@@ -116,6 +121,37 @@ export const ButtonsTemplate = () => {
 					Again, it is important that the start of the aria-label matches with
 					the visible text on the button to help users of speech input software
 					be able to activate the button.{" "}
+				</p>
+			</TemplateSection>
+			<TemplateSection
+				sectionName="textAndIconButtons"
+				title="Text and Icon Buttons">
+				<p>
+					Some buttons have both text and icons inside. The icon can help
+					complement the text and aid understanding. To prevent the accessible
+					name from repetition, eg "Button, save icon, save", the icon should be
+					given an empty(null) alt attribute or the state aria-hidden="true"
+				</p>
+				<button type="button" onClick={handleTextAndIconButton}>
+					<FaSave color="black" size="1rem" aria-hidden="true" /> Save
+				</button>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<img src="icon-url.png" alt="" />
+		Text
+</button>`}
+				/>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">
+	<img src="icon-url.png" aria-hidden="true" />
+		Text
+</button>`}
+				/>
+				<p>
+					An empty alt attribute has the most wide-spread support so that should
+					be your go to choice when using icons. However, some icon libraries
+					don't allow an alt attribute to be passed and that's where aria-hidden
+					can be useful.
 				</p>
 			</TemplateSection>
 		</>
