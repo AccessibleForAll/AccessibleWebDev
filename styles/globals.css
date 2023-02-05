@@ -100,4 +100,19 @@ h3 {
 	display: block;
 }
 
+.exampleButton {
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	background-color: var(--primaryLt);
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+}
+
+.exampleButton:hover, .exampleButton:focus {
+	background-color: var(--primary);
+	color: var(--white);
+}
 

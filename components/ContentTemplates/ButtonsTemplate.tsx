@@ -51,7 +51,9 @@ export const ButtonsTemplate = () => {
 			</TemplateSection>
 			<TemplateSection sectionName="textButtons" title="Text Buttons">
 				<p>A text button is a button which has only text inside it.</p>
-				<button onClick={handleTextButton}>Text here</button>
+				<button className="exampleButton" onClick={handleTextButton}>
+					Text here
+				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">Text here</button>`}
 				/>
@@ -71,23 +73,33 @@ export const ButtonsTemplate = () => {
 				<ul>
 					<li>
 						Product 1{" "}
-						<button onClick={handleAddToBasketButton}>Add to basket</button>
+						<button className="exampleButton" onClick={handleAddToBasketButton}>
+							Add to basket
+						</button>
 					</li>
 					<li>
 						Product 2{" "}
-						<button onClick={handleAddToBasketButton}>Add to basket</button>
+						<button className="exampleButton" onClick={handleAddToBasketButton}>
+							Add to basket
+						</button>
 					</li>
 					<li>
 						Product 3{" "}
-						<button onClick={handleAddToBasketButton}>Add to basket</button>
+						<button className="exampleButton" onClick={handleAddToBasketButton}>
+							Add to basket
+						</button>
 					</li>
 					<li>
 						Product 4{" "}
-						<button onClick={handleAddToBasketButton}>Add to basket</button>
+						<button className="exampleButton" onClick={handleAddToBasketButton}>
+							Add to basket
+						</button>
 					</li>
 					<li>
 						Product 5{" "}
-						<button onClick={handleAddToBasketButton}>Add to basket</button>
+						<button className="exampleButton" onClick={handleAddToBasketButton}>
+							Add to basket
+						</button>
 					</li>
 				</ul>
 				<p>We could use CSS to visibly hide some extra text:</p>
@@ -135,7 +147,10 @@ export const ButtonsTemplate = () => {
 					name from repetition, eg "Button, save icon, save", the icon should be
 					given an empty(null) alt attribute or the state aria-hidden="true"
 				</p>
-				<button type="button" onClick={handleTextAndIconButton}>
+				<button
+					className="exampleButton"
+					type="button"
+					onClick={handleTextAndIconButton}>
 					<FaSave color="black" size="1rem" aria-hidden="true" /> Save
 				</button>
 				<CodeBlock
@@ -165,7 +180,10 @@ export const ButtonsTemplate = () => {
 					icons should also have a suitable label. This can be done with the alt
 					attribute if using images or the aria-label attribute.
 				</p>
-				<button type="button" onClick={handleTextAndIconButton}>
+				<button
+					className="exampleButton"
+					type="button"
+					onClick={handleTextAndIconButton}>
 					<FaSave color="black" size="1rem" aria-label="Save" />
 				</button>
 				<CodeBlock
