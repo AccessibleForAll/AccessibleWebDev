@@ -357,6 +357,62 @@ export const ButtonsTemplate = () => {
 					should probably be a link.
 				</p>
 			</TemplateSection>
+			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
+				<a
+					href="https://www.w3.org/TR/WCAG21/#non-text-content"
+					className="blockLink">
+					1.1.1 Non-text content
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+					className="blockLink">
+					1.3.1 Info and Relationships
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#identify-purpose"
+					className="blockLink">
+					1.3.6 Identify Purpose
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+					className="blockLink">
+					1.4.3 Contrast (minimum)
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
+					className="blockLink">
+					1.4.11 Non-text Contrast
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
+					className="blockLink">
+					1.4.13 Content on Hover or Focus
+				</a>
+				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
+					2.1.1 Keyboard
+				</a>
+				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
+					2.1.1 Keyboard
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#focus-visible"
+					className="blockLink">
+					2.1.7 Focus Visible
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#label-in-name"
+					className="blockLink">
+					2.5.3 Label in Name
+				</a>
+				<a
+					href="https://www.w3.org/TR/WCAG21/#target-size"
+					className="blockLink">
+					2.5.5 Target Size
+				</a>
+				<a href="https://www.w3.org/TR/WCAG21/#on-focus" className="blockLink">
+					3.2.1 On Focus
+				</a>
+			</TemplateSection>
 		</>
 	)
 }
