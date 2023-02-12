@@ -2,15 +2,12 @@
 import styles from "./MaintainerCard.module.css"
 import { IMaintainer } from "../../data/maintainers"
 
-export interface MaintainerCardProps {
+export interface IMaintainerCardProps {
 	maintainer: IMaintainer
 }
 
-export const MaintainerCard = (props: MaintainerCardProps) => {
-	const {
-		maintainer: { image, fullName, description, githubLink },
-	} = props
-
+export const MaintainerCard = ({ maintainer }: IMaintainerCardProps) => {
+	const { image, fullName, description, githubLink } = maintainer
 	return (
 		<section className={styles.maintainerContainer}>
 			{image ? (

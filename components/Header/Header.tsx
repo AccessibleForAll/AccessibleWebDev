@@ -4,15 +4,17 @@ import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 
 import styles from "./Header.module.css"
 
-export interface HeaderProps {
+export interface IHeaderProps {
 	headerTitle: string
 	handleNavClick: () => void
 	showNavMobile: boolean
 }
 
-export const Header = (props: HeaderProps) => {
-	const { headerTitle, handleNavClick, showNavMobile } = props
-
+export const Header = ({
+	headerTitle,
+	handleNavClick,
+	showNavMobile,
+}: IHeaderProps) => {
 	return (
 		<>
 			<header>

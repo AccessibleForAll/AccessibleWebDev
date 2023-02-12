@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import { Footer } from "../Footer/Footer"
 import { Header } from "../Header/Header"
 import { NavPrimary } from "../Nav/NavPrimary"
@@ -6,15 +6,17 @@ import { NavPrimaryMobile } from "../Nav/NavPrimaryMobile"
 import { SkipLink } from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
-interface LayoutProps {
+interface ILayoutProps {
 	headerTitle: string
 	activeNavLink: string
 	children: JSX.Element
 }
 
-export const Layout = (props: LayoutProps) => {
-	const { headerTitle, activeNavLink, children } = props
-
+export const Layout = ({
+	headerTitle,
+	activeNavLink,
+	children,
+}: ILayoutProps) => {
 	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
 
 	const handleNavClick = () => {

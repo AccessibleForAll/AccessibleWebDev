@@ -2,13 +2,15 @@ import { NavItem } from "./NavItem"
 import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 
-export interface NavProps {
+export interface INavProps {
 	activeNavLink: string
 	handleNavClick: () => void
 }
 
-export const NavPrimaryMobile = (props: NavProps) => {
-	const { activeNavLink, handleNavClick } = props
+export const NavPrimaryMobile = ({
+	activeNavLink,
+	handleNavClick,
+}: INavProps) => {
 	return (
 		<nav aria-label="Primary" className={styles.navPrimaryMobile}>
 			<ul className={styles.navList}>

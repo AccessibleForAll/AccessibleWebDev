@@ -1,8 +1,5 @@
-import React from "react"
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const IconsTemplate = () => {
+export const IconsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default IconsTemplate

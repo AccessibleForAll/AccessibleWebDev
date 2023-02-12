@@ -1,7 +1,6 @@
 import Link from "next/link"
-import React from "react"
 import styles from "./Footer.module.css"
-import { BsGithub } from "react-icons/bs"
+import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs"
 
 export const Footer = () => {
 	return (
@@ -18,14 +17,20 @@ export const Footer = () => {
 						<a
 							href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
 							className={styles.footerLink}>
-							Become a Contributor
+							Become a Contributor{" "}
+							<span>
+								<BsBoxArrowUpRight aria-label="opens in new window" />
+							</span>
 						</a>
 					</li>
 					<li>
 						<a
 							href="https://github.com/sponsors/EmmaDawsonDev"
 							className={styles.footerLink}>
-							Support Us
+							Support Us{" "}
+							<span>
+								<BsBoxArrowUpRight aria-label="opens in new window" />
+							</span>
 						</a>
 					</li>
 					<li>

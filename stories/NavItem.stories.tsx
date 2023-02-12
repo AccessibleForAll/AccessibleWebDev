@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import { NavItem, NavItemProps } from "../components/Nav/NavItem"
+import { NavItem, INavItemProps } from "../components/Nav/NavItem"
 import { pages } from "../data/pages"
 
 export default {
@@ -15,4 +15,5 @@ export const DesktopNavItem = Template.bind({})
 DesktopNavItem.args = {
 	page: pages[16],
 	activeNavLink: "/navigation",
-} as NavItemProps
+	// eslint-disable-next-line @typescript-eslint/naming-convention
+} as INavItemProps

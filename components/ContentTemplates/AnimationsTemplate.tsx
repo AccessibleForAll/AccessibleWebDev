@@ -1,8 +1,5 @@
-import React from "react"
 import { WorkInProgress } from "../WorkInProgress/WorkInProgress"
 
-const AnimationsTemplate = () => {
+export const AnimationsTemplate = () => {
 	return <WorkInProgress />
 }
-
-export default AnimationsTemplate

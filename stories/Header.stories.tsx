@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import { Header, HeaderProps } from "../components/Header/Header"
+import { Header, IHeaderProps } from "../components/Header/Header"
 
 export default {
 	title: "Example/Header",
@@ -15,4 +15,5 @@ DesktopHeader.args = {
 	headerTitle: "Page Title",
 	handleNavClick: () => true,
 	showNavMobile: false,
-} as HeaderProps
+	// eslint-disable-next-line @typescript-eslint/naming-convention
+} as IHeaderProps

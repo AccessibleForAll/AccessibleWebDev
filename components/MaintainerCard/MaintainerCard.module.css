@@ -1,6 +1,6 @@
 .maintainerContainer {
     align-items: center;
-    border: 0.15rem solid var(--primary);
+    border: 0.15rem solid var(--primaryLt);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 }
 
 .maintainerImage {
-    background-color: var(--primary);
+    background-color: var(--primaryLt);
     border-radius: 50%;
     height: 8rem;
     margin-top: -5rem;
@@ -31,7 +31,7 @@
 }
 
 .linkButton {
-    background-color: var(--primary);
+    background-color: var(--primaryLt);
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
