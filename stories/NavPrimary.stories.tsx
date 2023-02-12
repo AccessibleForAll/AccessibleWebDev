@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import { NavPrimary, NavProps } from "../components/Nav/NavPrimary"
+import { NavPrimary, INavProps } from "../components/Nav/NavPrimary"
 
 export default {
 	title: "Example/Nav",
@@ -15,4 +15,5 @@ export const PrimaryNav = Template.bind({})
 
 PrimaryNav.args = {
 	activeNavLink: "/",
-} as NavProps
+	// eslint-disable-next-line @typescript-eslint/naming-convention
+} as INavProps

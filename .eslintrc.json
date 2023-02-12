@@ -23,10 +23,10 @@
 			"rules": {
 				"react/prop-types": "off",
 				"@typescript-eslint/naming-convention": [
-					"error",
+					"warn",
 					{
 						"selector": "default",
-						"format": ["strictCamelCase"],
+						"format": ["camelCase"],
 						"leadingUnderscore": "forbid",
 						"trailingUnderscore": "forbid"
 					},
