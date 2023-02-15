@@ -118,8 +118,7 @@ export const ButtonsTemplate = () => {
 					languageType={"css"}
 				/>
 				<CodeBlock
-					codeSnippet={`
-<button type="button" onclick="handleClick()">Add to basket
+					codeSnippet={`<button type="button" onclick="handleClick()">Add to basket
 	<span class="visibly-hidden">Product 1</span>
 </button>`}
 					languageType={"html"}
