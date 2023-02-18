@@ -438,6 +438,9 @@ export const ButtonsTemplate = () => {
 					Buttons vs. Links by Eric Eggert
 				</a>
 			</TemplateSection>
+			<p className="pageLastUpdated">
+				<strong>Page last updated: </strong>18th February 2023
+			</p>
 		</>
 	)
 }
