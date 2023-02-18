@@ -35,6 +35,7 @@ export const ButtonsTemplate = () => {
 
 				<CodeBlock
 					codeSnippet={`<button type="submit" onclick="handleClick()"></button>`}
+					languageType={"html"}
 				/>
 				<p>
 					If another element is used to create a button instead, such as a div,
@@ -56,6 +57,7 @@ export const ButtonsTemplate = () => {
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">Text here</button>`}
+					languageType={"html"}
 				/>
 				<p>
 					It gets its accessible name from the text between the opening and
@@ -112,11 +114,14 @@ export const ButtonsTemplate = () => {
 	position: absolute;
 	white-space: nowrap; 
 	width: 1px;
-}
-					
-<button type="button" onclick="handleClick()">Add to basket
+}`}
+					languageType={"css"}
+				/>
+				<CodeBlock
+					codeSnippet={`<button type="button" onclick="handleClick()">Add to basket
 	<span class="visibly-hidden">Product 1</span>
 </button>`}
+					languageType={"html"}
 				/>
 				<p>
 					This would then read out "Add to basket product 1" to screen reader
@@ -131,6 +136,7 @@ export const ButtonsTemplate = () => {
 				<p>We could also use an aria-label.</p>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()" aria-label="Add to basket product 1">Add to basket</button>`}
+					languageType={"html"}
 				/>
 				<p>
 					Again, it is important that the start of the aria-label matches with
@@ -158,12 +164,14 @@ export const ButtonsTemplate = () => {
 	<img src="icon-url.png" alt="" />
 		Text
 </button>`}
+					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
 	<img src="icon-url.png" aria-hidden="true" />
 		Text
 </button>`}
+					languageType={"html"}
 				/>
 				<p>
 					An empty alt attribute has the most wide-spread support so that should
@@ -190,11 +198,13 @@ export const ButtonsTemplate = () => {
 					codeSnippet={`<button type="button" onclick="handleClick()">
 	<img src="icon-url.png" alt="Save" />
 </button>`}
+					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
 	<i class="fa-solid fa-floppy-disk" aria-label="Save"></i>
 </button>`}
+					languageType={"html"}
 				/>
 				<p>
 					Make sure that the label you give the icon matches the function of the
@@ -207,6 +217,7 @@ export const ButtonsTemplate = () => {
 					codeSnippet={`<button type="button" onclick="handleClick()">
 	<i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
 </button>`}
+					languageType={"html"}
 				/>
 				<p>
 					<strong>Don't do this:</strong>
@@ -215,6 +226,7 @@ export const ButtonsTemplate = () => {
 					codeSnippet={`<button type="button" onclick="handleClick()">
 	<i class="fa-solid fa-magnifying-glass" aria-label="Magnifying glass"></i>
 </button>`}
+					languageType={"html"}
 				/>
 			</TemplateSection>
 			<TemplateSection sectionName="buttonStates" title="Button States">
@@ -305,6 +317,7 @@ export const ButtonsTemplate = () => {
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()" disabled>Disabled button</button>`}
+					languageType={"html"}
 				/>
 				<h3>Toggle buttons - pressed and unpressed states</h3>
 				<p>
@@ -320,6 +333,7 @@ export const ButtonsTemplate = () => {
 				</p>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()" aria-pressed="true">Toggle button</button>`}
+					languageType={"html"}
 				/>
 				<h3>Menus and popups - expanded and collapsed state</h3>
 				<p>
@@ -333,6 +347,7 @@ export const ButtonsTemplate = () => {
 				</p>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()" aria-expanded="true">Button with popup</button>`}
+					languageType={"html"}
 				/>
 			</TemplateSection>
 			<TemplateSection sectionName="buttonOrLink" title="Button or Link?">
