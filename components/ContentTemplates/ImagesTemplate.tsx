@@ -3,7 +3,7 @@ import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { imagePageNavigation } from "../../data/pageNavigationLists"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
-import { UpdatedDate } from "../UpdatedDate/UpdatedDate"
+import { PageUpdated } from "../PageUpdated/PageUpdated"
 
 export const ImagesTemplate = () => {
 	return (
@@ -407,10 +407,8 @@ export const ImagesTemplate = () => {
 					</a>
 				</TemplateSection>
 			</article>
-			{/* <p className="pageLastUpdated">
-				<strong>Page last updated: </strong>26th November 2022
-			</p> */}
-			<UpdatedDate date="26th November 2022" />
+
+			<PageUpdated date="26th November 2022" />
 		</>
 	)
 }
