@@ -81,7 +81,7 @@ h3 {
 
 /*Classes used on multiple content pages*/
 .infoSection {
-	margin-top: 2rem;
+	margin-top: 1.7;
 	width: 100%;
 }
 
@@ -100,4 +100,10 @@ h3 {
 	display: block;
 }
 
+.orderedLists > li {
+	margin-bottom: .7rem;
+}
 
+.unorderedLists > li {
+	margin-bottom: .7rem;
+}

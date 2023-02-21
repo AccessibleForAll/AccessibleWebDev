@@ -17,3 +17,19 @@ export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
+
+export const headingsPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#intro" },
+	{ linkName: "Why are HTML Headings Important?", href: "#whyHeadings" },
+	{
+		linkName: "What Should Be Included in a Heading?",
+		href: "#includedInHeadings",
+	},
+	{ linkName: "How to Write a Good Heading", href: "#goodHeadings" },
+	{
+		linkName: "What Should We Avoid When Using Headings?",
+		href: "#avoidHeadings",
+	},
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Test Your Knowledge", href: "#QuizQuestions" },
+]
