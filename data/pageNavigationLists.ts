@@ -28,3 +28,11 @@ export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
+
+export const formsPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Why Are Web Accessible Forms Important?", href: "#whyFormsImportant" },
+	{ linkName: "Best practices for designing web-accessible forms", href: "#formsBestPractices" },
+	{ linkName: "Code examples for web-accessible forms", href: "#formsCode" },
+	{ linkName: "What to avoid", href: "#formsAvoid" },
+]
