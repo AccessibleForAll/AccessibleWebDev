@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react"
 
 import {
 	MaintainerCard,
-	MaintainerCardProps,
+	IMaintainerCardProps,
 } from "../components/MaintainerCard/MaintainerCard"
 
 export default {
@@ -26,4 +26,5 @@ const maintainer = {
 	githubLink: "https://github.com",
 }
 
-DesktopMaintainerCard.args = { maintainer } as MaintainerCardProps
+// eslint-disable-next-line @typescript-eslint/naming-convention
+DesktopMaintainerCard.args = { maintainer } as IMaintainerCardProps
