@@ -100,6 +100,15 @@ h3 {
 	display: block;
 }
 
+
+.orderedLists > li {
+	margin-bottom: .7rem;
+}
+
+.unorderedLists > li {
+	margin-bottom: .7rem;
+}
+
 .exampleButton {
 	padding: 0.6rem 1.2rem;
 	display: flex;

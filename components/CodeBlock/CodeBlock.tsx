@@ -15,7 +15,10 @@ interface ICodeBlockProps {
 
 export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
 	return (
-		<SyntaxHighlighter language={languageType} style={dracula}>
+		<SyntaxHighlighter
+			language={languageType}
+			style={dracula}
+			wrapLongLines={true}>
 			{codeSnippet}
 		</SyntaxHighlighter>
 	)

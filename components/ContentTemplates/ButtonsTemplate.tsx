@@ -3,6 +3,7 @@ import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { FaSave } from "react-icons/fa"
 import { NavPage } from "../NavPage/NavPage"
 import { buttonPageNavigation } from "../../data/pageNavigationLists"
+import { PageUpdated } from "../PageUpdated/PageUpdated"
 
 export const ButtonsTemplate = () => {
 	const handleTextButton = () => {
@@ -438,9 +439,7 @@ export const ButtonsTemplate = () => {
 					Buttons vs. Links by Eric Eggert
 				</a>
 			</TemplateSection>
-			<p className="pageLastUpdated">
-				<strong>Page last updated: </strong>18th February 2023
-			</p>
+			<PageUpdated date="18th February 2023" />
 		</>
 	)
 }
