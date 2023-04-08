@@ -81,7 +81,7 @@ h3 {
 
 /*Classes used on multiple content pages*/
 .infoSection {
-	margin-top: 1.7;
+	margin-top: 2rem;
 	width: 100%;
 }
 
@@ -107,6 +107,7 @@ h3 {
 
 .unorderedLists > li {
 	margin-bottom: .7rem;
+}
 
 .exampleButton {
 	padding: 0.6rem 1.2rem;
