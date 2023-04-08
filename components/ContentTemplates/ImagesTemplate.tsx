@@ -44,7 +44,7 @@ export const ImagesTemplate = () => {
 					</p>
 					<CodeBlock
 						codeSnippet={`<img src="url" alt="The text alternative goes here" />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 
 					<CodeBlock
@@ -52,7 +52,7 @@ export const ImagesTemplate = () => {
 	<title>The text alternative goes here</title>
 	<path d="M120 10 L55 200 L265 180 Z" />
 </svg>`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 				<TemplateSection
@@ -86,7 +86,7 @@ export const ImagesTemplate = () => {
 					<CodeBlock
 						codeSnippet={`<img src="/oldPaperTexture.jpg" alt="" />
 <img src="/hexagonsPattern.jpg" alt="" />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 
@@ -111,7 +111,7 @@ export const ImagesTemplate = () => {
 					</div>
 					<CodeBlock
 						codeSnippet={`<img src="/cupcakes.jpg" alt="Cupcakes with pink icing and small sugar heart decorations" />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 
 					<h3>Complex Informative Images</h3>
@@ -143,7 +143,7 @@ export const ImagesTemplate = () => {
 					</div>
 					<CodeBlock
 						codeSnippet={`<img src="drill-instructions.png" alt="How to use a handheld drill. Further instructions below." />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 
@@ -176,7 +176,7 @@ export const ImagesTemplate = () => {
 					<CodeBlock
 						codeSnippet={`<img src="searchBtn.png" alt="Search" />
 <img src="playBtn.png" alt="Play" />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 
@@ -274,7 +274,7 @@ export const ImagesTemplate = () => {
 					</div>
 					<CodeBlock
 						codeSnippet={`<img src="make-the-day-great.jpg" alt="Make the day great sign" />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 				<TemplateSection
@@ -335,13 +335,13 @@ export const ImagesTemplate = () => {
 	<area
 		shape="circle"
 		coords="190,130,70"
-		href="https://en.wikipedia.org/wiki/Doughnut"
+		href="url"
 		alt="Doughnut"
 	/>
 	<area
 		shape="circle"
 		coords="380,250,100"
-		href="https://en.wikipedia.org/wiki/Coffee"
+		href="url"
 		alt="Coffee"
 	/>
 </map>
@@ -350,7 +350,7 @@ export const ImagesTemplate = () => {
 	src="donut-coffee.png"
 	alt="Illustration of a pink doughnut with sprinkles next to a cup of black coffee" 
 />`}
-						languageType={"html"}
+						languageType="html"
 					/>
 				</TemplateSection>
 				{/* TODO: <TemplateSection sectionName="checklist"  title="Images Checklist">
