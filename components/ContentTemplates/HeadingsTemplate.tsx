@@ -3,6 +3,7 @@ import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { headingsPageNavigation } from "../../data/pageNavigationLists"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
+import { PageUpdated } from "../PageUpdated/PageUpdated"
 
 export const HeadingsTemplate = () => {
 	return (
@@ -38,15 +39,15 @@ export const HeadingsTemplate = () => {
 					<ul className="unorderedLists">
 						<li>
 							They give order and structure to the web page, making it easier
-							for users to understand the layout and content of the page.{" "}
+							for users to understand the layout and content of the page.
 						</li>
 						<li>
 							They allow the browser to index and structure the page visually,
-							which helps users find what they are looking for.{" "}
+							which helps users find what they are looking for.
 						</li>
 						<li>
-							They allow screen readers and users to skip to specific sections
-							of the page, so they can find the information they need quickly.
+							They allow screen reader users to skip to specific sections of the
+							page, so they can find the information they need quickly.
 						</li>
 					</ul>
 				</TemplateSection>
@@ -72,20 +73,20 @@ export const HeadingsTemplate = () => {
 					</p>
 					<p>Below is a code snippet example with semantic section headings.</p>
 					<CodeBlock
+						languageType="html"
 						codeSnippet={`<h1> Yoga for Developers </h1>
-										<h2> What is Yoga? </h2>
-											<h3> The History of Yoga </h3>
-												<h4> Yoga's Origin </h4>
-												<h4> Yoga in Modern Times </h4>
-										<h2> The Benefit of Yoga </h2>
-											<h3> Strength Conditioning </h3>
-												<h4> Power Yoga </h4>
-											<h3> Increasing Flexibility</h3>
-												<h4> Gentle Stretches </h4>
-													<h5> Stretches for the hands </h5>
-														<h6> Prayer Pose </h6>
-														<h6> Nerve Gliding Exercises </h6>
-															`}
+	<h2> What is Yoga? </h2>
+		<h3> The History of Yoga </h3>
+			<h4> Yoga's Origin </h4>
+			<h4> Yoga in Modern Times </h4>
+	<h2> The Benefit of Yoga </h2>
+		<h3> Strength Conditioning </h3>
+			<h4> Power Yoga </h4>
+		<h3> Increasing Flexibility</h3>
+			<h4> Gentle Stretches </h4>
+				<h5> Stretches for the hands </h5>
+					<h6> Prayer Pose </h6>
+					<h6> Nerve Gliding Exercises </h6>`}
 					/>
 				</TemplateSection>
 
@@ -130,7 +131,7 @@ export const HeadingsTemplate = () => {
 					sectionName="QuizQuestions"
 					title="Test Your Knowledge">
 					<ol className="orderedLists">
-						<li>How many H1’s should we have on our webpage?</li>
+						<li>How many H1s should we have on our webpage?</li>
 						<li>Why is heading order important?</li>
 						<li>
 							Why is it important to have accurate and descriptive headings?
@@ -141,20 +142,18 @@ export const HeadingsTemplate = () => {
 						<li>What should we use to change the style of our headings?</li>
 						<li>
 							If you wanted to add another subsection under an h2 heading that
-							is directly related to the h2 subject, what heading number would
+							is directly related to the h2 subject, what heading level would
 							you use?
 						</li>
 						<li>
 							If you wanted to add a new subsection after an h2 that is not
-							related to the current subsection of h2, which heading number
-							would you use to make a new section?
+							related to the current subsection of h2, which heading level would
+							you use to make a new section?
 						</li>
 					</ol>
 				</TemplateSection>
 			</article>
-			<p className="pageLastUpdated">
-				<strong>Page last updated: </strong>24th December 2022
-			</p>
+			<PageUpdated date="8th April 2023" />
 		</>
 	)
 }
