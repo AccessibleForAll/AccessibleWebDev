@@ -79,6 +79,10 @@ h3 {
 	font-size: 1.1rem;
 }
 
+p {
+	line-height: 1.5;
+}
+
 /*Classes used on multiple content pages*/
 .infoSection {
 	margin-top: 2rem;
@@ -186,3 +190,4 @@ h3 {
 	display: inline-block;
 	margin: 0.5rem 0;
 }
+
