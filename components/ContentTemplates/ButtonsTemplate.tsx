@@ -170,7 +170,7 @@ export const ButtonsTemplate = () => {
 					type="button"
 					onClick={handleTextAndIconButton}>
 					<span>
-						<FaSave color="black" size="1rem" aria-hidden="true" /> Save
+						<FaSave size="1rem" aria-hidden="true" /> Save
 					</span>
 				</button>
 				<CodeBlock
@@ -206,7 +206,7 @@ export const ButtonsTemplate = () => {
 					className={styles.exampleButton}
 					type="button"
 					onClick={handleTextAndIconButton}>
-					<FaSave color="black" size="1rem" aria-label="Save" />
+					<FaSave size="1rem" aria-label="Save" />
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
