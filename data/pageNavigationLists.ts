@@ -3,6 +3,16 @@ export interface IPageNavigationItem {
 	href: string
 }
 
+export const breadcrumbsPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "HTML Structure", href: "#htmlStructure" },
+	{ linkName: "Add Extra Information with ARIA", href: "#aria" },
+	{ linkName: "Breadcrumbs Example", href: "#breadcrumbsExample" },
+	{ linkName: "Styling Breadcrumbs", href: "#breadcrumbStyling" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
+
 export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Text Buttons", href: "#textButtons" },
