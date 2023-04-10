@@ -12,8 +12,8 @@ interface IAboutProps {
 }
 
 const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const { t } = useTranslation("common")
-
 	return (
 		<>
 			<Head>
@@ -38,7 +38,7 @@ const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const locale: string = context.locale!
+	const locale: string = context?.locale ?? ""
 
 	const currentMaintainerData = currentMaintainers
 

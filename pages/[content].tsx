@@ -35,6 +35,7 @@ interface IProps {
 const ContentPage: NextPage<IProps> = ({ page }) => {
 	const title = capitalizeRoute(page)
 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const { t } = useTranslation("common")
 
 	return (
@@ -71,7 +72,7 @@ const ContentPage: NextPage<IProps> = ({ page }) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async (context) => {
-	const locales = context.locales!
+	const locales = context?.locales ?? []
 	const paths = pages.filter((page) => page.content)
 
 	const pathsWithLocales = paths.flatMap((path) => {
@@ -92,8 +93,8 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const content = context.params!.content
-	const locale: string = context.locale!
+	const content = context.params?.content ?? ""
+	const locale: string = context?.locale ?? ""
 
 	return {
 		props: {

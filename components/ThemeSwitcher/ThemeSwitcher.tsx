@@ -46,7 +46,7 @@ export const ThemeSwitcher = () => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
 
 		return () => document.removeEventListener("keyup", handleThemeSwitcherKB)
-	}, [])
+	})
 
 	return (
 		<>
