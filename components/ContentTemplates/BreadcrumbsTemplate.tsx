@@ -66,6 +66,10 @@ export const BreadcrumbsTemplate = () => {
 						Links within the list will let users know that they can click to
 						navigate to that area of the website.
 					</li>
+					<li>
+						Since the last element in a breadcrumb trail should represent the
+						current page, making it a link is optional.
+					</li>
 				</ul>
 			</TemplateSection>
 			<TemplateSection
@@ -75,11 +79,17 @@ export const BreadcrumbsTemplate = () => {
 					ARIA is used to add extra semantic information where HTML is not
 					enough. In this case, there is probably another navigation present on
 					the page. Therefore we will need to distinguish the breadcrumb
-					navigation from any other navigation with aria-label. We can also use
-					aria-current on the last link in the breadcrumbs to specify that the
-					link is the currently active page. Aria-hidden can be used to hide any
-					dividers between links.
+					navigation from any other navigation with an aria-label.
 				</p>
+
+				<p>
+					If the last link in the breadcrumb trail is the current page, we can
+					also use aria-current on that link to specify that it is the currently
+					active page. If the last element is not a link then aria-current is
+					optional.
+				</p>
+
+				<p>Aria-hidden can be used to hide any dividers between links.</p>
 			</TemplateSection>
 
 			<TemplateSection
