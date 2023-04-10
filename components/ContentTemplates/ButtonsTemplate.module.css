@@ -1,0 +1,91 @@
+.exampleButton {
+	padding: 0.6rem 1.2rem;	
+	cursor: pointer;
+	background-color: var(--primaryLt);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: inherit;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+
+.exampleButton span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exampleButton:hover, .exampleButton:focus {
+	background-color: var(--primary);
+}
+
+.exampleHover {
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	background-color: var(--primary);
+	color: black;
+  font-size: 0.9rem;
+  font-family: inherit;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0.5rem 0;
+}
+
+.exampleFocus {
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	background-color: var(--primary);
+	color: black;
+  font-size: 0.9rem;
+  font-family: inherit;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	display: inline-block;
+	outline: 2px transparent solid;
+	box-shadow: 0 0 0 2px #000, 0 0 0 4px #fff;
+	margin: 0.5rem 0;
+}
+
+.exampleActive {
+	position: relative;
+	top: 2px;
+	left: 1px;
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: pointer;
+	background-color: var(--primary);
+	color:black;
+  font-size: 0.9rem;
+  font-family: inherit;
+	border: 2px inset var(--primaryLt);
+	border-radius: 5px;
+	display: inline-block;
+	
+	margin: 0.5rem 0;
+}
+
+.exampleDisabled {
+	padding: 0.6rem 1.2rem;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	cursor: not-allowed;
+	background-color: var(--primaryLt);
+  font-size: 0.9rem;
+  font-family: inherit;
+	border: 1px solid var(--dark);
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0.5rem 0;
+}

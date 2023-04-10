@@ -4,6 +4,7 @@ import { FaSave } from "react-icons/fa"
 import { NavPage } from "../NavPage/NavPage"
 import { buttonPageNavigation } from "../../data/pageNavigationLists"
 import { PageUpdated } from "../PageUpdated/PageUpdated"
+import styles from "./ButtonsTemplate.module.css"
 
 export const ButtonsTemplate = () => {
 	const handleTextButton = () => {
@@ -53,7 +54,7 @@ export const ButtonsTemplate = () => {
 			</TemplateSection>
 			<TemplateSection sectionName="textButtons" title="Text Buttons">
 				<p>A text button is a button which has only text inside it.</p>
-				<button className="exampleButton" onClick={handleTextButton}>
+				<button className={styles.exampleButton} onClick={handleTextButton}>
 					Text here
 				</button>
 				<CodeBlock
@@ -76,31 +77,41 @@ export const ButtonsTemplate = () => {
 				<ul>
 					<li>
 						Product 1{" "}
-						<button className="exampleButton" onClick={handleAddToBasketButton}>
+						<button
+							className={styles.exampleButton}
+							onClick={handleAddToBasketButton}>
 							Add to basket
 						</button>
 					</li>
 					<li>
 						Product 2{" "}
-						<button className="exampleButton" onClick={handleAddToBasketButton}>
+						<button
+							className={styles.exampleButton}
+							onClick={handleAddToBasketButton}>
 							Add to basket
 						</button>
 					</li>
 					<li>
 						Product 3{" "}
-						<button className="exampleButton" onClick={handleAddToBasketButton}>
+						<button
+							className={styles.exampleButton}
+							onClick={handleAddToBasketButton}>
 							Add to basket
 						</button>
 					</li>
 					<li>
 						Product 4{" "}
-						<button className="exampleButton" onClick={handleAddToBasketButton}>
+						<button
+							className={styles.exampleButton}
+							onClick={handleAddToBasketButton}>
 							Add to basket
 						</button>
 					</li>
 					<li>
 						Product 5{" "}
-						<button className="exampleButton" onClick={handleAddToBasketButton}>
+						<button
+							className={styles.exampleButton}
+							onClick={handleAddToBasketButton}>
 							Add to basket
 						</button>
 					</li>
@@ -155,10 +166,12 @@ export const ButtonsTemplate = () => {
 					given an empty(null) alt attribute or the state aria-hidden="true"
 				</p>
 				<button
-					className="exampleButton"
+					className={styles.exampleButton}
 					type="button"
 					onClick={handleTextAndIconButton}>
-					<FaSave color="black" size="1rem" aria-hidden="true" /> Save
+					<span>
+						<FaSave color="black" size="1rem" aria-hidden="true" /> Save
+					</span>
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
@@ -190,7 +203,7 @@ export const ButtonsTemplate = () => {
 					attribute if using images or the aria-label attribute.
 				</p>
 				<button
-					className="exampleButton"
+					className={styles.exampleButton}
 					type="button"
 					onClick={handleTextAndIconButton}>
 					<FaSave color="black" size="1rem" aria-label="Save" />
@@ -247,7 +260,7 @@ export const ButtonsTemplate = () => {
 						3:1 contrast ratio with the background.
 						<div>
 							<button
-								className="exampleButton"
+								className={styles.exampleButton}
 								type="button"
 								onClick={handleTextButton}>
 								Default
@@ -262,7 +275,7 @@ export const ButtonsTemplate = () => {
 						color contrast ratios apply.
 						<div>
 							<button
-								className="exampleHover"
+								className={styles.exampleHover}
 								type="button"
 								onClick={handleTextButton}>
 								Hover
@@ -279,7 +292,7 @@ export const ButtonsTemplate = () => {
 						required color contrast ratio between text and background.
 						<div>
 							<button
-								className="exampleFocus"
+								className={styles.exampleFocus}
 								type="button"
 								onClick={handleTextButton}>
 								Focus
@@ -291,7 +304,7 @@ export const ButtonsTemplate = () => {
 						is pressed. It will often look like it's been pressed.
 						<div>
 							<button
-								className="exampleActive"
+								className={styles.exampleActive}
 								type="button"
 								onClick={handleTextButton}>
 								Active
@@ -310,7 +323,7 @@ export const ButtonsTemplate = () => {
 					instead if the button is pressed.
 				</p>
 				<button
-					className="exampleDisabled"
+					className={styles.exampleDisabled}
 					type="button"
 					disabled
 					onClick={handleTextButton}>
@@ -407,13 +420,10 @@ export const ButtonsTemplate = () => {
 				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
 					2.1.1 Keyboard
 				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
-					2.1.1 Keyboard
-				</a>
 				<a
 					href="https://www.w3.org/TR/WCAG21/#focus-visible"
 					className="blockLink">
-					2.1.7 Focus Visible
+					2.4.7 Focus Visible
 				</a>
 				<a
 					href="https://www.w3.org/TR/WCAG21/#label-in-name"
