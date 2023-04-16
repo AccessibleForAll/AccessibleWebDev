@@ -41,7 +41,7 @@
 					},
 					{
 						"selector": "typeLike",
-						"format": ["StrictPascalCase"]
+						"format": ["StrictPascalCase", "PascalCase"]
 					},
 					{
 						"selector": "interface",

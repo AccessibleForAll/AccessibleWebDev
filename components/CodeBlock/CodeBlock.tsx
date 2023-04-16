@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism"
 
-type TcodeLanguage =
+type TCodeLanguage =
 	| "html"
 	| "css"
 	| "javascript"
@@ -10,7 +10,7 @@ type TcodeLanguage =
 	| "tsx"
 interface ICodeBlockProps {
 	codeSnippet: string
-	languageType: TcodeLanguage
+	languageType: TCodeLanguage
 }
 
 export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
