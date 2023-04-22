@@ -38,7 +38,7 @@ const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const locale: string = context?.locale ?? ""
+	const locale: string = context?.locale || ""
 
 	const currentMaintainerData = currentMaintainers
 
