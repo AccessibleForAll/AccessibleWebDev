@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { FaCopy, FaCheckSquare } from "react-icons/fa"
-import style from "./copyCodeBlock.module.css"
+import style from "./CopyCodeBlock.module.css"
 
 interface CodeSnippet {
 	code: string
@@ -9,26 +9,30 @@ interface CodeSnippet {
 const CopyCodeBlock = ({ code }: CodeSnippet) => {
 	const [copyOk, setCopyOk] = useState(false)
 
-	const iconColor = copyOk ? "#0af20a" : "#ddd"
-
 	const handleClick = () => {
 		navigator.clipboard.writeText(code)
 
 		setCopyOk(true)
 		setTimeout(() => {
 			setCopyOk(false)
-		}, 500)
+		}, 3000)
 	}
 
 	return (
 		<button
-			className={copyOk ? `${style.codeCopied}` : style.codeCopyBtn}
+			className={style.codeCopyBtn}
 			onClick={handleClick}
 			aria-label="Copy code snippet to clipboard">
 			{copyOk ? (
-				<FaCheckSquare style={{ color: iconColor }} />
+				<>
+					<FaCheckSquare className={style.faCopSymbol} />
+					<span className={style.cpyText}>copied</span>
+				</>
 			) : (
-				<FaCopy style={{ color: iconColor }} />
+				<>
+					<FaCopy className={style.faCopySymbol} />
+					<span className={style.cpyText}>copy</span>
+				</>
 			)}
 		</button>
 	)

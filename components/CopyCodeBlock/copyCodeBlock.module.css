@@ -1,8 +1,12 @@
-/* Styles for the button before being clicked */
-
 .codeCopyBtn {
-	color: white;
+	color: var(--text);
+	background-color: var(--lightGrey);
 	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border: none;
+	border-radius: 0.3rem;
 	right: 5px;
 	top: 5px;
 	font-size: 1rem;
@@ -15,37 +19,10 @@
 	opacity: 0.9;
 }
 
-.codeCopyBtn:hover::after {
-	content: "copy";
-	display: flex;
-	align-items: center;
-	font-size: 0.5rem;
-	opacity: 0.9;
+.faCopySymbol {
+	color: var(--text);
 }
 
-.codeCopyBtn:focus::after {
-	content: "copy";
-	display: flex;
-	align-items: center;
-	font-size: 0.5rem;
-	opacity: 0.9;
-}
-
-/* Styles for button after it has been clicked */
-.codeCopied {
-	color: white;
-	position: absolute;
-	right: 5px;
-	top: 5px;
+.cpyText {
 	font-size: 1rem;
-	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-}
-
-.codeCopied::after {
-	content: "copied";
-	display: flex;
-	align-items: center;
-	font-size: 0.5rem;
-	opacity: 0.9;
 }
