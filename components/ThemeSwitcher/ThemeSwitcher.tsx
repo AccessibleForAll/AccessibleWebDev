@@ -46,6 +46,7 @@ export const ThemeSwitcher = () => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
 
 		return () => document.removeEventListener("keyup", handleThemeSwitcherKB)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [])
 
 	return (

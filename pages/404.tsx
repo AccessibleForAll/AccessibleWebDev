@@ -8,6 +8,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { GetStaticProps } from "next"
 
 const PageNotFound = () => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const { t } = useTranslation("common")
 	return (
 		<>
@@ -30,7 +31,7 @@ const PageNotFound = () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-	const locale: string = context.locale!
+	const locale: string = context?.locale ?? ""
 
 	return {
 		props: {
