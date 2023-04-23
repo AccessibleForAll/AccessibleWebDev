@@ -2,7 +2,7 @@
 :root.light {
 	--text: #272727;
 	--grey: #c7c7c7;
-	--lightGrey: #eeeeee;
+	--lightGrey: #d6d6d6;
 	--primary: #f02f7c;
 	--primaryLt: #ffb0d0;
 	--bg: #fff;
@@ -14,7 +14,7 @@
 :root.dark {
 	--text: #fff;
 	--grey: #c7c7c7;
-	--lightGrey: #3b3b3b;
+	--lightGrey: #737373;
 	--primary: #f02f7c;
 	--primaryLt: #f02f7c79;
 	--bg: #272727;

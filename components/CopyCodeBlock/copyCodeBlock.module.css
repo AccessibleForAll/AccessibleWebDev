@@ -1,28 +1,15 @@
 .codeCopyBtn {
 	color: var(--text);
 	background-color: var(--lightGrey);
+	padding: 8px;
 	position: absolute;
 	display: flex;
 	align-items: center;
-	flex-direction: column;
+	gap: 0.25rem;
 	border: none;
-	border-radius: 0.3rem;
+	border-radius: 3px;
 	right: 5px;
 	top: 5px;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-}
-
-.codeCopyBtn:hover {
-	transform: scale(1.1);
-	opacity: 0.9;
-}
-
-.faCopySymbol {
-	color: var(--text);
-}
-
-.cpyText {
-	font-size: 1rem;
 }

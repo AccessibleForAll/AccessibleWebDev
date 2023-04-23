@@ -25,13 +25,13 @@ const CopyCodeBlock = ({ code }: CodeSnippet) => {
 			aria-label="Copy code snippet to clipboard">
 			{copyOk ? (
 				<>
-					<FaCheckSquare className={style.faCopSymbol} />
-					<span className={style.cpyText}>copied</span>
+					<FaCheckSquare />
+					Copied
 				</>
 			) : (
 				<>
-					<FaCopy className={style.faCopySymbol} />
-					<span className={style.cpyText}>copy</span>
+					<FaCopy />
+					Copy
 				</>
 			)}
 		</button>
