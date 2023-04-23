@@ -200,7 +200,7 @@ export const BreadcrumbsTemplate = () => {
 					ARIA Authoring Practices Guide Breadcrumb Example
 				</a>
 				<a
-					href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/"
+					href="https://design-system.service.gov.uk/components/breadcrumbs/"
 					className="blockLink">
 					Gov.uk Design System - Breadcrumbs
 				</a>
