@@ -3,7 +3,6 @@ import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism"
 import CopyCodeBlock from "../CopyCodeBlock/CopyCodeBlock"
 import style from "./CodeBlock.module.css"
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 type TCodeLanguage =
 	| "html"
 	| "css"
