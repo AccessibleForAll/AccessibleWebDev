@@ -30,7 +30,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	color: var(--text);
-	background-color: var(--bg)
+	background-color: var(--bg);
 }
 
 a {
@@ -67,7 +67,11 @@ main {
 	display: none;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
 }
 
@@ -104,14 +108,10 @@ p {
 	display: block;
 }
 
-
 .orderedLists > li {
-	margin-bottom: .7rem;
+	margin-bottom: 0.7rem;
 }
 
 .unorderedLists > li {
-	margin-bottom: .7rem;
+	margin-bottom: 0.7rem;
 }
-
-
-
