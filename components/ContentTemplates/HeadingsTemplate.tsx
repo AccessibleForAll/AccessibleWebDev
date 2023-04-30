@@ -110,22 +110,16 @@ export const HeadingsTemplate = () => {
 					</ul>
 				</TemplateSection>
 				<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
-					<ul className="unorderedLists">
-						<li>
-							<a
-								href="https://www.w3.org/TR/WCAG21/#section-headings"
-								className="blockLink">
-								2.4.10 Section Headings
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
-								className="blockLink">
-								2.4.6 Headings and Labels
-							</a>
-						</li>
-					</ul>
+					<a
+						href="https://www.w3.org/TR/WCAG21/#section-headings"
+						className="blockLink">
+						2.4.10 Section Headings
+					</a>
+					<a
+						href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
+						className="blockLink">
+						2.4.6 Headings and Labels
+					</a>
 				</TemplateSection>
 				<TemplateSection
 					sectionName="QuizQuestions"
