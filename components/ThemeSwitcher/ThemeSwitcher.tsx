@@ -36,8 +36,13 @@ export const ThemeSwitcher = () => {
 		}
 	}
 
-	const handleClickOutside = () => {
-		setShowThemeSwitcher(false)
+	const handleClickOutside = (event: MouseEvent) => {
+		const isClickInside =
+			buttonRef.current?.contains(event.target as Node) ||
+			ulListRef.current?.contains(event.target as Node)
+		if (!isClickInside) {
+			setShowThemeSwitcher(false)
+		}
 	}
 
 	useOnClickOutside(ulListRef, handleClickOutside)
