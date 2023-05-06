@@ -36,16 +36,11 @@ export const ThemeSwitcher = () => {
 		}
 	}
 
-	const handleClickOutside = (event: MouseEvent) => {
-		const isClickInside =
-			buttonRef.current?.contains(event.target as Node) ||
-			ulListRef.current?.contains(event.target as Node)
-		if (!isClickInside) {
-			setShowThemeSwitcher(false)
-		}
+	const handleClickOutside = () => {
+		setShowThemeSwitcher(false)
 	}
 
-	useOnClickOutside(ulListRef, handleClickOutside)
+	useOnClickOutside(ulListRef, buttonRef, handleClickOutside)
 
 	useEffect(() => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
