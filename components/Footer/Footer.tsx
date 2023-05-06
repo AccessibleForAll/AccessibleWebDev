@@ -1,6 +1,6 @@
 import Link from "next/link"
 import styles from "./Footer.module.css"
-import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs"
+import { BsGithub, BsBoxArrowUpRight, BsTwitter } from "react-icons/bs"
 
 export const Footer = () => {
 	return (
@@ -50,14 +50,22 @@ export const Footer = () => {
 				</ul>
 			</div>
 			<div className={styles.footerBottom}>
+				<div className={styles.footerSocialIcons}>
+					<a
+						className={styles.footerIcons}
+						href="https://github.com/AccessibleForAll">
+						<BsGithub color="white" size="1.5rem" aria-label="Github" />
+					</a>
+					<a
+						className={styles.footerSocialIcon}
+						href="https://twitter.com/EmmaDawsonDev">
+						<BsTwitter color="white" size="1.5rem" aria-label="Github" />
+					</a>
+				</div>
 				<p className={styles.footerCopyrightText}>
 					© Accessible Web Dev by <strong>Accessible For All</strong>. Making
 					accessibility accessible for everyone!
 				</p>
-
-				<a href="https://github.com/AccessibleForAll">
-					<BsGithub color="white" size="1.5rem" aria-label="Github" />
-				</a>
 			</div>
 		</footer>
 	)
