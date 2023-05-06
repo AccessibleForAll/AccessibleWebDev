@@ -59,7 +59,7 @@ export const Footer = () => {
 					<a
 						className={styles.footerSocialIcon}
 						href="https://twitter.com/EmmaDawsonDev">
-						<BsTwitter color="white" size="1.5rem" aria-label="Github" />
+						<BsTwitter color="white" size="1.5rem" aria-label="Twitter" />
 					</a>
 				</div>
 				<p className={styles.footerCopyrightText}>
