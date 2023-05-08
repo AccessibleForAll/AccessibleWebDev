@@ -17,13 +17,12 @@ interface ICodeBlockProps {
 
 export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
 	return (
-		<div className={style.codeBlock}>
+		<div className={style.CodeBlockContainer}>
 			<CopyCodeBlock code={codeSnippet} />
 			<SyntaxHighlighter
 				language={languageType}
 				style={dracula}
-				wrapLongLines={true}
-				className="contain">
+				className={`${style.CodeBlock}`}>
 				{codeSnippet}
 			</SyntaxHighlighter>
 		</div>
