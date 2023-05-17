@@ -56,10 +56,10 @@ Using the active voice in writing makes your message more direct and engaging.
 
 ### Jargon
 
-Using technical jargon can alienate non-technical readers.
+Using technical and coding jargon can alienate non-technical readers.
 
-- ❌ **Not this:** Gitpod **was** an open-source application that provides a prebuilt development environment in your browser - powered by VS Code.
-- ✅ **Use this:** Gitpod **is** an open-source application that provides a prebuilt development environment in your browser - powered by VS Code.
+- ❌ **Not this:** Before submitting your code review, it is always helpful to add comments such as **LGTM!** in the textbox.
+- ✅ **Use this:** Before submitting your code review, it is always helpful to add comments such as **Great job!** in the textbox.
 
 ## Accessibility ♿
 
@@ -93,7 +93,7 @@ Using technical jargon can alienate non-technical readers.
 
 - Place headings in chronological order.
 - ❌ **Not this:** `<h1>Yoga for Developers</h1>`
-  `<h2>What is Yoga?</h2>`
+  `<h3>What is Yoga?</h3>`
   `<h2>The History of Yoga</h2>`
   - ✅ **Use this:**  `<h1>Yoga for Developers</h1>`
   `<h2>What is Yoga?</h2>`
