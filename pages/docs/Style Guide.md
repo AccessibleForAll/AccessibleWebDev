@@ -31,7 +31,7 @@ Grammar and mechanics help ensure that your writing is clear, concise, and easy 
 
 - Use commas in introductory elements.
   - ❌ **Not this:** **If you do not have one yet** you can create one for free with an email address and password.
-  - ✅ **Use this:** If you do not have one yet, you can create one for free with an email address and password.
+  - ✅ **Use this:** If you do not have one yet**,** you can create one for free with an email address and password.
 
 - Use commas before the seven, so-called, coordinating conjunctions (and, but, so, for, nor, yet, or) to separate two independent clauses.
   - ❌ **Not this:** There are 4 ways you can add your profile **but** for this Quickstart, we will use the GitHub UI.
@@ -52,7 +52,7 @@ Clarity in writing helps ensure that your audience understands your message and 
 Using the active voice in writing makes your message more direct and engaging.
 
 - ❌ **Not this:** This repo is **maintained** by a team of people.
-- ✅ **Use this:** Gitpod **is** an open-source application that provides a prebuilt development environment in your browser - powered by VS Code.
+- ✅ **Use this:** A team of people **maintains** this repo.
 
 ### Jargon
 
