@@ -91,7 +91,7 @@ Using technical and coding jargon can alienate non-technical readers.
   - ❌ **Not this:** `<h1> Yoga</h1>`
 - ✅ **Use this:** `<h1>Yoga for Developers</h1>`
 
-- Place headings in chronological order.
+- Place headings in sequential order.
 - ❌ **Not this:** `<h1>Yoga for Developers</h1>`
   `<h3>What is Yoga?</h3>`
   `<h2>The History of Yoga</h2>`
