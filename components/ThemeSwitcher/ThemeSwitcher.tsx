@@ -11,7 +11,7 @@ export const ThemeSwitcher = () => {
 	const { theme, setTheme } = useTheme()
 
 	const buttonRef = useRef<HTMLButtonElement>(null)
-	const ulListRef = useRef<HTMLUListElement>(null)
+	const divRef = useRef<HTMLDivElement>(null)
 
 	const handleThemeSwitcher = () => {
 		setShowThemeSwitcher((prevState) => !prevState)
@@ -40,7 +40,7 @@ export const ThemeSwitcher = () => {
 		setShowThemeSwitcher(false)
 	}
 
-	useOnClickOutside(ulListRef, handleClickOutside)
+	useOnClickOutside(divRef, handleClickOutside)
 
 	useEffect(() => {
 		document.addEventListener("keyup", handleThemeSwitcherKB)
@@ -50,7 +50,7 @@ export const ThemeSwitcher = () => {
 	}, [])
 
 	return (
-		<>
+		<div ref={divRef}>
 			<button
 				className={styles.themeBtn}
 				type="button"
@@ -67,8 +67,7 @@ export const ThemeSwitcher = () => {
 					className={styles.themeSwitcher}
 					id="themeSwitcherMenu"
 					aria-labelledby="themeSwitcherBtn"
-					onBlur={handleBlur}
-					ref={ulListRef}>
+					onBlur={handleBlur}>
 					{themes.map(({ label, value, Icon }) => (
 						<li key={label} className={theme === value ? styles.activeBtn : ""}>
 							<button
@@ -86,6 +85,6 @@ export const ThemeSwitcher = () => {
 					))}
 				</ul>
 			)}
-		</>
+		</div>
 	)
 }
