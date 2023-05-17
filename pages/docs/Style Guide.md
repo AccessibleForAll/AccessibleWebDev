@@ -51,7 +51,7 @@ Clarity in writing helps ensure that your audience understands your message and 
 
 Using the active voice in writing makes your message more direct and engaging.
 
-- ❌ **Not this:** Gitpod **was** an open-source application that provides a prebuilt development environment in your browser - powered by VS Code.
+- ❌ **Not this:** This repo is **maintained** by a team of people.
 - ✅ **Use this:** Gitpod **is** an open-source application that provides a prebuilt development environment in your browser - powered by VS Code.
 
 ### Jargon
