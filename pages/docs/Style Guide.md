@@ -41,7 +41,7 @@ Grammar and mechanics help ensure that your writing is clear, concise, and easy 
 
 - Only capitalize terms that describe a product, its feature, the first letter of a sentence, or a person’s name.
   - ❌ **Not this:** There are 4 ways you can add your profile, but for this **quickstart** we will use the **github ui**.
-  - ✅ **Use this:** There are 4 ways you can add your profile, **but** for this Quickstart, we will use the **GitHub UI**.
+  - ✅ **Use this:** There are 4 ways you can add your profile, but for this Quickstart, we will use the **GitHub UI**.
 
 ## Clarity 🤔
 
