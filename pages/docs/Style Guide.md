@@ -82,7 +82,7 @@ Using technical and coding jargon can alienate non-technical readers.
 - ✅ **Use this:** There are **4** ways you can fix your profile, but for this tutorial, we will use the GitHub UI.
 
 - Use them sparingly at the end of a sentence.
-  - ❌ **Not this:** Join the conversation on our Discord community! 😀
+  - ❌ **Not this:** Join the conversation on our Discord community! 😀 😄 🎉
   - ✅ **Use this:** Join the conversation on our Discord community!
 
 ### Headings
