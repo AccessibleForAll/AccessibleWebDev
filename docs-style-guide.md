@@ -31,7 +31,7 @@ Grammar and mechanics help ensure that your writing is clear, concise, and easy 
 
 - Use commas in introductory elements.
   - ❌ **Not this:** **If you do not have one yet** you can create one for free with an email address and password.
-  - ✅ **Use this:** If you do not have one yet**,** you can create one for free with an email address and password.
+  - ✅ **Use this:** **If you do not have one yet,** you can create one for free with an email address and password.
 
 - Use commas before the seven, so-called, coordinating conjunctions (and, but, so, for, nor, yet, or) to separate two independent clauses.
   - ❌ **Not this:** There are 4 ways you can add your profile **but** for this Quickstart, we will use the GitHub UI.
