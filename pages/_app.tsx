@@ -28,6 +28,17 @@ function MyApp({ Component, pageProps }: AppProps) {
 					href="/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
+				<meta property="og:title" content="Accessible Web Dev" />
+				<meta
+					property="og:description"
+					content="Learn the basics about web accessibility in a clear and easy to understand way"
+				/>
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://accessibleweb.dev/" />
+				<meta
+					property="og:image"
+					content="https://user-images.githubusercontent.com/57045550/192143094-d3987a9c-4bc9-4d42-b1e3-25ba7655a4bd.png"
+				/>
 			</Head>
 			<ThemeProvider attribute="class">
 				<Component {...pageProps} />
