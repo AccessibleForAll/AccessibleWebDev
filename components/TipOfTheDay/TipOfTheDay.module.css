@@ -1,8 +1,14 @@
 .card {
 	background-color: var(--bg);
 	border: 1px solid var(--grey);
-	padding: 8px;
+	padding: 1rem;
 	border-radius: 12px;
 	color: var(--dark);
-	max-width: 200px;
+	max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.card {
+		max-width: 300px;
+	}
 }
