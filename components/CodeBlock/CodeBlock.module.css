@@ -1,3 +1,25 @@
-.codeBlock {
+.CodeBlockContainer {
 	position: relative;
+	width: 90vw;
+	max-width: calc(1200px - 15rem);
+}
+
+.CodeBlock {
+	overflow-x: auto;
+}
+
+@media only screen and (min-width: 800px) {
+	.CodeBlockContainer {
+		width: 65vw;
+	}
+}
+
+.CodeBlock {
+	overflow-x: auto;
+}
+
+@media only screen and (max-width: 791px) {
+	.CodeBlock {
+		width: calc(100vw - 2rem);
+	}
 }
