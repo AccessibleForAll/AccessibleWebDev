@@ -22,7 +22,7 @@ export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
 			<SyntaxHighlighter
 				language={languageType}
 				style={dracula}
-				className={`${style.CodeBlock}`}>
+				className={style.CodeBlock}>
 				{codeSnippet}
 			</SyntaxHighlighter>
 		</div>

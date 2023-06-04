@@ -14,12 +14,3 @@
 	}
 }
 
-.CodeBlock {
-	overflow-x: auto;
-}
-
-@media only screen and (max-width: 791px) {
-	.CodeBlock {
-		width: calc(100vw - 2rem);
-	}
-}
