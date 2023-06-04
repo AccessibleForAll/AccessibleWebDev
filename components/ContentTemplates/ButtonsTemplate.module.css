@@ -29,7 +29,7 @@
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
-	color: black;
+	color:var(--invertText);
   font-size: 0.9rem;
   font-family: inherit;
 	border: 1px solid var(--dark);
@@ -45,7 +45,7 @@
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
-	color: black;
+	color:var(--invertText);
   font-size: 0.9rem;
   font-family: inherit;
 	border: 1px solid var(--dark);
@@ -66,7 +66,7 @@
 	gap: 0.5rem;
 	cursor: pointer;
 	background-color: var(--primary);
-	color:black;
+	color:var(--invertText);
   font-size: 0.9rem;
   font-family: inherit;
 	border: 2px inset var(--primaryLt);

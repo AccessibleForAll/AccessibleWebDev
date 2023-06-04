@@ -1,24 +1,26 @@
 :root,
 :root.light {
-	--text: #272727;
+	--text: #161e35;
+	--invertText: #fff;
 	--grey: #c7c7c7;
-	--lightGrey: #d6d6d6;
-	--primary: #f02f7c;
-	--primaryLt: #ffb0d0;
+	--highlight: #def8f6;
+	--primary: #028378;
+	--primaryLt: #7ddfd7;
 	--bg: #fff;
-	--dark: #1c1c1c;
+	--dark: #161e35;
 	--borderRadius: 3px;
 	--white: #fff;
 }
 
 :root.dark {
 	--text: #fff;
+	--invertText: #161e35;
 	--grey: #c7c7c7;
-	--lightGrey: #737373;
-	--primary: #f02f7c;
-	--primaryLt: #f02f7c79;
-	--bg: #272727;
-	--dark: #1c1c1c;
+	--highlight: #028378;
+	--primary: #53fdee;
+	--primaryLt: #028378;
+	--bg: #161e35;
+	--dark: #161e35;
 	--borderRadius: 3px;
 	--white: #fff;
 }
@@ -54,7 +56,7 @@ main {
 
 .active {
 	border-left: 3px solid var(--primary);
-	background-color: var(--lightGrey);
+	background-color: var(--highlight);
 	font-weight: bold;
 }
 

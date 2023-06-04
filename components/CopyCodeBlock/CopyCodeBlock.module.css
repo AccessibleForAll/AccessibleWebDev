@@ -1,6 +1,6 @@
 .codeCopyBtn {
 	color: var(--text);
-	background-color: var(--lightGrey);
+	background-color: var(--highlight);
 	padding: 8px;
 	position: absolute;
 	display: flex;
