@@ -22,6 +22,16 @@ const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 					name="description"
 					content="About the Accessible Web Dev site & team"
 				/>
+				<meta property="og:title" content="Accessible Web Dev - About" />
+				<meta property="og:description" content="About Accessible Web Dev" />
+				<meta property="og:url" content="https://accessibleweb.dev/about" />
+
+				<meta
+					property="twitter:url"
+					content="https://accessibleweb.dev/about"
+				/>
+				<meta name="twitter:title" content="Accessible Web Dev - About" />
+				<meta name="twitter:description" content="About Accessible Web Dev" />
 			</Head>
 			<Layout headerTitle="About Us" activeNavLink="">
 				<section>

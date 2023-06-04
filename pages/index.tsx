@@ -13,6 +13,19 @@ const Home: NextPage = () => {
 			<Head>
 				<title>{t("pageTitle")}</title>
 				<meta name="description" content={t("metaContent")} />
+				<meta property="og:title" content="Accessible Web Dev" />
+				<meta
+					property="og:description"
+					content="Learn the basics about web accessibility in a clear and easy to understand way"
+				/>
+				<meta property="og:url" content="https://accessibleweb.dev/" />
+
+				<meta property="twitter:url" content="https://accessibleweb.dev/" />
+				<meta name="twitter:title" content="Accessible Web Dev" />
+				<meta
+					name="twitter:description"
+					content="Learn the basics about web accessibility in a clear and easy to understand way"
+				/>
 			</Head>
 			<Layout headerTitle="Accessible Web Dev" activeNavLink="/">
 				<section>
