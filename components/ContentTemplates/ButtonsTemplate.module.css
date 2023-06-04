@@ -20,6 +20,7 @@
 
 .exampleButton:hover, .exampleButton:focus {
 	background-color: var(--primary);
+	color: var(--invertText)
 }
 
 .exampleHover {
