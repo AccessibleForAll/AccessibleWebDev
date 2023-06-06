@@ -1,4 +1,3 @@
-import Link from "next/link"
 import styles from "./NavPage.module.css"
 import { IPageNavigationItem } from "../../data/pageNavigationLists"
 
@@ -15,7 +14,7 @@ export const NavPage = ({ pageNavigation }: INavPageProps) => {
 				<ul className={styles.pageNavList}>
 					{pageNavigation.map((item, index) => (
 						<li key={index}>
-							<Link href={item.href}>{item.linkName}</Link>
+							<a href={item.href}>{item.linkName}</a>
 						</li>
 					))}
 				</ul>

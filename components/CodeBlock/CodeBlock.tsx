@@ -1,5 +1,6 @@
+import { useEffect, useRef, useState } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism"
+import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism"
 import CopyCodeBlock from "../CopyCodeBlock/CopyCodeBlock"
 import style from "./CodeBlock.module.css"
 
@@ -16,14 +17,29 @@ interface ICodeBlockProps {
 }
 
 export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
+	const [scrollableRegion, setScrollableRegion] = useState(false)
+
+	const ref = useRef<HTMLPreElement>(null)
+	const PreWithRef = (preProps: React.HTMLAttributes<HTMLPreElement>) => (
+		<pre {...preProps} ref={ref} />
+	)
+
+	useEffect(() => {
+		if (ref.current) {
+			const element = ref.current
+			setScrollableRegion(element.clientWidth < element.scrollWidth)
+		}
+	}, [])
+
 	return (
-		<div className={style.codeBlock}>
+		<div className={style.CodeBlockContainer}>
 			<CopyCodeBlock code={codeSnippet} />
 			<SyntaxHighlighter
 				language={languageType}
-				style={dracula}
-				wrapLongLines={true}
-				className="contain">
+				style={nightOwl}
+				className={style.CodeBlock}
+				PreTag={PreWithRef}
+				tabIndex={scrollableRegion ? 0 : -1}>
 				{codeSnippet}
 			</SyntaxHighlighter>
 		</div>
