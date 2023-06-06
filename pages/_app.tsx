@@ -32,14 +32,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<meta property="og:type" content="website" />
 				<meta
 					property="og:image"
-					content="https://user-images.githubusercontent.com/57045550/192143094-d3987a9c-4bc9-4d42-b1e3-25ba7655a4bd.png"
+					content="https://accessibleweb.dev/images/websiteScreenshot.png"
 				/>
 
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta property="twitter:domain" content="accessibleweb.dev" />
 				<meta
 					name="twitter:image"
-					content="https://user-images.githubusercontent.com/57045550/192143094-d3987a9c-4bc9-4d42-b1e3-25ba7655a4bd.png"
+					content="https://accessibleweb.dev/images/websiteScreenshot.png"
 				/>
 			</Head>
 			<ThemeProvider attribute="class">
