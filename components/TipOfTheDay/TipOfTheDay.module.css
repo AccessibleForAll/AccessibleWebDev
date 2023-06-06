@@ -3,7 +3,7 @@
 	border: 1px solid var(--grey);
 	padding: 1rem;
 	border-radius: 12px;
-	color: var(--dark);
+	color: var(--text);
 	max-width: 100%;
 }
 

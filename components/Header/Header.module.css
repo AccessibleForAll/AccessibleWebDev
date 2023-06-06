@@ -7,6 +7,7 @@
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
+	border-bottom: 1px solid var(--primary);
 }
 
 .topBanner a {
@@ -35,19 +36,19 @@
 
 .headerTitle {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1.55rem;
 	margin: 1rem;
 }
 
 @media (min-width: 500px) {
 	.headerTitle {
-		font-size: 2.7rem;
+		font-size: 2.55rem;
 	}
 }
 
 @media (min-width: 630px) {
 	.headerTitle {
-		font-size: 3.5rem;
+		font-size: 3.2rem;
 	}
 }
 
@@ -56,12 +57,12 @@
 		display: none;
 	}
 	.headerTitle {
-		font-size: 4.5rem;
+		font-size: 4rem;
 	}
 }
 
 @media (min-width: 1200px) {
 	.headerTitle {
-		font-size: 7rem;
+		font-size: 6rem;
 	}
 }

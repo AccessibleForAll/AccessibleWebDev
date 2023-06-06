@@ -4,10 +4,11 @@
     padding-bottom: 32px;
     color: #fff;
     margin-top: 2rem;
+    border-top: 1px solid var(--primary);
 }
 .footerTop {
     padding-bottom: 16px;
-    border-bottom: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--highlight);
     
 }
 
