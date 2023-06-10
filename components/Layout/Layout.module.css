@@ -4,3 +4,8 @@
   margin: 0 auto;
   border-top: 3px solid var(--primary);
 }
+@media only screen and (max-width: 400px) {
+	.CodeBlockContainer {
+		width: 280px;
+	}
+}
