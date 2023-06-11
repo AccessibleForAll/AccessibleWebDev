@@ -6,6 +6,6 @@
 }
 @media only screen and (max-width: 400px) {
 	.CodeBlockContainer {
-		width: 280px;
+		max-width: 280px;
 	}
 }
