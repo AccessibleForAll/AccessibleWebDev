@@ -16,7 +16,8 @@ const PageNotFound = () => {
 				<title>{`Page Not Found - Accessible Web Dev`}</title>
 				<meta name="description" content="404 - Page Not Found" />
 			</Head>
-			<Layout headerTitle="404 - Not Found" activeNavLink={""}>
+			<Layout activeNavLink={""}>
+				<h1>404 - Not Found</h1>
 				<div className="center">
 					<Image
 						src={notFoundImage.src}

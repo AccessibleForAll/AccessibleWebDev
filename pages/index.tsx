@@ -27,7 +27,8 @@ const Home: NextPage = () => {
 					content="Learn the basics about web accessibility in a clear and easy to understand way"
 				/>
 			</Head>
-			<Layout headerTitle="Accessible Web Dev" activeNavLink="/">
+			<Layout activeNavLink="/">
+				<h1>Accwssible Web Dev</h1>
 				<section>
 					<h2>{t("heading.welcome")}</h2>
 					<p>{t("para.text1")}</p>

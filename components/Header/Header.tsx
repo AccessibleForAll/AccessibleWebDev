@@ -5,13 +5,13 @@ import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 import styles from "./Header.module.css"
 
 export interface IHeaderProps {
-	headerTitle: string
+	// headerTitle: string
 	handleNavClick: () => void
 	showNavMobile: boolean
 }
 
 export const Header = ({
-	headerTitle,
+	// headerTitle,
 	handleNavClick,
 	showNavMobile,
 }: IHeaderProps) => {
@@ -36,7 +36,7 @@ export const Header = ({
 						</button>
 					</div>
 				</div>
-				<h1 className={styles.headerTitle}>{headerTitle}</h1>
+				{/* <h1 className={styles.headerTitle}>{headerTitle}</h1> */}
 			</header>
 		</>
 	)

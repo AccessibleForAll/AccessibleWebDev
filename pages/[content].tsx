@@ -63,7 +63,8 @@ const ContentPage: NextPage<IProps> = ({ page }) => {
 					content={`Learn how to make ${title} accessible`}
 				/>
 			</Head>
-			<Layout headerTitle={`Accessible ${title}`} activeNavLink={`/${page}`}>
+			<Layout activeNavLink={`/${page}`}>
+				<h1>`Accessible ${title}`</h1>
 				<>
 					{page === "alerts" && <AlertsTemplate />}
 					{page === "animations" && <AnimationsTemplate />}

@@ -33,7 +33,8 @@ const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 				<meta name="twitter:title" content="Accessible Web Dev - About" />
 				<meta name="twitter:description" content="About Accessible Web Dev" />
 			</Head>
-			<Layout headerTitle="About Us" activeNavLink="">
+			<Layout activeNavLink="">
+				<h1>About Us</h1>
 				<section>
 					<h2>Current Maintainers</h2>
 					<div className={styles.aboutRow}>

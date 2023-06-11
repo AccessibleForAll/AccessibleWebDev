@@ -7,13 +7,13 @@ import { SkipLink } from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
 interface ILayoutProps {
-	headerTitle: string
+	// headerTitle: string
 	activeNavLink: string
 	children: JSX.Element
 }
 
 export const Layout = ({
-	headerTitle,
+	// headerTitle,
 	activeNavLink,
 	children,
 }: ILayoutProps) => {
@@ -26,11 +26,7 @@ export const Layout = ({
 	return (
 		<>
 			<SkipLink />
-			<Header
-				headerTitle={headerTitle}
-				handleNavClick={handleNavClick}
-				showNavMobile={showNavMobile}
-			/>
+			<Header handleNavClick={handleNavClick} showNavMobile={showNavMobile} />
 			<div className={styles.layoutContainer}>
 				<NavPrimary activeNavLink={activeNavLink} />
 				{showNavMobile && (
