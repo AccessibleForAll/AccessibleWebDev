@@ -34,35 +34,10 @@
 	background-color: transparent;
 }
 
-.headerTitle {
-	text-align: center;
-	font-size: 1.55rem;
-	margin: 1rem;
-}
-
-@media (min-width: 500px) {
-	.headerTitle {
-		font-size: 2.55rem;
-	}
-}
-
-@media (min-width: 630px) {
-	.headerTitle {
-		font-size: 3.2rem;
-	}
-}
-
 @media (min-width: 800px) {
 	.topBanner .hamburgerBtn {
 		display: none;
 	}
-	.headerTitle {
-		font-size: 4rem;
-	}
+
 }
 
-@media (min-width: 1200px) {
-	.headerTitle {
-		font-size: 6rem;
-	}
-}

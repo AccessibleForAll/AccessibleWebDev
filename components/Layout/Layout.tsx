@@ -7,16 +7,11 @@ import { SkipLink } from "../SkipLink/SkipLink"
 import styles from "./Layout.module.css"
 
 interface ILayoutProps {
-	// headerTitle: string
 	activeNavLink: string
 	children: JSX.Element
 }
 
-export const Layout = ({
-	// headerTitle,
-	activeNavLink,
-	children,
-}: ILayoutProps) => {
+export const Layout = ({ activeNavLink, children }: ILayoutProps) => {
 	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
 
 	const handleNavClick = () => {

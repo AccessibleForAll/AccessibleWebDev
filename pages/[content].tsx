@@ -64,8 +64,8 @@ const ContentPage: NextPage<IProps> = ({ page }) => {
 				/>
 			</Head>
 			<Layout activeNavLink={`/${page}`}>
-				<h1>`Accessible ${title}`</h1>
 				<>
+					<h1>`Accessible ${title}`</h1>
 					{page === "alerts" && <AlertsTemplate />}
 					{page === "animations" && <AnimationsTemplate />}
 					{page === "audio" && <AudioTemplate />}

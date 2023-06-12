@@ -28,20 +28,22 @@ const Home: NextPage = () => {
 				/>
 			</Head>
 			<Layout activeNavLink="/">
-				<h1>Accwssible Web Dev</h1>
-				<section>
-					<h2>{t("heading.welcome")}</h2>
-					<p>{t("para.text1")}</p>
-					<p>{t("para.text2")}</p>
-					<p>{t("para.text3")}</p>
-					<p>
-						{t("para.text4")}{" "}
-						<a href="https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose">
-							{t("link.githubIssue")}
-						</a>
-					</p>
-					<TipOfTheDay />
-				</section>
+				<div>
+					<h1>Accessible Web Dev</h1>
+					<section>
+						<h2>{t("heading.welcome")}</h2>
+						<p>{t("para.text1")}</p>
+						<p>{t("para.text2")}</p>
+						<p>{t("para.text3")}</p>
+						<p>
+							{t("para.text4")}{" "}
+							<a href="https://github.com/AccessibleForAll/AccessibleWebDev/issues/new/choose">
+								{t("link.githubIssue")}
+							</a>
+						</p>
+						<TipOfTheDay />
+					</section>
+				</div>
 			</Layout>
 		</>
 	)

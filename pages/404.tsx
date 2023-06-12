@@ -17,15 +17,17 @@ const PageNotFound = () => {
 				<meta name="description" content="404 - Page Not Found" />
 			</Head>
 			<Layout activeNavLink={""}>
-				<h1>404 - Not Found</h1>
-				<div className="center">
-					<Image
-						src={notFoundImage.src}
-						alt="Page not found"
-						width={800}
-						height={600}
-					/>
-				</div>
+				<>
+					<h1>404 - Not Found</h1>
+					<div className="center">
+						<Image
+							src={notFoundImage.src}
+							alt="Page not found"
+							width={800}
+							height={600}
+						/>
+					</div>
+				</>
 			</Layout>
 		</>
 	)
