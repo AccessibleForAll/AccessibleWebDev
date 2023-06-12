@@ -3,8 +3,6 @@ import { pages } from "../../data/pages"
 import styles from "./NavPrimary.module.css"
 import { useState } from "react"
 
-import { AiOutlineSearch } from "react-icons/ai"
-
 export interface INavProps {
 	activeNavLink: string
 }

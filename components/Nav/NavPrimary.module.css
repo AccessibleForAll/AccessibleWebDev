@@ -15,8 +15,6 @@
   margin: 0;
   padding: 0;
   min-width: 15rem;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .navListItem {
@@ -40,7 +38,6 @@
 
 .navList a:focus {
   background-color: #28968C;
-  /* font-weight: bold; */
 }
 
 .searchBox{
