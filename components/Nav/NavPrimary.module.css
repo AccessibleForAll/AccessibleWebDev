@@ -15,30 +15,51 @@
   margin: 0;
   padding: 0;
   min-width: 15rem;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .navListItem {
   list-style: none;
+  margin: 2px;
+  margin-left: 10px;
+  
 }
 
 .navListItem a {
   text-decoration: none;
-  padding: 16px;
-  display: block;
+  padding: 4px;
+  display: inline-block;
+  border-radius: 5px;
+  
 }
 
 .navListItem a:hover {
-  background-color: var(--primaryLt);
+  background-color: #28968C;
 }
 
 .navList a:focus {
-  background-color: var(--primaryLt);
-  font-weight: bold;
+  background-color: #28968C;
+  /* font-weight: bold; */
+}
+
+.searchBox{
+  border: 2px solid var(--primary);
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.searchBox:focus {
+  outline-color: var(--primaryLt);
+
 }
 
 @media (min-width: 40rem) {
   .navPrimary {
-    width: 15rem;
+    width: 12rem;
+    margin-left: 10px;
   }
 }
 
