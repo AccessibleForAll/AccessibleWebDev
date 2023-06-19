@@ -13,9 +13,9 @@ export const NavPrimary = ({ activeNavLink }: INavProps) => {
 			<ul className={styles.navList}>
 				{pages.map((page, index) =>(
 					<NavItem
-					key={page.name + index}
-					page={page}
-					activeNavLink={activeNavLink}
+					        key={page.name + index}
+					        page={page}
+					        activeNavLink={activeNavLink}
 					/>
 				))}
 					
