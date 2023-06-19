@@ -21,7 +21,6 @@
   list-style: none;
   margin: 2px;
   margin-left: 10px;
-  
 }
 
 .navListItem a {
@@ -29,7 +28,6 @@
   padding: 4px;
   display: inline-block;
   border-radius: 5px;
-  
 }
 
 .navListItem a:hover {
@@ -46,7 +44,7 @@
     width: 15rem;
     margin-left: 10px;
   }
-} 
+}
 
 @media (min-width: 800px) {
   .navPrimary {

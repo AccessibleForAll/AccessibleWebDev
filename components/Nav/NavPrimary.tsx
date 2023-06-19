@@ -11,13 +11,14 @@ export const NavPrimary = ({ activeNavLink }: INavProps) => {
 	return (
 		<nav aria-label="Primary" className={styles.navPrimary}>
 			<ul className={styles.navList}>
-				{pages.map((page, index) =>
-						<NavItem
-							key={page.name + index}
-							page={page}
-							activeNavLink={activeNavLink}
-						/>
-				)}
+				{pages.map((page, index) =>(
+					<NavItem
+					key={page.name + index}
+					page={page}
+					activeNavLink={activeNavLink}
+					/>
+				))}
+					
 			</ul>
 		</nav>
 	)
