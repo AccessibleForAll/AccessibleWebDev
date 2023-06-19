@@ -33,32 +33,20 @@
 }
 
 .navListItem a:hover {
-  background-color: #28968C;
+  background-color: var(--primaryLt);
 }
 
 .navList a:focus {
-  background-color: #28968C;
-}
-
-.searchBox{
-  border: 2px solid var(--primary);
-  width: 150px;
-  height: 30px;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.searchBox:focus {
-  outline-color: var(--primaryLt);
-
+  background-color: var(--primary);
+  color: var(--white);
 }
 
 @media (min-width: 40rem) {
   .navPrimary {
-    width: 12rem;
+    width: 15rem;
     margin-left: 10px;
   }
-}
+} 
 
 @media (min-width: 800px) {
   .navPrimary {
