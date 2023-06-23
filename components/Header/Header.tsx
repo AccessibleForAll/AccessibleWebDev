@@ -31,7 +31,6 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 						</button>
 					</div>
 				</div>
-				{/* <h1 className={styles.headerTitle}>{headerTitle}</h1> */}
 			</header>
 		</>
 	)
