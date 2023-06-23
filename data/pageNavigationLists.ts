@@ -54,3 +54,12 @@ export const headingsPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Test Your Knowledge", href: "#QuizQuestions" },
 ]
+
+export const modalPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "How a modal should work", href: "#howAModalShouldWork" },
+	{ linkName: "Using <dialog>", href: "#usingDialog" },
+	{ linkName: "Custom Modals", href: "#customModals" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
