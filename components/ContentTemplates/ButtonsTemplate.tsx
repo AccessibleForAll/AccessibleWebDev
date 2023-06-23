@@ -45,7 +45,7 @@ export const ButtonsTemplate = () => {
 					button. Adding the onclick event will not automatically make the
 					element keyboard interactive. It also needs to:
 				</p>
-				<ul>
+				<ul className="list">
 					<li>Activate when a user presses the enter key</li>
 					<li>Activate when a user presses the space key</li>
 					<li>Be included in the tab sequence</li>
@@ -387,67 +387,103 @@ export const ButtonsTemplate = () => {
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
-				<a
-					href="https://www.w3.org/TR/WCAG21/#non-text-content"
-					className="blockLink">
-					1.1.1 Non-text content
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
-					className="blockLink">
-					1.3.1 Info and Relationships
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#identify-purpose"
-					className="blockLink">
-					1.3.6 Identify Purpose
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
-					className="blockLink">
-					1.4.3 Contrast (minimum)
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
-					className="blockLink">
-					1.4.11 Non-text Contrast
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
-					className="blockLink">
-					1.4.13 Content on Hover or Focus
-				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
-					2.1.1 Keyboard
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#focus-visible"
-					className="blockLink">
-					2.4.7 Focus Visible
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#label-in-name"
-					className="blockLink">
-					2.5.3 Label in Name
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#target-size"
-					className="blockLink">
-					2.5.5 Target Size
-				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#on-focus" className="blockLink">
-					3.2.1 On Focus
-				</a>
+				<ul className="list">
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#non-text-content"
+							className="blockLink">
+							1.1.1 Non-text content
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+							className="blockLink">
+							1.3.1 Info and Relationships
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#identify-purpose"
+							className="blockLink">
+							1.3.6 Identify Purpose
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+							className="blockLink">
+							1.4.3 Contrast (minimum)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
+							className="blockLink">
+							1.4.11 Non-text Contrast
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
+							className="blockLink">
+							1.4.13 Content on Hover or Focus
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#keyboard"
+							className="blockLink">
+							2.1.1 Keyboard
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#focus-visible"
+							className="blockLink">
+							2.4.7 Focus Visible
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#label-in-name"
+							className="blockLink">
+							2.5.3 Label in Name
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#target-size"
+							className="blockLink">
+							2.5.5 Target Size
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#on-focus"
+							className="blockLink">
+							3.2.1 On Focus
+						</a>
+					</li>
+				</ul>
 			</TemplateSection>
 			<TemplateSection sectionName="otherResources" title="Other Resources">
-				<a
-					href="https://design-system.service.gov.uk/components/button/"
-					className="blockLink">
-					Gov.uk Design System Button
-				</a>
-				<a href="https://yatil.net/blog/buttons-vs-links" className="blockLink">
-					Buttons vs. Links by Eric Eggert
-				</a>
+				<ul className="list">
+					<li>
+						<a
+							href="https://design-system.service.gov.uk/components/button/"
+							className="blockLink">
+							Gov.uk Design System Button
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://yatil.net/blog/buttons-vs-links"
+							className="blockLink">
+							Buttons vs. Links by Eric Eggert
+						</a>
+					</li>
+				</ul>
 			</TemplateSection>
 			<PageUpdated date="18th February 2023" />
 		</>
