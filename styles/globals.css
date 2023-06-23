@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap");
+
 :root,
 :root.light {
 	--text: #161e35;
@@ -29,8 +31,8 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+		Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	color: var(--text);
 	background-color: var(--bg);
 }
@@ -76,7 +78,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 0;
+	margin: 1rem 0 0 0;
 }
 
 h2 {
@@ -92,10 +94,6 @@ p {
 }
 
 /*Classes used on multiple content pages*/
-.infoSection {
-	margin-top: 2rem;
-	width: 100%;
-}
 
 .pageLastUpdated {
 	margin-top: 5rem;
@@ -112,10 +110,8 @@ p {
 	display: block;
 }
 
-.orderedLists > li {
+.list > li {
 	margin-bottom: 0.7rem;
 }
 
-.unorderedLists > li {
-	margin-bottom: 0.7rem;
-}
+
