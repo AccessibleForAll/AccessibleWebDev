@@ -94,10 +94,6 @@ p {
 
 /*Classes used on multiple content pages*/
 
-.pageLastUpdated {
-	margin-top: 5rem;
-	text-align: right;
-}
 
 .imageContainer {
 	display: flex;
