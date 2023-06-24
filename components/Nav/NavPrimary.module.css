@@ -35,7 +35,7 @@
 }
 
 .navList a:focus {
-  background-color: var(--primary);
+  background-color: var(--primaryLt);
   color: var(--text);
 }
 
