@@ -3,3 +3,14 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.layoutContainer main {
+	padding: 16px;
+}
+
+@media (min-width: 800px) {
+  .layoutContainer main {
+    padding: 16px 16px 16px 48px; 
+    flex-grow: 1;   
+  }
+}

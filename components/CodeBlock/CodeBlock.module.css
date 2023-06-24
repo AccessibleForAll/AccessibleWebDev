@@ -1,7 +1,7 @@
 .CodeBlockContainer {
 	position: relative;
 	width: 90vw;
-	max-width: calc(1200px - 15rem);
+	max-width: 900px;
 }
 
 .CodeBlock {
@@ -10,7 +10,13 @@
 
 @media only screen and (min-width: 800px) {
 	.CodeBlockContainer {
-		width: 65vw;
+		width: 61vw;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.CodeBlockContainer {
+		width: 70vw;
 	}
 }
 
