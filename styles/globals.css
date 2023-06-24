@@ -70,15 +70,18 @@ main {
 [hidden] {
 	display: none;
 }
-h1{
-	font-size: 2.5em;
-}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
 	margin: 1rem 0 0 0;
+}
+
+h1{
+	font-size: 2rem;
+	margin: 0 0 1rem 0;
 }
 
 h2 {
