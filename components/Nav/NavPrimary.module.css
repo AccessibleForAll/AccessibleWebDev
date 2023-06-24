@@ -25,7 +25,7 @@
 
 .navListItem a {
   text-decoration: none;
-  padding: 4px;
+  padding: 8px;
   display: inline-block;
   border-radius: 5px;
 }
@@ -36,7 +36,7 @@
 
 .navList a:focus {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--text);
 }
 
 @media (min-width: 40rem) {
