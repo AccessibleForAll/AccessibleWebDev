@@ -3,6 +3,7 @@ import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
 import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 
 import styles from "./Header.module.css"
+import { Logo } from "../Logo/Logo"
 
 export interface IHeaderProps {
 	handleNavClick: () => void
@@ -14,7 +15,11 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 		<>
 			<header>
 				<div className={styles.topBanner}>
-					<Link href="/">Accessible Web Dev</Link>
+					<Link href="/">
+						<a aria-label="Accessible Web Dev Home">
+							<Logo color="white" />
+						</a>
+					</Link>
 					<div className={styles.buttonsContainer}>
 						<ThemeSwitcher />
 						<button
@@ -23,10 +28,10 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 							aria-label="Navigation menu"
 							aria-expanded={showNavMobile}>
 							{!showNavMobile && (
-								<IoMenuSharp color="white" size="2.5rem" aria-hidden="true" />
+								<IoMenuSharp color="white" size="2rem" aria-hidden="true" />
 							)}
 							{showNavMobile && (
-								<IoCloseSharp color="white" size="2.5rem" aria-hidden="true" />
+								<IoCloseSharp color="white" size="2rem" aria-hidden="true" />
 							)}
 						</button>
 					</div>
