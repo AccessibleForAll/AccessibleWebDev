@@ -35,8 +35,8 @@
 }
 
 .navList a:focus {
-  background-color: var(--primaryLt);
-  color: var(--text);
+  background-color: var(--primary);
+  color: var(--invertText);
 }
 
 @media (min-width: 40rem) {
