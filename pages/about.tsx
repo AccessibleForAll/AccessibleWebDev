@@ -33,15 +33,18 @@ const About: NextPage<IAboutProps> = ({ currentMaintainerData }) => {
 				<meta name="twitter:title" content="Accessible Web Dev - About" />
 				<meta name="twitter:description" content="About Accessible Web Dev" />
 			</Head>
-			<Layout headerTitle="About Us" activeNavLink="">
-				<section>
-					<h2>Current Maintainers</h2>
-					<div className={styles.aboutRow}>
-						{currentMaintainerData.map((maintainer, index) => (
-							<MaintainerCard key={index} maintainer={maintainer} />
-						))}
-					</div>
-				</section>
+			<Layout activeNavLink="">
+				<div>
+					<h1>About Us</h1>
+					<section>
+						<h2>Current Maintainers</h2>
+						<div className={styles.aboutRow}>
+							{currentMaintainerData.map((maintainer, index) => (
+								<MaintainerCard key={index} maintainer={maintainer} />
+							))}
+						</div>
+					</section>
+				</div>
 			</Layout>
 		</>
 	)

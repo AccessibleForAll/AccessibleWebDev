@@ -36,7 +36,7 @@ export const HeadingsTemplate = () => {
 					sectionName="whyHeadings"
 					title="Why are HTML Headings Important?">
 					<p>Headings are important for a number of reasons.</p>
-					<ul className="unorderedLists">
+					<ul className="list">
 						<li>
 							They give order and structure to the web page, making it easier
 							for users to understand the layout and content of the page.
@@ -93,7 +93,7 @@ export const HeadingsTemplate = () => {
 				<TemplateSection
 					sectionName="avoidHeadings"
 					title="What Should We Avoid When Using Headings?">
-					<ul className="unorderedLists">
+					<ul className="list">
 						<li>
 							Avoid using more than one H1 on a page, as this can confuse the
 							structure and hierarchy of the page. Instead, the H1 should be
@@ -110,21 +110,27 @@ export const HeadingsTemplate = () => {
 					</ul>
 				</TemplateSection>
 				<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
-					<a
-						href="https://www.w3.org/TR/WCAG21/#section-headings"
-						className="blockLink">
-						2.4.10 Section Headings
-					</a>
-					<a
-						href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
-						className="blockLink">
-						2.4.6 Headings and Labels
-					</a>
+					<ul className="list">
+						<li>
+							<a
+								href="https://www.w3.org/TR/WCAG21/#section-headings"
+								className="blockLink">
+								2.4.10 Section Headings
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html"
+								className="blockLink">
+								2.4.6 Headings and Labels
+							</a>
+						</li>
+					</ul>
 				</TemplateSection>
 				<TemplateSection
 					sectionName="QuizQuestions"
 					title="Test Your Knowledge">
-					<ol className="orderedLists">
+					<ol className="list">
 						<li>How many H1s should we have on our webpage?</li>
 						<li>Why is heading order important?</li>
 						<li>

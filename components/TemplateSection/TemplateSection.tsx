@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import styles from "./TemplateSection.module.css"
 
 interface ITemplateSectionProps {
 	sectionName: string
@@ -12,7 +13,7 @@ export const TemplateSection = ({
 	children,
 }: ITemplateSectionProps) => {
 	return (
-		<section aria-labelledby={sectionName} className="infoSection">
+		<section aria-labelledby={sectionName} className={styles.infoSection}>
 			<h2 id={sectionName}>{title}</h2>
 			{children}
 		</section>
