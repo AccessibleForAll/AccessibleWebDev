@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { nightOwl } from "react-syntax-highlighter/dist/cjs/styles/prism"
 import CopyCodeBlock from "../CopyCodeBlock/CopyCodeBlock"
-import style from "./CodeBlock.module.css"
+import styles from "./CodeBlock.module.css"
 
 type TCodeLanguage =
 	| "html"
@@ -32,12 +32,12 @@ export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
 	}, [])
 
 	return (
-		<div className={style.CodeBlockContainer}>
+		<div className={styles.CodeBlockContainer}>
 			<CopyCodeBlock code={codeSnippet} />
 			<SyntaxHighlighter
 				language={languageType}
 				style={nightOwl}
-				className={style.CodeBlock}
+				className={styles.CodeBlock}
 				PreTag={PreWithRef}
 				tabIndex={scrollableRegion ? 0 : -1}>
 				{codeSnippet}
