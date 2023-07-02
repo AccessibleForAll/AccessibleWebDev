@@ -17,7 +17,7 @@ export const NavPrimary = ({ activeNavLink }: INavProps) => {
 					        page={page}
 					        activeNavLink={activeNavLink}
 					/>
-				))}	
+				))}
 			</ul>
 		</nav>
 	)
