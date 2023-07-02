@@ -52,7 +52,7 @@ export const BreadcrumbsTemplate = () => {
 					together, offer the semantics needed to make accessible breadcrumbs.
 				</p>
 				<p>What is needed:</p>
-				<ul>
+				<ul className="list">
 					<li>
 						A nav element will let users know that this is a navigation
 						landmark. Landmarks make things easier to find, especially for
@@ -142,68 +142,103 @@ export const BreadcrumbsTemplate = () => {
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
-				<a
-					href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
-					className="blockLink">
-					1.3.1 Info and Relationships
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#identify-purpose"
-					className="blockLink">
-					1.3.6 Identify Purpose
-				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#keyboard" className="blockLink">
-					2.1.1 Keyboard
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#focus-order"
-					className="blockLink">
-					2.4.3 Focus Order
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
-					className="blockLink">
-					2.4.4 Link Purpose
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#multiple-ways"
-					className="blockLink">
-					2.4.5 Multiple Ways
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#focus-visible"
-					className="blockLink">
-					2.4.7 Focus Visible
-				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#location" className="blockLink">
-					2.4.8 Location
-				</a>
-
-				<a
-					href="https://www.w3.org/TR/WCAG21/#target-size"
-					className="blockLink">
-					2.5.5 Target Size
-				</a>
-				<a href="https://www.w3.org/TR/WCAG21/#on-focus" className="blockLink">
-					3.2.1 On Focus
-				</a>
-				<a
-					href="https://www.w3.org/TR/WCAG21/#consistent-navigation"
-					className="blockLink">
-					3.2.3 Consistent Navigation
-				</a>
+				<ul className="list">
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+							className="blockLink">
+							1.3.1 Info and Relationships
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#identify-purpose"
+							className="blockLink">
+							1.3.6 Identify Purpose
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#keyboard"
+							className="blockLink">
+							2.1.1 Keyboard
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#focus-order"
+							className="blockLink">
+							2.4.3 Focus Order
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
+							className="blockLink">
+							2.4.4 Link Purpose
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#multiple-ways"
+							className="blockLink">
+							2.4.5 Multiple Ways
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#focus-visible"
+							className="blockLink">
+							2.4.7 Focus Visible
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#location"
+							className="blockLink">
+							2.4.8 Location
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#target-size"
+							className="blockLink">
+							2.5.5 Target Size
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#on-focus"
+							className="blockLink">
+							3.2.1 On Focus
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#consistent-navigation"
+							className="blockLink">
+							3.2.3 Consistent Navigation
+						</a>
+					</li>
+				</ul>
 			</TemplateSection>
 			<TemplateSection sectionName="otherResources" title="Other Resources">
-				<a
-					href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/"
-					className="blockLink">
-					ARIA Authoring Practices Guide Breadcrumb Example
-				</a>
-				<a
-					href="https://design-system.service.gov.uk/components/breadcrumbs/"
-					className="blockLink">
-					Gov.uk Design System - Breadcrumbs
-				</a>
+				<ul className="list">
+					<li>
+						<a
+							href="https://www.w3.org/WAI/ARIA/apg/patterns/breadcrumb/examples/breadcrumb/"
+							className="blockLink">
+							ARIA Authoring Practices Guide Breadcrumb Example
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://design-system.service.gov.uk/components/breadcrumbs/"
+							className="blockLink">
+							Gov.uk Design System - Breadcrumbs
+						</a>
+					</li>
+				</ul>
 			</TemplateSection>
 			<PageUpdated date="10th April 2023" />
 		</>

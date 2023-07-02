@@ -2,5 +2,15 @@
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
-  border-top: 3px solid var(--primary);
+}
+
+.layoutContainer main {
+	padding: 16px;
+}
+
+@media (min-width: 800px) {
+  .layoutContainer main {
+    padding: 16px 16px 16px 48px; 
+    flex-grow: 1;   
+  }
 }

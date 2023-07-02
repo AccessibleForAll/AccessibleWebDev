@@ -17,7 +17,10 @@
     margin: 0;
     list-style: none;
     line-height: 1.6;
-    
+}
+
+.footerList li {
+    margin: 14px 0 14px 0;
 }
 
 .footerLink, .footerLink:visited {
@@ -47,9 +50,11 @@
     .footerList {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;    
+        justify-content: space-between;  
     }
     
-    
+    .footerList li {
+        margin: 0;
+    }
     
 } 
