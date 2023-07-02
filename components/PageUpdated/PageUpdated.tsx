@@ -1,3 +1,4 @@
+import styles from "./PageUpdated.module.css"
 interface IPageUpdatedProps {
 	date: string
 }
