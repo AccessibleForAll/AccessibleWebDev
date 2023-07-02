@@ -53,9 +53,12 @@ a {
 
 
 .active {
-	border-left: 3px solid var(--primary);
-	background-color: var(--highlight);
 	font-weight: bold;
+	background-color: var(--primary);
+	color: var(--invertText);
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
 }
 
 .center {

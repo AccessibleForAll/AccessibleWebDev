@@ -19,12 +19,15 @@
 
 .navListItem {
   list-style: none;
+  margin: 2px;
+  margin-left: 10px;
 }
 
 .navListItem a {
   text-decoration: none;
-  padding: 16px;
-  display: block;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .navListItem a:hover {
@@ -32,13 +35,14 @@
 }
 
 .navList a:focus {
-  background-color: var(--primaryLt);
-  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--invertText);
 }
 
 @media (min-width: 40rem) {
   .navPrimary {
     width: 15rem;
+    margin-left: 10px;
   }
 }
 
