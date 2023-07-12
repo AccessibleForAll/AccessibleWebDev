@@ -55,7 +55,9 @@ Storybook - [Storybook Documentation](https://storybook.js.org/)
     ```bash
     git add <NameOfFileChanged>
     ```
-12. Commit your changes:
+12. Commit your changes and provide a meaningful commit message:
+    
+    Unsure how to write a meaningful commit message? Check out this article about [How to Write a Good Git Commit Message](https://blog.ossph.org/how-to-write-a-good-git-commit-message/#:~:text=To%20set%20up%20a%20Git,t%20meet%20the%20specified%20format.)
     ```bash
     git commit -m "<Your commit message here>"
     ```
