@@ -11,7 +11,11 @@
 
 .pageNavList {
 	list-style: none;
-	margin: 14px 0;
+	margin: 8px 0;
 	padding: 0;
 	line-height: 1.6;
+}
+
+.pageNavList li {
+	margin: 14px 0;
 }
