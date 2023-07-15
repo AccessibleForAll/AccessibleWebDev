@@ -1,17 +1,17 @@
 .pageNav {
-  background-color: var(--highlight);
-  padding: 8px 16px;
+	background-color: var(--highlight);
+	padding: 8px 16px;
 }
 
 .pageNavTitle {
-  font-weight: bold;
-  font-size: 1.1rem;
-  cursor: pointer;
+	font-weight: bold;
+	font-size: 1.1rem;
+	cursor: pointer;
 }
 
 .pageNavList {
-  list-style: none;
-  margin:8px 0;
-  padding: 0;
-  line-height: 1.6;
+	list-style: none;
+	margin: 14px 0;
+	padding: 0;
+	line-height: 1.6;
 }
