@@ -11,10 +11,10 @@
   padding: 0.3rem;
   border: 1px solid var(--primary);
   z-index: 100;
-  transform: translateY(-110%); 
+  transform: translateY(-100px); 
   transition: all .4s ease-in-out;
 }
 
 .skipToMainContent a:focus {
-  transform: translateY(0%);
+  transform: translateY(8px);
 }

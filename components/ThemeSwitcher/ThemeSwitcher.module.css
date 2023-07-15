@@ -8,12 +8,13 @@
 	background-color: transparent;
 	cursor: pointer;
 	color: var(--text);
+	font-size: .8rem;
 }
 
 .themeSwitcher {
 	position: absolute;
-	top: 16px;
-	right: 48px;
+	top: 8px;
+	right: 32px;
 	width: 10em;
 	background-color: var(--bg);
 	padding: 0.5rem;
@@ -37,6 +38,7 @@
 	width: 100%;
 	border: none;
 	background-color: var(--bg);
+	font-size: 0.8rem;
 }
 
 .themeSwitcher li.activeBtn {

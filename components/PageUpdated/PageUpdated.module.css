@@ -1,4 +1,9 @@
 .pageLastUpdated {
 	margin-top: 5rem;
-	text-align: right;
+}
+
+@media (min-width: 800px) {
+	.pageLastUpdated {
+		text-align: right;
+	}
 }
