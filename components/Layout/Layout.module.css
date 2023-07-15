@@ -1,16 +1,26 @@
 .layoutContainer {
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
+  min-height: calc(100vh - var(--headerHeight));
+  margin-top: 3rem;
 }
 
 .layoutContainer main {
 	padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
 }
 
 @media (min-width: 800px) {
-  .layoutContainer main {
-    padding: 16px 16px 16px 48px; 
-    flex-grow: 1;   
+  .columnContainer {    
+    flex-grow: 1; 
+    margin-left: 15rem;  
   }
 }

@@ -50,7 +50,11 @@ export const Footer = () => {
 				</p>
 
 				<a href="https://github.com/AccessibleForAll">
-					<BsGithub color="white" size="1.5rem" aria-label="Github" />
+					<BsGithub
+						className={styles.footerLogos}
+						size="1.5rem"
+						aria-label="Github"
+					/>
 				</a>
 			</div>
 		</footer>

@@ -2,29 +2,31 @@
 
 :root,
 :root.light {
-	--text: #161e35;
+	--text: #0D1023;
 	--invertText: #fff;
 	--grey: #c7c7c7;
 	--highlight: #def8f6;
 	--primary: #028378;
 	--primaryLt: #7ddfd7;
 	--bg: #fff;
-	--dark: #161e35;
+	--dark: #0D1023;
 	--borderRadius: 3px;
 	--white: #fff;
+	--headerHeight: 3rem;
 }
 
 :root.dark {
 	--text: #fff;
-	--invertText: #161e35;
+	--invertText: #0D1023;
 	--grey: #c7c7c7;
 	--highlight: #028378;
 	--primary: #53fdee;
 	--primaryLt: #028378;
-	--bg: #161e35;
-	--dark: #161e35;
+	--bg: #0D1023;
+	--dark: #0D1023;
 	--borderRadius: 3px;
 	--white: #fff;
+	--headerHeight: 3rem;
 }
 
 html,
@@ -112,4 +114,6 @@ p {
 	margin-bottom: 0.7rem;
 }
 
-
+.textContainer {
+	max-width: 52rem;
+}

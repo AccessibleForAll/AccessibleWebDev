@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout/Layout"
 import Head from "next/head"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
-import { TipOfTheDay } from "../components/TipOfTheDay"
+import { TipOfTheDay } from "../components/TipOfTheDay/TipOfTheDay"
 
 const Home: NextPage = () => {
 	const { t } = useTranslation("homepage")
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 			<Layout activeNavLink="/">
 				<div>
 					<h1>Accessible Web Dev</h1>
-					<section>
+					<section className="textContainer">
 						<h2>{t("heading.welcome")}</h2>
 						<p>{t("para.text1")}</p>
 						<p>{t("para.text2")}</p>

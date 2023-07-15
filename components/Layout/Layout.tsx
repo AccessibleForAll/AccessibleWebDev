@@ -30,9 +30,11 @@ export const Layout = ({ activeNavLink, children }: ILayoutProps) => {
 						handleNavClick={handleNavClick}
 					/>
 				)}
-				<main id="main">{children}</main>
+				<div className={styles.columnContainer}>
+					<main id="main">{children}</main>
+					<Footer />
+				</div>
 			</div>
-			<Footer />
 		</>
 	)
 }

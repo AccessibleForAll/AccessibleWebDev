@@ -2,12 +2,12 @@
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	border: 1px solid #fff;
+	border: 1px solid var(--primaryLt);
 	padding: 0.2rem 0.5rem;
 	border-radius: var(--borderRadius);
 	background-color: transparent;
 	cursor: pointer;
-	color: #fff;
+	color: var(--text);
 }
 
 .themeSwitcher {
@@ -17,7 +17,7 @@
 	width: 10em;
 	background-color: var(--bg);
 	padding: 0.5rem;
-	border: 1px solid var(--primary);
+	border: 1px solid var(--primaryLt);
 	border-radius: var(--borderRadius);
 	list-style: none;
 }

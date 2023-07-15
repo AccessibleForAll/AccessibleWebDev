@@ -24,11 +24,9 @@ export const TipOfTheDay = () => {
 	const createTipOfTheDay = () => {
 		return (
 			<>
-				<h2>{tipIndex.title}</h2>
+				<h2>Tip of the day: {tipIndex.title}</h2>
 				<p>{tipIndex.description}</p>
-				<a target="_blank" rel="noreferrer" href={tipIndex.tipLink}>
-					{tipIndex.tipLinkLabel}
-				</a>
+				<a href={tipIndex.tipLink}>{tipIndex.tipLinkLabel}</a>
 			</>
 		)
 	}

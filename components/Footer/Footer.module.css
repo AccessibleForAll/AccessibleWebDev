@@ -1,16 +1,11 @@
 .footer {
-    background-color: var(--dark);
+    background-color: var(--bg);
     padding: 16px;
-    padding-bottom: 32px;
-    color: #fff;
+    color: var(--text);
     margin-top: 2rem;
-    border-top: 1px solid var(--primary);
+    border-top: 1px solid var(--primaryLt);
 }
-.footerTop {
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--highlight);
-    
-}
+
 
 .footerList {
     padding: 0;
@@ -43,6 +38,10 @@
 .footerCopyrightText {
     margin: 0;
     font-size: 0.9rem;
+}
+
+.footerLogos {
+    color: var(--text)
 }
 
 @media only screen and (min-width: 55rem) {

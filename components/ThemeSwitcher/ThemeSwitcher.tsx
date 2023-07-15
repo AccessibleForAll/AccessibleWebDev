@@ -59,7 +59,11 @@ export const ThemeSwitcher = () => {
 				onClick={handleThemeSwitcher}
 				aria-expanded={showThemeSwitcher}
 				ref={buttonRef}>
-				<BsCircleHalf color="white" size="1rem" aria-hidden="true" />
+				<BsCircleHalf
+					className={styles.themeIcon}
+					size="1rem"
+					aria-hidden="true"
+				/>
 				Theme
 			</button>
 			{showThemeSwitcher && (
