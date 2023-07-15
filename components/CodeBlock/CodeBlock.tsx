@@ -33,6 +33,7 @@ export const CodeBlock = ({ codeSnippet, languageType }: ICodeBlockProps) => {
 
 	return (
 		<div className={styles.CodeBlockContainer}>
+			<div className={styles.codeLanguage}>{languageType}</div>
 			<CopyCodeBlock code={codeSnippet} />
 			<SyntaxHighlighter
 				language={languageType}

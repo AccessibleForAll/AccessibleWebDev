@@ -1,11 +1,29 @@
 .CodeBlockContainer {
 	position: relative;
 	width: 90vw;
-	max-width: 900px;
+	max-width: 850px;
+	border: 1px solid var(--primaryLt);
+	border-radius: 8px;
+	background-color: var(--primaryLt);
+	padding: 40px 8px 2px 8px;
+	margin: 16px 0;
 }
 
 .CodeBlock {
 	overflow-x: auto;
+}
+
+
+
+.codeLanguage {
+	background-color: var(--dark);
+	padding: 8px;
+	color: var(--white);
+	position: absolute;
+	top: 10px;
+	left: 8px;
+	right: 8px;
+	border-bottom: 1px solid var(--primaryLt);
 }
 
 @media only screen and (min-width: 800px) {
