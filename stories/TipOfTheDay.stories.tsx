@@ -1,6 +1,6 @@
 import React from "react"
 import { ComponentStory, ComponentMeta } from "@storybook/react"
-import { TipOfTheDay } from "../components/TipOfTheDay"
+import { TipOfTheDay } from "../components/TipOfTheDay/TipOfTheDay"
 
 export default {
 	title: "Example/TipOfTheDay",

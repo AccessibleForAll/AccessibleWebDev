@@ -1,13 +1,15 @@
 .topBanner {
-	background-color: var(--dark);
-	color: white;
-	height: 3rem;
+	background-color: var(--bg);
+	color: var(--text);
+	height: var(--headerHeight);
+	width: 100%;
 	padding: 0 16px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	border-bottom: 1px solid var(--primary);
+	position: fixed;
+	border-bottom: 1px solid var(--primaryLt);
+	z-index: 1;
 }
 
 .topBanner a {
@@ -32,37 +34,15 @@
 	border: none;
 	padding: 0;
 	background-color: transparent;
+	color: var(--text);
 }
 
-.headerTitle {
-	text-align: center;
-	font-size: 1.55rem;
-	margin: 1rem;
-}
 
-@media (min-width: 500px) {
-	.headerTitle {
-		font-size: 2.55rem;
-	}
-}
-
-@media (min-width: 630px) {
-	.headerTitle {
-		font-size: 3.2rem;
-	}
-}
 
 @media (min-width: 800px) {
 	.topBanner .hamburgerBtn {
 		display: none;
 	}
-	.headerTitle {
-		font-size: 4rem;
-	}
+
 }
 
-@media (min-width: 1200px) {
-	.headerTitle {
-		font-size: 6rem;
-	}
-}

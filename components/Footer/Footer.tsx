@@ -17,20 +17,14 @@ export const Footer = () => {
 						<a
 							href="https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md"
 							className={styles.footerLink}>
-							Become a Contributor{" "}
-							<span>
-								<BsBoxArrowUpRight aria-label="opens in new window" />
-							</span>
+							Become a Contributor
 						</a>
 					</li>
 					<li>
 						<a
 							href="https://github.com/sponsors/EmmaDawsonDev"
 							className={styles.footerLink}>
-							Support Us{" "}
-							<span>
-								<BsBoxArrowUpRight aria-label="opens in new window" />
-							</span>
+							Support Us
 						</a>
 					</li>
 					<li>
@@ -56,7 +50,11 @@ export const Footer = () => {
 				</p>
 
 				<a href="https://github.com/AccessibleForAll">
-					<BsGithub color="white" size="1.5rem" aria-label="Github" />
+					<BsGithub
+						className={styles.footerLogos}
+						size="1.5rem"
+						aria-label="Github"
+					/>
 				</a>
 			</div>
 		</footer>

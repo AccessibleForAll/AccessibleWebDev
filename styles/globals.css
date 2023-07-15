@@ -2,29 +2,31 @@
 
 :root,
 :root.light {
-	--text: #161e35;
+	--text: #0D1023;
 	--invertText: #fff;
 	--grey: #c7c7c7;
 	--highlight: #def8f6;
 	--primary: #028378;
 	--primaryLt: #7ddfd7;
 	--bg: #fff;
-	--dark: #161e35;
+	--dark: #0D1023;
 	--borderRadius: 3px;
 	--white: #fff;
+	--headerHeight: 3rem;
 }
 
 :root.dark {
 	--text: #fff;
-	--invertText: #161e35;
+	--invertText: #0D1023;
 	--grey: #c7c7c7;
 	--highlight: #028378;
 	--primary: #53fdee;
 	--primaryLt: #028378;
-	--bg: #161e35;
-	--dark: #161e35;
+	--bg: #0D1023;
+	--dark: #0D1023;
 	--borderRadius: 3px;
 	--white: #fff;
+	--headerHeight: 3rem;
 }
 
 html,
@@ -50,16 +52,15 @@ a {
 	box-shadow: 0 0 0 2px #000, 0 0 0 4px #fff;
 }
 
-main {
-	max-width: 1200px;
-	flex-grow: 1;
-	padding: 16px;
-}
+
 
 .active {
-	border-left: 3px solid var(--primary);
-	background-color: var(--highlight);
 	font-weight: bold;
+	background-color: var(--primary);
+	color: var(--invertText);
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 5px;
 }
 
 .center {
@@ -79,6 +80,11 @@ h6 {
 	margin: 1rem 0 0 0;
 }
 
+h1{
+	font-size: 2rem;
+	margin: 0 0 1rem 0;
+}
+
 h2 {
 	font-size: 1.5rem;
 }
@@ -93,10 +99,6 @@ p {
 
 /*Classes used on multiple content pages*/
 
-.pageLastUpdated {
-	margin-top: 5rem;
-	text-align: right;
-}
 
 .imageContainer {
 	display: flex;
@@ -112,4 +114,6 @@ p {
 	margin-bottom: 0.7rem;
 }
 
-
+.textContainer {
+	max-width: 52rem;
+}

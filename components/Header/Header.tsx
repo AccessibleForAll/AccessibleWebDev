@@ -5,16 +5,11 @@ import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 import styles from "./Header.module.css"
 
 export interface IHeaderProps {
-	headerTitle: string
 	handleNavClick: () => void
 	showNavMobile: boolean
 }
 
-export const Header = ({
-	headerTitle,
-	handleNavClick,
-	showNavMobile,
-}: IHeaderProps) => {
+export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 	return (
 		<>
 			<header>
@@ -28,15 +23,14 @@ export const Header = ({
 							aria-label="Navigation menu"
 							aria-expanded={showNavMobile}>
 							{!showNavMobile && (
-								<IoMenuSharp color="white" size="2.5rem" aria-hidden="true" />
+								<IoMenuSharp size="1.5rem" aria-hidden="true" />
 							)}
 							{showNavMobile && (
-								<IoCloseSharp color="white" size="2.5rem" aria-hidden="true" />
+								<IoCloseSharp size="1.5rem" aria-hidden="true" />
 							)}
 						</button>
 					</div>
 				</div>
-				<h1 className={styles.headerTitle}>{headerTitle}</h1>
 			</header>
 		</>
 	)

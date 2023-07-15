@@ -1,30 +1,34 @@
 .navPrimary {
-  display: none;
+  display: none;  
 }
 
 .navPrimaryMobile {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
-  top: 48px;
+  top: var(--headerHeight);
+  bottom: 0;
   background-color: var(--bg);
   z-index: 1;
+  overflow: scroll;
 }
 
 .navList {
-  margin: 0;
-  padding: 0;
-  min-width: 15rem;
+  margin: 8px 0 0 0;
+  padding: 0; 
 }
 
 .navListItem {
   list-style: none;
+  margin: 2px;
+  margin-left: 16px;
 }
 
 .navListItem a {
   text-decoration: none;
-  padding: 16px;
-  display: block;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .navListItem a:hover {
@@ -32,21 +36,20 @@
 }
 
 .navList a:focus {
-  background-color: var(--primaryLt);
-  font-weight: bold;
-}
-
-@media (min-width: 40rem) {
-  .navPrimary {
-    width: 15rem;
-  }
+  background-color: var(--primary);
+  color: var(--invertText);
 }
 
 @media (min-width: 800px) {
   .navPrimary {
-
-    margin-top: 16px;
+    width: 15rem;
     display: block;
+    position: fixed;
+    overflow-y: auto;
+    height: calc(100vh - var(--headerHeight));
+    top: var(--headerHeight);
+    left: 0;
+    border-right: 1px solid var(--primaryLt);
   }
 
   .navPrimaryMobile {

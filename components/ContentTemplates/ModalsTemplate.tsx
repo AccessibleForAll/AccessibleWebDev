@@ -78,8 +78,8 @@ export const ModalsTemplate = () => {
 
 				<CodeBlock
 					codeSnippet={`<button id="openDialogBtn">Open dialog</button>
-<dialog id="dialog">
-  <h2>This is a heading</h2>
+<dialog id="dialog" aria-labelledby="dialog_heading">
+  <h2 id="dialog_heading">This is a heading</h2>
   <p>This is some placeholder text within the dialog.</p>
   <button type="button" id="cancelBtn">Cancel</button>
 </dialog>`}
