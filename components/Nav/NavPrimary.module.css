@@ -33,6 +33,7 @@
 
 .navListItem a:hover {
   background-color: var(--primaryLt);
+  color: var(--text);
 }
 
 .navList a:focus {
