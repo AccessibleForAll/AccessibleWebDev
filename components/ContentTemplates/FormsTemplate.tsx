@@ -79,7 +79,8 @@ export const FormsTemplate = () => {
 				<p>Phone number (XXX-XXX-XXXX): [text field]</p>
 				<p>
 					This is better than just having “Phone number” as the visual label, as
-					it explicitly lets the user know the proper number format.
+					it explicitly lets the user know the expected number format without
+					having to guess.
 				</p>
 				<p>
 					Additionally, forms should have good visual contrast between the text
