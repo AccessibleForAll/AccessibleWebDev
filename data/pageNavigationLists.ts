@@ -55,6 +55,24 @@ export const headingsPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Test Your Knowledge", href: "#QuizQuestions" },
 ]
 
+export const formsPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{
+		linkName: "What Should We Consider When Building Accessible Forms?",
+		href: "#whatToConsider",
+	},
+	{
+		linkName: "Creating Simple, Understandable Forms",
+		href: "#creatingForms",
+	},
+	{
+		linkName: "Keyboard Accessible Forms",
+		href: "#keyboardAccessibleForms",
+	},
+	{ linkName: "Error Validation and Changes in State", href: "#formErrors" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+]
+
 export const modalPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "How a modal should work", href: "#howAModalShouldWork" },
