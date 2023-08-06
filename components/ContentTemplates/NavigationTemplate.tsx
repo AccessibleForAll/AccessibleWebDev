@@ -66,10 +66,7 @@ export const NavigationTemplate = () => {
 					// TODO: Fix this code block!
 				}
 				<CodeBlock
-					codeSnippet={`<button 
-	id="hamburgerMenu" class="navButton" 
-	aria-label="Navigation menu" aria-expanded="false" 
-	aria-controls="primaryNav">
+					codeSnippet={`<button id="hamburgerMenu" class="navButton" aria-label="Navigation menu" aria-expanded="false" aria-controls="primaryNav">
 	Menu
 </button>
 <nav id="primaryNav" class="hidden">
@@ -166,7 +163,129 @@ window.addEventListener("keyup", (e) => {
 					popup to open when pressed. The list of navigation links is then
 					shown.
 				</p>
-				<CodeBlock codeSnippet={""} languageType={"html"} />
+				<p>
+					In the example below a very simple "Mega Menu" is shown with only two
+					sections. These can be extended as necessary.
+				</p>
+				<CodeBlock
+					codeSnippet={`<nav>
+  <ul class="nav-list">
+    <li class="nav-group">
+      <button id="navItem1" class="navItem" aria-expanded="false" aria-controls="disclosure1">Nav 1 &#9660;</button>
+      <ul class="disclosure hidden" id="disclosure1">
+        <li>
+          <a href="#">Dropdown 1 - item 1</a>
+        </li>
+        <li>
+          <a href="#">Dropdown 1 - item 2</a>
+        </li>
+        <li>
+          <a href="#">Dropdown 1 - item 3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-group">
+      <button id="navItem2" class="navItem" aria-expanded="false" aria-controls="disclosure2">Nav list 2 &#9660;</button>
+      <ul class="disclosure hidden" id="disclosure2">
+        <li>
+          <a href="#">Dropdown 2 - item 1</a>
+        </li>
+        <li>
+          <a href="#">Dropdown 2 - item 2</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>`}
+					languageType={"html"}
+				/>
+				<CodeBlock
+					codeSnippet={`.disclosure {
+  position: absolute;
+  border: 1px solid black;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+.disclosure li {
+  margin: 0.5rem 0;
+}
+
+.hidden {
+  display: none;
+}`}
+					languageType={"css"}
+				/>
+				<CodeBlock
+					codeSnippet={`const navButtons = document.querySelectorAll(".navItem");
+const disclosures = document.querySelectorAll(".disclosure");
+
+function openNavigation(button) {
+  button.setAttribute("aria-expanded", "true");
+  // The ul is a direct sibling to the button
+  const disclosure = button.nextElementSibling;
+  disclosure.classList.remove("hidden");
+}
+
+function closeNavigation(button) {
+  button.setAttribute("aria-expanded", "false");
+  const disclosure = button.nextElementSibling;
+  disclosure.classList.add("hidden");
+}
+
+function toggleNavigation(index) {
+  // First we close any open dropdowns not related to the current button in focus by looping over all nav buttons
+  navButtons.forEach((button, buttonIndex) => {
+    if (buttonIndex != index) {
+      closeNavigation(button);
+    }
+  });
+  const currentButton = event.target;
+  const open = currentButton.getAttribute("aria-expanded");
+  open === "false"
+    ? openNavigation(currentButton)
+    : closeNavigation(currentButton);
+}
+
+// This function closes an open disclosure if a user tabs away from the last anchor element in the list. It is reliant on the top-level list item of the top level ul having a class to find the group containing button + disclosure it controls
+function handleBlur(button) {
+  const navList = event.currentTarget.closest(".nav-group");
+  if (!event.relatedTarget || !navList.contains(event.relatedTarget)) {
+    closeNavigation(button);
+  }
+}
+
+// Adds the toggle event to every top level button
+navButtons.forEach((button, index) => {
+  button.addEventListener("click", () => toggleNavigation(index));
+});
+
+// This adds the handleBlur event to the last anchor element in each disclosure
+disclosures.forEach((disclosure) => {
+  const listItems = disclosure.querySelectorAll("li a");
+  listItems[listItems.length - 1].addEventListener("blur", (event) => {
+    handleBlur(disclosure.previousElementSibling);
+  });
+});
+
+// This adds a global event listener to close any open disclosures when the escape key is pressed
+window.addEventListener("keyup", (e) => {
+  if (e.key === "Escape") {
+    const navButtonsArr = Array.from(navButtons);
+    const currentOpenButtonIndex = navButtonsArr.findIndex(
+      (button) => button.getAttribute("aria-expanded") === "true"
+    );
+    // If there is an open disclosure, close it and send focus back to the button that controls it.
+    if (currentOpenButtonIndex >= 0) {
+      const currentOpenButton = navButtons[currentOpenButtonIndex];
+      currentOpenButton.focus();
+      closeNavigation(currentOpenButton);
+    }
+  }
+});`}
+					languageType={"javascript"}
+				/>
 			</TemplateSection>
 			<TemplateSection sectionName={"linksOrder"} title={"Order of Links"}>
 				<p>
