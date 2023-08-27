@@ -81,3 +81,14 @@ export const modalPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
+
+export const navigationPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "A Simple Navigation", href: "#simpleNav" },
+	{ linkName: "Hamburger Menus", href: "#hamburgerMenus" },
+	{ linkName: "Mega Menus", href: "#megaMenus" },
+	{ linkName: "Order of Links", href: "#linksOrder" },
+	{ linkName: "Multiple Navigations Per Page", href: "#multipleNavs" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	//{ linkName: "Other Resources", href: "#otherResources" },
+]
