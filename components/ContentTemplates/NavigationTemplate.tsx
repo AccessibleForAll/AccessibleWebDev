@@ -312,16 +312,15 @@ window.addEventListener("keyup", (e) => {
 
 				<CodeBlock
 					codeSnippet={`<nav aria-label="Site">
-				...
-				</nav>
-				`}
+...
+</nav>
+`}
 					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<nav aria-label="Within page">
-				...
-				</nav>
-				`}
+...
+</nav>`}
 					languageType={"html"}
 				/>
 			</TemplateSection>
@@ -337,8 +336,66 @@ window.addEventListener("keyup", (e) => {
 			<TemplateSection sectionName="otherResources" title="Other Resources">
 				<ul className="list">
 					<li>
-						<a href="#" className="blockLink">
-							###
+						<a
+							href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
+							className="blockLink">
+							1.3.1 Info and Relationships
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#reflow"
+							className="blockLink">
+							1.4.10 Reflow
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
+							className="blockLink">
+							1.4.13 Content on Hover and Focus
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#keyboard"
+							className="blockLink">
+							2.1.1 Keyboard
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
+							className="blockLink">
+							2.4.4 Link Purpose (in Context)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#focus-visible"
+							className="blockLink">
+							2.4.7 Focus visible
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#location"
+							className="blockLink">
+							2.4.8 Location
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#consistent-navigation"
+							className="blockLink">
+							3.2.3 Consistent Navigation
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG21/#name-role-value"
+							className="blockLink">
+							4.1.2 Name, Role, Value
 						</a>
 					</li>
 				</ul>
