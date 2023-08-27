@@ -397,7 +397,7 @@ window.addEventListener("keyup", (e) => {
 					</li>
 				</ul>
 			</TemplateSection> */}
-			<PageUpdated date="26th June 2023" />
+			<PageUpdated date="27th August 2023" />
 		</>
 	)
 }
