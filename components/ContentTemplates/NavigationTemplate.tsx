@@ -4,9 +4,6 @@ import { NavPage } from "../NavPage/NavPage"
 import { PageUpdated } from "../PageUpdated/PageUpdated"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 
-// same order
-// multiple navs on a page
-
 export const NavigationTemplate = () => {
 	return (
 		<>
