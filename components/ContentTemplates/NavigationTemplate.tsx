@@ -324,15 +324,6 @@ window.addEventListener("keyup", (e) => {
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
 					<li>
-						<a href="#" className="blockLink">
-							###
-						</a>
-					</li>
-				</ul>
-			</TemplateSection>
-			<TemplateSection sectionName="otherResources" title="Other Resources">
-				<ul className="list">
-					<li>
 						<a
 							href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
 							className="blockLink">
@@ -393,6 +384,15 @@ window.addEventListener("keyup", (e) => {
 							href="https://www.w3.org/TR/WCAG21/#name-role-value"
 							className="blockLink">
 							4.1.2 Name, Role, Value
+						</a>
+					</li>
+				</ul>
+			</TemplateSection>
+			<TemplateSection sectionName="otherResources" title="Other Resources">
+				<ul className="list">
+					<li>
+						<a href="#" className="blockLink">
+							###
 						</a>
 					</li>
 				</ul>
