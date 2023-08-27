@@ -4,6 +4,9 @@ import { NavPage } from "../NavPage/NavPage"
 import { PageUpdated } from "../PageUpdated/PageUpdated"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 
+// TODO: Add information about using aria-current
+// TODO: Add working examples to complement the code examples
+
 export const NavigationTemplate = () => {
 	return (
 		<>
