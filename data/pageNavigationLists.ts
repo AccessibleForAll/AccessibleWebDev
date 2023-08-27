@@ -72,5 +72,5 @@ export const navigationPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Order of Links", href: "#linksOrder" },
 	{ linkName: "Multiple Navigations Per Page", href: "#multipleNavs" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
-	{ linkName: "Other Resources", href: "#otherResources" },
+	//{ linkName: "Other Resources", href: "#otherResources" },
 ]

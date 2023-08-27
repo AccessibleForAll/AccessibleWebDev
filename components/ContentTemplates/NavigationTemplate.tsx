@@ -388,7 +388,7 @@ window.addEventListener("keyup", (e) => {
 					</li>
 				</ul>
 			</TemplateSection>
-			<TemplateSection sectionName="otherResources" title="Other Resources">
+			{/* <TemplateSection sectionName="otherResources" title="Other Resources">
 				<ul className="list">
 					<li>
 						<a href="#" className="blockLink">
@@ -396,7 +396,7 @@ window.addEventListener("keyup", (e) => {
 						</a>
 					</li>
 				</ul>
-			</TemplateSection>
+			</TemplateSection> */}
 			<PageUpdated date="26th June 2023" />
 		</>
 	)
