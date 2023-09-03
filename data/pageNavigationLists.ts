@@ -3,6 +3,12 @@ export interface IPageNavigationItem {
 	href: string
 }
 
+export const audioPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
+
 export const breadcrumbsPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "HTML Structure", href: "#htmlStructure" },
