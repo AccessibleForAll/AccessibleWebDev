@@ -5,6 +5,7 @@ export interface IPageNavigationItem {
 
 export const audioPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "How To Add Closed Captions To Your Audio?", href: "#howToAdd" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
