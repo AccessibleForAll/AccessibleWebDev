@@ -5,7 +5,11 @@ export interface IPageNavigationItem {
 
 export const audioPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
-	{ linkName: "How To Add Closed Captions To Your Audio?", href: "#howToAdd" },
+	{ linkName: "Transcripts", href: "#transcripts" },
+	{ linkName: "Captions", href: "#captions" },
+	{ linkName: "How To Add Closed Captions To Your Video?", href: "#howToAdd" },
+	{ linkName: "Sign Language", href: "#signLanguage" },
+	{ linkName: "Accessible media players", href: "#accessibleMediaPlayers" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]

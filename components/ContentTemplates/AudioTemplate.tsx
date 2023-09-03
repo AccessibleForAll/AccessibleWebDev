@@ -6,10 +6,22 @@ import { audioPageNavigation } from "../../data/pageNavigationLists"
 
 export const AudioTemplate = () => {
 	return (
-		<div>
+		<>
 			<NavPage pageNavigation={audioPageNavigation} />
 			<TemplateSection sectionName="introduction" title="Introduction">
 				<p>Introduction</p>
+			</TemplateSection>
+			<TemplateSection sectionName={"transcripts"} title={"Transcripts"}>
+				<p>
+					Transcripts info - audio and video, how much is described, place near
+					the audio/video player so they can be more easily located
+				</p>
+			</TemplateSection>
+			<TemplateSection sectionName={"captions"} title={"Captions"}>
+				<p>
+					Captions section - open and closed. Explain difference. Option to
+					change font size, color etc of closed captions.
+				</p>
 			</TemplateSection>
 			<TemplateSection
 				sectionName="howToAdd"
@@ -39,6 +51,24 @@ export const AudioTemplate = () => {
 `}
 				/>
 			</TemplateSection>
-		</div>
+			<TemplateSection sectionName={"signLanguage"} title={"Sign Language"}>
+				<p>Sing language info</p>
+			</TemplateSection>
+			<TemplateSection
+				sectionName={"accessibleMediaPlayers"}
+				title={"Accessible Media Players"}>
+				<p>
+					Media player section - placement of caption button at same heirarchy
+					as play/pause etc. Keyboard operable
+				</p>
+			</TemplateSection>
+			<TemplateSection sectionName={"WCAGCriteria"} title={"WCAG Criteria"}>
+				<p>WCAG section</p>
+			</TemplateSection>
+			<TemplateSection sectionName={"resources"} title={"Resources"}>
+				<p>Resources section</p>
+			</TemplateSection>
+			<PageUpdated date={"Update me"} />
+		</>
 	)
 }
