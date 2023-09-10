@@ -32,6 +32,11 @@ export const AudioTemplate = () => {
 					transcripts remove these extra sounds whilst leaving the rest of the
 					audio as is. Nothing is paraphrased or summarised.
 				</p>
+				<p>
+					An added benefit of transcripts is that they can be more easily
+					translated into other languages. This makes the audio content
+					available to a wider range of people.
+				</p>
 			</TemplateSection>
 			<TemplateSection sectionName={"captions"} title={"Captions"}>
 				<p>
