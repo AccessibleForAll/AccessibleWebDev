@@ -9,12 +9,28 @@ export const AudioTemplate = () => {
 		<>
 			<NavPage pageNavigation={audioPageNavigation} />
 			<TemplateSection sectionName="introduction" title="Introduction">
-				<p>Introduction</p>
+				<p>
+					Any form of audio on a website, whether prerecorded or live, audio
+					only or as part of a video or animation, should be provided in an
+					alternative form so that it can be perceived by people that can't
+					access the audio. Such alternatives include transcripts, captions and
+					sign language.
+				</p>
 			</TemplateSection>
 			<TemplateSection sectionName={"transcripts"} title={"Transcripts"}>
 				<p>
-					Transcripts info - audio and video, how much is described, place near
-					the audio/video player so they can be more easily located
+					An audio transcript is a text version of the audio in a prerecorded
+					audio or video file. It should be located close to the audio or video
+					file so that it is easy to find for anyone that wishes to read it. As
+					a transcript can be long, it is adequate to provide a link to the
+					transcript in close proximity to the audio or video file.
+				</p>
+				<p>
+					Transcripts should identify who is speaking and include any relevant
+					background sounds. Full verbatim transcripts include every sound, even
+					ums and ahs, that occured in the original audio. Clean verbatim
+					transcripts remove these extra sounds whilst leaving the rest of the
+					audio as is. Nothing is paraphrased or summarised.
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName={"captions"} title={"Captions"}>
