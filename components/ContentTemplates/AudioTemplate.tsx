@@ -84,7 +84,7 @@ export const AudioTemplate = () => {
 				<CodeBlock
 					languageType="html"
 					codeSnippet={`<video controls width="200">
-  <source src="https://www.youtube.com/watch?v=0QHaxrUkSE" type="video/mp4" />
+  <source src="video.mp4" type="video/mp4" />
   <track
     default
     kind="captions"
