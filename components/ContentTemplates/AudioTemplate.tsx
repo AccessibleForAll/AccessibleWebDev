@@ -40,8 +40,31 @@ export const AudioTemplate = () => {
 			</TemplateSection>
 			<TemplateSection sectionName={"captions"} title={"Captions"}>
 				<p>
-					Captions section - open and closed. Explain difference. Option to
-					change font size, color etc of closed captions.
+					Captions are a text version of audio displayed alongside video inside
+					the media player. They should include all forms of audio such as
+					dialogue, background music, sound effects and anything else relevant
+					to the person watching. If the video is prerecorded the captions
+					should be synced with the audio. If the video is live there can
+					sometimes be a short delay as the captions are being added in real
+					time by professional real-time captioners.
+				</p>
+				<p>
+					There are two types of captions: Open Captions and Closed Captions.
+				</p>
+				<h3>Open Captions</h3>
+				<p>
+					Open captions are captions that are burned into the video track. They
+					are always visible when the video is playing and there is no way to
+					adjust the font size or style of the captions. They do however provide
+					a consistent experience for everyone.
+				</p>
+				<h3>Closed Captions</h3>
+				<p>
+					Closed captions are provided on a separate audio track which means
+					they can be switched on and off by the user. Often the user will also
+					have some control over the size and style of the captions so they can
+					be adjusted to suit their personal needs. However, closed caption
+					support may differ between different media players.
 				</p>
 			</TemplateSection>
 			<TemplateSection
