@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { IoMenuSharp, IoCloseSharp } from "react-icons/io5"
 import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher"
 
@@ -14,7 +15,9 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 		<>
 			<header>
 				<div className={styles.topBanner}>
-					<Link href="/">Accessible Web Dev</Link>
+					<Link href="/">
+						<Image src="/AWD.svg" alt="Accessible Web Dev Logo" />
+					</Link>
 					<div className={styles.buttonsContainer}>
 						<ThemeSwitcher />
 						<button
