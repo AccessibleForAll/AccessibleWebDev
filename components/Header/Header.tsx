@@ -16,7 +16,12 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 			<header>
 				<div className={styles.topBanner}>
 					<Link href="/">
-						<Image src="/AWD.svg" alt="Accessible Web Dev Logo" />
+						<Image
+							src="/AWD.svg"
+							alt="Accessible Web Dev Logo"
+							width="60"
+							height="60"
+						/>
 					</Link>
 					<div className={styles.buttonsContainer}>
 						<ThemeSwitcher />
