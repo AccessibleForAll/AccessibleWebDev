@@ -31,6 +31,15 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
+export const linkPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Descriptive Link Text", href: "#linkText" },
+	{ linkName: "Link States", href: "#linkStates" },
+	{ linkName: "Link Image", href: "#linkImage" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
+
 export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Text Alternatives", href: "#textAlternatives" },
