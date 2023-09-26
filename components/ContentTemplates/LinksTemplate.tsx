@@ -265,8 +265,8 @@ export const LinksTemplate = () => {
 						information for screen reader users.
 						<CodeBlock
 							codeSnippet={`<a href="#">
-    <img alt="" src="http://ia.media-imdb.com/images/M/MV5BMTIxMjc4NTA2Nl5BMl5BanBnXkFtZTYwNTU2MzU5._V1._SX86_CR0,0,86,86_.jpg" width="300" height="200"/>
-    <span>The Sopranos</span>
+    <img alt="" src="/images/imagesTemplate/oldPaperTexture.jpg" width="300" height="200"/>
+    <span>Old brown paper texture</span>
 </a>`}
 							languageType={"html"}
 						/>
