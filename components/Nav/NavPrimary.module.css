@@ -41,6 +41,18 @@
   color: var(--invertText);
 }
 
+.searchBox{
+  height: 40px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+  /* background:red; */
+  color:var(--primary) ;
+  font-size: medium;
+  /* border: var(--primary); */
+  border-radius: 20;
+}
+
 @media (min-width: 800px) {
   .navPrimary {
     width: 15rem;
