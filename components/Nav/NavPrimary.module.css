@@ -1,44 +1,44 @@
 .navPrimary {
-	display: none;
+  display: none;  
 }
 
 .navPrimaryMobile {
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: var(--headerHeight);
-	bottom: 0;
-	background-color: var(--bg);
-	z-index: 1;
-	overflow: scroll;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: var(--headerHeight);
+  bottom: 0;
+  background-color: var(--bg);
+  z-index: 1;
+  overflow: scroll;
 }
 
 .navList {
-	margin: 8px 0 0 0;
-	padding: 0;
+  margin: 8px 0 0 0;
+  padding: 0; 
 }
 
 .navListItem {
-	list-style: none;
-	margin: 2px;
-	margin-left: 16px;
+  list-style: none;
+  margin: 2px;
+  margin-left: 16px;
 }
 
 .navListItem a {
-	text-decoration: none;
-	padding: 8px;
-	display: inline-block;
-	border-radius: 5px;
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+  border-radius: 5px;
 }
 
 .navListItem a:hover {
-	background-color: var(--primaryLt);
-	color: var(--text);
+  background-color: var(--primaryLt);
+  color: var(--text);
 }
 
 .navList a:focus {
-	background-color: var(--primary);
-	color: var(--invertText);
+  background-color: var(--primary);
+  color: var(--invertText);
 }
 
 .searchBox {
@@ -57,18 +57,18 @@
 }
 
 @media (min-width: 800px) {
-	.navPrimary {
-		width: 15rem;
-		display: block;
-		position: fixed;
-		overflow-y: auto;
-		height: calc(100vh - var(--headerHeight));
-		top: var(--headerHeight);
-		left: 0;
-		border-right: 1px solid var(--primaryLt);
-	}
+  .navPrimary {
+    width: 15rem;
+    display: block;
+    position: fixed;
+    overflow-y: auto;
+    height: calc(100vh - var(--headerHeight));
+    top: var(--headerHeight);
+    left: 0;
+    border-right: 1px solid var(--primaryLt);
+  }
 
-	.navPrimaryMobile {
-		display: none;
-	}
+  .navPrimaryMobile {
+    display: none;
+  }
 }
