@@ -42,18 +42,18 @@
 }
 
 .searchBox {
-	border: 2px solid var(--primary);
-	width: 180px;
-	height: 40px;
-	font-size: medium;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 10px;
-	margin-left: 10px;
+  border: 2px solid var(--primary);
+  width: 180px;
+  height: 40px;
+  font-size: medium;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: 10px;
 }
 
 .searchBox:focus {
-	outline-color: var(--primaryLt);
+  outline-color: var(--primaryLt);
 }
 
 @media (min-width: 800px) {
