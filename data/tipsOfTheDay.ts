@@ -46,7 +46,7 @@ export const Tips: ITips[] = [
 		title: "Use Semantic HTML",
 		description:
 			"Use appropriate HTML tags to help convey the meaning and structure of your content, which makes it easier for screen readers and other assistive technologies to navigate.",
-		tipLink: "https://www.w3.org/WAI/WCAG21/Techniques/semantic-structure.html",
+		tipLink: "https://webaim.org/techniques/semanticstructure/",
 		tipLinkLabel: "Read more about semantic HTML...",
 	},
 	{
