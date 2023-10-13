@@ -18,10 +18,24 @@ export const ChartsTemplate = () => {
 					understand.
 				</p>
 			</TemplateSection>
+			<TemplateSection sectionName="typesOfCharts" title="Types of Charts">
+				<p>
+					Common types of that are used on the web include:
+					<ol>
+						<li>Comparison Charts: Often used to compare two products</li>
+						<li>Bar Charts:Often used to used to compare sale results</li>
+						<li>Line Charts: Often used to convey a company's history</li>
+					</ol>
+				</p>
+			</TemplateSection>
 			<TemplateSection
 				sectionName="howToAdd"
-				title="How to How To Add Charts to Your Audio?">
-				<p>{/* add paragraph on how to add charts to a website */}</p>
+				title="How to Add Charts to your websites">
+				<p>
+					There are many methods to add a chart to your website, but here's a
+					simple way to this:
+					{/* add code block and steps here */}
+				</p>
 			</TemplateSection>
 			<TemplateSection
 				sectionName="accessibilityTips"
