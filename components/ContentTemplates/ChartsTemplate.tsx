@@ -29,13 +29,62 @@ export const ChartsTemplate = () => {
 				</p>
 			</TemplateSection>
 			<TemplateSection
-				sectionName="howToAdd"
-				title="How to Add Charts to your websites">
-				<p>
-					There are many methods to add a chart to your website, but here's a
-					simple way to this:
-					{/* add code block and steps here */}
-				</p>
+				sectionName="howToCreate"
+				title="How to Create a Comparison Chart">
+				<p> Out of all the charts used on websites, comparison charts tend to be
+					used the most. Here's how to add this piece of content to your
+					website.</p>
+				<ol> 
+<li>  Add the table element </li> 
+<CodeBlock languageType="html" codeSnippet={
+							`<table>
+								
+								</table> 
+						`} 
+						/>
+						<li> Add a table head: This helps create the list of categories that will be compared.</li>
+						<CodeBlock languageType="html" codeSnippet={ 
+							`<thead>
+								<tr>
+									<th>Category 1</th>
+									<th>Category 2</th>
+									<th>Category 3</th>
+								</tr>
+							</thead>
+						`} 
+						/>
+						<li> Add the `<tbody>`, `<td>`, and `<tr>` elements: These help create the data that will be compared</li>
+						<CodeBlock languageType="html" codeSnippet={
+							`<tbody>
+								<tr>
+									<td>Data 1</td>
+									<td>Data 2</td>
+									<td>Data 3</td>
+								</tr>
+							</tbody>
+						`}
+						/>
+<p> Here's how the table looks as a whole</p>
+<CodeBlock languageType="html" codeSnippet={
+							`<table>
+								<thead>
+									<tr>
+										<th>Category 1</th>
+										<th>Category 2</th>
+										<th>Category 3</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Data 1</td>
+										<td>Data 2</td>
+										<td>Data 3</td>
+									</tr>
+								</tbody>
+							</table>
+						`} 
+						/>
+				</ol>	
 			</TemplateSection>
 			<TemplateSection
 				sectionName="accessibilityTips"
