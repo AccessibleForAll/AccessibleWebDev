@@ -89,7 +89,12 @@ export const ChartsTemplate = () => {
 			<TemplateSection
 				sectionName="accessibilityTips"
 				title="Tips to make your charts accessible">
-				<p>{/* add paragraph on how to make your charts accessible */}</p>
+				<p> Here are some ways you can make your charts accessible</p>
+				<ol>
+					<li>**Use descriptive labels:** Clearly describe significant parts of the chart (e.g., the title and x and y-axises). Make data points and columns distinguishable by using clear labels and different colors. </li>
+					<li> **Be selective about color choices:** Use a color contrast checker to ensure that the colors in your chart can be detected by screen readers.</li>
+					<li>**Use other sources:** Consider using different forms of media to present the data whether its images, text, short clips, etc. This would help people comprehend the data in their own way. </li>
+				</ol>
 			</TemplateSection>
 		</>
 	)
