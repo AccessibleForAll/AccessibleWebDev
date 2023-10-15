@@ -7,7 +7,7 @@ import { chartsPageNavigation } from "../../data/pageNavigationLists"
 export const ChartsTemplate = () => {
 	return (
 		<>
-			<NavPage pageNavigation={chartPageNavigation} />
+			<NavPage pageNavigation={chartsPageNavigation} />
 			<TemplateSection sectionName="introduction" title="Introduction">
 				<p>
 					The chart is a visual representation of data that uses symbols, lines,
