@@ -11,12 +11,17 @@ export const ChartsTemplate = () => {
 			<TemplateSection sectionName="introduction" title="Introduction">
 				<p>
 					The chart is a visual representation of data that uses symbols, lines,
-					or bars to convey information. Whether it's comparing features of two
+					or bars to convey information. Whether it's comparing the features of two
 					mobile devices on a website, results of a survey on a social media
 					post, or a person's monthly progress in their goal, charts should be
-					conveyed in a way that is easy to for all users to read and
-					understand.
+					conveyed in a way that is easy for all users to read and
+					understand. Unfortunately, that's not always the case.
 				</p>
+<h3> Common issues</h3>
+				<ul>
+                <li>Same color scheme: Charts tend to use the same style of colors, which makes it difficult for low-vision and visually-impaired users to read their content</li>
+				<li>X and y-axes: The x and y-axes in charts make it harder for people with dyscalculia and other learning and neurocognitive disabilities to understand the the relationship between the two axes and interpret the chart's data points</li>
+				</ul>
 			</TemplateSection>
 			<TemplateSection sectionName="typesOfCharts" title="Types of Charts">
 				<p>
