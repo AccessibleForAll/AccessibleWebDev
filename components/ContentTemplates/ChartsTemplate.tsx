@@ -34,72 +34,18 @@ export const ChartsTemplate = () => {
 				</p>
 			</TemplateSection>
 			<TemplateSection
-				sectionName="howToCreate"
-				title="How to Create a Comparison Chart">
-				<p> Out of all the charts used on websites, comparison charts tend to be
-					used the most. Here's how to add this piece of content to your
-					website.</p>
-				<ol> 
-<li>  Add the table element </li> 
-<CodeBlock languageType="html" codeSnippet={
-							`<table>
-								
-								</table> 
-						`} 
-						/>
-						<li> Add a table head: This helps create the list of categories that will be compared.</li>
-						<CodeBlock languageType="html" codeSnippet={ 
-							`<thead>
-								<tr>
-									<th>Category 1</th>
-									<th>Category 2</th>
-									<th>Category 3</th>
-								</tr>
-							</thead>
-						`} 
-						/>
-						<li> Add the `<tbody>`, `<td>`, and `<tr>` elements: These help create the data that will be compared</li>
-						<CodeBlock languageType="html" codeSnippet={
-							`<tbody>
-								<tr>
-									<td>Data 1</td>
-									<td>Data 2</td>
-									<td>Data 3</td>
-								</tr>
-							</tbody>
-						`}
-						/>
-<p> Here's how the table looks as a whole</p>
-<CodeBlock languageType="html" codeSnippet={
-							`<table>
-								<thead>
-									<tr>
-										<th>Category 1</th>
-										<th>Category 2</th>
-										<th>Category 3</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Data 1</td>
-										<td>Data 2</td>
-										<td>Data 3</td>
-									</tr>
-								</tbody>
-							</table>
-						`} 
-						/>
-				</ol>	
-			</TemplateSection>
-			<TemplateSection
 				sectionName="accessibilityTips"
 				title="Tips to make your charts accessible">
 				<p> Here are some ways you can make your charts accessible</p>
-				<ol>
-					<li>**Use descriptive labels:** Clearly describe significant parts of the chart (e.g., the title and x and y-axises). Make data points and columns distinguishable by using clear labels and different colors. </li>
-					<li> **Be selective about color choices:** Use a color contrast checker to ensure that the colors in your chart can be detected by screen readers.</li>
-					<li>**Use other sources:** Consider using different forms of media to present the data whether its images, text, short clips, etc. This would help people comprehend the data in their own way. </li>
-				</ol>
+				<h2>Images of Charts</h2>
+				<p>
+					Like any other image, it's important to add alternative text when
+					you're adding images of charts to your website and mobile
+					applications. Per <a href="https://www.w3.org/WAI/tutorials/images/complex/"> W3C's standards for complex images</a>, it's best to use to long descriptions when writing alt text for charts, so that people, especially those who have low-vision and other disabilities, have an easier time reading the chart's content. Adding this information can get difficult, so consider using the following method to help you:
+					</p>
+					<CodeBlock languageType="markdown" codeSnippet={`alt="Chart type of type data where reason for including chart"`}
+					<p>Here it is in action:</p>
+					<CodeBlock languageType="html" codeSnippet={`<p> <img src="breast-cancer-stats-charts.jpg" alt="Bar graph of breast cancer cases per 100,000 American women where Black women have 124.0 more rates of incidences than their white counterparts"> </p>`}
 			</TemplateSection>
 		</>
 	)
