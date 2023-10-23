@@ -46,7 +46,14 @@ export const ChartsTemplate = () => {
 					<CodeBlock languageType="markdown" codeSnippet={`alt="Chart type of type data where reason for including chart"`}
 					<p>Here it is in action:</p>
 					<CodeBlock languageType="html" codeSnippet={`<p> <img src="breast-cancer-stats-charts.jpg" alt="Bar graph of breast cancer cases per 100,000 American women where Black women have 124.0 more rates of incidences than their white counterparts"> </p>`}
-			</TemplateSection>
+					<h2>Working with Interactive Charts</h2>
+				<p>Interactive charts tend to have interactive features such as animated images, videos, progress bars. While they make the charts more engaging, the UI of these features tend to be small and complex, making it difficult for visually-impaired users and those with limited motor skills to interact with(no pun intended 😉). Here's some ways to make these charts interactive for everyone:</p>
+				<ol>
+					<li><strong>Make it keyboard accessible:</strong> The keyboard is a tool that makes it easier for low-vision and motor-limited users to navigate websites, so it's important to make every visual keyboard-friendy. For example, if your chart has a link users need to click on in order to view content, ensure that the <kbd> Enter</kbd> key can be used to access it</li>
+					<li> <strong>Create a dark and light version:</strong> While dark mode makes it easier for people who are sensitive to light, it can cause the pupils to dilate, making a person's vision blurry. So it's best to offer a light and dark version to satisfy both users</li>
+					<li><strong> Make static visuals a preference:</strong>  The modifiable nature of interactive visuals tends to make it difficult screen readers to analyze this information so consider using static visuals as they tend to be more screen reader and keyboard-friendly.</li>
+				</ol>
+				</TemplateSection>
 		</>
 	)
 }
