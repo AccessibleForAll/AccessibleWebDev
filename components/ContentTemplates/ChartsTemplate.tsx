@@ -53,6 +53,9 @@ export const ChartsTemplate = () => {
 					<li> <strong>Create a dark and light version:</strong> While dark mode makes it easier for people who are sensitive to light, it can cause the pupils to dilate, making a person's vision blurry. So it's best to offer a light and dark version to satisfy both users</li>
 					<li><strong> Make static visuals a preference:</strong>  The modifiable nature of interactive visuals tends to make it difficult screen readers to analyze this information so consider using static visuals as they tend to be more screen reader and keyboard-friendly.</li>
 				</ol>
+				<h2> Using Colors</h2>
+				<p> As previously mentioned, charts tend use the same color scheme, which makes it difficult for low-vision users to access the content. Here are some ways to make the colors of your charts more accessible:</p>
+                             {/* add list later */}
 				</TemplateSection>
 		</>
 	)
