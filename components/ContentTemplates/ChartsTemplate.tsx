@@ -67,10 +67,16 @@ export const ChartsTemplate = () => {
 				</ul>
 				</TemplateSection>
 			<TemplateSection sectionName="recommendedTools" title="Recommended Resources">
-				{/* add content later */}
+				<p>Here are some resources we recommend to help you create accessible charts</p>
+				<ul>
+					<li> <a href="https://webaim.org/resources/contrastchecker/"> WebAIM: Contrast Color Checker</a></li>
+					<li> <a href="https://accessiblepalette.com/"> Accessible Palette</a></li>
+				</ul>
 			</TemplateSection> 
 			<TemplateSection sectionName="accessibilityCriteria" title="WCAG Criteria">
+				<ul>
 			 {/* add content later */}
+				</ul>
 			</TemplateSection> 
 		</>
 	)
