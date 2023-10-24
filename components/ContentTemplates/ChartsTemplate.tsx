@@ -48,15 +48,24 @@ export const ChartsTemplate = () => {
 					<CodeBlock languageType="html" codeSnippet={`<p> <img src="breast-cancer-stats-charts.jpg" alt="Bar graph of breast cancer cases per 100,000 American women where Black women have 124.0 more rates of incidences than their white counterparts"> </p>`}
 					<h2>Working with Interactive Charts</h2>
 				<p>Interactive charts tend to have interactive features such as animated images, videos, progress bars. While they make the charts more engaging, the UI of these features tend to be small and complex, making it difficult for visually-impaired users and those with limited motor skills to interact with(no pun intended 😉). Here's some ways to make these charts interactive for everyone:</p>
-				<ol>
+				<ul>
 					<li><strong>Make it keyboard accessible:</strong> The keyboard is a tool that makes it easier for low-vision and motor-limited users to navigate websites, so it's important to make every visual keyboard-friendy. For example, if your chart has a link users need to click on in order to view content, ensure that the <kbd> Enter</kbd> key can be used to access it</li>
 					<li> <strong>Create a dark and light version:</strong> While dark mode makes it easier for people who are sensitive to light, it can cause the pupils to dilate, making a person's vision blurry. So it's best to offer a light and dark version to satisfy both users</li>
 					<li><strong> Make static visuals a preference:</strong>  The modifiable nature of interactive visuals tends to make it difficult screen readers to analyze this information so consider using static visuals as they tend to be more screen reader and keyboard-friendly.</li>
-				</ol>
+				</ul>
 				<h2> Using Colors</h2>
 				<p> As previously mentioned, charts tend use the same color scheme, which makes it difficult for low-vision users to access the content. Here are some ways to make the colors of your charts more accessible:</p>
-                             {/* add list later */}
+                            <ul>
+				    <li><strong>Use a single-hue palette:</strong> It makes the chart readable for all sorts of color-blindness</li>
+				    <li><strong>Use a color contrast checker:</strong> Let's be honest, choosing accessible colors can be be hassle, so color contrast checkers can be very helpful in ensuring that your color palette provides colors that make it easy for everyone to view your charts. </li>
+			    </ul>
 				</TemplateSection>
+			<TemplateSection sectionName="recommendedTools" title="Recommended Resources">
+				{/* add content later */}
+			</TemplateSection> 
+			<TemplateSection sectionName="accessibilityCriteria" title="WCAG Criteria">
+			 {/* add content later */}
+			</TemplateSection> 
 		</>
 	)
 }
