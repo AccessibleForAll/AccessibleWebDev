@@ -59,6 +59,12 @@ export const ChartsTemplate = () => {
 				    <li><strong>Use a single-hue palette:</strong> It makes the chart readable for all sorts of color-blindness</li>
 				    <li><strong>Use a color contrast checker:</strong> Let's be honest, choosing accessible colors can be be hassle, so color contrast checkers can be very helpful in ensuring that your color palette provides colors that make it easy for everyone to view your charts. </li>
 			    </ul>
+				<h2> Presenting information</h2>
+                                  <p> When comes to presenting information in your charts, here are some things to keep in mind to ensure they are accessible:</p>
+				<ul>
+					<li><strong>Use clear label and descriptions:</strong> Place labels and legends to mark and distinguish significant data points in your charts. Also, create titles that summarize the message of your charts. Doing these methods would help users, especially those who are neurodivergent, gain a better understanding of your chart's purpose and content</li>
+					<li><strong>Provide other resources:</strong> Some people learn visually. Others learn with auditory, so it's important to provides other forms of content whether it's an article, blog, video, etc. That way these users would gain a better understanding of your chart</li>
+				</ul>
 				</TemplateSection>
 			<TemplateSection sectionName="recommendedTools" title="Recommended Resources">
 				{/* add content later */}
