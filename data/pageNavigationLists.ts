@@ -106,9 +106,7 @@ export const navigationPageNavigation: IPageNavigationItem[] = [
 export const chartsPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Types of Charts", href: "#chartTypes" },
-	{ linkName: "How to Create a Comparision Chart", href: "#chartCompar" },
-	{
-		linkName: "Tips to make your charts accessible",
-		href: "#accessibleCharts",
-	},
+	{linkName: "Tips to make your charts accessible", href: "#accessibleCharts"},
+	{linkName: "Recommended Resources", href: "#recommendedTools"},
+	{linkName: "WCAG Criteria", href: "#WCAGCriteria"}, 
 ]
