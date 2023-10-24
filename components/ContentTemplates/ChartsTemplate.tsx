@@ -75,7 +75,7 @@ export const ChartsTemplate = () => {
 			</TemplateSection> 
 			<TemplateSection sectionName="accessibilityCriteria" title="WCAG Criteria">
 				<ul>
-			 {/* add content later */}
+			<li><a href="https://www.w3.org/WAI/tutorials/images/complex/#long-descriptions"> Complex Images: Long Descriptions</a></li>
 				</ul>
 			</TemplateSection> 
 		</>
