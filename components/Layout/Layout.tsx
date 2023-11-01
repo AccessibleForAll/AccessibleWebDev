@@ -12,22 +12,25 @@ interface ILayoutProps {
 }
 
 export const Layout = ({ activeNavLink, children }: ILayoutProps) => {
-	const [showNavMobile, setShowNavMobile] = useState<boolean>(false)
+	const [isNavMobileOpen, setIsNavMobileOpen] = useState<boolean>(false)
 
-	const handleNavClick = () => {
-		setShowNavMobile((prevState) => !prevState)
+	const toggleNavMobileOpen = () => {
+		setIsNavMobileOpen((prevState) => !prevState)
 	}
 
 	return (
 		<>
 			<SkipLink />
-			<Header handleNavClick={handleNavClick} showNavMobile={showNavMobile} />
+			<Header
+				handleNavClick={toggleNavMobileOpen}
+				isNavMobileOpen={isNavMobileOpen}
+			/>
 			<div className={styles.layoutContainer}>
 				<NavPrimary activeNavLink={activeNavLink} />
-				{showNavMobile && (
+				{isNavMobileOpen && (
 					<NavPrimaryMobile
 						activeNavLink={activeNavLink}
-						handleNavClick={handleNavClick}
+						closeNavMobile={toggleNavMobileOpen} // since, closeNavMobile prop can only be called when <NavPrimaryMobile /> is in open state so, toggleNavMobileOpen handler can be used for closing nav mobile.
 					/>
 				)}
 				<div className={styles.columnContainer}>
