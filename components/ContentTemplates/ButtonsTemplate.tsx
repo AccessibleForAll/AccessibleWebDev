@@ -175,16 +175,16 @@ export const ButtonsTemplate = () => {
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-					<img src="icon-url.png" alt="" />
-					Text
-					</button>`}
+<img src="icon-url.png" alt="" />
+	Text
+</button>`}
 					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-					<img src="icon-url.png" aria-hidden="true" />
-						Text
-					</button>`}
+<img src="icon-url.png" aria-hidden="true" />
+	Text
+</button>`}
 					languageType={"html"}
 				/>
 				<p>
@@ -210,14 +210,14 @@ export const ButtonsTemplate = () => {
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-					<img src="icon-url.png" alt="Save" />
-					</button>`}
+	<img src="icon-url.png" alt="Save" />
+</button>`}
 					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-					<i class="fa-solid fa-floppy-disk" aria-label="Save"></i>
-					</button>`}
+	<i class="fa-solid fa-floppy-disk" aria-label="Save"></i>
+</button>`}
 					languageType={"html"}
 				/>
 				<p>
@@ -229,8 +229,8 @@ export const ButtonsTemplate = () => {
 				</p>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-						<i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
-					</button>`}
+	<i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+</button>`}
 					languageType={"html"}
 				/>
 				<p>
@@ -238,8 +238,8 @@ export const ButtonsTemplate = () => {
 				</p>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-						<i class="fa-solid fa-magnifying-glass" aria-label="Magnifying glass"></i>
-					</button>`}
+	<i class="fa-solid fa-magnifying-glass" aria-label="Magnifying glass"></i>
+</button>`}
 					languageType={"html"}
 				/>
 			</TemplateSection>
