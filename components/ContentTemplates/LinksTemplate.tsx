@@ -161,63 +161,19 @@ other places on the web */`}
 					</li>
 				</ul>
 			</TemplateSection>
-			<TemplateSection sectionName="linkImage" title="Link Image">
+			<TemplateSection sectionName="linkImage" title="Image and Icon Links">
 				<p>
-					You can turn an image into a clickable link that takes you to another
-					webpage. To ensure that this image link is accessible to screen
-					readers and everyone else, you should follow these guidelines:
+					You can turn an image or icon into a clickable link that takes you to
+					another webpage. Since image and icon links don't have a visible link
+					text, you need to use a different method to give the link an
+					accessible name. These methods can include adding an aria-label, using
+					a visibly-hidden class or adding an alt attribute to the image text
+					wrapped inside the link.
 				</p>
-				<ul>
-					<li>
-						<strong>Use Anchor Element: </strong>
-						Wrap the image element within an anchor element{" "}
-						<strong>{`${"<a>"}`}</strong> to create a clickable link. This makes
-						it clear that the image is interactive and leads to another page.
-						<CodeBlock
-							codeSnippet={`<a href="#">
-    <img alt="Old brown paper texture" src="/images/imagesTemplate/oldPaperTexture.jpg" width="300" height="200"/>
-</a>`}
-							languageType={"html"}
-						/>
-						<p>
-							<a href="#">
-								<Image
-									src="/images/imagesTemplate/oldPaperTexture.jpg"
-									alt="Old brown paper texture"
-									width={300}
-									height={200}
-									layout="intrinsic"
-								/>
-							</a>
-						</p>
-					</li>
-					<li>
-						<strong>Provide Descriptive Alt Text: </strong>
-						Use the alt attribute within the image tag to describe the content
-						or purpose of the image. This text should be meaningful and convey
-						the image's function, especially to those who can't see it.
-						<CodeBlock
-							codeSnippet={`<a href="#">
-    <img alt="Old brown paper texture" src="/images/imagesTemplate/oldPaperTexture.jpg" width="300" height="200"/>
-</a>`}
-							languageType={"html"}
-						/>
-					</li>
-					<li>
-						<strong>Use Descriptive Text (if alt is empty): </strong>
-						If the image itself doesn't contain meaningful content, you can use
-						a descriptive text within a <strong>{`${"<span>"}`}</strong> element
-						alongside an empty alt attribute. This ensures there's still textual
-						information for screen reader users.
-						<CodeBlock
-							codeSnippet={`<a href="#">
-    <img alt="" src="/images/imagesTemplate/oldPaperTexture.jpg" width="300" height="200"/>
-    <span>Old brown paper texture</span>
-</a>`}
-							languageType={"html"}
-						/>
-					</li>
-				</ul>
+				<p>
+					The important thing to remember when using images and icons as links
+					is to describe the link destination and not the content of the image.
+				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
