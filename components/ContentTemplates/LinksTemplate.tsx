@@ -122,47 +122,42 @@ other places on the web */`}
 				</div>
 			</TemplateSection>
 
-			<TemplateSection sectionName="linkStates" title="Link State">
+			<TemplateSection sectionName="linkStates" title="Link State and Style">
 				<p>
 					To improve the accessibility of your website, it's crucial to make
-					links more noticeable and user-friendly, especially for people using
-					screen readers or those with low visibility or color blindness.
+					links easy to distinguish from non-interactive elements on a page.
 				</p>
 
 				<p>Here's how to achieve this:</p>
 
-				<ul>
+				<ul className="list">
 					<li>
 						<strong>Underline Links by Default: </strong>
 						Links should be underlined by default. This provides a clear visual
 						indicator that a piece of text or an element is clickable. It's a
 						universal convention that helps all users understand what's
 						clickable.
-						<CodeBlock
-							codeSnippet={`a {
-    text-decoration: underline;
-}`}
-							languageType={"css"}
-						/>
 					</li>
 					<li>
 						<strong>Ensure Sufficient Color Contrast: </strong>
 						Make sure the color of your links contrasts well with the background
 						color. This ensures that people with visual impairments can easily
-						distinguish the links from the surrounding text.
+						distinguish the links from the surrounding text. The contrast ratio
+						should be at least 4.5:1 for WCAG level AA compliance. Color should
+						not be the only way to distinguish links from surrounding text.
 					</li>
 					<li>
 						<strong>Add Link State on Click or Visit: </strong>
 						To aid users in identifying which links they've already visited or
 						clicked, consider adding a visual change, such as making the link
 						text bold or giving it a bright outline color.
-						<CodeBlock
-							codeSnippet={`a:visited {
-    font-weight: bold;
-    outline: 2px solid #00f; /* Use a bright color for the outline */
-}`}
-							languageType={"css"}
-						/>
+					</li>
+					<li>
+						<strong>Don't rely on hover state to convey links: </strong>
+						Hover is not available on touch devices or for people navigating the
+						web with keyboard, screen readers or other input devices. Therefore
+						hover states only, such as underline or color change on hover,
+						should not be relied upon to convey that something is a link.
 					</li>
 				</ul>
 			</TemplateSection>

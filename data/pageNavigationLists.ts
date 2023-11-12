@@ -38,8 +38,8 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 export const linkPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
-	{ linkName: "Link States", href: "#linkStates" },
-	{ linkName: "Link Image", href: "#linkImage" },
+	{ linkName: "Link State and Style", href: "#linkStates" },
+	{ linkName: "Image and Icon Links", href: "#linkImage" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
