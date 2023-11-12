@@ -14,144 +14,98 @@ export const LinksTemplate = () => {
 			<TemplateSection sectionName="introduction" title="Introduction">
 				<p>
 					Links, also known as hyperlinks, are a fundamental element in HTML.
-					They serve the purpose of connecting different pages within a website
-					or linking to external resources or documents from one webpage to
-					another.
+					They connect different pages, or parts of pages, to one another.
 				</p>
 
 				<p>
-					In HTML, links are created using the anchor element{" "}
+					In HTML, links are created using the anchor element
 					<strong>{`${"<a>"}`}</strong>. This element allows you to make text or
-					images clickable, enabling users to navigate by clicking, redirecting
-					through URLs, accessing through the tab key, or selecting with the
-					Enter key.
+					images clickable, and has inbuilt interactivity allowing users to
+					activate the link with a mouse click, a touch device or by pressing
+					Enter on a keyboard. It is also automatically reachable with the tab
+					key.
 				</p>
-
-				<CodeBlock
-					codeSnippet={`<a href="https://accessibleweb.dev">Visit Accessible Web</a>`}
-					languageType={"html"}
-				/>
-
 				<p>
-					There are two main types of links: internal links and external links.
-				</p>
-				<ul>
-					<li>
-						<strong>Internal links: </strong>
-						Internal links connect webpages within your own website. They help
-						users navigate between different pages of your site easily.
-						<CodeBlock
-							codeSnippet={`<a href="buttons.html">Learn more about accessible buttons</a>`}
-							languageType={"html"}
-						/>
-						<p>
-							<a href="buttons">Learn more about accessible buttons</a>
-						</p>
-					</li>
-
-					<li>
-						<strong>External links: </strong>
-						External links, on the other hand, connect your webpage to another
-						webpage on an external website. An example of this is when you link
-						your website to the W3C website for additional information or
-						resources.
-						<CodeBlock
-							codeSnippet={`<a href="https://www.w3schools.com/">Visit W3Schools</a>`}
-							languageType={"html"}
-						/>
-						<h3>Open External links in a New Tab</h3>
-						<p>
-							External links should be clearly marked as such, especially when
-							they open in a new browser tab, either with a new window icon{" "}
-							<span>
-								<ImNewTab size="1rem" aria-hidden="true" />
-							</span>{" "}
-							or a descriptive text e.g “(opens in a new tab)” and also include
-							a target attribute of “_blank” and rel=”noopener” to prevent
-							potential security risks.
-						</p>
-						<CodeBlock
-							codeSnippet={`<a href="https://www.accessibleweb.com" rel="noopener" target="_blank">
-    Visit Accessible Web
-    <span hidden id="new_tab">(opens in a new tab)</span>
-    <svg aria-hidden="true" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true" fill="#000000">
-    </svg>
-</a>`}
-							languageType={"html"}
-						/>
-						<p>
-							In this example, we use a <strong>{`${"<span>"}`}</strong> element
-							with the 'hidden' attribute and id="new_tab" with the text "(opens
-							in a new tab)", which won't be visible by default. The
-							aria-hidden="true" attribute in the SVG element ensures that the
-							SVG icon is not visible to screen readers. When screen readers
-							visit the link, they'll read it as{" "}
-							<strong>Visit Accessible Web. Opens in a new tab.</strong>
-						</p>
-					</li>
-				</ul>
-				<p>
-					Notice the difference between the hrefs. The href for internal link is
-					pointing to a page within this website - Buttons and the href for
-					external link is pointing to a file outside this website.
+					An important attribute for accessibility is the href attribute. This
+					specifies the destination of the link. If the href is not present then
+					the link is not accessible.
 				</p>
 			</TemplateSection>
-			<TemplateSection sectionName="linkText" title="Descriptive Link Text">
-				<p>
-					Link text is the text that describes a hyperlink on a webpage. It's
-					important to have descriptive link text to provide clear context for
-					screen readers and all users.
-				</p>
-				<CodeBlock
-					codeSnippet={`<a href="https://accessibleweb.dev">Visit Accessible Web</a>`}
-					languageType={"html"}
-				/>
-				<p>
-					Descriptive link text helps users understand the purpose of the link.
-					Avoid using vague phrases like "Click Here" or "Read More."
-				</p>
-				<p>
-					If you must use <strong>non-descriptive text</strong>, you can make it
-					more accessible with ARIA attributes for screen readers.
-				</p>
-				<CodeBlock
-					codeSnippet={`<a href="https://accessibleweb.dev" aria-label="Read more about Accessible Web">Read more</a>`}
-					languageType={"html"}
-				/>
 
-				<p>
-					<a
-						href="https://accessibleweb.dev"
-						aria-label="Read more about FreecodeCamp">
-						Read more
-					</a>
-				</p>
+			<TemplateSection
+				sectionName="accessibleLinkNames"
+				title="Accessible Link Names">
+				<div>
+					<h3>Descriptive Link Text</h3>
+					<p>
+						Link text is the text between the opening and closing anchor tag
+						that describes a hyperlink on a webpage. It's important to have
+						descriptive link text to provide clear context about where the link
+						leads and helps users understand the purpose of the link. This is
+						helpful for people with cognitive disabilities, screen reader users
+						and voice input users.
+					</p>
 
-				<p>
-					However, ARIA labels may not provide perfect accessibility. A better
-					solution is to use a <strong>{`${"<span>"}`}</strong> element within
-					the <strong>{`${"<a>"}`}</strong> element to provide descriptive text
-					that's accessible to screen readers but not visible to sighted users{" "}
-				</p>
+					<CodeBlock
+						codeSnippet={`<a href="https://accessibleweb.dev">Visit Accessible Web Dev</a> 
+<!--The descriptive name in this case is "Visit Accessible Web Dev" -->`}
+						languageType={"html"}
+					/>
+				</div>
+				<div>
+					<h3>Non-descriptive Link Text</h3>
+					<p>
+						If possible, avoid using vague, non-descriptive phrases as link text
+						like "Click Here" or "Read More". These phrases are difficult to
+						understand without surrounding context and can pose problems for
+						screen reader users and voice input users. It is also common to see
+						these phrases repeated multiple times on a page, for example on an
+						e-commerce site listing several product cards, making it more
+						difficult to differentiate between the different link destinations.
+					</p>
+					<p>
+						If you must use non-descriptive text, you can make it more
+						accessible by using methods to overwrite the visible text.
+					</p>
+					<h4>Aria-label</h4>
+					<p>
+						The first method is to use an aria-label. This will overwrite the
+						visible text and be read out to screen reader users instead. It's
+						important to keep in mind that the aria-label should start with the
+						same text as shown in the visible text so that the link still works
+						for voice input users.
+					</p>
+					<p>
+						An aria-label can also be used to give an image or icon link an
+						accessible name when there is no visible link text.
+					</p>
+					<CodeBlock
+						codeSnippet={`<a href="https://accessibleweb.dev" aria-label="Read more about Accessible Web">Read more</a>`}
+						languageType={"html"}
+					/>
+					<p>
+						Some downsides to aria-label are that it doesn't always get
+						translated by in-browser translate tools. It also completely
+						overwrites the visible text which can be problematic if the two do
+						not match.
+					</p>
+					<h4>Hiding elements with CSS</h4>
+					<p>
+						Another solution is to use CSS to hide some extra text. By adding a
+						visibly hidden <strong>{`${"<span>"}`}</strong> element within the{" "}
+						<strong>{`${"<a>"}`}</strong> element to provide descriptive text
+						that's read out to screen readers but not visible to sighted users.
+					</p>
 
-				<CodeBlock
-					codeSnippet={`<a href="https://www.freecodecamp.org">Read more
-	<span class="sr-only">Read more about FreeCodeCamp</span>
+					<CodeBlock
+						codeSnippet={`<a href="https://accessibleweb.dev">Read more
+	<span class="visibly-hidden">Read more about Accessible Web Dev</span>
 </a>`}
-					languageType={"html"}
-				/>
-				<p>
-					Here, the <strong>{`${"<span>"}`}</strong> element has a class of
-					"sr-only" (meaning for screen readers only) and a descriptive text.
-				</p>
+						languageType={"html"}
+					/>
 
-				<p>
-					To ensure the <strong>{`${"<span>"}`}</strong> element remains
-					accessible but hidden from sighted users, apply the following CSS
-					style:
-				</p>
-				<CodeBlock
-					codeSnippet={`.sr-only {
+					<CodeBlock
+						codeSnippet={`.visibly-hidden {
     border: 0;
     clip: rect(0,0,0,0);
     height: 1px;
@@ -160,15 +114,12 @@ export const LinksTemplate = () => {
     padding: 0;
     position: absolute;
     width: 1px;
-}`}
-					languageType={"css"}
-				/>
-				<p>
-					<a href="https://www.freecodecamp.org">
-						Read more
-						<span className={styles.srOnly}>Read more about FreeCodeCamp</span>
-					</a>
-				</p>
+}
+/* You may also see this class called screen-reader-only or sr-only in
+other places on the web */`}
+						languageType={"css"}
+					/>
+				</div>
 			</TemplateSection>
 
 			<TemplateSection sectionName="linkStates" title="Link State">
@@ -389,4 +340,69 @@ export const LinksTemplate = () => {
 			<PageUpdated date="18th September 2023" />
 		</>
 	)
+}
+{
+	/* <p>
+					There are two main types of links: internal links and external links.
+				</p>
+				<ul>
+					<li>
+						<strong>Internal links: </strong>
+						Internal links connect webpages within your own website. They help
+						users navigate between different pages of your site easily.
+						<CodeBlock
+							codeSnippet={`<a href="buttons.html">Learn more about accessible buttons</a>`}
+							languageType={"html"}
+						/>
+						<p>
+							<a href="buttons">Learn more about accessible buttons</a>
+						</p>
+					</li>
+
+					<li>
+						<strong>External links: </strong>
+						External links, on the other hand, connect your webpage to another
+						webpage on an external website. An example of this is when you link
+						your website to the W3C website for additional information or
+						resources.
+						<CodeBlock
+							codeSnippet={`<a href="https://www.w3schools.com/">Visit W3Schools</a>`}
+							languageType={"html"}
+						/>
+						<h3>Open External links in a New Tab</h3>
+						<p>
+							External links should be clearly marked as such, especially when
+							they open in a new browser tab, either with a new window icon{" "}
+							<span>
+								<ImNewTab size="1rem" aria-hidden="true" />
+							</span>{" "}
+							or a descriptive text e.g “(opens in a new tab)” and also include
+							a target attribute of “_blank” and rel=”noopener” to prevent
+							potential security risks.
+						</p>
+						<CodeBlock
+							codeSnippet={`<a href="https://www.accessibleweb.com" rel="noopener" target="_blank">
+    Visit Accessible Web
+    <span hidden id="new_tab">(opens in a new tab)</span>
+    <svg aria-hidden="true" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true" fill="#000000">
+    </svg>
+</a>`}
+							languageType={"html"}
+						/>
+						<p>
+							In this example, we use a <strong>{`${"<span>"}`}</strong> element
+							with the 'hidden' attribute and id="new_tab" with the text "(opens
+							in a new tab)", which won't be visible by default. The
+							aria-hidden="true" attribute in the SVG element ensures that the
+							SVG icon is not visible to screen readers. When screen readers
+							visit the link, they'll read it as{" "}
+							<strong>Visit Accessible Web. Opens in a new tab.</strong>
+						</p>
+					</li>
+				</ul>
+				<p>
+					Notice the difference between the hrefs. The href for internal link is
+					pointing to a page within this website - Buttons and the href for
+					external link is pointing to a file outside this website.
+				</p> */
 }
