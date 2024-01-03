@@ -2,10 +2,7 @@ import { TemplateSection } from "../TemplateSection/TemplateSection"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { NavPage } from "../NavPage/NavPage"
 import { linkPageNavigation } from "../../data/pageNavigationLists"
-import { ImNewTab } from "react-icons/im"
 import { PageUpdated } from "../PageUpdated/PageUpdated"
-import styles from "./LinksTemplate.module.css"
-import Image from "next/image"
 
 export const LinksTemplate = () => {
 	return (
@@ -19,8 +16,8 @@ export const LinksTemplate = () => {
 
 				<p>
 					In HTML, links are created using the anchor element
-					<strong>{`${"<a>"}`}</strong>. This element allows you to make text or
-					images clickable, and has inbuilt interactivity allowing users to
+					<strong>{`${" <a>"}`}</strong>. This element allows you to make text
+					or images clickable, and has inbuilt interactivity allowing users to
 					activate the link with a mouse click, a touch device or by pressing
 					Enter on a keyboard. It is also automatically reachable with the tab
 					key.
@@ -56,7 +53,7 @@ export const LinksTemplate = () => {
 					<h3>Non-descriptive Link Text</h3>
 					<p>
 						If possible, avoid using vague, non-descriptive phrases as link text
-						like "Click Here" or "Read More". These phrases are difficult to
+						such as "Click Here" or "Read More". These phrases are difficult to
 						understand without surrounding context and can pose problems for
 						screen reader users and voice input users. It is also common to see
 						these phrases repeated multiple times on a page, for example on an
@@ -65,7 +62,8 @@ export const LinksTemplate = () => {
 					</p>
 					<p>
 						If you must use non-descriptive text, you can make it more
-						accessible by using methods to overwrite the visible text.
+						accessible by using methods to overwrite the visible text. Two such
+						methods are using aria-label or hiding additional text with CSS.
 					</p>
 					<h4>Aria-label</h4>
 					<p>
@@ -73,7 +71,8 @@ export const LinksTemplate = () => {
 						visible text and be read out to screen reader users instead. It's
 						important to keep in mind that the aria-label should start with the
 						same text as shown in the visible text so that the link still works
-						for voice input users.
+						for voice input users. If the visible link says "Read more" the
+						aria-label might be "Read more about ..."
 					</p>
 					<p>
 						An aria-label can also be used to give an image or icon link an
@@ -91,15 +90,16 @@ export const LinksTemplate = () => {
 					</p>
 					<h4>Hiding elements with CSS</h4>
 					<p>
-						Another solution is to use CSS to hide some extra text. By adding a
-						visibly hidden <strong>{`${"<span>"}`}</strong> element within the{" "}
-						<strong>{`${"<a>"}`}</strong> element to provide descriptive text
-						that's read out to screen readers but not visible to sighted users.
+						Another solution is to use CSS to hide some extra text. This can be
+						done by adding a visibly hidden <strong>{`${"<span>"}`}</strong>{" "}
+						element within the <strong>{`${"<a>"}`}</strong> element to provide
+						descriptive text that gets read out to screen readers but is not
+						visible to sighted users.
 					</p>
 
 					<CodeBlock
 						codeSnippet={`<a href="https://accessibleweb.dev">Read more
-	<span class="visibly-hidden">Read more about Accessible Web Dev</span>
+	<span class="visibly-hidden">about Accessible Web Dev</span>
 </a>`}
 						languageType={"html"}
 					/>
@@ -141,16 +141,11 @@ other places on the web */`}
 					<li>
 						<strong>Ensure Sufficient Color Contrast: </strong>
 						Make sure the color of your links contrasts well with the background
-						color. This ensures that people with visual impairments can easily
+						color or surrounding text color. This ensures that people with
+						visual impairments or color vision deficiencies can easily
 						distinguish the links from the surrounding text. The contrast ratio
 						should be at least 4.5:1 for WCAG level AA compliance. Color should
 						not be the only way to distinguish links from surrounding text.
-					</li>
-					<li>
-						<strong>Add Link State on Click or Visit: </strong>
-						To aid users in identifying which links they've already visited or
-						clicked, consider adding a visual change, such as making the link
-						text bold or giving it a bright outline color.
 					</li>
 					<li>
 						<strong>Don't rely on hover state to convey links: </strong>
@@ -260,23 +255,9 @@ other places on the web */`}
 				<ul className="list">
 					<li>
 						<a
-							href="https://www.sitepoint.com/15-rules-making-accessible-links/"
+							href="https://www.tpgi.com/well-color-us-surprised-this-sc-can-be-a-tricky-customer/"
 							className="blockLink">
-							Making Accessible Links: 15 Golden Rules for Developers
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://medium.com/@svinkle/why-let-someone-know-when-a-link-opens-a-new-window-8699d20ed3b1"
-							className="blockLink">
-							Why let someone know when a link opens a new tab?
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/noopener"
-							className="blockLink">
-							HTML Attribute rel="noopener"
+							Well Color Us Surprised - This SC Can Be a Tricky Customer
 						</a>
 					</li>
 					<li>
@@ -291,69 +272,4 @@ other places on the web */`}
 			<PageUpdated date="18th September 2023" />
 		</>
 	)
-}
-{
-	/* <p>
-					There are two main types of links: internal links and external links.
-				</p>
-				<ul>
-					<li>
-						<strong>Internal links: </strong>
-						Internal links connect webpages within your own website. They help
-						users navigate between different pages of your site easily.
-						<CodeBlock
-							codeSnippet={`<a href="buttons.html">Learn more about accessible buttons</a>`}
-							languageType={"html"}
-						/>
-						<p>
-							<a href="buttons">Learn more about accessible buttons</a>
-						</p>
-					</li>
-
-					<li>
-						<strong>External links: </strong>
-						External links, on the other hand, connect your webpage to another
-						webpage on an external website. An example of this is when you link
-						your website to the W3C website for additional information or
-						resources.
-						<CodeBlock
-							codeSnippet={`<a href="https://www.w3schools.com/">Visit W3Schools</a>`}
-							languageType={"html"}
-						/>
-						<h3>Open External links in a New Tab</h3>
-						<p>
-							External links should be clearly marked as such, especially when
-							they open in a new browser tab, either with a new window icon{" "}
-							<span>
-								<ImNewTab size="1rem" aria-hidden="true" />
-							</span>{" "}
-							or a descriptive text e.g “(opens in a new tab)” and also include
-							a target attribute of “_blank” and rel=”noopener” to prevent
-							potential security risks.
-						</p>
-						<CodeBlock
-							codeSnippet={`<a href="https://www.accessibleweb.com" rel="noopener" target="_blank">
-    Visit Accessible Web
-    <span hidden id="new_tab">(opens in a new tab)</span>
-    <svg aria-hidden="true" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" mirror-in-rtl="true" fill="#000000">
-    </svg>
-</a>`}
-							languageType={"html"}
-						/>
-						<p>
-							In this example, we use a <strong>{`${"<span>"}`}</strong> element
-							with the 'hidden' attribute and id="new_tab" with the text "(opens
-							in a new tab)", which won't be visible by default. The
-							aria-hidden="true" attribute in the SVG element ensures that the
-							SVG icon is not visible to screen readers. When screen readers
-							visit the link, they'll read it as{" "}
-							<strong>Visit Accessible Web. Opens in a new tab.</strong>
-						</p>
-					</li>
-				</ul>
-				<p>
-					Notice the difference between the hrefs. The href for internal link is
-					pointing to a page within this website - Buttons and the href for
-					external link is pointing to a file outside this website.
-				</p> */
 }
