@@ -175,23 +175,23 @@ export const ButtonsTemplate = () => {
 				</button>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-	<img src="icon-url.png" alt="" />
-		Text
+<img src="icon-url.png" alt="" />
+	Text
 </button>`}
 					languageType={"html"}
 				/>
 				<CodeBlock
 					codeSnippet={`<button type="button" onclick="handleClick()">
-	<img src="icon-url.png" aria-hidden="true" />
-		Text
+<img src="icon-url.png" aria-hidden="true" />
+	Text
 </button>`}
 					languageType={"html"}
 				/>
 				<p>
-					An empty alt attribute has the most wide-spread support so that should
-					be your go to choice when using icons. However, some icon libraries
-					don't allow an alt attribute to be passed and that's where aria-hidden
-					can be useful.
+					An empty alt attribute has the most wide-spread support, so that
+					should be your go to choice when using icons. However, some icon
+					libraries don't allow an alt attribute to be passed and that's where
+					aria-hidden can be useful.
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="iconOnlyButtons" title="Icon-only buttons">
