@@ -20,11 +20,11 @@ export const pages: IPage[] = [
 	// 	href: "/captchas",
 	// 	content: "captchas",
 	// },
-	// {
-	// 	name: "Charts",
-	// 	href: "/charts",
-	// 	content: "charts",
-	// },
+	{
+		name: "Charts",
+		href: "/charts",
+		content: "charts",
+	},
 	{ name: "Forms", href: "/forms", content: "forms" },
 	{ name: "Headings", href: "/headings", content: "headings" },
 	// { name: "Icons", href: "/icons", content: "icons" },
