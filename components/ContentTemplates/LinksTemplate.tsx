@@ -23,6 +23,13 @@ export const LinksTemplate = () => {
 					key.
 				</p>
 				<p>
+					The accessible name for links created using the anchor element comes
+					from the content between the opening and closing tag. If the content
+					between the opening and closing tags is not text, or the text is very
+					generic the accessible name should be added in another way, for
+					example with ARIA.
+				</p>
+				<p>
 					An important attribute for accessibility is the href attribute. This
 					specifies the destination of the link. If the href is not present then
 					the link is not accessible.
@@ -72,19 +79,19 @@ export const LinksTemplate = () => {
 						important to keep in mind that the aria-label should start with the
 						same text as shown in the visible text so that the link still works
 						for voice input users. If the visible link says "Read more" the
-						aria-label might be "Read more about ..."
+						aria-label might be "Read more about accessible buttons"
 					</p>
 					<p>
 						An aria-label can also be used to give an image or icon link an
 						accessible name when there is no visible link text.
 					</p>
 					<CodeBlock
-						codeSnippet={`<a href="https://accessibleweb.dev" aria-label="Read more about Accessible Web">Read more</a>`}
+						codeSnippet={`<a href="https://accessibleweb.dev/buttons" aria-label="Read more about accessible buttons">Read more</a>`}
 						languageType={"html"}
 					/>
 					<p>
 						Some downsides to aria-label are that it doesn't always get
-						translated by in-browser translate tools. It also completely
+						translated by in-browser translation tools. It also completely
 						overwrites the visible text which can be problematic if the two do
 						not match.
 					</p>
@@ -98,8 +105,8 @@ export const LinksTemplate = () => {
 					</p>
 
 					<CodeBlock
-						codeSnippet={`<a href="https://accessibleweb.dev">Read more
-	<span class="visibly-hidden">about Accessible Web Dev</span>
+						codeSnippet={`<a href="https://accessibleweb.dev/buttons">Read more
+	<span class="visibly-hidden">about accessible buttons</span>
 </a>`}
 						languageType={"html"}
 					/>
@@ -167,8 +174,24 @@ other places on the web */`}
 				</p>
 				<p>
 					The important thing to remember when using images and icons as links
-					is to describe the link destination and not the content of the image.
+					is to describe the link destination rather than the content of the
+					image.
 				</p>
+				<CodeBlock
+					codeSnippet={`<a href="https://google.com" aria-label="Google">
+	<FaGoogle />
+</a>
+
+<a href="https://google.com">
+	<FaGoogle />
+	<span class="visibly-hidden">Google</span>
+</a>
+
+<a href="https://google.com">
+	<img src="url" alt="Google" />
+</a>`}
+					languageType={"html"}
+				/>
 			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
