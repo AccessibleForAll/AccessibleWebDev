@@ -139,14 +139,20 @@ other places on the web */`}
 
 				<ul className="list">
 					<li>
-						<strong>Underline Links by Default: </strong>
+						<strong>Underline links by default: </strong>
 						Links should be underlined by default. This provides a clear visual
 						indicator that a piece of text or an element is clickable. It's a
 						universal convention that helps all users understand what's
 						clickable.
 					</li>
 					<li>
-						<strong>Ensure Sufficient Color Contrast: </strong>
+						<strong>Focus state: </strong>A focused link should have a focus
+						indicator which makes it easy to see where focus is on the screen.
+						This is often a thicker border or outline around the link and should
+						have a contrast ratio of at least 3:1 with the background.
+					</li>
+					<li>
+						<strong>Ensure sufficient color contrast: </strong>
 						Make sure the color of your links contrasts well with the background
 						color or surrounding text color. This ensures that people with
 						visual impairments or color vision deficiencies can easily
@@ -246,9 +252,44 @@ other places on the web */`}
 					</li>
 					<li>
 						<a
+							href="https://www.w3.org/TR/WCAG22/#link-purpose-in-context"
+							className="blockLink">
+							2.4.4 Link Purpose (in Context)
+						</a>
+					</li>
+					<li>
+						<a
 							href="https://www.w3.org/TR/WCAG21/#focus-visible"
 							className="blockLink">
 							2.4.7 Focus Visible
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#link-purpose-link-only"
+							className="blockLink">
+							2.4.9 Link Purpose (Link Only)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#focus-not-obscured-minimum"
+							className="blockLink">
+							2.4.11 Focus Not Obscured (Minimum)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#focus-not-obscured-enhanced"
+							className="blockLink">
+							2.4.12 Focus Not Obscured (Enhanced)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#focus-appearance"
+							className="blockLink">
+							2.4.13 Focus Appearance
 						</a>
 					</li>
 					<li>
@@ -260,9 +301,16 @@ other places on the web */`}
 					</li>
 					<li>
 						<a
-							href="https://www.w3.org/TR/WCAG21/#target-size"
+							href="https://www.w3.org/TR/WCAG22/#target-size-enhanced"
 							className="blockLink">
-							2.5.5 Target Size
+							2.5.5 Target Size (Enhanced)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#target-size-minimum"
+							className="blockLink">
+							2.5.8 Target Size (Minimum)
 						</a>
 					</li>
 					<li>
@@ -292,7 +340,7 @@ other places on the web */`}
 					</li>
 				</ul>
 			</TemplateSection>
-			<PageUpdated date="18th September 2023" />
+			<PageUpdated date="5th January 2024" />
 		</>
 	)
 }
