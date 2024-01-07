@@ -169,36 +169,45 @@ other places on the web */`}
 					</li>
 				</ul>
 			</TemplateSection>
-			{/* For issue #387 */}
-			<TemplateSection sectionName="openInNewPage" title="Open Links in a new page/window.">
+			<TemplateSection
+				sectionName="openInNewPage"
+				title="Open Links in a new page/window.">
 				<p>
-					You can use HTML attribute <strong>target</strong> to open the linked documents.
+					You can use HTML attribute <strong>target</strong> to open the linked
+					documents.
 					<ul>
 						<li>
-							<strong>_blank:</strong> Opens the link in a new tab/window. Great for external links, PDFs, or downloads. 
-							But remember accessibility concerns: screen reader announcements, focus management, user confusion.
+							<strong>_blank:</strong> Opens the link in a new tab/window. Great
+							for external links, PDFs, or downloads. But remember accessibility
+							concerns: screen reader announcements, focus management, user
+							confusion.
 						</li>
 						<li>
-							<strong>_self (default):</strong> Opens the link in the current frame/window. 
-							Classic behavior, but can lose user context for complex interactions.
+							<strong>_self (default):</strong> Opens the link in the current
+							frame/window. Classic behavior, but can lose user context for
+							complex interactions.
 						</li>
 						<li>
-							<strong>_parent:</strong> Opens the link in the parent frame/window (if framesets are used). 
-							Not as common nowadays, but can be useful for specific layouts.
+							<strong>_parent:</strong> Opens the link in the parent
+							frame/window (if framesets are used). Not as common nowadays, but
+							can be useful for specific layouts.
 						</li>
 						<li>
-							<strong>_top:</strong> Opens the link in the entire browser window, replacing the current content. 
-							Can be jarring for users, use sparingly.
+							<strong>_top:</strong> Opens the link in the entire browser
+							window, replacing the current content. Can be jarring for users,
+							use sparingly.
 						</li>
 						<li>
-							<strong>Named frames:</strong> Opens the link in a pre-defined frame within the current page.
-							Less common with modern layouts, but still supported.
+							<strong>Named frames:</strong> Opens the link in a pre-defined
+							frame within the current page. Less common with modern layouts,
+							but still supported.
 						</li>
-					</ul>	
+					</ul>
 					<CodeBlock
-					codeSnippet={`<a href="https://accessibleweb.dev" target="_blank">Visit Accessible Web Dev</a> 
+						codeSnippet={`<a href="https://accessibleweb.dev" target="_blank">Visit Accessible Web Dev</a> 
 					<!--This Linked page/document would open in a new page/window.-->`}
-					languageType={"html"}/>				
+						languageType={"html"}
+					/>
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="linkImage" title="Image and Icon Links">
