@@ -129,6 +129,80 @@ other places on the web */`}
 				</div>
 			</TemplateSection>
 
+			<TemplateSection
+				sectionName="openInNewPage"
+				title="Opening Links in a new tab or window.">
+				<p>
+					You can use HTML attribute <strong>target</strong> to open the linked
+					documents.
+					<ul>
+						<li>
+							<strong>_blank:</strong> Opens the link in a new tab/window. Great
+							for external links, PDFs, or downloads. But remember accessibility
+							concerns: Screen readers, used by people with visual impairments,
+							often don't automatically announce when a link opens in a new tab.
+							This can lead to confusion, as the user might not realize they've
+							been taken to a different page. When a new tab opens, it might not
+							automatically receive focus, making it difficult for keyboard-only
+							users to navigate. Users might not realize they're in a new tab,
+							especially if they're not visually focused on the browser window.
+							This can lead to unexpected behavior when using the back button or
+							trying to interact with the original page
+						</li>
+						<CodeBlock
+							codeSnippet={`<a href="https://accessibleweb.dev" rel="noopener noreferrer" target="_blank">Visit Accessible Web Dev</a> 
+					<!--This Linked page/document would open in a new page/window.-->`}
+							languageType={"html"}
+						/>
+						<li>
+							<strong>_self (default):</strong> Opens the link in the current
+							frame/window. Classic behavior, but can lose user context for
+							complex interactions.
+						</li>
+						<CodeBlock
+							codeSnippet={`<a href="https://accessibleweb.dev" rel="noopener noreferrer" target="_self">Visit Accessible Web Dev</a> 
+					<!--This Linked page/document would open in a new page/window.-->`}
+							languageType={"html"}
+						/>
+						<li>
+							<strong>_parent:</strong> Opens the link in the parent
+							frame/window (if framesets are used). Not as common nowadays, but
+							can be useful for specific layouts.
+						</li>
+						<CodeBlock
+							codeSnippet={`<a href="https://accessibleweb.dev" rel="noopener noreferrer" target="_parent">Visit Accessible Web Dev</a> 
+					<!--This Linked page/document would open in a new page/window.-->`}
+							languageType={"html"}
+						/>
+						<li>
+							<strong>_top:</strong> Opens the link in the entire browser
+							window, replacing the current content. Can be jarring for users,
+							use sparingly.
+						</li>
+						<CodeBlock
+							codeSnippet={`<a href="https://accessibleweb.dev" rel="noopener noreferrer" target="_top">Visit Accessible Web Dev</a> 
+					<!--This Linked page/document would open in a new page/window.-->`}
+							languageType={"html"}
+						/>
+						<li>
+							<strong>Named frames:</strong> Opens the link in a pre-defined
+							frame within the current page. Less common with modern layouts,
+							but still supported.
+						</li>
+					</ul>
+					<CodeBlock
+						codeSnippet={`
+						<frameset cols="20%,80%">
+							<frame src="content.html" name="main">
+							<!--This is how to create a new frame.-->
+					  	</frameset>
+						<a href="https://accessibleweb.dev" rel="noopener noreferrer" target="main">Visit Accessible Web Dev</a> 
+					<!--This Linked page/document would open in a new tab or window.-->`}
+						languageType={"html"}
+					/>
+				</p>
+			</TemplateSection>
+
 			<TemplateSection sectionName="linkStates" title="Link State and Style">
 				<p>
 					To improve the accessibility of your website, it's crucial to make
