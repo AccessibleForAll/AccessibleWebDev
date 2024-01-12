@@ -41,6 +41,7 @@ export const linkPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Link State and Style", href: "#linkStates" },
 	{ linkName: "Image and Icon Links", href: "#linkImage" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 

@@ -339,6 +339,33 @@ other places on the web */`}
 						</a>
 					</li>
 				</ul>
+				<TemplateSection
+					sectionName="Touch Target Minimum"
+					title="Touch Target Minimum">
+					<p>
+						When it comes to creating accessible links, it's important that they
+						are easy to activate. To achieve this goal, WCAG suggests the
+						following:
+					</p>
+					<ul className="list">
+						<li>
+							Spacing: Ensure that the link's text has enough space so that
+							users can understand its context. Doing this would also make it
+							easier for users who have motor dexterity issues.
+						</li>
+					</ul>
+					<p>
+						{" "}
+						If you're interested in learning more about this new standard, check
+						it out at{" "}
+						<a
+							href="https://www.w3.org/TR/WCAG22/#target-size-minimum"
+							className="blockLink">
+							{" "}
+							W3's website
+						</a>{" "}
+					</p>
+				</TemplateSection>
 			</TemplateSection>
 			<PageUpdated date="5th January 2024" />
 		</>
