@@ -1,9 +1,0 @@
-.pageLastUpdated {
-	margin-top: 5rem;
-}
-
-@media (min-width: 800px) {
-	.pageLastUpdated {
-		text-align: right;
-	}
-}
