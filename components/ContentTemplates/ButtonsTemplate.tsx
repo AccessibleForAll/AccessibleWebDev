@@ -468,7 +468,7 @@ export const ButtonsTemplate = () => {
 				</ul>
 			</TemplateSection>
 			<TemplateSection
-				sectionName="Touch Target Minimum"
+				sectionName="touchTargetMinimum"
 				title="Touch Target Minimum">
 				<p>
 					When it comes to creating accessible buttons, it's important that they
