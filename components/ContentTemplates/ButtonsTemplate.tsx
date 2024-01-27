@@ -476,15 +476,7 @@ export const ButtonsTemplate = () => {
 						them at least 24 by 24 CSS pixels in size. Using this approach will make it easier for 
 						users who suffer from mobility impairments such as hand tremors or
 						are amputees to navigate mobile apps or websites.
-					{" "}
-					If you're interested in learning more about this new standard, check
-					it out at{" "}
-					<a
-						href="https://www.w3.org/TR/WCAG22/#target-size-minimum"
-						className="blockLink">
-						{" "}
-						W3's website
-					</a>{" "}
+					
 				</p>
 			</TemplateSection>
 			<TemplateSection sectionName="otherResources" title="Other Resources">
