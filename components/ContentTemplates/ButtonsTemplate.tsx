@@ -472,18 +472,10 @@ export const ButtonsTemplate = () => {
 				title="Touch Target Minimum">
 				<p>
 					When it comes to creating accessible buttons, it's important that they
-					are easy to activate. To achieve this goal, WCAG suggests the
-					following:
-				</p>
-				<ul className="list">
-					<li>
-						Spacing: Avoid putting the buttons close together. Consider making
-						it at least 24 by 24 CSS pixels in size. It'll make it easier for
+					are easy to activate. To achieve this goal, WCAG recommends avoiding putting the buttons close together. Consider making
+						them at least 24 by 24 CSS pixels in size. Using this approach will make it easier for 
 						users who suffer from mobility impairments such as hand tremors or
 						are amputees to navigate mobile apps or websites.
-					</li>
-				</ul>
-				<p>
 					{" "}
 					If you're interested in learning more about this new standard, check
 					it out at{" "}
