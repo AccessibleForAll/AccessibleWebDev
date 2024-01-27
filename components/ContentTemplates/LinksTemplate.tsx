@@ -340,6 +340,15 @@ other places on the web */`}
 					</li>
 				</ul>
 			</TemplateSection>
+			<TemplateSection
+					sectionName="touchTargetMinimum"
+					title="Touch Target Minimum">
+					<p>
+						When it comes to creating accessible links, it's important that they
+						are easy to activate. To do this, WCAG recommends spacing the link's text so that users can understand its context. Doing this would also make it
+							easier for users who have motor dexterity issues to read them.
+					</p>
+					</TemplateSection>
 			<PageUpdated date="5th January 2024" />
 		</>
 	)

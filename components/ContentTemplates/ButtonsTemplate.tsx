@@ -467,6 +467,13 @@ export const ButtonsTemplate = () => {
 					</li>
 				</ul>
 			</TemplateSection>
+			<TemplateSection sectionName="touchTargetMinimum" title="Touch Target Minimum">
+				<p>
+					When it comes to creating accessible buttons for your websites and applications, it's important that they
+					are easy to activate. To achieve this goal, WCAG suggests to avoid putting the buttons together. Consider make their size at least 24 by 24 CSS pixels. In doing so, users, especially those who suffer from mobility impairments like hand tremors or are amputees, have an easier time clicking on them.
+				</p>
+
+			</TemplateSection>
 			<TemplateSection sectionName="otherResources" title="Other Resources">
 				<ul className="list">
 					<li>
