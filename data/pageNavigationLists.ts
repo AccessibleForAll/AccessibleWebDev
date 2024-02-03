@@ -31,8 +31,8 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Icon-only Buttons", href: "#iconOnlyButtons" },
 	{ linkName: "Button States", href: "#buttonStates" },
 	{ linkName: "Button or Link?", href: "#buttonOrLink" },
+	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
-	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },}
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
@@ -41,8 +41,8 @@ export const linkPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
 	{ linkName: "Link State and Style", href: "#linkStates" },
 	{ linkName: "Image and Icon Links", href: "#linkImage" },
-	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
