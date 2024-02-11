@@ -46,6 +46,17 @@ export const linkPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
+export const captchasPageNavigation: IPageNavigationItem[] = [
+	{
+		linkName: "Introduction",
+		href: "#introduction",
+	},
+	{ linkName: "What's the issue with CAPTCHAs?", href: "#captchaIssues" },
+	{ linkName: "Accessible CAPTCHA", href: "#accessibleCAPTCHA" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
+
 export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Text Alternatives", href: "#textAlternatives" },
