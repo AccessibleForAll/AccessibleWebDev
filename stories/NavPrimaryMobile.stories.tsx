@@ -15,6 +15,6 @@ export const MobilePrimaryNav = Template.bind({})
 
 MobilePrimaryNav.args = {
 	activeNavLink: "/",
-	handleNavClick: () => true,
+	closeNavMobile: () => true,
 	// eslint-disable-next-line @typescript-eslint/naming-convention
 } as INavProps

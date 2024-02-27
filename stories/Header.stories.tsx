@@ -14,6 +14,6 @@ export const DesktopHeader = Template.bind({})
 DesktopHeader.args = {
 	headerTitle: "Page Title",
 	handleNavClick: () => true,
-	showNavMobile: false,
+	isNavMobileOpen: false,
 	// eslint-disable-next-line @typescript-eslint/naming-convention
 } as IHeaderProps

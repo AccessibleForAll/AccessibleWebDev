@@ -6,10 +6,10 @@ import styles from "./Header.module.css"
 
 export interface IHeaderProps {
 	handleNavClick: () => void
-	showNavMobile: boolean
+	isNavMobileOpen: boolean
 }
 
-export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
+export const Header = ({ handleNavClick, isNavMobileOpen }: IHeaderProps) => {
 	return (
 		<>
 			<header>
@@ -21,12 +21,11 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 							className={styles.hamburgerBtn}
 							onClick={handleNavClick}
 							aria-label="Navigation menu"
-							aria-expanded={showNavMobile}>
-							{!showNavMobile && (
-								<IoMenuSharp size="1.5rem" aria-hidden="true" />
-							)}
-							{showNavMobile && (
+							aria-expanded={isNavMobileOpen}>
+							{isNavMobileOpen ? (
 								<IoCloseSharp size="1.5rem" aria-hidden="true" />
+							) : (
+								<IoMenuSharp size="1.5rem" aria-hidden="true" />
 							)}
 						</button>
 					</div>
