@@ -1,10 +1,5 @@
 {
-	"extends": [
-		"next/core-web-vitals",
-		"prettier",
-		"plugin:storybook/recommended",
-		"plugin:@typescript-eslint/recommended"
-	],
+	"extends": ["next/core-web-vitals", "prettier", "plugin:@typescript-eslint/recommended"],
 	"rules": {
 		"comma-spacing": ["error", { "before": false, "after": true }],
 		"react/no-unescaped-entities": 0,

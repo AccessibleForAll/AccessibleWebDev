@@ -14,7 +14,6 @@ This project is built with Next.JS, Typescript and CSS modules.
 Icons - [React Icons Documentation]( https://react-icons.github.io/react-icons)  
 Code Snippets - [React Syntax Highlighter Documentation](https://github.com/react-syntax-highlighter/react-syntax-highlighter)  
 Translations - [next-i18next Documentation](https://next.i18next.com/)  
-Storybook - [Storybook Documentation](https://storybook.js.org/)
 
 ## How to contribute
 
@@ -44,10 +43,6 @@ Storybook - [Storybook Documentation](https://storybook.js.org/)
 9.  To run the whole project locally:
     ```bash
     yarn dev
-    ```
-    If you are making an isolated component and wish to run storybook locally instead of the whole website run this instead of `yarn dev`:
-    ```bash
-    yarn storybook
     ```
 
 10.  Make your changes
