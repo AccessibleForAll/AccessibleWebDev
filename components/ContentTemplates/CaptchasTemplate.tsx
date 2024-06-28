@@ -1,5 +1,6 @@
 import { captchasPageNavigation } from "../../data/pageNavigationLists"
 import { NavPage } from "../NavPage/NavPage"
+import { PageUpdated } from "../PageUpdated/PageUpdated"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
 
 export const CaptchasTemplate = () => {
@@ -30,7 +31,7 @@ export const CaptchasTemplate = () => {
 				<p>
 					Any CAPTCHA relying on sight, such as picking all the traffic light
 					images, or writing the letters in a distorted text, are not accessible
-					to people who are blind, are deaf-blind,have low vision or have a
+					to people who are blind, are deaf-blind, have low vision or have a
 					reading disability such as dyslexia.
 				</p>
 				<h3>Audio</h3>
@@ -61,11 +62,11 @@ export const CaptchasTemplate = () => {
 				sectionName={"accessibleCAPTCHA"}
 				title={"Accessible CAPTCHA"}>
 				<p>
-					The most accessible way to make CAPTCHA accessible is to remove it.
-					Unless you have a large problem with spam then CAPTCHA is probably not
-					needed. You can try using things like honeypots for form submission.
-					These are hidden form fields that only bots can find. Or consider two
-					factor authentication for creating accounts and logging into services.
+					The best way to make CAPTCHA accessible is to remove it. Unless you
+					have a large problem with spam then CAPTCHA is probably not needed.
+					You can try using things like honeypots for form submission. These are
+					hidden form fields that only bots can find. Or consider two factor
+					authentication for creating accounts and logging into services.
 				</p>
 				<p>
 					If you must use CAPTCHA then you must provide multiple ways for people
@@ -100,6 +101,7 @@ export const CaptchasTemplate = () => {
 					</li>
 				</ul>
 			</TemplateSection>
+			<PageUpdated date="28th June 2024" />
 		</>
 	)
 }

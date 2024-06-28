@@ -16,7 +16,7 @@ export const pages: IPage[] = [
 	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
 	{ name: "Buttons", href: "/buttons", content: "buttons" },
 	{
-		name: "Captchas",
+		name: "CAPTCHAs",
 		href: "/captchas",
 		content: "captchas",
 	},
