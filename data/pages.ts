@@ -15,11 +15,11 @@ export const pages: IPage[] = [
 	{ name: "Audio", href: "/audio", content: "audio" },
 	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
 	{ name: "Buttons", href: "/buttons", content: "buttons" },
-	// {
-	// 	name: "Captchas",
-	// 	href: "/captchas",
-	// 	content: "captchas",
-	// },
+	{
+		name: "CAPTCHAs",
+		href: "/captchas",
+		content: "captchas",
+	},
 	// {
 	// 	name: "Charts",
 	// 	href: "/charts",
