@@ -36,16 +36,6 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
-export const linkPageNavigation: IPageNavigationItem[] = [
-	{ linkName: "Introduction", href: "#introduction" },
-	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
-	{ linkName: "Link State and Style", href: "#linkStates" },
-	{ linkName: "Image and Icon Links", href: "#linkImage" },
-	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
-	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
-	{ linkName: "Other Resources", href: "#otherResources" },
-]
-
 export const captchasPageNavigation: IPageNavigationItem[] = [
 	{
 		linkName: "Introduction",
@@ -53,6 +43,16 @@ export const captchasPageNavigation: IPageNavigationItem[] = [
 	},
 	{ linkName: "What's the issue with CAPTCHAs?", href: "#captchaIssues" },
 	{ linkName: "Accessible CAPTCHA", href: "#accessibleCAPTCHA" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
+]
+
+export const iconsPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Decorative Icons", href: "#decorativeIcons" },
+	{ linkName: "Informative Icons", href: "#informativeIcons" },
+	{ linkName: "Text Alternatives", href: "#textAlternatives" },
+	{ linkName: "Icon Links and Buttons", href: "#iconLinksAndButtons" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
@@ -104,6 +104,16 @@ export const formsPageNavigation: IPageNavigationItem[] = [
 	},
 	{ linkName: "Error Validation and Changes in State", href: "#formErrors" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+]
+
+export const linkPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
+	{ linkName: "Link State and Style", href: "#linkStates" },
+	{ linkName: "Image and Icon Links", href: "#linkImage" },
+	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
 export const modalPageNavigation: IPageNavigationItem[] = [
