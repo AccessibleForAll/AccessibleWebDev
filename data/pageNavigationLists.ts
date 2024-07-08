@@ -47,16 +47,6 @@ export const captchasPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
-export const iconsPageNavigation: IPageNavigationItem[] = [
-	{ linkName: "Introduction", href: "#introduction" },
-	{ linkName: "Decorative Icons", href: "#decorativeIcons" },
-	{ linkName: "Informative Icons", href: "#informativeIcons" },
-	{ linkName: "Text Alternatives", href: "#textAlternatives" },
-	{ linkName: "Icon Links and Buttons", href: "#iconLinksAndButtons" },
-	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
-	{ linkName: "Other Resources", href: "#otherResources" },
-]
-
 export const imagePageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
 	{ linkName: "Text Alternatives", href: "#textAlternatives" },
