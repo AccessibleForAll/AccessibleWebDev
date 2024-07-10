@@ -31,15 +31,18 @@ export const buttonPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Icon-only Buttons", href: "#iconOnlyButtons" },
 	{ linkName: "Button States", href: "#buttonStates" },
 	{ linkName: "Button or Link?", href: "#buttonOrLink" },
+	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
-export const linkPageNavigation: IPageNavigationItem[] = [
-	{ linkName: "Introduction", href: "#introduction" },
-	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
-	{ linkName: "Link State and Style", href: "#linkStates" },
-	{ linkName: "Image and Icon Links", href: "#linkImage" },
+export const captchasPageNavigation: IPageNavigationItem[] = [
+	{
+		linkName: "Introduction",
+		href: "#introduction",
+	},
+	{ linkName: "What's the issue with CAPTCHAs?", href: "#captchaIssues" },
+	{ linkName: "Accessible CAPTCHA", href: "#accessibleCAPTCHA" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
@@ -91,6 +94,16 @@ export const formsPageNavigation: IPageNavigationItem[] = [
 	},
 	{ linkName: "Error Validation and Changes in State", href: "#formErrors" },
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+]
+
+export const linkPageNavigation: IPageNavigationItem[] = [
+	{ linkName: "Introduction", href: "#introduction" },
+	{ linkName: "Accessible Link Names", href: "#accessibleLinkNames" },
+	{ linkName: "Link State and Style", href: "#linkStates" },
+	{ linkName: "Image and Icon Links", href: "#linkImage" },
+	{ linkName: "Touch Target Minimum", href: "#touchTargetMinimum" },
+	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
+	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
 export const modalPageNavigation: IPageNavigationItem[] = [

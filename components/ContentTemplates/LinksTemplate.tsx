@@ -199,6 +199,17 @@ other places on the web */`}
 					languageType={"html"}
 				/>
 			</TemplateSection>
+			<TemplateSection
+				sectionName="touchTargetMinimum"
+				title="Touch Target Minimum">
+				<p>
+					When it comes to creating accessible links, it's important that they
+					are easy to activate. To do this, WCAG recommends that links that are
+					not within text have a target size of at least 24 x 24 CSS pixels.
+					Doing this makes it easier for users who have motor dexterity issues
+					to click them.
+				</p>
+			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
 					<li>
@@ -340,6 +351,7 @@ other places on the web */`}
 					</li>
 				</ul>
 			</TemplateSection>
+
 			<PageUpdated date="5th January 2024" />
 		</>
 	)

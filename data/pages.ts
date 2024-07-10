@@ -15,11 +15,11 @@ export const pages: IPage[] = [
 	{ name: "Audio", href: "/audio", content: "audio" },
 	{ name: "Breadcrumbs", href: "/breadcrumbs", content: "breadcrumbs" },
 	{ name: "Buttons", href: "/buttons", content: "buttons" },
-	// {
-	// 	name: "Captchas",
-	// 	href: "/captchas",
-	// 	content: "captchas",
-	// },
+	{
+		name: "CAPTCHAs",
+		href: "/captchas",
+		content: "captchas",
+	},
 	// {
 	// 	name: "Charts",
 	// 	href: "/charts",
@@ -27,7 +27,7 @@ export const pages: IPage[] = [
 	// },
 	{ name: "Forms", href: "/forms", content: "forms" },
 	{ name: "Headings", href: "/headings", content: "headings" },
-	// { name: "Icons", href: "/icons", content: "icons" },
+	{ name: "Icons", href: "/icons", content: "icons" },
 	{ name: "Images", href: "/images", content: "images" },
 	{ name: "Links", href: "/links", content: "links" },
 	// { name: "Lists", href: "/lists", content: "lists" },

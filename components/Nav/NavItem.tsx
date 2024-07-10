@@ -16,12 +16,11 @@ export const NavItem = ({
 	const isLinkActive = activeNavLink === page.href
 	return (
 		<li className={`${styles.navListItem} ${isLinkActive ? "active" : ""}`}>
-			<Link href={page.href}>
-				<a
-					onClick={handleNavClick}
-					aria-current={isLinkActive ? "page" : false}>
-					{page.name}
-				</a>
+			<Link
+				href={page.href}
+				onClick={handleNavClick}
+				aria-current={isLinkActive ? "page" : false}>
+				{page.name}
 			</Link>
 		</li>
 	)

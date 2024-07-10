@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { imagePageNavigation } from "../../data/pageNavigationLists"

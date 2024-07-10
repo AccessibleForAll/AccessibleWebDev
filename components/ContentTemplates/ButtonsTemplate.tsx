@@ -386,6 +386,18 @@ export const ButtonsTemplate = () => {
 					should probably be a link.
 				</p>
 			</TemplateSection>
+			<TemplateSection
+				sectionName="touchTargetMinimum"
+				title="Touch Target Minimum">
+				<p>
+					When it comes to creating accessible buttons for your websites and
+					applications, it's important that they are easy to activate. To
+					achieve this goal, WCAG suggests that buttons have a minimum target
+					size of at least 24 by 24 CSS pixels. In doing so, users, especially
+					those who suffer from mobility impairments like hand tremors or are
+					amputees, have an easier time clicking on them.
+				</p>
+			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
 					<li>
@@ -453,9 +465,16 @@ export const ButtonsTemplate = () => {
 					</li>
 					<li>
 						<a
-							href="https://www.w3.org/TR/WCAG21/#target-size"
+							href="https://www.w3.org/TR/WCAG22/#target-size-enhanced"
 							className="blockLink">
-							2.5.5 Target Size
+							2.5.5 Target Size (Enhanced)
+						</a>
+					</li>
+					<li>
+						<a
+							href="https://www.w3.org/TR/WCAG22/#target-size-minimum"
+							className="blockLink">
+							2.5.8 Target Size (Minimum)
 						</a>
 					</li>
 					<li>
@@ -467,6 +486,7 @@ export const ButtonsTemplate = () => {
 					</li>
 				</ul>
 			</TemplateSection>
+
 			<TemplateSection sectionName="otherResources" title="Other Resources">
 				<ul className="list">
 					<li>

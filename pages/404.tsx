@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import notFoundImage from "../public/404.png"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Head from "next/head"
 import { Layout } from "../components/Layout/Layout"
 import { useTranslation } from "next-i18next"

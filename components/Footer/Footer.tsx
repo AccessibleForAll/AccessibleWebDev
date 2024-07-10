@@ -8,8 +8,8 @@ export const Footer = () => {
 			<div className={styles.footerTop}>
 				<ul className={styles.footerList}>
 					<li>
-						<Link href="/about">
-							<a className={styles.footerLink}>About the maintainers</a>
+						<Link href="/about" className={styles.footerLink}>
+							About the maintainers
 						</Link>
 					</li>
 
@@ -35,10 +35,8 @@ export const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<Link href="/">
-							<a className={styles.footerLink}>
-								Accessibility Statement - coming soon
-							</a>
+						<Link href="/" className={styles.footerLink}>
+							Accessibility Statement - coming soon
 						</Link>
 					</li>
 				</ul>
