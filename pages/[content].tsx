@@ -27,6 +27,7 @@ import { NavigationTemplate } from "../components/ContentTemplates/NavigationTem
 import { TablesTemplate } from "../components/ContentTemplates/TablesTemplate"
 import { VideoTemplate } from "../components/ContentTemplates/VideoTemplate"
 import { PaginationTemplate } from "../components/ContentTemplates/PaginationTemplate"
+import { SelectTemplate } from "../components/ContentTemplates/SelectTemplate"
 
 interface IProps {
 	page: string
@@ -83,6 +84,7 @@ const ContentPage: NextPage<IProps> = ({ page }) => {
 					{page === "modals" && <ModalsTemplate />}
 					{page === "navigation" && <NavigationTemplate />}
 					{page === "pagination" && <PaginationTemplate />}
+					{page === "select" && <SelectTemplate />}
 					{page === "tables" && <TablesTemplate />}
 					{page === "video" && <VideoTemplate />}
 				</>

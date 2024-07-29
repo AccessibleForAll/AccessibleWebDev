@@ -35,6 +35,7 @@ export const pages: IPage[] = [
 	{ name: "Modals", href: "/modals", content: "modals" },
 	{ name: "Navigation", href: "/navigation", content: "navigation" },
 	// { name: "Pagination", href: "/pagination", content: "pagination" },
+	{ name: "Select", href: "/select", content: "select" },
 	// { name: "Tables", href: "/tables", content: "tables" },
 	// { name: "Video", href: "/video", content: "video" },
 ]
