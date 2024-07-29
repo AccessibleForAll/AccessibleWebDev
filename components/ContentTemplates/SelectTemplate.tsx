@@ -6,7 +6,7 @@ import { IPageNavigationItem } from "../../data/pageNavigationLists"
 
 export const selectPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Introduction", href: "#introduction" },
-	{ linkName: "", href: "#" },
+	{ linkName: "Custom Select Widgets", href: "#customSelect" },
 
 	{ linkName: "WCAG Criteria", href: "#WCAGCriteria" },
 	{ linkName: "Other Resources", href: "#otherResources" },
@@ -66,8 +66,30 @@ export const SelectTemplate = () => {
 						first.
 					</p>
 				</TemplateSection>
-				<TemplateSection sectionName="" title="">
-					<p>blah</p>
+				<TemplateSection
+					sectionName="customSelect"
+					title="Custom Select Widgets">
+					<p>
+						The <strong>{`${" <select>"}`}</strong> element has been notoriously
+						hard to style for a long time, and inconsistencies between inbuilt
+						browser styles has led many designers to develop a more
+						consistent-looking widget which does the same job.
+					</p>
+
+					<p>
+						It has become much easier to style in recent years, but many
+						designers still want consistent design across all browsers. However,
+						more consistent design has led to less consistent behaviour as every
+						developer implements the widget in their own way. If you do end up
+						creating a custom select widget, here's the behaviour you need to
+						add to make it accessible:
+					</p>
+					<ul className="list">
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</TemplateSection>
 				<TemplateSection sectionName="" title="">
 					<p>blah</p>
