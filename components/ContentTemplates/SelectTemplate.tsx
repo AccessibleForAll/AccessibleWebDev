@@ -12,7 +12,7 @@ export const selectPageNavigation: IPageNavigationItem[] = [
 	{ linkName: "Other Resources", href: "#otherResources" },
 ]
 
-export const IconsTemplate = () => {
+export const SelectTemplate = () => {
 	return (
 		<>
 			<NavPage pageNavigation={selectPageNavigation} />
