@@ -18,7 +18,53 @@ export const SelectTemplate = () => {
 			<NavPage pageNavigation={selectPageNavigation} />
 			<article>
 				<TemplateSection sectionName="introduction" title="Introduction">
-					<p>Select</p>
+					<p>
+						Select menus are interactive form elements that allow a user to make
+						a choice from a list. Select menus have their own semantic HTML
+						element which is accessible. This means they can be used by mouse
+						users, keyboard users and they work with assistive technology such
+						as screen readers automatically.
+					</p>
+					<label htmlFor="color-select">Choose a color:</label>
+
+					<select name="colors" id="color-select">
+						<option value="">--Please choose an option--</option>
+						<option value="red">Red</option>
+						<option value="blue">Blue</option>
+						<option value="green">Green</option>
+						<option value="yellow">Yellow</option>
+						<option value="purple">Purple</option>
+						<option value="orange">Orange</option>
+					</select>
+					<CodeBlock
+						codeSnippet={`<label for="color-select">Choose a color:</label>
+<select name="colors" id="color-select">
+  <option value="">--Please choose an option--</option>
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="yellow">Yellow</option>
+  <option value="purple">Purple</option>
+  <option value="orange">Orange</option>
+</select>`}
+						languageType={"html"}
+					/>
+					<p>
+						The label needs to be programmatically associated with the select
+						element. This is done by adding a <strong>for</strong> attribute to
+						the label element and a matching <strong>id</strong> attribute to
+						the select element.
+					</p>
+					<p>
+						Even though the native HTML <strong>{`${" <select>"}`}</strong>{" "}
+						element is technically accessible, it can still be difficult to use
+						since options do not become visible until the select is actively
+						opened. A long list of choices can be difficult to scan through and
+						can lead to high cognitive demands on memory. Usability testing
+						should always be done to see if a radio group suffices instead. For
+						multi-select lists, a list of checkboxes should always be considered
+						first.
+					</p>
 				</TemplateSection>
 				<TemplateSection sectionName="" title="">
 					<p>blah</p>
