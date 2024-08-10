@@ -10,6 +10,8 @@
 		"prepare": "husky install"
 	},
 	"dependencies": {
+		"@codesandbox/sandpack-react": "^2.18.2",
+		"js-beautify": "^1.15.1",
 		"next": "^13.5.6",
 		"next-i18next": "^12.1.0",
 		"next-themes": "^0.2.1",
@@ -21,6 +23,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.19.3",
+		"@types/js-beautify": "^1.14.3",
 		"@types/node": "18.0.5",
 		"@types/react": "18.0.15",
 		"@types/react-dom": "18.0.6",

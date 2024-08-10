@@ -1,8 +1,14 @@
+import dynamic from "next/dynamic"
 import { formsPageNavigation } from "../../data/pageNavigationLists"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
 import { NavPage } from "../NavPage/NavPage"
 import { PageUpdated } from "../PageUpdated/PageUpdated"
 import { TemplateSection } from "../TemplateSection/TemplateSection"
+import { formatCss, formatHtml } from "../../utils"
+
+const Playground = dynamic(() => import("../Playground/Playground"), {
+	ssr: false,
+})
 
 export const FormsTemplate = () => {
 	return (
@@ -215,6 +221,25 @@ export const FormsTemplate = () => {
 					&lt;div&gt; element with role=alert in order to be read out to a
 					screen reader user.
 				</p>
+			</TemplateSection>
+			<TemplateSection sectionName="playground" title="Playground">
+				<Playground
+					files={{
+						"/index.html": {
+							active: true,
+							code: formatHtml(`                            
+<form>
+<label for="phone">Phone Number (XXX-XXX-XXXX):</label>
+<input type="tel" id="phone" name="phone">
+</form>
+
+`),
+						},
+						"/Wrapper.css": {
+							code: formatCss(`form{ color:blue;} `),
+						},
+					}}
+				/>
 			</TemplateSection>
 			<TemplateSection sectionName="WCAGCriteria" title="WCAG Criteria">
 				<ul className="list">
