@@ -1,15 +1,39 @@
-# Accessible Web Dev
 
-This site is intended to be a resource for developers wanting to learn the basics about accessibility in a clear and easy to understand way. It is not intended to replace official documentation and guidelines but to provide a stepping stone to get started where official documentation is often difficult to interpret for new web developers.
+# [Accessible Web Dev](https://accessibleweb.dev/) 🌐  
 
-![Screenshot of Accessible Web Dev homepage](/public/images/websiteScreenshot.png)
+Welcome to **Accessible Web Dev**, a resource designed to help web developers learn the fundamentals of accessibility in a practical, easy-to-understand way. This site is an **entry point** into the world of accessibility, complementing current standards by breaking down complex concepts. While it doesn't replace existing standards like the [WCAG standards](https://www.w3.org/WAI/standards-guidelines/wcag/), it offers a beginner-friendly pathway into accessibility for developers of all experience levels.
 
-## Contributing
+![Screenshot of Accessible Web Dev homepage showing a clean, accessible interface with key topics and resources.](/public/images/websiteScreenshot.png)
 
-- To report a bug, please raise a [bug report](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=bug_report.md&title=)
-- To request a new feature, please raise an [issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=feature_request.md&title=)
-- To make a contribution to documentation, translation, code or design please follow the [contributing guidelines](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md)
+---
 
-## License
+## 🚀 Features  
 
-AccessibleWebDev is licensed under the MIT License - see [License](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/LICENSE)
+- **Beginner-Friendly Content**: Step-by-step guides to start your accessibility journey.  
+- **Practical Examples**: Real-world implementations of accessibility best practices.  
+- **Resources & Tools**: Discover accessibility checkers, ARIA guides, and more.  
+- **Community-Driven**: Contributions from developers worldwide to keep the content relevant and up-to-date.  
+
+---
+
+## 🤝 How to Contribute  
+
+We welcome and encourage contributions! There are multiple ways to help improve this project:  
+
+1. **Report Bugs:**  
+   If you encounter a bug, please raise a [Bug Report](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=bug_report.md&title=).  
+
+2. **Request New Features:**  
+   Have ideas for new features? Submit an [Issue](https://github.com/AccessibleForAll/AccessibleWebDev/issues/new?assignees=&labels=&template=feature_request.md&title=).  
+
+3. **Contribute Code, Documentation, or Design:**  
+   We are always looking to improve! Please follow our [Contributing Guidelines](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/CONTRIBUTING.md) to submit code, translations, or design updates.  
+
+4. **Spread the Word:**  
+   Share the project with your peers to help promote accessibility across the web.  
+
+---
+
+## 📄 License  
+
+Accessible Web Dev is licensed under the **MIT License**. See the full [License](https://github.com/AccessibleForAll/AccessibleWebDev/blob/main/LICENSE) for more details.
