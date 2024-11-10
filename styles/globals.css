@@ -29,6 +29,12 @@
 	--headerHeight: 3rem;
 }
 
+@supports (font: -apple-system-body) {
+  html {
+    font: -apple-system-body;
+  }
+}
+
 html,
 body {
 	padding: 0;

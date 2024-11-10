@@ -11,7 +11,7 @@
   padding: 0.3rem;
   border: 1px solid var(--primary);
   z-index: 100;
-  transform: translateY(-100px); 
+  transform: translateY(-500px); 
   transition: all .4s ease-in-out;
 }
 
