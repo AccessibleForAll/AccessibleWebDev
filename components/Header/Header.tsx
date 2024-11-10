@@ -14,7 +14,7 @@ export const Header = ({ handleNavClick, showNavMobile }: IHeaderProps) => {
 		<>
 			<header>
 				<div className={styles.topBanner}>
-					<Link href="/">Accessible Web Dev</Link>
+					<Link href="/">AWD</Link>
 					<div className={styles.buttonsContainer}>
 						<ThemeSwitcher />
 						<button
