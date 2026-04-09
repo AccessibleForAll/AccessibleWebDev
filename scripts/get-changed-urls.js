@@ -23,11 +23,11 @@ const includeHome = process.argv.includes("--include-home")
 let changedFiles = []
 try {
 	let diff
-	// Check if running in PR context (GitHub Actions sets GITHUB_BASE_REF)
-	if (process.env.GITHUB_BASE_REF) {
-		// For PR: compare against base branch
+	// Check if running in PR context (GitHub Actions sets GITHUB_BASE_SHA)
+	if (process.env.GITHUB_BASE_SHA) {
+		// For PR: compare against base branch SHA
 		diff = execSync(
-			`git diff --name-only origin/${process.env.GITHUB_BASE_REF}...HEAD`
+			`git diff --name-only ${process.env.GITHUB_BASE_SHA}...HEAD`
 		).toString()
 	} else {
 		// For push: compare against previous commit
