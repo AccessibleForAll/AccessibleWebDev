@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-tabindex */
+/* eslint-disable jsx-a11y/alt-text */
 import Image from "next/legacy/image"
 import { NavPage } from "../NavPage/NavPage"
 import { CodeBlock } from "../CodeBlock/CodeBlock"
@@ -8,6 +10,12 @@ import { PageUpdated } from "../PageUpdated/PageUpdated"
 export const ImagesTemplate = () => {
 	return (
 		<>
+			<img src="/images/imagesTemplate/oldPaperTexture.jpg"></img>
+			<div role="button">
+				Testing
+				<div role="menuitem">123</div>
+			</div>
+			<div tabIndex={0}>Testing tabindex</div>
 			<NavPage pageNavigation={imagePageNavigation} />
 			<article>
 				<TemplateSection sectionName="introduction" title="Introduction">
