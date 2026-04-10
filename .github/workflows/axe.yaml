@@ -17,7 +17,25 @@ jobs:
       - run: npm run dev & npx wait-on http://localhost:3000
       - name: Install browser drivers
         run: npx browser-driver-manager install chrome
-      - name: Run axe
+      - name: Get URLs to scan based on changed files
+        id: urls
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          # Fetch base branch to ensure valid git history
+          git fetch origin ${{ github.event.pull_request.base.ref }}
+
+          URLS=$(node scripts/get-changed-urls.js http://localhost:3000 --include-home)
+          echo "urls<<EOF" >> $GITHUB_OUTPUT
+          echo "$URLS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+      - name: Run axe on changed pages
         run: |
           npm install -g @axe-core/cli
-          axe http://localhost:3000 --exit
+
+          # Scan each changed URL
+          echo "${{ steps.urls.outputs.urls }}" | while read url; do
+            [ -z "$url" ] && continue
+            echo "Scanning: $url"
+            axe "$url" --exit
+          done
