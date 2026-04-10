@@ -23,7 +23,7 @@ jobs:
           GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
           # Fetch base branch to ensure valid git history
-          git fetch origin ${{ github.event.pull_request.base.ref }} --depth=1
+          git fetch origin ${{ github.event.pull_request.base.ref }}
 
           URLS=$(node scripts/get-changed-urls.js http://localhost:3000 --include-home)
           echo "urls<<EOF" >> $GITHUB_OUTPUT
